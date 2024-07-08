@@ -1,0 +1,27 @@
+---
+indexpage:
+  title: VMware용 Workload Factory 설명서
+  summary: 온프레미스 vSphere 환경에서 AWS 기반의 VMware Cloud로 마이그레이션을 간소화하고 맞춤형 FSx for ONTAP
+    파일 시스템을 외부 데이터 저장소로 구현합니다.
+  keywords: VMware, FSx, VMs, VMC, VMware Cloud on AWS, FSx for ONTAP
+  lead: 온프레미스 vSphere 환경에서 AWS 기반의 VMware Cloud로 마이그레이션을 간소화하고 맞춤형 FSx for ONTAP 파일
+    시스템을 외부 데이터 저장소로 구현합니다.
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: VMware용 Workload Factory에 대해 알아보십시오
+      url: learn-about-vmware-workloads.html
+    - title: 빠른 시작
+      url: quick-start.html
+  - title: VMware 마이그레이션 관리자를 사용합니다
+    links:
+    - title: 현재 VM 구성을 캡처합니다
+      url: capture-vm-configurations.html
+    - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
+      url: launch-onboarding-advisor.html
+    - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
+      url: deploy-fsx-file-system.html
+    - title: FSx for ONTAP 파일 시스템을 AWS의 VMware Cloud에 연결합니다
+      url: connect-sddc-to-fsx.html
+    - title: 데이터를 새로운 인프라로 마이그레이션합니다
+      url: migrate-data.html

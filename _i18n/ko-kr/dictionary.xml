@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="495f22292688acea8c30ad6ad16b09d3" category="summary">Migration Advisor VM Collector 스크립트 또는 RVTools를 사용하여 현재 VM 구성을 캡처할 수 있습니다. Migration Advisor VM Collector 스크립트는 가장 정확한 계획을 위해 VM 구성과 성능 데이터를 모두 수집하므로 이 스크립트를 사용하는 것이 좋습니다.</block>
+  <block id="8e2550c26f1fc7187221c8126336a37a" category="doc">현재 VM 구성을 캡처합니다</block>
+  <block id="29f021e47d424b1dde8f4e01c9c530a8" category="inline-link-macro">기존 계획을 사용하여 새 계획을 작성하는 방법을 알아봅니다</block>
+  <block id="b16e57a351e118b35fdca27cf5d83661" category="paragraph">이전에 로컬로 저장한 기존 배포 계획을 기반으로 새 시스템을 배포하려는 경우 이 단계를 건너뛰고 기존 배포 계획을 선택할 수 있습니다. <block ref="d2cbff8d3a997fc87993c98dd8782aa2" category="inline-link-macro-rx"></block>..</block>
+  <block id="c423127be094663f098066c3efa8a37a" category="open-title">Migration Advisor VM Collector 스크립트를 사용합니다</block>
+  <block id="e7bc9976408bfbd315fb5cead8d7c4e2" category="paragraph">NetApp Migration Advisor VM Collector 스크립트는 RVTools에서 수집하는 것과 유사한 방식으로 vCenter에서 VM 구성 정보를 수집하지만, 현재 VM 성능 데이터를 캡처하여 실제 읽기/쓰기 IOPS 및 처리량 통계를 제공합니다.</block>
+  <block id="008d8f4c73b65286fe403c16e1624b81" category="paragraph">마이그레이션 어드바이저를 시작하여 Codebox 창에서 마이그레이션 어드바이저 VM 수집기 스크립트를 복사해야 합니다.</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">시작하기 전에</block>
+  <block id="e1d2996b93191c5688a74299834edf26" category="paragraph">Collector 스크립트를 실행할 시스템은 다음 요구 사항을 충족해야 합니다.</block>
+  <block id="0c4645754fcdfe7cca6f59f6d9404062" category="inline-link">Microsoft PowerShell 설명서</block>
+  <block id="c4b8ed9b28e6ddd2c9ef5d29cea79093" category="list-text">Microsoft PowerShell 7.0 이상이 설치되어 있어야 합니다. PowerShell을 설치해야 하는 경우 를<block ref="3bcd12783e3a1f59d5d004057b3692c3" category="inline-link-rx"></block> 참조하십시오.</block>
+  <block id="0d5127f7ee302061e40242ba37db8061" category="inline-link">VMware PowerCLI 설명서</block>
+  <block id="2a90e2cfe9bf4b6ecdc1218b5e9e89ce" category="list-text">VMware PowerCLI가 설치되어 있어야 합니다. PowerCLI를 설치해야 하는 경우 를<block ref="ff5166a0861cd610082cc0f8476803ff" category="inline-link-rx"></block> 참조하십시오.</block>
+  <block id="e6137ecdf6ebd5bc847812c9dbb3684e" category="list-text">SSL 인증서 검사를 비활성화해야 합니다.</block>
+  <block id="d334c68ce1d93dc967147b543a0f7eb5" category="list-text">PowerShell에서 서명되지 않은 스크립트의 실행을 허용해야 합니다.</block>
+  <block id="3650e2eb7f7794332db7036831f768dd" category="paragraph">VM에서 장기 통계(일일 통계)를 캡처하려면 vSphere 관리 콘솔(VMware 관리 환경)에서 통계 레벨 3 이상을 활성화해야 합니다.</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
+  <block id="d34fab7936dd110b003945d679bb4133" category="list-text">Workload Factory에 로그인합니다.</block>
+  <block id="e89045fcaeea0596351f980d8876a90a" category="list-text">VMware 타일에서 * 계획 및 배포 * 를 선택합니다.</block>
+  <block id="56dbec4488b5001a29504a3a766a4f86" category="inline-image-macro">현재 VM 구성 정보를 수집하는 데 사용할 수 있는 다양한 방법의 스크린샷</block>
+  <block id="ab42a9ea30ee72a49c9dd83c04a1fa74" category="paragraph"><block ref="ab42a9ea30ee72a49c9dd83c04a1fa74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7733cfea4c10d8edbae71f745c8adcc4" category="list-text">새 배포 계획 생성 * 을 선택하고 * 마이그레이션 어드바이저 VMware 데이터 수집기 사용 * 옵션을 선택한 후 * 다음 * 을 선택합니다.</block>
+  <block id="7797697bf5f4b38c4de3f12c9a5194ac" category="paragraph">Prepare for VMware Cloud on AWS migration * 페이지가 표시됩니다.</block>
+  <block id="f383f073a6edf7564d29459bef094282" category="inline-image-macro">다운로드 버튼</block>
+  <block id="a064715cfe4e3e4a214bc84cf0551160" category="inline-image-macro">복사 버튼</block>
+  <block id="219834f22347449944becd8d5c8939be" category="list-text">Codebox 창에서 <block ref="a800f53f7ef8a18e067b4b267fa3a526" category="inline-image-macro-rx" type="image"></block> 마이그레이션 어드바이저 VM 수집기 스크립트("list-vms.ps1"로 이름)를 대상 시스템에 저장하거나 <block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block> 적절한 시스템에 붙여 넣을 수 있도록 스크립트를 복사하도록 선택합니다.</block>
+  <block id="05e3a2cbedde64e89634c5de47649970" category="list-text">다음 단계에 따라 현재 VM의 구성을 캡처합니다.</block>
+  <block id="35fc8aad1c96a506870619b99b225bd3" category="list-text">PowerShell 및 PowerCLI가 설치된 데이터 수집기를 다운로드한 시스템에 로그인합니다.</block>
+  <block id="ea290aa0b4fc7a1e5e3a3d4108b40f29" category="list-text">다음 명령을 실행하여 VMware vCenter 서버에 연결합니다.</block>
+  <block id="8283e4c9758f438b06e1efdea761629b" category="paragraph">&lt;server_IP&gt;를 VMware 서버의 IP 주소 또는 호스트 이름으로 바꿉니다.</block>
+  <block id="b882080acef378635311a1d56cbfd3e5" category="list-text">다운로드한 데이터 수집기 스크립트를 실행하고 "일별" 또는 "시간별" VM 통계에 대한 데이터 수집 옵션을 지정합니다.</block>
+  <block id="5976be1a3647c1d1d6df4ce77cd4c6de" category="paragraph">여기서,</block>
+  <block id="f463cab33838fd5d10abccaf72330f35" category="list-text">* true * 는 지난 24시간 동안 5분 간격으로 IOPS 및 처리량 데이터를 수집합니다</block>
+  <block id="14b13715e39f4ef8d6e21c37afc154b7" category="list-text">*FALSE*는 지난 1시간 동안 20초 간격으로 IOPS 및 처리량 데이터를 수집합니다.</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">결과</block>
+  <block id="1638657861eed27566f94f3aac3cd641" category="paragraph">스크립트는 현재 작업 디렉토리에 이름이 지정된 CSV 파일을 출력합니다.<block ref="d79e984209d9daa189a55436e4ddcc1c" prefix=" " category="inline-code"></block> CSV 파일에는 모든 VM 및 해당 속성의 목록이 IOPS 및 처리량 데이터와 함께 포함됩니다.</block>
+  <block id="3f8f9b99b287380b37d3886a9f7e40f7" category="open-title">RVTools 소프트웨어를 사용합니다</block>
+  <block id="18498b95c15ee1034dbf55a71b7c7b9d" category="paragraph">RVTools는 vCenter 및 ESX 서버(5.x - 8.0)와 상호 작용하여 VMware 가상 환경에 대한 정보를 캡처하는 Windows 애플리케이션입니다. VM, CPU, 메모리, 디스크, 클러스터에 대한 정보 수집 ESX 호스트, 데이터 저장소 등 이 정보를 xlsx 파일로 내보내어 마이그레이션 관리자에서 사용할 수 있습니다.</block>
+  <block id="344899ab535d99090285d73527e8b852" category="inline-link">RVTools에 대해 자세히 알아보십시오</block>
+  <block id="707b583376def9edad1fc8a7199124ea" category="paragraph"><block ref="707b583376def9edad1fc8a7199124ea" category="inline-link-rx"></block></block>
+  <block id="5525d9548d578c70365c720a2035b2fa" category="inline-link">RVTools 웹 사이트</block>
+  <block id="13613d07869f39104d3c7dc70d0a584e" category="list-text">에서 RVTools 4.4.2 이상을 다운로드하여 설치합니다<block ref="c7c9965d016bc084e3044c04ae01ffcd" category="inline-link-rx"></block></block>
+  <block id="93768280696f91c787d919221b25e927" category="list-text">RVTools를 실행하고 대상 vCenter Server에 로그인합니다.</block>
+  <block id="1121913c71bf9c4dfefecfd1802408c4" category="paragraph">그러면 해당 vCenter Server에 대한 정보가 캡처됩니다.</block>
+  <block id="418e7e2732f5b077d0a55b9086325810" category="list-text">VMware 정보를 xlsx 또는 xls 파일로 내보냅니다.</block>
+  <block id="1abe5a39abd90cfac9ffa06b90b781c1" category="inline-link">RVTools 설명서</block>
+  <block id="7d2cf15a702542e944716ce9fffaed68" category="paragraph">자세한 내용은 의 "commandline parameters" 장을<block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block> 참조하십시오.</block>
+  <block id="67ec8486a529d78b43140379c2ad7aff" category="paragraph">결과가 포함된 xlsx 또는 xls 파일이 작업 디렉터리에 저장됩니다.</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">다음 단계</block>
+  <block id="a178c2b3af2dda868c902f74b1f1d2a0" category="inline-link-macro">마이그레이션 관리자를 사용하여 배포 계획을 생성합니다</block>
+  <block id="ed04dfca3ba99cc02a56786b8fee09d3" category="paragraph"><block ref="b33ad552760aea505851a4e799b84f84" category="inline-link-macro-rx"></block>..</block>
+  <block id="a409bb04787a5ddb8911b653d035c75e" category="summary">FSx for ONTAP 파일 시스템을 구축한 후에는 해당 시스템을 AWS 인프라의 VMware Cloud에 연결해야 합니다. SDDC는 VPC 피어링 기능을 사용하여 네트워크 연결을 외부 NFS 스토리지 볼륨으로 확장하여 FSx for ONTAP 파일 시스템에 연결할 수 있는 네트워크 옵션을 제공합니다.</block>
+  <block id="07413029412abf4b07d59a7418a48d98" category="doc">FSx for ONTAP 파일 시스템을 AWS의 VMware Cloud에 연결합니다</block>
+  <block id="ff8452c1f30c7c23563874f41490c4aa" category="paragraph">FSx for ONTAP 파일 시스템을 배포한 후에는 해당 시스템을 AWS 인프라의 VMware Cloud에 연결해야 합니다. SDDC(소프트웨어 정의 데이터 센터)는 VPC 피어링 기능을 사용하여 외부 NFS 스토리지 볼륨으로 네트워크 연결을 확장하여 FSx for ONTAP 파일 시스템에 연결할 수 있는 네트워크 옵션을 제공합니다.</block>
+  <block id="36789903991e7a805b64dce62ee3cb41" category="inline-link">자세한 내용은 Amazon VPC 피어링 문서를 참조하십시오</block>
+  <block id="3f44cc30db3785a317875ea3b608f92d" category="paragraph"><block ref="3f44cc30db3785a317875ea3b608f92d" category="inline-link-rx"></block></block>
+  <block id="35e4dc1372c9892d7d45c118016255bf" category="paragraph">다음 다이어그램은 VPC 피어링을 사용하여 단일 가용 영역(AZ) SDDC 클러스터를 FSx for ONTAP 단일 AZ 구축에 연결하는 방법을 보여줍니다.</block>
+  <block id="40c5156ee08f8bf4b4ba3c18de0844d9" category="inline-image-macro">단일 AZ SDDC 클러스터를 FSx for ONTAP 단일 AZ 구축에 연결하기 위해 VPC 피어링을 사용하는 방법을 보여 주는 다이어그램</block>
+  <block id="9d06593ee15f520ce9a945a1bbad4daf" category="paragraph"><block ref="9d06593ee15f520ce9a945a1bbad4daf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c450ceba09f988891c5496ca97845c53" category="summary">권장 FSx for ONTAP 파일 시스템 또는 경우에 따라 파일 시스템이 정확한 요구사항을 충족하는지 확인한 후 Workload Factory를 사용하여 AWS 환경에 시스템을 구축할 수 있습니다.</block>
+  <block id="6dab83facb5fd4298e37906481e1055b" category="doc">권장 FSx for ONTAP 파일 시스템을 배포합니다</block>
+  <block id="5619c23907d6c8e136428b1ffb2d7cbd" category="paragraph">권장 FSx for ONTAP 파일 시스템(또는 경우에 따라 여러 파일 시스템)이 정확한 요구사항을 충족하는지 확인한 후, Workload Factory를 사용하여 AWS 환경에 시스템을 구축할 수 있습니다.</block>
+  <block id="d1ffdff1dd8d60417d05a9a8abdd7372" category="paragraph">워크로드 팩토리 계정에 추가한 정책 및 권한에 따라 Workload Factory(자동화 모드 사용)를 사용하여 FSx for ONTAP 파일 시스템을 완전히 구축할 수 있습니다. 사용 권한이 더 적거나(읽기 모드) 권한이 없는 경우(기본 모드) 코드박스의 CloudFormation 정보를 사용하고 AWS에 FSx for ONTAP 파일 시스템을 직접 배포해야 합니다.</block>
+  <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="list-title">요구 사항</block>
+  <block id="7e1f47394f042a5680b207362e9dbb16" category="list-text">FSx for ONTAP 파일 시스템을 구축하려면 AWS SDDC(소프트웨어 정의 데이터 센터) 버전 1.20 이상을 사용하는 VMware Cloud를 사용해야 합니다.</block>
+  <block id="3cc79e4bc7d6bf8c61765b69d71a1967" category="list-text">SDDC 구축 시 사용되는 것과 동일한 VPC에 FSx for ONTAP 파일 시스템을 배포해서는 안 됩니다. 대신, AWS 기반 VMware Cloud를 Amazon FSx for NetApp ONTAP와 통합할 수 있도록 신규 Amazon VPC에 구축해야 합니다.</block>
+  <block id="4c140f9dee411d36eaecae373e42714d" category="list-text">FSx for ONTAP 파일 시스템을 SDDC와 동일한 AWS 지역 내에 구축해야 합니다.</block>
+  <block id="83485d5de9840078428e4e90581100d8" category="list-text">검토 계획 * 페이지 하단에 * 배포 * 를 선택하면 FSx for ONTAP 파일 시스템 생성 페이지가 표시됩니다.</block>
+  <block id="c62464e42e0351f87df4c1af5e9e9eae" category="paragraph">FSx for ONTAP 파일 시스템을 정의하는 대부분의 필드는 입력한 정보를 기반으로 완료되지만 이 페이지에서 완료해야 하는 몇 가지 필드가 있습니다.</block>
+  <block id="132fcccbd763cde9c55e108cdadfd0fd" category="inline-link">이 두 옵션이 제공하는 혜택을 확인해 보십시오</block>
+  <block id="fd2398aa4da3ccd407e0f45bfe6e2c78" category="paragraph">빠른 만들기 또는 고급 만들기 옵션을 사용할 수 있습니다. Advanced create는 사용자 지정할 수 있는 몇 가지 추가 스토리지 매개 변수를 제공합니다.<block ref="58902a26384717a6f0eddfec6bc4cb67" category="inline-link-rx"></block>..</block>
+  <block id="3122fdd8e760049dec2c43dc4e3b6338" category="list-text">* AWS 자격 증명 *: 워크로드 팩토리에게 FSx for ONTAP 파일 시스템을 직접 생성하는 데 필요한 권한을 부여할 자격 증명을 선택하거나 추가합니다. 또한 코드상자에서 CloudFormation 코드를 선택하고 AWS에 FSx for ONTAP 파일 시스템을 직접 구축할 수도 있습니다.</block>
+  <block id="6067baf4cdc27f6050d51b12f15fc3e1" category="list-text">* 파일 시스템 이름 *: 이 FSx for ONTAP 파일 시스템에 사용할 이름을 입력하십시오.</block>
+  <block id="359e1e6f7c29e9b4dac5878404beab8e" category="list-text">* 태그 * : 선택적으로 태그를 추가하여 이 FSx for ONTAP 파일 시스템을 분류할 수 있습니다.</block>
+  <block id="f6da2acef7db3c4a718d343f3dfe3c4c" category="list-text">"네트워크 및 보안" 섹션에서 다음 정보를 입력합니다.</block>
+  <block id="7d41d89314fd1a2df6210e91f6da55a7" category="list-text">* 지역 및 VPC *: FSx for ONTAP 파일 시스템을 구축할 지역 및 VPC를 선택합니다.</block>
+  <block id="875cc5528c7347167f10ab54d3e80c6b" category="paragraph">AWS 기반 VMware Cloud를 구축하는 VPC와 다른 VPC에 구축해야 합니다.</block>
+  <block id="d7b999322a22682588eba6652df7e969" category="list-text">* 보안 그룹 *: * 고급 생성 * 옵션을 사용할 때 모든 트래픽이 FSx for ONTAP 파일 시스템에 액세스할 수 있도록 FSx for ONTAP VPC의 기본 보안 그룹을 선택할 수 있습니다.</block>
+  <block id="955565afef9175d40dc796c8c08484e8" category="paragraph">다른 AWS 서비스에서 FSx for ONTAP 파일 시스템에 액세스할 수 있는 권한을 제한하는 인바운드 규칙을 추가할 수 있습니다. 이렇게 하면 열려 있는 서비스의 양이 차단됩니다. 최소 포트 및 프로토콜은 다음과 같습니다.</block>
+  <block id="9985b4390c40137573e6da05caf85874" category="cell">프로토콜</block>
+  <block id="407c4e9fac86b98147da49acd4fa0d01" category="cell">포트</block>
+  <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">목적</block>
+  <block id="c9767dc9dfe4c81c0ae4626b21acfc43" category="cell">TCP, UDP</block>
+  <block id="698d51a19d8a121ce581499d7b701668" category="cell">111</block>
+  <block id="14c91204084503a0837bfc6026505f24" category="cell">portmapper(NFS 요청에 사용되는 포트를 협상하는 데 사용됨)</block>
+  <block id="6a10bbd480e4c5573d8f3af73ae0454b" category="cell">635</block>
+  <block id="28aac0c74eeebdce14ab7aaa4c92bc47" category="cell">NFS mountd(NFS 마운트 요청 수신)</block>
+  <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049</block>
+  <block id="2f29fc667dc3fa4319c22fdf48b5f753" category="cell">NFS 네트워크 트래픽</block>
+  <block id="ee0e95249268b86ff2053bef214bfeda" category="cell">4045</block>
+  <block id="fefb6f2f5d7131cf5e8b738af973a786" category="cell">네트워크 잠금 관리자(NLM, lockd) - 잠금 요청을 처리합니다.</block>
+  <block id="354ac345fd8c6d7ef634d9a8e3d47b83" category="cell">4046</block>
+  <block id="9d9e7ba9dfdb9531592447525b1f1fc8" category="cell">네트워크 상태 모니터(NSM, statd) - 잠금 관리를 위해 서버를 재부팅할 때 NFS 클라이언트에 알립니다.</block>
+  <block id="77fbffa5b3d67799f982e68e437e610d" category="list-text">* 가용 영역 *: 가용 영역 및 서브넷을 선택합니다.</block>
+  <block id="efb5e91db292426d0c09add167e46888" category="paragraph">AZ 간 트래픽에 대한 요금을 회피하려면 VMware SDDC가 구축된 위치와 동일한 가용 영역을 선택해야 합니다.</block>
+  <block id="fb26b856306fb38ef6265197eb53ecb2" category="list-text">* 암호화 *: * 고급 생성 * 옵션을 사용할 경우 드롭다운에서 AWS 암호화 키 이름을 선택할 수 있습니다.</block>
+  <block id="edc4d6e9343c85d6c3cd73aa547319dc" category="list-text">* 데이터 저장소 액세스 제어 *: * Advanced create * 옵션을 사용할 때 모든 호스트가 데이터 저장소에 액세스할 수 있는지 또는 특정 서브넷의 특정 vSphere 클러스터 노드만 데이터 저장소에 액세스할 수 있는지 여부를 선택할 수 있습니다.</block>
+  <block id="8692762c0d29157bc5211825fc73a10b" category="list-text">"File system details" 섹션에서 다음 정보를 입력합니다.</block>
+  <block id="b457a49b2162fbe7cc5f769e85b880b9" category="list-text">* ONTAP credentials *: ONTAP 암호를 입력하고 확인합니다.</block>
+  <block id="b976bad24e9b592d64259244c102d9fd" category="list-text">* 스토리지 VM 자격 증명 * (고급 생성만 해당): 스토리지 VM 암호를 입력하고 확인합니다. 암호는 이 파일 시스템에 특정하거나 ONTAP 자격 증명에 대해 입력한 것과 동일한 암호를 사용할 수 있습니다.</block>
+  <block id="08e34c2ea7e908b280b051fe362e2321" category="list-text">요약 * 섹션에서 VMware 마이그레이션 어드바이저가 사용자 정보를 기반으로 설계한 FSx for ONTAP 파일 시스템 및 데이터 저장소 구성을 확인할 수 있습니다.</block>
+  <block id="4a35c02d3fb3149532246a286cc9491f" category="list-text">ONTAP용 FSx 파일 시스템을 배포하려면 * 생성 * 을 선택합니다. 이 프로세스에는 최대 2시간이 소요될 수 있습니다.</block>
+  <block id="3ee808c6bed6c3cca6d6a6643ba08c89" category="paragraph">필요에 따라 Codebox 창에서 * Redirect to CloudFormation * 을 선택하여 CloudFormation 스택을 사용하여 파일 시스템을 만들 수 있습니다.</block>
+  <block id="8a17abf71adea43d22ac172f424f4140" category="paragraph">두 경우 모두 CloudFormation에서 생성 진행률을 모니터링할 수 있습니다.</block>
+  <block id="af48fc2e1e9f5e62213f21a797f40b49" category="paragraph">FSx for ONTAP 파일 시스템이 구축됩니다.</block>
+  <block id="243f4102d24e538f61072e19e53b373f" category="summary">NetApp은 Workload Factory에 대한 다양한 방법을 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">도움을 받으십시오</block>
+  <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="paragraph">NetApp은 Workload Factory와 다양한 방법으로 클라우드 서비스를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
+  <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">FSx for ONTAP에 대한 지원을 받으십시오</block>
+  <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">FSx for ONTAP, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 워크로드 팩토리 설명서에서 "도움말 얻기"를 참조하십시오.</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP용 Amazon FSx</block>
+  <block id="9d06990508d25d367d9158c6558eb9c8" category="paragraph"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
+  <block id="35f9849ffdd809bda11d0fc56e1e3583" category="paragraph">Workload Factory 및 해당 스토리지 솔루션 및 서비스에 대한 기술 지원을 받으려면 아래에 설명된 지원 옵션을 사용하십시오.</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">자체 지원 옵션을 사용합니다</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">이 옵션은 하루 24시간, 주 7일 동안 무료로 사용할 수 있습니다.</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">문서화</block>
+  <block id="d935525f4850c4638cbf48ae53fb4686" category="paragraph">현재 보고 있는 Workload Factory 문서</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">기술 자료</block>
+  <block id="436f63b446dba5a418c698d49bd39718" category="list-text"><block ref="436f63b446dba5a418c698d49bd39718" category="inline-link-rx"></block></block>
+  <block id="ba6274b9c9d1f81bb3a648fa289986b8" category="paragraph">Workload Factory 기술 문서를 검색하여 문제 해결에 도움이 되는 문서를 찾습니다.</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">커뮤니티</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="7faef90df03399696ba9d4815b37171a" category="paragraph">Workload Factory 커뮤니티에 참여하여 진행 중인 토론을 따르거나 새로운 토론을 만드십시오.</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">NetApp Support로 케이스 생성</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">위의 자체 지원 옵션 외에도 NetApp 지원 전문가와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">시작하기 전에</block>
+  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">지원 등록 방법을 알아보십시오</block>
+  <block id="a12ea39ddf1c98adfd7f751299705efa" category="paragraph">케이스 생성 * 기능을 사용하려면 먼저 지원을 등록해야 합니다. NetApp 지원 사이트 자격 증명을 워크로드 팩토리 로그인과 연결합니다. <block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>..</block>
+  <block id="356c88ac4b0ec3f7689cc91f54701fef" category="list-text">Workload Factory 콘솔의 오른쪽 위에서 * Help &gt; Support * 를 선택합니다.</block>
+  <block id="aadd86a3fadf19221852692c6e4adc2f" category="paragraph">이 옵션을 선택하면 BlueXP 콘솔에 새 브라우저 탭이 열리고 지원 대시보드가 로드됩니다.</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">리소스 * 페이지의 기술 지원 아래에서 사용 가능한 옵션 중 하나를 선택합니다.</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">전화로 통화하려면 * 전화 * 를 선택하십시오. 전화를 걸 수 있는 전화 번호가 나열된 netapp.com 페이지로 연결됩니다.</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">NetApp 지원 전문가와 함께 티켓을 열려면 * 케이스 생성 * 을 선택하십시오.</block>
+  <block id="d7d0da18fbb8f8f85c1364883fbdf4c7" category="list-text">* 서비스 *: * 워크로드 팩토리 * 를 선택합니다.</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">* 케이스 우선 순위 *: 케이스의 우선 순위를 선택합니다. 우선 순위는 낮음, 중간, 높음 또는 긴급입니다.</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">이러한 우선 순위에 대한 자세한 내용을 보려면 필드 이름 옆에 있는 정보 아이콘 위로 마우스를 가져갑니다.</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">* 문제 설명 * : 해당 오류 메시지 또는 수행한 문제 해결 단계를 포함하여 문제에 대한 자세한 설명을 제공합니다.</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">* 추가 이메일 주소 *: 다른 사람에게 이 문제를 알고자 할 경우 추가 이메일 주소를 입력하십시오.</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">* 첨부 파일(선택 사항) *: 한 번에 하나씩 최대 5개의 첨부 파일을 업로드합니다.</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">첨부 파일은 파일당 25MB로 제한됩니다. txt, log, pdf, jpg/jpeg, rtf, DOC/docx, xls/xlsx 및 CSV.</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">NetApp Support로 케이스를 생성할 수 있는 케이스 생성 양식 스크린샷</block>
+  <block id="b0c6c3ee60a29925d3f09cd609b79483" category="paragraph"><block ref="b0c6c3ee60a29925d3f09cd609b79483" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">작업을 마친 후</block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">지원 케이스 번호와 함께 팝업이 나타납니다. NetApp 지원 전문가가 귀사의 사례를 검토하고 곧 다시 연결해 드릴 것입니다.</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">지원 케이스 기록을 보려면 * 설정 &gt; 일정 * 을 선택하고 "지원 케이스 생성"이라는 작업을 찾을 수 있습니다. 맨 오른쪽에 있는 버튼을 사용하면 작업을 확장하여 세부 정보를 볼 수 있습니다.</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">케이스를 생성하려고 할 때 다음과 같은 오류 메시지가 나타날 수 있습니다.</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"선택한 서비스에 대해 케이스를 생성할 권한이 없습니다."</block>
+  <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">이 오류는 NSS 계정과 연결된 레코드 회사가 BlueXP 계정 일련 번호( 960xxxx) 또는 작동 환경 일련 번호 다음 옵션 중 하나를 사용하여 지원을 요청할 수 있습니다.</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">제품 내 채팅을 사용합니다</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">에서 비기술적 케이스를 제출하십시오<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">지원 사례 관리(Preview)</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">BlueXP에서 직접 활성 및 해결된 지원 사례를 보고 관리할 수 있습니다. NSS 계정 및 회사와 관련된 케이스를 관리할 수 있습니다.</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">케이스 관리를 미리 보기로 사용할 수 있습니다. NetApp은 이 경험을 개선하고 다음 릴리즈에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 사용하여 피드백을 보내주십시오.</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">다음 사항에 유의하십시오.</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">페이지 상단의 케이스 관리 대시보드에서는 두 가지 보기를 제공합니다.</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">왼쪽 보기에는 사용자가 제공한 NSS 계정으로 지난 3개월 동안 개설된 총 케이스가 표시됩니다.</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">오른쪽 보기에는 사용자 NSS 계정을 기준으로 회사 수준에서 지난 3개월 동안 개설된 총 사례가 표시됩니다.</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">테이블의 결과에는 선택한 보기와 관련된 사례가 반영됩니다.</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">관심 있는 열을 추가 또는 제거할 수 있으며 우선 순위 및 상태 등의 열 내용을 필터링할 수 있습니다. 다른 열은 정렬 기능만 제공합니다.</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">자세한 내용은 아래 단계를 참조하십시오.</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">케이스 수준별로 케이스 메모를 업데이트하거나 아직 종결 또는 미결 종결 상태가 아닌 케이스를 종결할 수 있습니다.</block>
+  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">Case Management * 를 선택하고 메시지가 표시되면 NSS 계정을 BlueXP에 추가합니다.</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">케이스 관리 * 페이지에는 BlueXP 사용자 계정과 연결된 NSS 계정과 관련된 미해결 케이스가 표시됩니다. NSS 관리 * 페이지 상단에 나타나는 것과 동일한 NSS 계정입니다.</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">필요한 경우 테이블에 표시되는 정보를 수정합니다.</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">조직의 케이스 * 에서 * 보기 * 를 선택하여 회사와 관련된 모든 케이스를 봅니다.</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">정확한 날짜 범위를 선택하거나 다른 기간을 선택하여 날짜 범위를 수정합니다.</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">케이스 관리 페이지의 표 위에 있는 옵션 스크린샷으로 정확한 날짜 범위 또는 최근 7일, 30일 또는 3개월을 선택할 수 있습니다.</block>
+  <block id="4f7062c5c309a833cf46e4a1a5a5d366" category="paragraph"><block ref="4f7062c5c309a833cf46e4a1a5a5d366" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">열의 내용을 필터링합니다.</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">활성 또는 종료와 같은 특정 상태와 일치하는 케이스를 필터링할 수 있는 상태 열의 필터 옵션 스크린샷</block>
+  <block id="8f624dee500d9670a27c4404084a7a62" category="paragraph"><block ref="8f624dee500d9670a27c4404084a7a62" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">테이블에 나타나는 더하기 아이콘입니다</block>
+  <block id="002f1c0a8cf4a68b888010ddef3a7f7e" category="list-text">표시할 열을 선택한 다음 선택하여 테이블에 표시되는 열을 변경합니다 <block ref="e55ec8dc42ae68d9326c51261c8a5f4f" category="inline-image-macro-rx" type="image"></block> .</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">표에 표시할 수 있는 열을 보여 주는 스크린샷</block>
+  <block id="72c5c65442a2c44e7f2546b8b4c957df" category="paragraph"><block ref="72c5c65442a2c44e7f2546b8b4c957df" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">표의 마지막 열에 세 개의 점이 있는 아이콘</block>
+  <block id="000a1376035909240f559b8ab724030c" category="list-text">사용 가능한 옵션 중 하나를 선택하고 선택하여 기존 케이스를 <block ref="54181d1b918b28e5f92545f8b3b4a30c" category="inline-image-macro-rx" type="image"></block> 관리합니다.</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">* 사례 보기 *: 특정 케이스에 대한 전체 세부 정보를 봅니다.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 케이스 메모 업데이트 *: 문제에 대한 추가 세부 정보를 제공하거나 * 파일 업로드 * 를 선택하여 최대 5개의 파일을 첨부할 수 있습니다.</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">* 케이스 종료 *: 케이스를 종료하는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 선택합니다.</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷</block>
+  <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2559e4d6b9e2e602a91b8df995b458c8" category="summary">NetApp Workload Factory에 로그인하여 VMware Migration Advisor에 액세스합니다. 마법사의 단계를 따라 필요에 맞게 사용자 지정된 배포 계획 또는 마이그레이션 계획을 만듭니다.</block>
+  <block id="31f8985acb8af1ba9c63a40c3a7ceeee" category="paragraph">마이그레이션 관리자는 다음 시나리오에 대한 배포 계획을 생성하는 데 사용할 수 있습니다.</block>
+  <block id="c2fc31ef454cc8e0f7af0db95923a688" category="inline-xref">현재 온프레미스 vSphere 환경을 클라우드로 마이그레이션합니다.</block>
+  <block id="e8fd05295638b6180f44a5f4c0d57bf4" category="list-text"><block ref="5a7eb2b4bf76f0222b9bec2f2e8b4fa9" category="inline-xref-macro-rx"></block></block>
+  <block id="28a3e421e42b408e3e4ff1bca62ee052" category="inline-xref">요구사항이 유사한 기존 구축 계획을 기반으로 클라우드에 시스템 구축</block>
+  <block id="c31c21e843fdb59a8add150356c11304" category="list-text"><block ref="5fa6f23430006bdd76a7952ab9b38e33" category="inline-xref-macro-rx"></block></block>
+  <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">여기</block>
+  <block id="aa852edb1debe256686d19ef81384df5" category="paragraph">Workload Factory에 액세스하려면 사용자 이름과 암호가 있어야 합니다. 액세스 권한이 없는 경우 지금 계정을 만드십시오. 자세한 내용은 지침을<block ref="8d9a8b8727a696c09218527f7717c32e" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="8209a613eadf680eb0da074479c79a0b" category="section-title">온-프레미스 vSphere 환경을 기반으로 구축 계획을 만듭니다</block>
+  <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">온프레미스 vSphere 환경의 현재 가상 머신 구성을 AWS 기반 VMware Cloud의 가상 머신으로 마이그레이션하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 수 있습니다.</block>
+  <block id="56a6fbe00ab3546c5044f6b0c6eca438" category="list-text">마이그레이션 어드바이저 VM 수집기(.csv 파일)를 사용하거나 RVTools(.xlsx 파일)를 사용하여 기존 시스템에서 인벤토리 파일을 만들어야 합니다.</block>
+  <block id="b13e28ff6e5b463fac6d9d320af1db48" category="list-text">Workload Factory에 로그인하는 시스템에서 인벤토리 파일에 액세스할 수 있어야 합니다.</block>
+  <block id="2627024352d67ddaed97566f9597199d" category="list-text">VMware 워크로드 타일에서 * 계획 및 배포 * 를 선택하면 VMware 마이그레이션 관리자 기본 페이지가 표시됩니다.</block>
+  <block id="cff0ff09fa5d46af3e6c32d9a5e2d408" category="inline-image-macro">현재 VM 구성 정보를 로드하는 데 사용할 수 있는 다양한 방법의 스크린샷</block>
+  <block id="be546eb7700a271b12e087db71616a76" category="paragraph"><block ref="be546eb7700a271b12e087db71616a76" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e805dde1d276b6165ec64309a45ea71e" category="list-text">Create a new deployment plan * 을 선택합니다.</block>
+  <block id="4f85817ed18f4d26c6d18e7183794766" category="list-text">Workload Factory를 현재 VM 구성으로 채우는 데 사용할 인벤토리 파일 유형을 선택하고 * Next * 를 선택합니다.</block>
+  <block id="e7864d4b66ace757c2a108b5b0e4db3e" category="list-text">VMware 데이터 수집기를 사용하여 만든 .csv 파일을 사용하려면 * 마이그레이션 어드바이저 VMware 데이터 수집기 사용 * 을 선택합니다.</block>
+  <block id="df5b6541eb8d439f6dc76a16fe960915" category="list-text">RVTools를 사용하여 만든 .xlsx 파일을 사용하려면 * RVTools 사용 * 을 선택합니다.</block>
+  <block id="587a30d8155d9c5303442e11e5e9efd7" category="paragraph">"Prepare for VMware Cloud Onboarding" 페이지가 표시됩니다.</block>
+  <block id="d762f74fe1a7fc0e27c55a560adb618a" category="inline-image-macro">업로드 버튼</block>
+  <block id="743535db86e8f679fc605a77ecbf0ca2" category="list-text">Upload VM configuration_ 섹션에서 사용할 파일을 선택하고 <block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block> 선택합니다.</block>
+  <block id="f1199435711bc45d8683750f770d5c15" category="list-text">Migration Advisor VM Collector를 사용할 때 .csv 파일을 선택합니다.</block>
+  <block id="27251bcadd79e3fd1a18ec89ac447679" category="list-text">RVTools를 사용할 때 .xlsx 파일을 선택합니다.</block>
+  <block id="2e2ed307f4257994c4b8559cf9d7b08d" category="paragraph">VM 요약 섹션은 VM 수와 총 스토리지 용량을 반영하기 위해 인벤토리 파일에서 채워집니다.</block>
+  <block id="3d8f99409368ebf501d582ae12ca2f27" category="list-text">VM 인벤토리 고려 사항_ 섹션에서 마이그레이션할 VM 목록을 필터링하는 옵션을 선택합니다.</block>
+  <block id="06d3c6072e68b5d0d41062b66737b7e6" category="list-text">* VM 고려 *: 운영 전원 상태에 따라 .csv 파일에서 추출되는 VM을 나타냅니다. 모든 VM을 가져올 수도 있고, 설정, 해제 또는 일시 중단된 VM만 가져올 수도 있습니다.</block>
+  <block id="edbd0792b525368441c58f7092b26053" category="list-text">* 고려할 VM 스토리지 *: 온보딩된 각 VM에 대해 생성된 데이터 저장소의 크기가 현재 사용된 크기(권장) 또는 프로비저닝된 크기에 따라 조정되는지 여부를 선택합니다.</block>
+  <block id="5137ca074fe20694559457d4589ea3cb" category="paragraph">외부 데이터 저장소는 Amazon FSx for NetApp ONTAP 파일 시스템 볼륨을 사용하여 구현합니다.</block>
+  <block id="27fb8be12e3cea936186504383e63a1d" category="list-text">* 고려할 VM 메모리 *: 온보딩된 각 VM에 할당된 메모리의 크기가 현재 사용된 크기(권장)나 프로비저닝된 크기를 기준으로 조정되는지 여부를 선택합니다.</block>
+  <block id="e269405b2917ada078ab1e21aea949ab" category="list-text">VMware Cloud on AWS 배포 구성 _ 섹션에 필요한 VMware Cloud on AWS 구성에 대한 세부 정보를 입력합니다.</block>
+  <block id="4db1f12ab10efa83baa889c794b5d44f" category="list-text">* 지역 * : VM 및 Amazon FSx for NetApp ONTAP 파일 시스템을 배포할 지역을 선택합니다.</block>
+  <block id="56d2a3933360986a83fe1eebbddbbe4d" category="paragraph">최적의 성능과 비용 효율성을 위해 이 지역은 일반적으로 기존 VMware Cloud on AWS SDDC 구축 지역과 동일합니다.</block>
+  <block id="6b8da9378d031990b64af03c75893aa3" category="list-text">*VM 예상 성능 요구 사항*: 이 옵션은 RVTools를 사용할 때만 사용할 수 있습니다. Migration Advisor VM Collector는 사용자 환경에서 이 정보를 수집합니다. 배포될 새 VM에 적용할 가상 머신당 평균 성능 매개 변수를 다음과 같이 제공합니다.</block>
+  <block id="ed14429e797a847f497a533ac4d3ae54" category="list-text">* VM당 평균 IOPS *: 파일 시스템에 필요한 IOPS 수를 입력합니다. 확실하지 않은 경우 Amazon FSx for ONTAP 파일 시스템에 대해 SSD 스토리지의 GiB당 기본값인 3 IOPS를 사용할 수 있습니다. 예를 들어, 2,000GiB의 용량을 구축하면 6,000 IOPS로 변환됩니다. 먼저 IOPS를 작게 설정하는 것이 좋습니다. 파일 시스템이 생성된 후 워크로드가 마이그레이션되거나 배포됨에 따라 프로비저닝된 SSD IOPS를 늘릴 수 있습니다.</block>
+  <block id="35c06a302c6771923f1bf0ae87021382" category="list-text">* 평균 I/O 블록 크기 *: 읽기 또는 쓰기 작업이 포함된 각 블록의 크기입니다. 기본 크기는 4KB입니다. 대규모 순차 읽기 및 쓰기 작업 부하에는 블록 크기가 더 클 수 있습니다. 블록 크기가 작을수록 스파스 파일 또는 대용량 파일에 대해 작은 랜덤 쓰기를 수행하는 워크로드의 성능이 향상될 수 있습니다.</block>
+  <block id="671f570e3ea106a7c662d27393517d77" category="list-text">* 평균 쓰기 비율 *: 워크로드의 쓰기 작업에 해당하는 작업의 비율입니다. 기본 비율은 쓰기 30% 및 읽기 70%입니다.</block>
+  <block id="8cee69b8c05f31ed2796e76723e0346d" category="list-text">vm storage capacity considerations_섹션에서 몇 가지 스토리지 옵션 중에서 선택합니다.</block>
+  <block id="6f46f8eb6a78042e25d606c158b4f91b" category="list-text">* 평균 데이터 축소율 *: 세 가지 일반적인 데이터 축소 선택 값 중에서 선택합니다. "1:1 - No reduction(축소 없음)", "1:1.25 - 20% 감소" 또는 "1:1.5 - 33% 감소"를 선택합니다.</block>
+  <block id="0c47db7e17a6772593257a96d46f5cef" category="list-text">* 여유 공간 비율 *: FSx for ONTAP 파일 시스템의 용량에 추가되는 용량 증가 비율을 입력하십시오.</block>
+  <block id="aebce73a3f5f4b5eb62667bc03380901" category="paragraph">20% 미만의 양을 선택하면 보호 및 장기 백업을 위한 볼륨 스냅샷을 생성할 수 없습니다.</block>
+  <block id="b861243dc465efb48d26f7b08e8092dd" category="list-text">Next * 를 선택하면 "VMware cloud on AWS node configuration" 페이지가 표시됩니다.</block>
+  <block id="eb45b66ef322066cb931c800b0ff5a5d" category="paragraph">이 페이지에서는 예상 절감 분석 및 권장 노드 유형을 사용하여 AWS 기반 VMware Cloud 클러스터 구성을 정의할 수 있습니다. 다음을 구성할 수 있습니다.</block>
+  <block id="c89e6e0aa2bb09c1d7b8e38b112b33e1" category="list-text">*vSAN 아키텍처*: vSAN 익스프레스 스토리지 아키텍처(ESA) 또는 vSAN 원본 스토리지 아키텍처(OSA) 아키텍처를 사용할지 선택합니다.</block>
+  <block id="43a0e9cbfc582c1e66e7982369aae32e" category="list-text">*vSAN 오류 포용*: VM에 필요한 내결함성 수준을 선택합니다. "Auto(자동)"를 선택할 수 있습니다(권장). 또는 다양한 RAID 레벨 중에서 선택할 수 있습니다.</block>
+  <block id="74ea3f5cdcbfe5071a021f2bcbcf8f1d" category="list-text">RAID-1(FTT 1): 2개 이상의 디스크에 있는 데이터 세트의 정확한 복사본(또는 미러)으로 구성됩니다.</block>
+  <block id="afd103de82421fcd40e3a247053edca8" category="list-text">RAID-5(FTT 1): 분산형 패리티 정보가 3개 이상의 드라이브에 분산되어 있는 블록 레벨 스트라이핑으로 구성되어 단일 디스크 오류에도 견딜 수 있습니다.</block>
+  <block id="540c7a94a98b70d6ef1eca9ecb05237b" category="list-text">RAID-5(FTT 2): 분산 패리티 정보를 사용하여 블록 레벨 스트라이핑으로 구성하며, 패리티 정보는 4개 이상의 드라이브에 분산되며, 두 개의 동시 디스크 장애가 발생해도 견딜 수 있습니다.</block>
+  <block id="83079c9ee0e50366d1ef680d4e22dedc" category="list-text">RAID-6(FTT 2): 다른 패리티 블록을 추가하여 RAID 5를 확장합니다. 따라서 모든 구성원 디스크에 두 개의 패리티 블록이 분산되는 블록 레벨 스트라이핑을 사용합니다. 여기에는 4개 이상의 드라이브가 필요하며 두 개의 동시 디스크 장애가 발생해도 계속 작동합니다.</block>
+  <block id="9478ea6583d20a9061cef8506db5c270" category="list-text">* 노드 구성 선택 목록 *: 노드의 EC2 인스턴스 유형을 선택합니다.</block>
+  <block id="d24303e7898eb257f4fb345a8f95e80c" category="list-text">Next * 를 선택하면 "Select virtual machines" 페이지에 이전 페이지에서 제공한 기준과 일치하는 VM이 표시됩니다.</block>
+  <block id="2098e007a671f07e900cc010817a5ea8" category="list-text">_Selection criteria_ 섹션에서 배포할 VM의 기준을 선택합니다.</block>
+  <block id="b03b66d464724edfe090b5d9de614232" category="list-text">비용 및 성능 최적화를 기반으로 합니다</block>
+  <block id="48ab4f2784ee12638e45fef2dcf8b049" category="list-text">복구 시나리오를 위해 로컬 스냅샷으로 데이터를 쉽게 복원할 수 있는 기능을 기반으로 합니다</block>
+  <block id="20d354f50e7d95fe0e5bfc8eb9580f5b" category="list-text">두 가지 기준 집합 모두 기반: 저렴한 비용으로 우수한 복구 옵션을 제공합니다</block>
+  <block id="ae3c7f6c7bd398f47e39119c3850d2c9" category="list-text">_Virtual Machines_ 섹션에서 이전 페이지에서 제공한 기준과 일치하는 VM이 선택(선택)됩니다. 이 페이지에서 VM을 더 적게 온보드/마이그레이션하려는 경우 VM을 선택하거나 선택 취소합니다.</block>
+  <block id="79f53a3b1e201c92e599dda08347cd47" category="paragraph">변경 사항이 있을 경우 * 권장 배포 * 섹션이 업데이트됩니다. 머리글 행의 확인란을 선택하면 이 페이지의 모든 VM을 선택할 수 있습니다.</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">다음 * 을 선택합니다.</block>
+  <block id="d688779efac4d2bffd0b9dff31e1e59a" category="list-text">데이터 저장소 배포 계획 * 페이지에서 마이그레이션에 권장되는 VM 및 데이터 저장소의 총 수를 검토합니다.</block>
+  <block id="fb803e9043bd24aadbf134718fc937f4" category="list-text">페이지 상단에 나열된 각 데이터 저장소를 선택하여 데이터 저장소와 VM이 프로비저닝되는 방법을 확인합니다.</block>
+  <block id="4345e81606df5dc45287de1f6571b7e8" category="paragraph">페이지 하단에는 이 새 VM 및 데이터 저장소를 프로비저닝할 소스 VM(또는 여러 VM)이 표시됩니다.</block>
+  <block id="370536ffe24c99675c2d3115f877ecb6" category="list-text">데이터 저장소를 구축하는 방법을 이해했으면 * 다음 * 을 선택합니다.</block>
+  <block id="365938d07c3056cb5ddd57ae13a34718" category="list-text">배포 계획 검토 * 페이지에서 마이그레이션할 모든 VM의 예상 월별 비용을 검토합니다.</block>
+  <block id="6337ff3f1523ba47c97a795e4b5bbc20" category="paragraph">페이지 상단에서는 배포된 모든 VM 및 FSx for ONTAP 파일 시스템의 월별 비용을 설명합니다. 각 섹션을 확장하여 "권장 Amazon FSx for ONTAP 파일 시스템 구성", "예상 비용 분석", "볼륨 구성", "사이징 가정" 및 기술 "면책 조항"에 대한 세부 정보를 볼 수 있습니다.</block>
+  <block id="8687a48178491c960e3d406f98cbf29c" category="list-text">마이그레이션 계획에 만족하면 몇 가지 옵션이 있습니다.</block>
+  <block id="0afb54dff7a72cd0654a60ad3ddcbeca" category="inline-link-macro">FSx for ONTAP 파일 시스템을 구축하는 방법에 관해 알아보십시오</block>
+  <block id="97d5613878abc66cd0377bc72293e1c7" category="list-text">VM을 지원하는 FSx for ONTAP 파일 시스템을 배포하려면 * 배포 * 를 선택합니다. <block ref="6d03875f1725fb0475157a3f38b365e6" category="inline-link-macro-rx"></block>..</block>
+  <block id="2c0e666cc5cdf75376ac7d0a2c199cbd" category="list-text">마이그레이션 계획을 .csv 형식으로 다운로드하려면 * 다운로드 계획 &gt; VM 배포 * 를 선택하여 새로운 클라우드 기반 지능형 데이터 인프라를 구축할 수 있습니다.</block>
+  <block id="89fa06462cff9e0b4ce0010f48295b35" category="list-text">계획을 배포할 수 있도록 마이그레이션 계획을 .pdf 형식으로 다운로드하려면 * 계획 다운로드 &gt; 계획 보고서 * 를 선택하십시오.</block>
+  <block id="a8e3f2e23f07d3e3b894748c162a207a" category="list-text">마이그레이션 계획을 .json 형식의 템플릿으로 저장하려면 * 계획 내보내기 * 를 선택합니다. 나중에 계획을 가져와 요구 사항이 유사한 시스템을 배포할 때 템플릿으로 사용할 수 있습니다.</block>
+  <block id="eb0382b6d1486520f7db805842e3cb39" category="section-title">기존 계획을 기반으로 배포 계획을 만듭니다</block>
+  <block id="8c7f50d238649f9f07e3c2778bd32944" category="paragraph">이전에 사용한 기존 배포 계획과 유사한 새 배포를 계획하는 경우 해당 계획을 가져와 편집한 다음 새 배포 계획으로 저장할 수 있습니다.</block>
+  <block id="2ba4d56c67bf769878bdd42cd7cca655" category="paragraph">Workload Factory에 로그인하려는 시스템에서 기존 배포 계획에 대한 .json 파일에 액세스할 수 있어야 합니다.</block>
+  <block id="8e6d200b693c56bf0c412dc1466869ca" category="paragraph"><block ref="8e6d200b693c56bf0c412dc1466869ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0cf508bfdfca6645623887a9bbdf21a6" category="list-text">Import an existing deployment plan * 을 선택합니다.</block>
+  <block id="5f729e0cf80af6c0509f40c4e10b8e21" category="list-text"><block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>마이그레이션 관리자에서 가져올 기존 계획 파일을 선택하고 선택합니다.</block>
+  <block id="8909739edfc984376de0bcbd81aa6b66" category="list-text">다음 * 을 선택하면 계획 검토 페이지가 표시됩니다.</block>
+  <block id="d4c61bc1e71803429948c212b58c3dfe" category="list-text">이전 * 을 선택하여 _Prepare for VMware Cloud 온보딩_ 페이지에 액세스하고 _VM 선택_ 페이지에 액세스하여 이전 섹션에서 설명한 대로 계획에 대한 설정을 수정할 수 있습니다.</block>
+  <block id="ad004cea2e3efcaa61893ef5d25d7633" category="list-text">요구사항에 맞게 계획을 사용자 지정한 후에는 FSx for ONTAP 파일 시스템에서 데이터 저장소에 대한 배포 프로세스를 시작하거나 계획을 저장할 수 있습니다.</block>
+  <block id="44e948f72707f7630f611b68923bfc83" category="summary">Workload Factory for VMware는 온프레미스 시스템의 데이터를 AWS의 VMware Cloud로 이동하는 툴을 제공합니다. VMware 마이그레이션 어드바이저를 사용하면 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석하고 권장 VM 레이아웃을 AWS vSphere 클러스터 기반 VMware Cloud에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 수 있습니다.</block>
+  <block id="be5711eda7e0bf4f780900d61a066a0c" category="doc">VMware용 Workload Factory에 대해 알아보십시오</block>
+  <block id="9a65636d5ca5b878904a6057dac83843" category="paragraph">워크로드 팩토리 for VMware는 온프레미스 시스템에서 VMware Cloud on AWS(VMC)로 데이터를 이동할 수 있는 툴을 제공합니다. VMware 마이그레이션 어드바이저를 사용하면 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석하고 권장 VM 레이아웃을 AWS vSphere 클러스터 기반 VMware Cloud에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 수 있습니다.</block>
+  <block id="95b939b0f0e220091a7ff9d176a3097b" category="paragraph">Amazon FSx for NetApp ONTAP은 NetApp의 ONTAP 파일 시스템을 기반으로 구축된 외부 NFS 데이터 저장소로, AWS vSphere 클러스터 기반 VMware Cloud에 연결할 수 있습니다. 사용 가능한 스토리지를 늘리기 위해 호스트를 추가할 필요가 없습니다. 대신 FSx for ONTAP 볼륨을 외부 데이터 저장소로 사용하여 vSAN 데이터 저장소를 보완하면 됩니다. 따라서 컴퓨팅 리소스와 독립적으로 확장이 가능한 유연한 고성능 가상화 스토리지 인프라를 제공할 수 있습니다.</block>
+  <block id="30141ccedd6bc04bfcb3e98195efc3cb" category="inline-image-macro">아키텍처를 보여 주는 다이어그램</block>
+  <block id="b3bddd6280dd2182432a9d3160f06da2" category="paragraph"><block ref="b3bddd6280dd2182432a9d3160f06da2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ccaa90f171b926c0ccd9ee1bae9f5282" category="section-title">VMware 마이그레이션 관리자의 작동 방식</block>
+  <block id="7d197b845beffcefcc2b7624db4536bc" category="paragraph">마이그레이션 어드바이저를 사용하면 VMware 지원 데이터 저장소에서 실행되는 온프레미스 가상 머신(VM)과 데이터를 FSx for ONTAP 파일 시스템에 있는 보조 NFS 데이터 저장소가 포함된 VMware Cloud 데이터 저장소로 이동할 수 있습니다.</block>
+  <block id="3104e285f52d2373db8e64fa25908a0a" category="inline-image-macro">마이그레이션 후 이전 아키텍처와 새 아키텍처의 예를 보여 주는 다이어그램</block>
+  <block id="793538922c4536c046db4d0b15151ec1" category="paragraph"><block ref="793538922c4536c046db4d0b15151ec1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f16579e3ec27716e8cd4980fbae4d3e4" category="paragraph">AWS 기반 VMware Cloud의 단일 vSphere 클러스터에 FSx for ONTAP 볼륨을 최대 4개까지 연결할 수 있습니다.</block>
+  <block id="389a4416c476e7624728b96c49b3cce2" category="section-title">마이그레이션 조언자로 수행할 수 있는 작업</block>
+  <block id="a5f8a88b580feb03d498f8605e413984" category="paragraph">마이그레이션 관리자는 다음과 같은 기능을 제공합니다.</block>
+  <block id="8cab295292831bfdeb59bccbb79bdd46" category="list-text">현재 온-프레미스 VM 구성을 분석합니다</block>
+  <block id="c25aec1fd0ebfaedc74c756cad69abd2" category="list-text">AWS의 VMware Cloud로 마이그레이션할 VM을 결정합니다</block>
+  <block id="1a05637cb863ca10f5a7d788eab39615" category="list-text">VM 외부 데이터 저장소로 사용할 FSx for ONTAP 볼륨에서 필요한 공간을 식별합니다</block>
+  <block id="feb18d16cfa710c71684233bc628e803" category="list-text">결과 보고서를 검토하여 배포 단계를 이해합니다</block>
+  <block id="ecd032206ca6be7b4497c7dadd4679ff" category="list-text">실제 배포를 수행합니다</block>
+  <block id="404d1cf9d1cf2f009727efa79f365ed0" category="paragraph">마이그레이션 어드바이저는 단일 FSx for ONTAP 파일 시스템에 연결된 AWS 클러스터 기반 단일 VMware Cloud의 구성 계획을 지원합니다.</block>
+  <block id="59a64ee2ba08e22b44728c86d8f75c1b" category="section-title">마이그레이션 관리자 사용의 이점</block>
+  <block id="68b045681603b3999a47a329a1c2f2f2" category="paragraph">Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라의 일부를 AWS 기반 VMware Cloud로 전환하는 것은 다음과 같은 이점을 제공합니다.</block>
+  <block id="633d759efd4c2199d984faea480082ad" category="list-text">호스트 및 스토리지의 분리 및 고급 데이터 효율성을 통한 비용 최적화</block>
+  <block id="52800f54ef93212b18b3653970aa2ed4" category="list-text">추가 호스트 인스턴스를 구입할 필요 없이 필요에 따라 스토리지 용량을 확장할 수 있습니다</block>
+  <block id="17167f5b04002560e9e2c5818b543bfa" category="list-text">공간 효율적인 스냅샷, 클론 복제, 압축, 중복제거, 컴팩션과 같은 클라우드의 NetApp ONTAP 데이터 관리 기능</block>
+  <block id="d668b75d63a6a78b8ce267ca999a6f00" category="list-text">하드웨어 업데이트 관리 감소</block>
+  <block id="f9f61055f7c12e19b3df8a6b77099e20" category="list-text">볼륨 크기를 늘리거나 줄일 뿐만 아니라 데이터 처리량, IOPS 및 파일 시스템 크기를 변경하는 기능</block>
+  <block id="958d4e659e939db8e66a192e1e4f46f9" category="list-text">AZ(Multiple Availability Zone) 배포를 지원하는 고가용성</block>
+  <block id="0abb1f890b7655b5842e2e4271738b78" category="list-text">Transit Gateway 없이 VPC 피어링을 사용하는 단일 AZ 구성에서 비용과 대기 시간을 줄일 수 있습니다</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">비용</block>
+  <block id="cf8aeb0c4f237de02bcdaf88a3c66dc8" category="paragraph">VMware 마이그레이션 관리자를 사용하려면 비용이 들지 않습니다.</block>
+  <block id="82836395e9110a209081b396c82b2a38" category="paragraph">마이그레이션 어드바이저의 권장 사항에 따라 배포한 AWS 리소스의 비용을 지불해야 합니다.</block>
+  <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">라이센싱</block>
+  <block id="2d9265a10aaf645fb97ed7b493dc9c5c" category="paragraph">NetApp에서 마이그레이션 관리자를 사용하기 위해 특별한 라이센스가 필요하지 않습니다.</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">상표</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, NetApp 로고, NetApp 상표 페이지에 나열된 마크는 NetApp Inc.의 상표입니다. 기타 회사 및 제품 이름은 해당 소유자의 상표일 수 있습니다.</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">특허</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 소유 특허 목록은 다음 사이트에서 확인할 수 있습니다.</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
+  <block id="22e5a7336ebe77138f0282cedcb069ab" category="inline-link">워크로드 팩토리</block>
+  <block id="7ffcbeca3b450b8d05f9cf0eedb617f8" category="list-text"><block ref="7ffcbeca3b450b8d05f9cf0eedb617f8" category="inline-link-rx"></block></block>
+  <block id="887f800d53dc2cd5a7894464a6f60a6b" category="inline-link">데이터베이스용 워크로드 팩토리</block>
+  <block id="7e505d4c691d86e5bd415f9ccb849966" category="list-text"><block ref="7e505d4c691d86e5bd415f9ccb849966" category="inline-link-rx"></block></block>
+  <block id="9591e2d54c998ae1c9d48fd5be7762e9" category="inline-link">GenAI를 위한 워크로드 팩토리</block>
+  <block id="f38c7416013fc239c3dd3288d40a40c0" category="list-text"><block ref="f38c7416013fc239c3dd3288d40a40c0" category="inline-link-rx"></block></block>
+  <block id="404a5efb62a3a3f22b02593091042608" category="inline-link">VMware용 워크로드 팩토리</block>
+  <block id="9a211183d3fa82368d76fdbab5abdeda" category="list-text"><block ref="9a211183d3fa82368d76fdbab5abdeda" category="inline-link-rx"></block></block>
+  <block id="2281d47edbe43f0701ce273bb95a9f2f" category="summary">VMware Hybrid Cloud Extension과 같은 툴을 사용하여 데이터를 이전 가상 머신 스토리지에서 새 가상 머신에 연결된 FSx for NetApp ONTAP 볼륨으로 이동합니다. VMware HCX 핵심 기능을 사용하면 워크로드를 사내 데이터 센터에서 SDDC로 투명하게 마이그레이션할 수 있습니다.</block>
+  <block id="2066c133f5c3f51fd034acd791ddedb4" category="doc">데이터를 새로운 인프라로 마이그레이션합니다</block>
+  <block id="63796ed0675a30eed387ff515fb4109d" category="paragraph">HCX(VMware Hybrid Cloud Extension)와 같은 툴을 사용하여 기존 가상 머신 스토리지에서 새 가상 머신에 연결된 FSx for NetApp ONTAP 볼륨으로 데이터를 이동합니다. VMware HCX 핵심 기능을 사용하면 워크로드를 온프레미스 데이터 센터에서 SDDC(소프트웨어 정의 데이터 센터)로 투명하게 마이그레이션할 수 있습니다.</block>
+  <block id="81296b60bd3fac67fc4c879b35c21ce7" category="inline-link">자세한 내용은 VMware HCX 설명서를 참조하십시오</block>
+  <block id="38b89112e54a0592b6516a64ce8ab7cd" category="paragraph"><block ref="38b89112e54a0592b6516a64ce8ab7cd" category="inline-link-rx"></block></block>
+  <block id="5944c69245ff8965d3ea01f690fb5c93" category="paragraph">데이터를 AWS의 VMware Cloud 및 Amazon FSx for NetApp ONTAP 외부 데이터 저장소로 마이그레이션했으므로 이제 FSx for ONTAP 파일 시스템의 중요한 데이터를 백업 및 보호하여 데이터를 항상 사용 가능한 상태로 유지할 수 있습니다.</block>
+  <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link">NetApp ONTAP용 Amazon FSx 문서</block>
+  <block id="0eb8b604056cff3e56816d6bff3e3b57" category="paragraph">FSx for ONTAP 파일 시스템 관리에 대한 자세한 내용은 로<block ref="fbab171416a38225bcf6963b32f6d497" category="inline-link-rx"></block> 이동하여 사용할 수 있는 백업 및 보호 기능을 확인하십시오.</block>
+  <block id="b7c19b7e4e8df7fa64586112497c63f5" category="summary">VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라를 AWS 기반 VMware Cloud로 이동하십시오.</block>
+  <block id="4a715abf409664eac4dbee272a84b726" category="doc">VMware 마이그레이션 관리자 사용을 빠르게 시작합니다</block>
+  <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link">작동 모드</block>
+  <block id="02d45e6950dba7745c9b6afe3c8338ca" category="paragraph">시작하기 전에 에 대한 이해가 있어야 합니다<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block></block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1개</block>
+  <block id="fff1fc3457dd9a218bca11799687e08e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Workload Factory를 등록하고 계정을 생성하십시오</block>
+  <block id="8fd935558171bd50056871ef9ee7bd05" category="inline-link">워크로드 팩토리 콘솔</block>
+  <block id="14f89f5bf7b25f9807c89a283db37504" category="inline-link">계정 만들기에 대해 자세히 알아보세요</block>
+  <block id="7cca958997b643dcdd24be8d260e2aba" category="paragraph">로<block ref="d98336faa10e493cfae83d68fb7054ec" category="inline-link-rx"></block> 이동하여 가입합니다.<block ref="f1d16e6a74984f9cd23c9d8db5e9c155" category="inline-link-rx"></block>..</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2개</block>
+  <block id="b36a952e38561cb86fdb6a473044fce0" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 계정에 AWS 자격 증명 및 권한을 추가합니다</block>
+  <block id="b6d510f8e10407a559355b654de7d04f" category="paragraph">AWS 계정에 액세스하기 위해 자격 증명을 추가하지 않고 Workload Factory를 _Basic_mode에서 사용할 수 있습니다. Read_or_automate_ 모드에서 AWS 자격 증명을 Workload Factory에 추가하면 Workload Factory 계정에 FSx for ONTAP 파일 시스템을 생성 및 관리하고 VMware Cloud 내에서 워크로드를 배포 및 관리하는 데 필요한 권한이 부여됩니다.</block>
+  <block id="fb391f4cf6483b8b419032dc188bd9d8" category="inline-link">자격 증명 및 사용 권한을 추가하는 방법에 대해 알아봅니다</block>
+  <block id="d162e97fcdf643050da77419fb18d12e" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block></block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">세 가지</block>
+  <block id="1f76f27677ef01d1ad1565c7410f1780" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> vSphere 환경의 현재 VM 구성을 캡처합니다</block>
+  <block id="db8e3fd16ddc3075e85969124d04abeb" category="paragraph">마이그레이션 어드바이저 VM 수집기 스크립트 또는 RVTools를 사용하여 현재 VM 구성을 캡처하여 배포 계획을 생성할 수 있습니다. 기존 배포 계획을 템플릿으로 가져온 다음 필요한 특성을 수정할 수도 있습니다.</block>
+  <block id="d9cec56bc6d84406c70fa2a7a03dd8ce" category="inline-link-macro">현재 VM 구성을 캡처하는 방법에 대해 알아봅니다</block>
+  <block id="ec7087d8e162b675d744c90559820893" category="paragraph"><block ref="79606d920ed0f6e57d9f492e8fd606e3" category="inline-link-macro-rx"></block>..</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">네</block>
+  <block id="f47ef0c0240caa246ed6aae746117014" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> VMware 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다</block>
+  <block id="14f4f353ef5e3c4a3673476c525c538d" category="paragraph">VMware 마이그레이션 어드바이저를 실행하고 Amazon FSx for ONTAP 파일 시스템을 외부 NFS 데이터 저장소로 사용하여 새로운 VMware Cloud on AWS 인프라로 마이그레이션할 VM을 선택합니다. 계획을 저장하기 전에 몇 가지 수정을 할 수 있습니다.</block>
+  <block id="a0df7f574896aa929c819bd3a817625c" category="inline-link-macro">VMware Migration Advisor를 사용하여 구축 계획을 생성하는 방법에 대해 알아봅니다</block>
+  <block id="8d7795534dfe29f84396c92c8d0a4dcd" category="paragraph"><block ref="a837f3781560502a9640d7db10536ff7" category="inline-link-macro-rx"></block>..</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">다섯</block>
+  <block id="d4ae0fc6e06774e5a7be305be578b336" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 권장 FSx for ONTAP 파일 시스템을 배포합니다</block>
+  <block id="f52c9ba96cd69f0216a683d029eb830e" category="paragraph">AWS 기반 VMware Cloud 인프라에서 VM용 데이터 저장소를 제공하는 새로운 FSx for ONTAP 파일 시스템을 구축하십시오.</block>
+  <block id="2c3ed559463775a8e752bd5354347b70" category="inline-link-macro">새로운 FSx for ONTAP 파일 시스템을 구축하는 방법을 알아보십시오</block>
+  <block id="5e3387eb970620f47e529a8dc0cc62b6" category="paragraph"><block ref="b515969da0a0d29c570c51f868d340c0" category="inline-link-macro-rx"></block>..</block>
+  <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">6개</block>
+  <block id="c572af7f3132380b2d88a9d4aa80dad6" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> FSx for ONTAP 파일 시스템을 AWS의 VMware Cloud에 연결합니다</block>
+  <block id="88cf79670ce663257099330f2ebe608f" category="paragraph">SDDC(소프트웨어 정의 데이터 센터)는 VPC 피어링 기능을 사용하여 외부 NFS 스토리지 볼륨으로 네트워크 연결을 확장하여 FSx for ONTAP 파일 시스템에 연결할 수 있는 네트워크 옵션을 제공합니다.</block>
+  <block id="03f4cd7af088de0b86d1c9f3c79648d1" category="inline-link-macro">데이터 마이그레이션에 대해 자세히 알아보십시오</block>
+  <block id="41b04f79071185e9f18797de9d32abe2" category="paragraph"><block ref="051cfa5c6aadf2a5b5551470e9f0e33e" category="inline-link-macro-rx"></block>..</block>
+  <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">7번</block>
+  <block id="a4712ad015228f6fd465cbe507723fae" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> 이전 시스템에서 새로운 FSx for ONTAP 파일 시스템으로 데이터를 마이그레이션합니다</block>
+  <block id="3638e2726e921646915ead3523420694" category="paragraph">VMware HCX(하이브리드 클라우드 확장)와 같은 외부 툴을 사용하여 기존 가상 머신 스토리지의 데이터를 새 가상 머신에 연결된 FSx for NetApp ONTAP 볼륨으로 이동합니다.</block>
+  <block id="ed2864ba6212a6975c8039c89029a916" category="paragraph"><block ref="19e3683b716b5e111f0f1f9ccf094dd2" category="inline-link-macro-rx"></block>..</block>
+  <block id="b334128403ed60ff931947907046e1f0" category="summary">NetApp 기술 지원에 대한 지원 케이스를 열려면 먼저 NetApp 지원 사이트 계정을 Workload Factory에 추가한 다음 지원을 등록해야 합니다.</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">지원을 위해 등록하십시오</block>
+  <block id="996ad73a480311d4f86d6946935389d2" category="paragraph">Workload Factory 및 해당 스토리지 솔루션 및 서비스에 대한 기술 지원을 받으려면 지원 등록을 해야 합니다. Workload Factory와는 별도의 웹 기반 콘솔인 BlueXP 콘솔에서 지원을 받으려면 등록해야 합니다.</block>
+  <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">지원을 등록한다고 해서 클라우드 공급자 파일 서비스에 대한 NetApp 지원이 활성화되지 않습니다. 클라우드 공급자 파일 서비스, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품에 대한 Workload Factory 설명서의 "도움말 얻기"를 참조하십시오.</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">지원 등록 개요</block>
+  <block id="d7e4bb081bf4ec4814d83edcfbdb8b96" category="paragraph">계정 ID 지원 가입 등록(BlueXP의 지원 리소스 페이지에 있는 20자리 960xxxxxxxxx 일련 번호)은 단일 지원 구독 ID로 사용됩니다. 각 BlueXP 계정 수준 지원 구독을 등록해야 합니다.</block>
+  <block id="f9e05c2b383e3f11e3b4bebbe8952225" category="paragraph">등록하면 지원 티켓 열기 및 자동 사례 생성과 같은 기능을 사용할 수 있습니다. 아래 설명과 같이 BlueXP에 NetApp Support 사이트(NSS) 계정을 추가하여 등록을 완료합니다.</block>
+  <block id="856edc4caec68fece6859c4be9360f3c" category="section-title">NetApp 지원에 계정을 등록합니다</block>
+  <block id="2d6573b6ae4c51dc24e58109473f2490" category="paragraph">지원을 등록하고 지원 권한을 활성화하려면 계정 사용자 한 명이 NetApp Support 사이트 계정을 BlueXP 로그인과 연결해야 합니다. NetApp 지원에 등록하는 방법은 NetApp Support 사이트(NSS) 계정이 이미 있는지 여부에 따라 다릅니다.</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSS 계정이 있는 기존 고객</block>
+  <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">NSS 계정을 가지고 있는 NetApp 고객은 BlueXP를 통해 지원을 받기 위해 등록하기만 하면 됩니다.</block>
+  <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 설정 아이콘을 선택하고 * 자격 증명 * 을 선택합니다.</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">사용자 자격 증명 * 을 선택합니다.</block>
+  <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">NSS 자격 증명 추가 * 를 선택하고 NetApp Support 사이트(NSS) 인증 프롬프트를 따릅니다.</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">등록 프로세스가 성공적으로 완료되었는지 확인하려면 도움말 아이콘을 선택하고 * 지원 * 을 선택합니다.</block>
+  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">리소스 * 페이지에 계정이 지원을 위해 등록되었다는 내용이 표시됩니다.</block>
+  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">계정 일련 번호와 녹색 확인란이 표시된 스크린샷 및 지원을 위해 등록된 텍스트.</block>
+  <block id="fa7897454f637026faa3e00ccbfec239" category="paragraph"><block ref="fa7897454f637026faa3e00ccbfec239" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">다른 BlueXP 사용자는 BlueXP 로그인과 NetApp Support 사이트 계정을 연결하지 않은 경우 동일한 지원 등록 상태를 볼 수 없습니다. 그러나 BlueXP 계정이 지원을 위해 등록되지 않은 것은 아닙니다. 계정에 있는 한 사용자가 이 단계를 따랐을 경우 계정이 등록되었습니다.</block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">기존 고객이지만 NSS 계정은 없습니다</block>
+  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">기존 사용권 및 제품 번호가 _NO_NSS인 기존 NetApp 고객인 경우 NSS 계정을 만들어 BlueXP 로그인과 연결해야 합니다.</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp Support 사이트 사용자 등록 양식</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">를 완료하여 NetApp 지원 사이트 계정을 만듭니다<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">적절한 사용자 레벨(일반적으로 * NetApp 고객/최종 사용자 *)을 선택해야 합니다.</block>
+  <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">위에 사용된 BlueXP 계정 일련 번호(960xxxx)를 일련 번호 필드에 복사해야 합니다. 이렇게 하면 계정 처리 속도가 빨라집니다.</block>
+  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">아래의 단계를 완료하여 새 NSS 계정을 BlueXP 로그인에 연결합니다 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp이 처음이었습니다</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">NetApp의 새로운 브랜드이고 NSS 계정이 없는 경우 아래의 각 단계를 수행하십시오.</block>
+  <block id="f5d7029ed18f998c0a9d780b2554e538" category="list-text">지원 리소스 페이지에서 계정 ID 일련 번호를 찾습니다.</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다</block>
+  <block id="55adf589d087b17fca134b34f65498ed" category="paragraph"><block ref="55adf589d087b17fca134b34f65498ed" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp의 지원 등록 사이트</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">로<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 이동하여 * 등록된 NetApp 고객이 아님 * 을 선택합니다.</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">필수 필드(빨간색 별표가 있는 필드)를 입력합니다.</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">[제품 라인] * 필드에서 * Cloud Manager * 를 선택한 다음 해당 청구 공급자를 선택합니다.</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">위의 2단계에서 계정의 일련 번호를 복사하고 보안 검색을 완료한 다음 NetApp의 글로벌 데이터 개인 정보 보호 정책을 읽는지 확인합니다.</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">이 보안 트랜잭션을 완료하기 위해 제공된 사서함으로 즉시 이메일이 전송됩니다. 몇 분 내에 확인 이메일이 도착하지 않으면 스팸 폴더를 확인해야 합니다.</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">이메일 내에서 작업을 확인합니다.</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">확인 시 NetApp에 요청이 제출되고 NetApp Support 사이트 계정을 만들 것을 권장합니다.</block>
+  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">일련 번호 필드에 위에서 사용된 계정 일련 번호(960xxxx)를 복사해 주십시오. 이렇게 하면 계정 처리 속도가 빨라집니다.</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">이 과정에서 NetApp이 연락을 드릴 것입니다. 신규 사용자를 위한 일회성 온보딩 연습입니다.</block>
+  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">NetApp Support 사이트 계정이 있는 경우 아래의 단계를 완료하여 계정을 BlueXP 로그인에 연결합니다 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="ced82174541d112041637e3fe596dc75" category="summary">Workload Factory의 VMware 마이그레이션 어드바이저 구성 요소의 새로운 기능에 대해 알아보십시오.</block>
+  <block id="490414e0366b091220802d406e52c076" category="doc">새로운 기능</block>
+  <block id="ff51979e6ce0617443f1ee7e3e8969ea" category="paragraph">Workload Factory의 VMware Cloud Migration Advisor 구성 요소의 새로운 기능에 대해 알아보십시오.</block>
+  <block id="1d949c7c5600289e10795f178278edd1" category="section-title">2024년 7월 7일</block>
+  <block id="e34fc91d682ebcf23e9732294872ca80" category="section-title">VMware용 Workload Factory 최초 릴리즈</block>
+  <block id="9bab53a02593423437540c8ac9802fde" category="paragraph">초기 릴리즈에는 VMware 마이그레이션 어드바이저를 사용하여 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석하고 권장 VM 레이아웃을 AWS 기반 VMware Cloud에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 계획을 생성하는 기능이 포함되어 있습니다.</block>
+  <block id="1a61f87dd9021f3f5868a4a4418a6116" category="sidebar">온프레미스 vSphere 환경에서 AWS 기반의 VMware Cloud로 마이그레이션을 간소화하고 맞춤형 FSx for ONTAP 파일 시스템을 외부 데이터 저장소로 구현합니다.</block>
+  <block id="73f5c244b09686e8501c3a915df34d30" category="sidebar">VMware용 Workload Factory 설명서</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하십시오</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">빠른 시작</block>
+  <block id="9faf81d72d2e94d2a3b1079129468863" category="sidebar">VMware 마이그레이션 관리자를 사용합니다</block>
+  <block id="1a686aeebb374b70871c49c0a3a9e04d" category="sidebar">FSx for ONTAP 파일 시스템을 AWS의 VMware Cloud에 연결합니다</block>
+  <block id="114262d24985ba4272fb41b60a7a9b81" category="sidebar">VMware 워크로드 문서</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
+  <block id="48b99c17fb09e3417fa2dfdd982e21b8" category="sidebar">FSx for ONTAP을 AWS의 VMware Cloud에 연결합니다</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식 및 지원</block>
+</blocks>

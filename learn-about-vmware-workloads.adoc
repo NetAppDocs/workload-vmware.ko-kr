@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: learn-about-vmware-workloads.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works 
+summary: Workload Factory for VMware는 온프레미스 시스템의 데이터를 AWS의 VMware Cloud로 이동하는 툴을 제공합니다. VMware 마이그레이션 어드바이저를 사용하면 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석하고 권장 VM 레이아웃을 AWS vSphere 클러스터 기반 VMware Cloud에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 수 있습니다. 
+---
+= VMware용 Workload Factory에 대해 알아보십시오
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+워크로드 팩토리 for VMware는 온프레미스 시스템에서 VMware Cloud on AWS(VMC)로 데이터를 이동할 수 있는 툴을 제공합니다. VMware 마이그레이션 어드바이저를 사용하면 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석하고 권장 VM 레이아웃을 AWS vSphere 클러스터 기반 VMware Cloud에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 수 있습니다.
+
+Amazon FSx for NetApp ONTAP은 NetApp의 ONTAP 파일 시스템을 기반으로 구축된 외부 NFS 데이터 저장소로, AWS vSphere 클러스터 기반 VMware Cloud에 연결할 수 있습니다. 사용 가능한 스토리지를 늘리기 위해 호스트를 추가할 필요가 없습니다. 대신 FSx for ONTAP 볼륨을 외부 데이터 저장소로 사용하여 vSAN 데이터 저장소를 보완하면 됩니다. 따라서 컴퓨팅 리소스와 독립적으로 확장이 가능한 유연한 고성능 가상화 스토리지 인프라를 제공할 수 있습니다.
+
+image:diagram-vmware-fsx-overview.png["아키텍처를 보여 주는 다이어그램"]
+
+
+
+== VMware 마이그레이션 관리자의 작동 방식
+
+마이그레이션 어드바이저를 사용하면 VMware 지원 데이터 저장소에서 실행되는 온프레미스 가상 머신(VM)과 데이터를 FSx for ONTAP 파일 시스템에 있는 보조 NFS 데이터 저장소가 포함된 VMware Cloud 데이터 저장소로 이동할 수 있습니다.
+
+image:diagram-vmware-fsx-old-new.png["마이그레이션 후 이전 아키텍처와 새 아키텍처의 예를 보여 주는 다이어그램"]
+
+AWS 기반 VMware Cloud의 단일 vSphere 클러스터에 FSx for ONTAP 볼륨을 최대 4개까지 연결할 수 있습니다.
+
+
+
+== 마이그레이션 조언자로 수행할 수 있는 작업
+
+마이그레이션 관리자는 다음과 같은 기능을 제공합니다.
+
+* 현재 온-프레미스 VM 구성을 분석합니다
+* AWS의 VMware Cloud로 마이그레이션할 VM을 결정합니다
+* VM 외부 데이터 저장소로 사용할 FSx for ONTAP 볼륨에서 필요한 공간을 식별합니다
+* 결과 보고서를 검토하여 배포 단계를 이해합니다
+* 실제 배포를 수행합니다
+
+
+마이그레이션 어드바이저는 단일 FSx for ONTAP 파일 시스템에 연결된 AWS 클러스터 기반 단일 VMware Cloud의 구성 계획을 지원합니다.
+
+
+
+== 마이그레이션 관리자 사용의 이점
+
+Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라의 일부를 AWS 기반 VMware Cloud로 전환하는 것은 다음과 같은 이점을 제공합니다.
+
+* 호스트 및 스토리지의 분리 및 고급 데이터 효율성을 통한 비용 최적화
+* 추가 호스트 인스턴스를 구입할 필요 없이 필요에 따라 스토리지 용량을 확장할 수 있습니다
+* 공간 효율적인 스냅샷, 클론 복제, 압축, 중복제거, 컴팩션과 같은 클라우드의 NetApp ONTAP 데이터 관리 기능
+* 하드웨어 업데이트 관리 감소
+* 볼륨 크기를 늘리거나 줄일 뿐만 아니라 데이터 처리량, IOPS 및 파일 시스템 크기를 변경하는 기능
+* AZ(Multiple Availability Zone) 배포를 지원하는 고가용성
+* Transit Gateway 없이 VPC 피어링을 사용하는 단일 AZ 구성에서 비용과 대기 시간을 줄일 수 있습니다
+
+
+
+
+== 비용
+
+VMware 마이그레이션 관리자를 사용하려면 비용이 들지 않습니다.
+
+마이그레이션 어드바이저의 권장 사항에 따라 배포한 AWS 리소스의 비용을 지불해야 합니다.
+
+
+
+== 라이센싱
+
+NetApp에서 마이그레이션 관리자를 사용하기 위해 특별한 라이센스가 필요하지 않습니다.
