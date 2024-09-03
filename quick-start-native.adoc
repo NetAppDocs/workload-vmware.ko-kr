@@ -1,17 +1,17 @@
 ---
 sidebar: sidebar 
-permalink: quick-start.html 
+permalink: quick-start-native.html 
 keywords: quick start 
-summary: VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라를 AWS 기반 VMware Cloud로 이동하십시오. 
+summary: VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라를 Amazon EC2로 이동하십시오. 
 ---
-= VMware 마이그레이션 관리자를 사용하여 AWS 기반 VMware Cloud로 마이그레이션하는 작업을 빠르게 시작합니다
+= VMware 마이그레이션 관리자를 사용하여 Amazon EC2로 마이그레이션을 빠르게 시작할 수 있습니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라를 AWS 기반 VMware Cloud로 이동하십시오.
+VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라를 Amazon EC2로 이동하십시오.
 
 시작하기 전에 에 대한 이해가 있어야 합니다 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["작동 모드"^]
 
@@ -21,7 +21,7 @@ VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTAP을 외�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 계정에 AWS 자격 증명 및 권한을 추가합니다
 [role="quick-margin-para"]
-AWS 계정에 액세스하기 위해 자격 증명을 추가하지 않고 Workload Factory를 _Basic_mode에서 사용할 수 있습니다. Read_or_automate_ 모드에서 AWS 자격 증명을 Workload Factory에 추가하면 Workload Factory 계정에 FSx for ONTAP 파일 시스템을 생성 및 관리하고 VMware Cloud 내에서 워크로드를 배포 및 관리하는 데 필요한 권한이 부여됩니다.
+AWS 계정에 액세스하기 위해 자격 증명을 추가하지 않고 Workload Factory를 _Basic_mode에서 사용할 수 있습니다. 읽기_ 또는 _자동화_ 모드에서 AWS 자격 증명을 워크로드 팩터에 추가하면 워크로드 팩토리 계정에 FSx for ONTAP 파일 시스템을 생성 및 관리하고 Amazon EC2 내에서 워크로드를 배포 및 관리하는 데 필요한 권한이 부여됩니다.
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["자격 증명 및 사용 권한을 추가하는 방법에 대해 알아봅니다"^]
@@ -31,18 +31,18 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["자격 
 마이그레이션 어드바이저 VM 수집기 스크립트 또는 RVTools를 사용하여 현재 VM 구성을 캡처하여 배포 계획을 생성할 수 있습니다. 기존 배포 계획을 템플릿으로 가져온 다음 필요한 특성을 수정할 수도 있습니다.
 
 [role="quick-margin-para"]
-link:capture-vm-configurations.html["현재 VM 구성을 캡처하는 방법에 대해 알아봅니다"]..
+link:capture-vm-configurations-native.html["현재 VM 구성을 캡처하는 방법에 대해 알아봅니다"]..
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] VMware 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
 [role="quick-margin-para"]
-VMware 마이그레이션 어드바이저를 실행하고 Amazon FSx for ONTAP 파일 시스템을 외부 NFS 데이터 저장소로 사용하여 새로운 VMware Cloud on AWS 인프라로 마이그레이션할 VM을 선택합니다. 계획을 저장하기 전에 몇 가지 수정을 할 수 있습니다.
+VMware 마이그레이션 관리자를 실행하고 Amazon FSx for ONTAP 파일 시스템을 외부 NFS 데이터 저장소로 사용하여 Amazon EC2 인프라로 마이그레이션할 VM을 선택합니다. 계획을 저장하기 전에 몇 가지 수정을 할 수 있습니다.
 
 [role="quick-margin-para"]
-link:launch-onboarding-advisor.html["VMware Migration Advisor를 사용하여 구축 계획을 생성하는 방법에 대해 알아봅니다"]..
+link:launch-onboarding-advisor-native.html["VMware Migration Advisor를 사용하여 구축 계획을 생성하는 방법에 대해 알아봅니다"]..
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["다섯"] 권장 FSx for ONTAP 파일 시스템을 배포합니다
 [role="quick-margin-para"]
-AWS 기반 VMware Cloud 인프라에서 VM용 데이터 저장소를 제공하는 새로운 FSx for ONTAP 파일 시스템을 구축하십시오.
+Amazon EC2 인프라의 VM용 데이터 저장소를 제공할 새로운 FSx for ONTAP 파일 시스템을 배포합니다.
 
 [role="quick-margin-para"]
 link:deploy-fsx-file-system.html["새로운 FSx for ONTAP 파일 시스템을 구축하는 방법을 알아보십시오"]..

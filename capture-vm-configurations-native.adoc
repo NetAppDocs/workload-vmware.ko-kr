@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: capture-vm-configurations.html 
+permalink: capture-vm-configurations-native.html 
 keywords: vm workloads, capture vm details 
 summary: Migration Advisor VM Collector 스크립트 또는 RVTools를 사용하여 현재 VM 구성을 캡처할 수 있습니다. Migration Advisor VM Collector 스크립트는 가장 정확한 계획을 위해 VM 구성과 성능 데이터를 모두 수집하므로 이 스크립트를 사용하는 것이 좋습니다. 
 ---
-= VMware Cloud로 마이그레이션하기 전에 현재 VM 구성을 캡처하십시오
+= Amazon EC2로 마이그레이션하기 전에 현재 VM 구성을 캡처합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -12,8 +12,6 @@ summary: Migration Advisor VM Collector 스크립트 또는 RVTools를 사용하
 
 [role="lead"]
 Migration Advisor VM Collector 스크립트 또는 RVTools를 사용하여 현재 VM 구성을 캡처할 수 있습니다. Migration Advisor VM Collector 스크립트는 가장 정확한 계획을 위해 VM 구성과 성능 데이터를 모두 수집하므로 이 스크립트를 사용하는 것이 좋습니다.
-
-이전에 로컬로 저장한 기존 배포 계획을 기반으로 새 시스템을 배포하려는 경우 이 단계를 건너뛰고 기존 배포 계획을 선택할 수 있습니다. link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["기존 계획을 사용하여 새 계획을 작성하는 방법을 알아봅니다"]..
 
 [role="tabbed-block"]
 ====
@@ -36,10 +34,7 @@ VM에서 장기 통계(일일 통계)를 캡처하려면 vSphere 관리 콘솔(V
 
 .단계
 . Workload Factory에 로그인합니다.
-. VMware 워크로드 타일에서 * 액세스 및 계획 * 을 선택한 다음 * AWS 기반 VMware Cloud로 마이그레이션 * 을 선택합니다.
-+
-VMware Migration Advisor 기본 페이지가 표시됩니다.
-
+. VMware 타일에서 * 액세스 및 계획 * 을 선택합니다.
 . 새 배포 계획 생성 * 을 선택하고 * 마이그레이션 어드바이저 VMware 데이터 수집기 사용 * 옵션을 선택한 후 * 다음 * 을 선택합니다.
 +
 Prepare for VMware Cloud on AWS migration * 페이지가 표시됩니다.
@@ -70,7 +65,7 @@ Prepare for VMware Cloud on AWS migration * 페이지가 표시됩니다.
 
 
 .결과
-스크립트는 현재 작업 디렉토리에 이름이 지정된 CSV 파일을 출력합니다. `list-vms-yyyy-MM-dd-HH-mm-ss.csv` CSV 파일에는 모든 VM 및 해당 속성의 목록이 IOPS 및 처리량 데이터와 함께 포함됩니다.
+스크립트는 현재 작업 디렉토리의 이름에 타임스탬프가 있는 압축된 파일을 출력합니다. zip 파일에는 모든 VM 및 해당 속성의 목록이 IOPS 및 처리량 데이터와 함께 포함됩니다.
 
 --
 .RVTools 소프트웨어를 사용합니다
@@ -97,4 +92,4 @@ https://www.robware.net/home["RVTools에 대해 자세히 알아보십시오"^]
 --
 ====
 .다음 단계
-link:launch-onboarding-advisor.html["마이그레이션 어드바이저를 사용하여 VMware Cloud on AWS 구축 계획을 수립합니다"]..
+link:launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2 배포 계획을 생성합니다"]..

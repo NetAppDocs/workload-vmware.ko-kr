@@ -1,0 +1,9 @@
+= VMware용 Workload Factory 최초 릴리즈
+:allow-uri-read: 
+
+
+
+
+=== VMware용 Workload Factory 최초 릴리즈
+
+초기 릴리즈에는 VMware 마이그레이션 어드바이저를 사용하여 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석하고 권장 VM 레이아웃을 AWS 기반 VMware Cloud에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 계획을 생성하는 기능이 포함되어 있습니다.
