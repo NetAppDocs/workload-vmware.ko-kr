@@ -471,4 +471,5 @@
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">AWS 기반 VMware Cloud로 마이그레이션하십시오</block>
   <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">AWS 기반 VMware Cloud로 마이그레이션을 빠르게 시작할 수 있습니다</block>
   <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">Amazon EC2로의 마이그레이션을 빠르게 시작합니다</block>
+  <block id="71f8c32a3420de60438e9dc0e0e66db0" category="list-text">VMware 워크로드 타일에서 * 액세스 및 계획 * 을 선택한 다음 * AWS 네이티브 컴퓨팅으로 마이그레이션 * 을 선택합니다. VMware Migration Advisor 기본 페이지가 표시됩니다.</block>
 </blocks>
