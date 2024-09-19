@@ -15,6 +15,18 @@ Workload Factory의 VMware Cloud Migration Advisor 구성 요소의 새로운 �
 
 
 
+== 2024년 9월 19일
+
+
+
+=== VMware 마이그레이션 어드바이저의 향상된 기능
+
+이번 VMware용 Workload Factory 릴리즈에는 VMware 마이그레이션 관리자를 사용할 때 마이그레이션 계획을 가져오고 내보내는 기능과 안정성이 향상되었습니다.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"]
+
+
+
 == 2024년 9월 1일
 
 
