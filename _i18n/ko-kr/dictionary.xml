@@ -488,4 +488,8 @@
   <block id="eb5a861bf39cbc8f1c04a5223199b242" category="list-text">이전 섹션에 설명된 대로 * Previous * 를 선택하여 이전 페이지에 액세스하고 계획에 대한 설정을 수정할 수 있습니다.</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">요구 사항에 맞게 계획을 사용자 지정한 후에는 계획을 저장하거나 계획 보고서를 PDF 파일로 다운로드할 수 있습니다.</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024년 9월 19일</block>
+  <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">VMware Migration Advisor 데이터 축소율이 도움이 됩니다</block>
+  <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">이번 VMware용 Workload Factory 릴리즈에는 데이터 축소율 지원 기능이 있습니다. 데이터 축소율 도우미를 통해 AWS 클라우드 온보딩을 준비할 때 VMware 인벤토리 및 스토리지 공간에 가장 적합한 비율을 결정할 수 있습니다.</block>
+  <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">어떤 비율을 선택할지 잘 모르겠으면 * 결정 도움 요청 * 을 선택합니다. Data reduction ratio assistant _ 대화상자가 나타납니다. VM 인벤토리 및 스토리지 자산에 적용되는 설명을 선택하십시오. 보조자는 적절한 데이터 축소율을 권장합니다. 권장 비율을 사용하려면 * 적용 * 을 선택합니다.</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024년 11월 3일</block>
 </blocks>

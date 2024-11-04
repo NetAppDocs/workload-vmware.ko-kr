@@ -10,7 +10,7 @@ settings:
   rss_page: whats-new.html
   release_notes_autogen:
     release_notes_repo: workload-relnotes
-  langs: ko-kr,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,zh-cn,zh-tw
+  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
   - title: VMware 워크로드 문서
@@ -29,6 +29,16 @@ sidebar:
       url: "/quick-start-native.html"
   - title: VMware 마이그레이션 관리자를 사용합니다
     entries:
+    - title: Amazon EC2로 마이그레이션합니다
+      entries:
+      - title: 현재 VM 구성을 캡처합니다
+        url: "/capture-vm-configurations-native.html"
+      - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
+        url: "/launch-onboarding-advisor-native.html"
+      - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
+        url: "/deploy-fsx-file-system.html"
+      - title: 데이터를 새로운 인프라로 마이그레이션합니다
+        url: "/migrate-data-native.html"
     - title: AWS 기반 VMware Cloud로 마이그레이션하십시오
       entries:
       - title: 현재 VM 구성을 캡처합니다
@@ -41,16 +51,6 @@ sidebar:
         url: "/connect-sddc-to-fsx.html"
       - title: 데이터를 새로운 인프라로 마이그레이션합니다
         url: "/migrate-data.html"
-    - title: Amazon EC2로 마이그레이션합니다
-      entries:
-      - title: 현재 VM 구성을 캡처합니다
-        url: "/capture-vm-configurations-native.html"
-      - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
-        url: "/launch-onboarding-advisor-native.html"
-      - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
-        url: "/deploy-fsx-file-system.html"
-      - title: 데이터를 새로운 인프라로 마이그레이션합니다
-        url: "/migrate-data-native.html"
   - title: 지식 및 지원
     entries:
     - title: 지원을 위해 등록하십시오
