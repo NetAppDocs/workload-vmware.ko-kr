@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: Workload Factory의 VMware 마이그레이션 어드바이저 구성 요소의 새로운 기능에 대해 알아보십시오. 
+summary: 워크로드 팩토리의 VMware 마이그레이션 어드바이저 구성 요소의 새로운 기능에 대해 알아보십시오. 
 ---
 = 새로운 기능
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Workload Factory의 VMware 마이그레이션 어드바이저 구성 �
 
 
 [role="lead"]
-Workload Factory의 VMware Cloud Migration Advisor 구성 요소의 새로운 기능에 대해 알아보십시오.
+워크로드 팩토리의 VMware Cloud Migration Advisor 구성 요소에 대한 새로운 기능에 대해 알아보십시오.
 
 
 
@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === VMware 마이그레이션 어드바이저의 향상된 기능
 
-이번 VMware용 Workload Factory 릴리즈에는 VMware 마이그레이션 관리자를 사용할 때 마이그레이션 계획을 가져오고 내보내는 기능과 안정성이 향상되었습니다.
+이번 VMware용 워크로드 팩토리에는 기능 및 안정성이 향상되었으며 VMware 마이그레이션 관리자를 사용할 때 마이그레이션 계획을 가져오고 내보내는 기능이 포함되어 있습니다.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"]
 
@@ -45,7 +45,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2로 마이그레이션합니다
 
-VMware용 Workload Factory는 이제 VMware 마이그레이션 관리자를 사용하여 Amazon EC2로의 마이그레이션을 지원합니다.
+VMware용 워크로드 팩토리에서는 이제 VMware 마이그레이션 어드바이저를 사용하여 Amazon EC2로의 마이그레이션을 지원합니다.
 
 
 
@@ -53,6 +53,6 @@ VMware용 Workload Factory는 이제 VMware 마이그레이션 관리자를 사�
 
 
 
-=== VMware용 Workload Factory 최초 릴리즈
+=== VMware용 워크로드 팩토리 최초 릴리즈
 
 초기 릴리즈에는 VMware 마이그레이션 어드바이저를 사용하여 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석하고 권장 VM 레이아웃을 AWS 기반 VMware Cloud에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 계획을 생성하는 기능이 포함되어 있습니다.

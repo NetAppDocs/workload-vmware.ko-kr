@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: launch-onboarding-advisor.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: NetApp Workload Factory에 로그인하여 VMware Migration Advisor에 액세스합니다. 마법사의 단계를 따라 필요에 맞게 사용자 지정된 배포 계획 또는 마이그레이션 계획을 만듭니다. 
+summary: NetApp 워크로드 팩토리에 로그인하여 VMware 마이그레이션 조언자에 액세스합니다. 마법사의 단계를 따라 필요에 맞게 사용자 지정된 배포 계획 또는 마이그레이션 계획을 만듭니다. 
 ---
 = 마이그레이션 어드바이저를 사용하여 AWS 기반 VMware Cloud에 대한 구축 계획을 수립합니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: NetApp Workload Factory에 로그인하여 VMware Migration Advisor에 
 
 
 [role="lead"]
-NetApp Workload Factory에 로그인하여 VMware Migration Advisor에 액세스합니다. 마법사의 단계를 따라 필요에 맞게 사용자 지정된 배포 계획 또는 마이그레이션 계획을 만듭니다.
+NetApp 워크로드 팩토리에 로그인하여 VMware 마이그레이션 조언자에 액세스합니다. 마법사의 단계를 따라 필요에 맞게 사용자 지정된 배포 계획 또는 마이그레이션 계획을 만듭니다.
 
 VMware Cloud로 마이그레이션할 때 마이그레이션 관리자를 사용하여 다음 시나리오에 대한 배포 계획을 생성할 수 있습니다.
 
@@ -19,7 +19,7 @@ VMware Cloud로 마이그레이션할 때 마이그레이션 관리자를 사용
 * <<기존 계획을 기반으로 배포 계획을 만듭니다,요구사항이 유사한 기존 구축 계획을 기반으로 클라우드에 시스템 구축>>
 
 
-Workload Factory에 액세스하려면 사용자 이름과 암호가 있어야 합니다. 액세스 권한이 없는 경우 지금 계정을 만드십시오. 자세한 내용은 지침을 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["여기"]참조하십시오.
+워크로드 팩토리얼에 액세스하려면 사용자 이름과 암호가 있어야 합니다. 액세스 권한이 없는 경우 지금 계정을 만드십시오. 자세한 내용은 지침을 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["여기"]참조하십시오.
 
 
 
@@ -29,16 +29,17 @@ Workload Factory에 액세스하려면 사용자 이름과 암호가 있어야 �
 
 .요구 사항
 * 마이그레이션 어드바이저 VM 수집기(.csv 파일)를 사용하거나 RVTools(.xlsx 파일)를 사용하여 기존 시스템에서 인벤토리 파일을 만들어야 합니다.
-* Workload Factory에 로그인하는 시스템에서 인벤토리 파일에 액세스할 수 있어야 합니다.
+* 작업 부하 공장에 로그인하는 시스템에서 인벤토리 파일에 액세스할 수 있어야 합니다.
 
 
 .단계
+. 중 하나를 사용하여 워크로드 팩토리에 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] 로그인합니다.
 . VMware 워크로드 타일에서 * 액세스 및 계획 * 을 선택한 다음 * AWS 기반 VMware Cloud로 마이그레이션 * 을 선택합니다.
 +
 VMware Migration Advisor 기본 페이지가 표시됩니다.
 
 . Create a new deployment plan * 을 선택합니다.
-. Workload Factory를 현재 VM 구성으로 채우는 데 사용할 인벤토리 파일 유형을 선택하고 * Next * 를 선택합니다.
+. 현재 VM 구성으로 워크로드 팩토리를 채우는 데 사용할 인벤토리 파일 유형을 선택하고 * 다음 * 을 선택합니다.
 +
 ** VMware 데이터 수집기를 사용하여 만든 .csv 파일을 사용하려면 * 마이그레이션 어드바이저 VMware 데이터 수집기 사용 * 을 선택합니다.
 ** RVTools를 사용하여 만든 .xlsx 파일을 사용하려면 * RVTools 사용 * 을 선택합니다.
@@ -153,10 +154,10 @@ VM 요약 섹션은 VM 수와 총 스토리지 용량을 반영하기 위해 인
 이전에 사용한 기존 배포 계획과 유사한 새 배포를 계획하는 경우 해당 계획을 가져와 편집한 다음 새 배포 계획으로 저장할 수 있습니다.
 
 .요구 사항
-Workload Factory에 로그인하려는 시스템에서 기존 배포 계획에 대한 .json 파일에 액세스할 수 있어야 합니다.
+워크로드 팩토리얼에 로그인하려는 시스템에서 기존 배포 계획에 대한 .json 파일에 액세스할 수 있어야 합니다.
 
 .단계
-. Workload Factory에 로그인합니다.
+. 중 하나를 사용하여 워크로드 팩토리에 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] 로그인합니다.
 . VMware 워크로드 타일에서 * 액세스 및 계획 * 을 선택한 다음 * AWS 기반 VMware Cloud로 마이그레이션 * 을 선택합니다. VMware Migration Advisor 기본 페이지가 표시됩니다.
 . Import an existing deployment plan * 을 선택합니다.
 . image:button-upload-file.png["업로드 버튼"]마이그레이션 관리자에서 가져올 기존 계획 파일을 선택하고 선택합니다.

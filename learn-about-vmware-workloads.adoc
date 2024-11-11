@@ -2,20 +2,28 @@
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: Workload Factory for VMware는 온프레미스 시스템의 데이터를 AWS의 VMware Cloud로 이동하는 툴을 제공합니다. VMware 마이그레이션 어드바이저를 사용하면 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석하고 권장 VM 레이아웃을 AWS vSphere 클러스터 기반 VMware Cloud에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 수 있습니다. 
+summary: 'VMware용 워크로드 팩토리에는 온프레미스 시스템의 데이터를 워크로드 팩토리로 이동할 수 있는 툴이 있습니다. VMware는 온프레미스 시스템의 데이터를 VMware Cloud on AWS(VMC) 또는 Amazon EC2로 이동할 수 있는 툴을 제공합니다.' 
 ---
-= VMware용 Workload Factory에 대해 알아보십시오
+= VMware용 워크로드 팩토리에 대해 알아보십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-워크로드 팩토리 for VMware는 온프레미스 시스템에서 VMware Cloud on AWS(VMC) 또는 Amazon EC2로 데이터를 이동할 수 있는 툴을 제공합니다. VMware 마이그레이션 어드바이저를 사용하면 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석하고 권장 VM 레이아웃을 AWS vSphere 클러스터 기반 Amazon EC2 또는 VMware Cloud에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 수 있습니다.
+VMware용 워크로드 팩토리는 데이터를 온프레미스 시스템의 VMware Cloud on AWS(VMC) 또는 Amazon EC2로 이동할 수 있는 툴을 제공합니다.
+
+
+
+== VMware에서 워크로드 팩토링이란 무엇입니까?
+
+VMware 워크로드 팩토리에는 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석할 수 있는 마이그레이션 조언자가 제공됩니다. 그런 다음 마이그레이션 어드바이저는 권장 VM 레이아웃을 Amazon EC2 또는 VMware Cloud on AWS vSphere 클러스터 에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용하기 위한 계획을 생성합니다.
 
 Amazon FSx for NetApp ONTAP은 NetApp의 ONTAP 파일 시스템을 기반으로 구축된 외부 NFS 데이터 저장소로, Amazon EC2 인스턴스 또는 VMware Cloud on AWS vSphere 클러스터에 연결할 수 있습니다. 사용 가능한 스토리지를 늘리기 위해 호스트를 추가할 필요가 없습니다. 대신 FSx for ONTAP 볼륨을 외부 데이터 저장소로 사용하여 vSAN 데이터 저장소를 보완하면 됩니다. 따라서 컴퓨팅 리소스와 독립적으로 확장이 가능한 유연한 고성능 가상화 스토리지 인프라를 제공할 수 있습니다.
 
 image:diagram-vmware-fsx-overview.png["아키텍처를 보여 주는 다이어그램"]
+
+작업 부하 공장에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["워크로드 공장 개요"^]참조하십시오.
 
 
 
@@ -55,6 +63,19 @@ Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 �
 * 볼륨 크기를 늘리거나 줄일 뿐만 아니라 데이터 처리량, IOPS 및 파일 시스템 크기를 변경하는 기능
 * AZ(Multiple Availability Zone) 배포를 지원하는 고가용성
 * Transit Gateway 없이 VPC 피어링을 사용하는 단일 AZ 구성에서 비용과 대기 시간을 줄일 수 있습니다
+
+
+
+
+== 워크로드 팩토리 사용을 위한 툴
+
+다음 툴과 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다.
+
+* * 워크로드 팩토리 콘솔 * : 워크로드 팩토리 콘솔은 애플리케이션 및 프로젝트에 대한 전체적인 보기를 제공하는 시각적 인터페이스를 제공합니다.
+* * BlueXP  콘솔 *: BlueXP  콘솔은 하이브리드 인터페이스 환경을 제공하므로 다른 BlueXP  서비스와 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다.
+* * REST API *: 워크로드 팩토리 REST API를 통해 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리할 수 있습니다
+* * CloudFormation *: AWS CloudFormation 코드를 사용하면 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 워크로드 팩토리 콘솔에서 정의한 작업을 수행할 수 있습니다.
+* * Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하면 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리할 수 있습니다.
 
 
 

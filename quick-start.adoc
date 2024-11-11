@@ -13,18 +13,17 @@ summary: VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTA
 [role="lead"]
 VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라를 AWS 기반 VMware Cloud로 이동하십시오.
 
-시작하기 전에 에 대한 이해가 있어야 합니다 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["작동 모드"^]
+시작하기 전에 에 대한 이해가 있어야 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["작동 모드"^] 합니다.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] Workload Factory를 등록하고 계정을 생성하십시오
-[role="quick-margin-para"]
-로 https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^] 이동하여 가입합니다. https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["계정 만들기에 대해 자세히 알아보세요"]..
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] 워크로드 공장 에 로그인합니다
+를 사용하여 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] 로그인해야 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["워크로드 팩토리에 계정을 설정합니다"^] 합니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 계정에 AWS 자격 증명 및 권한을 추가합니다
 [role="quick-margin-para"]
-AWS 계정에 액세스하기 위해 자격 증명을 추가하지 않고 Workload Factory를 _Basic_mode에서 사용할 수 있습니다. Read_or_automate_ 모드에서 AWS 자격 증명을 Workload Factory에 추가하면 Workload Factory 계정에 FSx for ONTAP 파일 시스템을 생성 및 관리하고 VMware Cloud 내에서 워크로드를 배포 및 관리하는 데 필요한 권한이 부여됩니다.
+AWS 계정에 액세스하기 위해 자격 증명을 추가하지 않고 _Basic_mode에서 워크로드 팩터리를 사용할 수 있습니다. Read_or_automate_ 모드에서 워크로드 팩토리에 AWS 자격 증명을 추가하면 워크로드 공장 계정에 FSx for ONTAP 파일 시스템을 생성 및 관리하고 VMware Cloud 내에서 워크로드를 배포 및 관리하는 데 필요한 권한이 부여됩니다.
 
 [role="quick-margin-para"]
-https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["자격 증명 및 사용 권한을 추가하는 방법에 대해 알아봅니다"^]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["자격 증명 및 사용 권한을 추가하는 방법에 대해 알아봅니다"^]..
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] vSphere 환경의 현재 VM 구성을 캡처합니다
 [role="quick-margin-para"]
@@ -52,7 +51,7 @@ link:deploy-fsx-file-system.html["새로운 FSx for ONTAP 파일 시스템을 �
 SDDC(소프트웨어 정의 데이터 센터)는 VPC 피어링 기능을 사용하여 외부 NFS 스토리지 볼륨으로 네트워크 연결을 확장하여 FSx for ONTAP 파일 시스템에 연결할 수 있는 네트워크 옵션을 제공합니다.
 
 [role="quick-margin-para"]
-link:connect-sddc-to-fsx.html["데이터 마이그레이션에 대해 자세히 알아보십시오"]..
+link:connect-sddc-to-fsx.html["FSx for ONTAP 파일 시스템을 연결하는 방법에 대해 알아보십시오"]..
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["7번"] 이전 시스템에서 새로운 FSx for ONTAP 파일 시스템으로 데이터를 마이그레이션합니다
 [role="quick-margin-para"]

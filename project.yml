@@ -21,7 +21,7 @@ sidebar:
       url: "/whats-new.html"
   - title: 시작하십시오
     entries:
-    - title: VMware용 Workload Factory에 대해 알아보십시오
+    - title: VMware용 워크로드 팩토리에 대해 알아보십시오
       url: "/learn-about-vmware-workloads.html"
     - title: AWS 기반 VMware Cloud로 마이그레이션을 빠르게 시작할 수 있습니다
       url: "/quick-start.html"
@@ -36,9 +36,7 @@ sidebar:
       - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
         url: "/launch-onboarding-advisor-native.html"
       - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
-        url: "/deploy-fsx-file-system.html"
-      - title: 데이터를 새로운 인프라로 마이그레이션합니다
-        url: "/migrate-data-native.html"
+        url: "/deploy-fsx-file-system-native.html"
     - title: AWS 기반 VMware Cloud로 마이그레이션하십시오
       entries:
       - title: 현재 VM 구성을 캡처합니다
@@ -60,5 +58,5 @@ sidebar:
   - title: 법적 고지
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP Workload Factory for AWS
+  name: BlueXP workload factory for AWS
   repo: workload-family
