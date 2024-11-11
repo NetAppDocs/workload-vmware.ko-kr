@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: VMware 설명서를 위한 워크로드 팩토리
+  title: VMware 설명서를 위한 BlueXP  워크로드 팩토리
   summary: 온프레미스 vSphere 환경에서 AWS 기반의 VMware Cloud로 마이그레이션을 간소화하고 맞춤형 FSx for ONTAP
     파일 시스템을 외부 데이터 저장소로 구현합니다.
   keywords: VMware, FSx, VMs, VMC, VMware Cloud on AWS, FSx for ONTAP
