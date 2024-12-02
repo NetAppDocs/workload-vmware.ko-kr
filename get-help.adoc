@@ -7,7 +7,7 @@ summary: 'NetApp는 다양한 방법으로 워크로드 팩토리를 지원합�
 = 도움을 받으십시오
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

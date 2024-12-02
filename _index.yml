@@ -9,7 +9,7 @@ indexpage:
   tiles:
   - title: 시작하십시오
     links:
-    - title: VMware용 워크로드 팩토리에 대해 알아보십시오
+    - title: VMware용 BlueXP  워크로드 팩토리에 대해 알아보십시오
       url: learn-about-vmware-workloads.html
     - title: '빠른 시작: AWS의 VMware Cloud로 마이그레이션합니다'
       url: quick-start.html
@@ -35,5 +35,3 @@ indexpage:
       url: launch-onboarding-advisor-native.html
     - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
       url: deploy-fsx-file-system.html
-    - title: 데이터를 새로운 인프라로 마이그레이션합니다
-      url: migrate-data-native.html

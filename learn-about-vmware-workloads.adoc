@@ -2,22 +2,22 @@
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: 'VMware용 워크로드 팩토리에는 온프레미스 시스템의 데이터를 워크로드 팩토리로 이동할 수 있는 툴이 있습니다. VMware는 온프레미스 시스템의 데이터를 VMware Cloud on AWS(VMC) 또는 Amazon EC2로 이동할 수 있는 툴을 제공합니다.' 
+summary: 'VMware용 BlueXP  워크로드 팩토리에서는 온프레미스 시스템의 데이터를 VMware Cloud on AWS(VMC) 또는 Amazon EC2로 이동할 수 있는 툴을 제공합니다.' 
 ---
-= VMware용 워크로드 팩토리에 대해 알아보십시오
+= VMware용 BlueXP  워크로드 팩토리에 대해 알아보십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-VMware용 워크로드 팩토리는 데이터를 온프레미스 시스템의 VMware Cloud on AWS(VMC) 또는 Amazon EC2로 이동할 수 있는 툴을 제공합니다.
+VMware용 BlueXP  워크로드 팩토리에서는 온프레미스 시스템의 데이터를 VMware Cloud on AWS(VMC) 또는 Amazon EC2로 이동할 수 있는 툴을 제공합니다.
 
 
 
-== VMware에서 워크로드 팩토링이란 무엇입니까?
+== VMware용 BlueXP  워크로드 팩토리는 무엇입니까?
 
-VMware 워크로드 팩토리에는 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석할 수 있는 마이그레이션 조언자가 제공됩니다. 그런 다음 마이그레이션 어드바이저는 권장 VM 레이아웃을 Amazon EC2 또는 VMware Cloud on AWS vSphere 클러스터 에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용하기 위한 계획을 생성합니다.
+VMware용 BlueXP  workload factory는 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석할 수 있는 마이그레이션 관리자를 제공합니다. 그런 다음 마이그레이션 어드바이저는 권장 VM 레이아웃을 Amazon EC2 또는 VMware Cloud on AWS vSphere 클러스터 에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용하기 위한 계획을 생성합니다.
 
 Amazon FSx for NetApp ONTAP은 NetApp의 ONTAP 파일 시스템을 기반으로 구축된 외부 NFS 데이터 저장소로, Amazon EC2 인스턴스 또는 VMware Cloud on AWS vSphere 클러스터에 연결할 수 있습니다. 사용 가능한 스토리지를 늘리기 위해 호스트를 추가할 필요가 없습니다. 대신 FSx for ONTAP 볼륨을 외부 데이터 저장소로 사용하여 vSAN 데이터 저장소를 보완하면 됩니다. 따라서 컴퓨팅 리소스와 독립적으로 확장이 가능한 유연한 고성능 가상화 스토리지 인프라를 제공할 수 있습니다.
 

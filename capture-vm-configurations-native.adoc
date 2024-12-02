@@ -34,12 +34,16 @@ VM에서 장기 통계(일일 통계)를 캡처하려면 vSphere 관리 콘솔(V
 
 .단계
 . 중 하나를 사용하여 워크로드 팩토리에 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] 로그인합니다.
-. VMware 타일에서 * 액세스 및 계획 * 을 선택합니다.
-. 새 배포 계획 생성 * 을 선택하고 * 마이그레이션 어드바이저 VMware 데이터 수집기 사용 * 옵션을 선택한 후 * 다음 * 을 선택합니다.
+. VMware 워크로드 타일에서 * 액세스 및 계획 * 을 선택한 다음 * AWS 네이티브 컴퓨팅으로 마이그레이션 * 을 선택합니다. VMware Migration Advisor 시작 화면이 표시됩니다.
 +
-Prepare for VMware Cloud on AWS migration * 페이지가 표시됩니다.
+정보를 검토하여 마이그레이션 관리자의 이점에 대해 알아보십시오.
 
-. Codebox 창에서 image:button-download-codebox.png["다운로드 버튼"] 마이그레이션 어드바이저 VM 수집기 스크립트("list-vms.ps1"로 이름)를 대상 시스템에 저장하거나 image:button-copy-codebox.png["복사 버튼"] 적절한 시스템에 붙여 넣을 수 있도록 스크립트를 복사하도록 선택합니다.
+. 준비가 되면 * 시작 * 을 선택합니다.
+. 세부 계획 * 타일을 선택하고 * 다음 * 을 선택합니다.
++
+페이지 오른쪽에 코드 상자 창이 나타납니다.
+
+. Codebox 창에서 image:button-download-codebox.png["다운로드 버튼"]마이그레이션 어드바이저 데이터 수집기 스크립트("list-vms.ps1"로 이름)를 대상 시스템에 저장하거나 스크립트를 복사하여 적절한 시스템에 붙여 넣을 수 있도록 선택합니다image:button-copy-codebox.png["복사 버튼"].
 . 다음 단계에 따라 현재 VM의 구성을 캡처합니다.
 +
 .. PowerShell 및 PowerCLI가 설치된 데이터 수집기를 다운로드한 시스템에 로그인합니다.
