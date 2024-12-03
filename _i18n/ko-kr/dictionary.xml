@@ -352,7 +352,6 @@
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">일련 번호 필드에 위에서 사용된 계정 일련 번호(960xxxx)를 복사해 주십시오. 이렇게 하면 계정 처리 속도가 빨라집니다.</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">이 과정에서 NetApp이 연락을 드릴 것입니다. 신규 사용자를 위한 일회성 온보딩 연습입니다.</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">NetApp Support 사이트 계정이 있는 경우 아래의 단계를 완료하여 계정을 BlueXP 로그인에 연결합니다 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
-  <block id="490414e0366b091220802d406e52c076" category="doc">새로운 기능</block>
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">2024년 7월 7일</block>
   <block id="9bab53a02593423437540c8ac9802fde" category="paragraph">초기 릴리즈에는 VMware 마이그레이션 어드바이저를 사용하여 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석하고 권장 VM 레이아웃을 AWS 기반 VMware Cloud에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 계획을 생성하는 기능이 포함되어 있습니다.</block>
   <block id="1a61f87dd9021f3f5868a4a4418a6116" category="sidebar">온프레미스 vSphere 환경에서 AWS 기반의 VMware Cloud로 마이그레이션을 간소화하고 맞춤형 FSx for ONTAP 파일 시스템을 외부 데이터 저장소로 구현합니다.</block>
@@ -367,13 +366,11 @@
   <block id="b315d9d256afa359134156c4a3ba121a" category="list-text">마이그레이션 어드바이저 VM 수집기(.csv 파일)를 사용하거나 RVTools(.xlsx 파일)를 사용하여 기존 시스템에서 인벤토리 파일을 만들어야 합니다.</block>
   <block id="acac926eb24cce36b7b6f36c0db430ca" category="list-text">VMware 워크로드 타일에서 * 액세스 및 계획 * 을 선택한 다음 * AWS 기반 VMware Cloud로 마이그레이션 * 을 선택합니다. VMware Migration Advisor 기본 페이지가 표시됩니다.</block>
   <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">Amazon EC2로 마이그레이션합니다</block>
-  <block id="1f1840a1cd78fc828b7bf5b09ef626dd" category="doc">Amazon EC2로 마이그레이션하기 전에 현재 VM 구성을 캡처합니다</block>
   <block id="d33a9cde7de06ccdf8aba953dd2aeb0d" category="list-text">다운로드한 데이터 수집기 스크립트를 실행하고 "일별" 또는 "시간별" VM 통계에 대한 데이터 수집 옵션을 지정합니다.</block>
   <block id="8109466383788459676a9b2ec067ebe7" category="paragraph">스크립트는 현재 작업 디렉토리의 이름에 타임스탬프가 있는 압축된 파일을 출력합니다. zip 파일에는 모든 VM 및 해당 속성의 목록이 IOPS 및 처리량 데이터와 함께 포함됩니다.</block>
   <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph"><block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block>자세한 내용은 의 "commandline parameters" 장을 참조하십시오.</block>
   <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">마이그레이션 관리자를 사용하여 Amazon EC2 배포 계획을 생성합니다</block>
   <block id="414196819b55791be7e7314c3ef3e1cb" category="paragraph"><block ref="256f57bc6446332fd4641ea86650235a" category="inline-link-macro-rx"></block>..</block>
-  <block id="2937dfbcdcb41e8eba68b50ecd25d526" category="doc">VMware Cloud로 마이그레이션하기 전에 현재 VM 구성을 캡처하십시오</block>
   <block id="ad593b2d0fe3cbb86e53650eaaf4824a" category="list-text">VMware 워크로드 타일에서 * 액세스 및 계획 * 을 선택한 다음 * AWS 기반 VMware Cloud로 마이그레이션 * 을 선택합니다.</block>
   <block id="f04f84e2375dd70545e2146f2d203aa3" category="paragraph">VMware Migration Advisor 기본 페이지가 표시됩니다.</block>
   <block id="0c9cddf33e5d4dde0908a43c0281f4c9" category="inline-link-macro">마이그레이션 어드바이저를 사용하여 VMware Cloud on AWS 구축 계획을 수립합니다</block>
@@ -391,7 +388,6 @@
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">20% 미만의 양을 선택하면 보호 및 장기 백업을 위한 볼륨 스냅샷을 생성할 수 없습니다.</block>
   <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">* VM 스냅샷 보호 *: 스냅샷을 사용하여 VM을 보호하려면 이 옵션을 활성화합니다.</block>
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">페이지 상단에서는 배포된 모든 VM 및 FSx for ONTAP 파일 시스템의 월별 비용을 설명합니다. 각 섹션을 확장하여 "권장되는 Amazon FSx for ONTAP 파일 시스템 구성", "예상 비용 분석", "볼륨 구성", "크기 지정 가정" 및 기술적 "면책 조항"에 대한 세부 정보를 볼 수 있습니다.</block>
-  <block id="772ab2cb66607567ceddf170a9c148d1" category="doc">마이그레이션 어드바이저를 사용하여 AWS 기반 VMware Cloud에 대한 구축 계획을 수립합니다</block>
   <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">VMware Cloud로 마이그레이션할 때 마이그레이션 관리자를 사용하여 다음 시나리오에 대한 배포 계획을 생성할 수 있습니다.</block>
   <block id="dafb3c70bc12caaeab402760a87e98d9" category="inline-xref">현재 온프레미스 vSphere 환경을 VMware 클라우드로 마이그레이션합니다.</block>
   <block id="59bf0f7e79d795451ad94f36b9896e02" category="list-text"><block ref="d7d9086f96876c516cd0685f13fc1fe9" category="inline-xref-macro-rx"></block></block>
@@ -405,12 +401,10 @@
   <block id="5cf77a6cd1a6546f96141615c376acb2" category="inline-link">VMware HCX 설명서를 검토합니다</block>
   <block id="1cdaa881e46a57173b4ffb5ec3faacc3" category="paragraph"><block ref="cef3bc29c9f27088570c1e3262538cf8" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="e893ba46613a19a9294b7b151c4df83e" category="summary">VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라를 Amazon EC2로 이동하십시오.</block>
-  <block id="294f9af291a855904cc69ccf0e3c306f" category="doc">VMware 마이그레이션 관리자를 사용하여 Amazon EC2로 마이그레이션을 빠르게 시작할 수 있습니다</block>
   <block id="9cd1f8c893219dcc9697141d6585e5d9" category="paragraph"><block ref="ab4df44eb8806514d8649fc0b63ead31" category="inline-link-macro-rx"></block>..</block>
   <block id="d645e6b9cc715485914696dcaeed7e40" category="paragraph">VMware 마이그레이션 관리자를 실행하고 Amazon FSx for ONTAP 파일 시스템을 외부 NFS 데이터 저장소로 사용하여 Amazon EC2 인프라로 마이그레이션할 VM을 선택합니다. 계획을 저장하기 전에 몇 가지 수정을 할 수 있습니다.</block>
   <block id="362f02ec410356642b41d807749588d9" category="paragraph"><block ref="d6918f6a6163624fe27be3a8b64bdb49" category="inline-link-macro-rx"></block>..</block>
   <block id="2f2f1ce9d4f5decb03f093128a1fc15e" category="paragraph">Amazon EC2 인프라의 VM용 데이터 저장소를 제공할 새로운 FSx for ONTAP 파일 시스템을 배포합니다.</block>
-  <block id="d8329106d0f4da40a239ea890e93904c" category="doc">VMware 마이그레이션 관리자를 사용하여 AWS 기반 VMware Cloud로 마이그레이션하는 작업을 빠르게 시작합니다</block>
   <block id="aebd84094284845d3e849298624e3ce8" category="sidebar">빠른 시작: AWS의 VMware Cloud로 마이그레이션합니다</block>
   <block id="a529cc49011230ace4aa0d605878b3a7" category="sidebar">빠른 시작: Amazon EC2로 마이그레이션합니다</block>
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">AWS 기반 VMware Cloud로 마이그레이션하십시오</block>
@@ -511,4 +505,16 @@
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
   <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024년 12월 1일</block>
   <block id="ee42de0e28fe9ae4fdaac41867872582" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 2024년 9월 1일</block>
+  <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">VMware 워크로드를 Amazon EC2로 마이그레이션하기 전에 VM 구성을 캡처하십시오</block>
+  <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">VMware 워크로드를 사용하여 VMware Cloud로 마이그레이션하기 전에 VM 구성을 캡처하십시오</block>
+  <block id="3173329d2df7808ef89c684e36fe95db" category="doc">VMware 워크로드에 권장되는 FSx for ONTAP 파일 시스템을 구축하십시오</block>
+  <block id="bbdbb1a9bdd5ede393b6116d9f10e1dc" category="doc">VMware용 BlueXP  워크로드 팩토리에 대한 지원을 받으십시오</block>
+  <block id="d426ad1d2770909e76d9ec998753048e" category="doc">VMware 워크로드 마이그레이션 어드바이저를 사용하여 Amazon EC2에 대한 구축 계획을 수립합니다</block>
+  <block id="9aed60fda8e95affae05b540b6cbe03a" category="doc">VMware 워크로드 마이그레이션 어드바이저를 사용하여 VMware Cloud on AWS에 대한 구축 계획을 수립합니다</block>
+  <block id="9e568012fe6f23b1555756d444007015" category="doc">VMware용 BlueXP  워크로드 팩토리지에 대한 법적 고지 사항</block>
+  <block id="6ea93b9b9da308faf45f55074d8c73cb" category="doc">VMware용 BlueXP  워크로드 팩토리로 데이터를 새로운 인프라로 마이그레이션하십시오</block>
+  <block id="09bf5c9e5640bf75b6e024bb49783cc9" category="doc">VMware 워크로드 마이그레이션 어드바이저를 사용하여 Amazon EC2로 신속하게 마이그레이션할 수 있습니다</block>
+  <block id="ecdd552e8f9e5da2a61e6db8b8030056" category="doc">VMware 워크로드 마이그레이션 어드바이저를 사용하여 AWS 기반 VMware Cloud로 마이그레이션하기 위한 빠른 시작</block>
+  <block id="9db9ff1e14360eb723369155da355a69" category="doc">VMware에 대한 BlueXP  워크로드 팩토리 지원에 등록하십시오</block>
+  <block id="06d7f560c7d6e855b18ae8d7b5014e05" category="doc">VMware를 위한 BlueXP  워크로드 팩토리의 새로운 기능</block>
 </blocks>

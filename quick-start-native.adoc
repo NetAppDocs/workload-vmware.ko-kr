@@ -4,7 +4,7 @@ permalink: quick-start-native.html
 keywords: quick start 
 summary: VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라를 Amazon EC2로 이동하십시오. 
 ---
-= VMware 마이그레이션 관리자를 사용하여 Amazon EC2로 마이그레이션을 빠르게 시작할 수 있습니다
+= VMware 워크로드 마이그레이션 어드바이저를 사용하여 Amazon EC2로 신속하게 마이그레이션할 수 있습니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -16,6 +16,7 @@ VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTAP을 외�
 시작하기 전에 에 대한 이해가 있어야 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["작동 모드"^] 합니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] 워크로드 공장 에 로그인합니다
+[role="quick-margin-para"]
 를 사용하여 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] 로그인해야 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["워크로드 팩토리에 계정을 설정합니다"^] 합니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 계정에 AWS 자격 증명 및 권한을 추가합니다

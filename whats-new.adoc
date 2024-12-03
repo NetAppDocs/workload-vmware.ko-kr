@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
 summary: 워크로드 팩토리의 VMware 마이그레이션 어드바이저 구성 요소의 새로운 기능에 대해 알아보십시오. 
 ---
-= 새로운 기능
+= VMware를 위한 BlueXP  워크로드 팩토리의 새로운 기능
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

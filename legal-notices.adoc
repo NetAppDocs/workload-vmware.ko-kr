@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 법적 고지
+= VMware용 BlueXP  워크로드 팩토리지에 대한 법적 고지 사항
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
