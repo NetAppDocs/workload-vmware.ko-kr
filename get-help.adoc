@@ -11,13 +11,13 @@ summary: 'NetApp는 다양한 방법으로 워크로드 팩토리를 지원합�
 
 
 [role="lead"]
-NetApp은 Workload Factory와 다양한 방법으로 클라우드 서비스를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.
+NetApp은 BlueXP  워크로드 팩토리 및 클라우드 서비스를 다양한 방식으로 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.
 
 
 
 == FSx for ONTAP에 대한 지원을 받으십시오
 
-FSx for ONTAP, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 워크로드 팩토리 설명서에서 "도움말 얻기"를 참조하십시오.
+FSx for ONTAP, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 워크로드 공장 설명서의 "도움말 얻기"를 참조하십시오.
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["ONTAP용 Amazon FSx"^]
 
@@ -31,15 +31,15 @@ Workload Factory 및 해당 스토리지 솔루션 및 서비스에 대한 기�
 
 * 문서화
 +
-현재 보고 있는 Workload Factory 문서
+현재 보고 있는 작업 부하 공장 문서입니다.
 
 * https://kb.netapp.com["기술 자료"^]
 +
-Workload Factory 기술 문서를 검색하여 문제 해결에 도움이 되는 문서를 찾습니다.
+워크로드 팩토리 기술 문서를 검색하여 문제 해결에 유용한 문서를 찾습니다.
 
 * http://community.netapp.com/["커뮤니티"^]
 +
-Workload Factory 커뮤니티에 참여하여 진행 중인 토론을 따르거나 새로운 토론을 만드십시오.
+워크로드 공장 커뮤니티에 참여하여 진행 중인 토론을 따르거나 새 토론을 만드십시오.
 
 
 
@@ -50,10 +50,10 @@ Workload Factory 커뮤니티에 참여하여 진행 중인 토론을 따르거�
 위의 자체 지원 옵션 외에도 NetApp 지원 전문가와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.
 
 .시작하기 전에
-케이스 생성 * 기능을 사용하려면 먼저 지원을 등록해야 합니다. NetApp 지원 사이트 자격 증명을 워크로드 팩토리 로그인과 연결합니다. link:support-registration.html["지원 등록 방법을 알아보십시오"]..
+케이스 생성 * 기능을 사용하려면 먼저 지원을 등록해야 합니다. NetApp 지원 사이트 자격 증명을 워크로드 공장 로그인에 연결하십시오. link:support-registration.html["지원 등록 방법을 알아보십시오"]..
 
 .단계
-. Workload Factory 콘솔의 오른쪽 위에서 * Help > Support * 를 선택합니다.
+. 워크로드 팩토리 콘솔의 오른쪽 위에서 * Help > Support * 를 선택합니다.
 +
 이 옵션을 선택하면 BlueXP 콘솔에 새 브라우저 탭이 열리고 지원 대시보드가 로드됩니다.
 
@@ -124,7 +124,7 @@ BlueXP에서 직접 활성 및 해결된 지원 사례를 보고 관리할 수 �
 
 
 .단계
-. Workload Factory 콘솔의 오른쪽 위에서 * Help > Support * 를 선택합니다.
+. 워크로드 팩토리 콘솔의 오른쪽 위에서 * Help > Support * 를 선택합니다.
 +
 이 옵션을 선택하면 BlueXP 콘솔에 새 브라우저 탭이 열리고 지원 대시보드가 로드됩니다.
 

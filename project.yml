@@ -58,5 +58,5 @@ sidebar:
   - title: 법적 고지
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP workload factory for AWS
+  name: BlueXP workload factory
   repo: workload-family

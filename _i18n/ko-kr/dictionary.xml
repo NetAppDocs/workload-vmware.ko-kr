@@ -94,28 +94,21 @@
   <block id="8a17abf71adea43d22ac172f424f4140" category="paragraph">두 경우 모두 CloudFormation에서 생성 진행률을 모니터링할 수 있습니다.</block>
   <block id="af48fc2e1e9f5e62213f21a797f40b49" category="paragraph">FSx for ONTAP 파일 시스템이 구축됩니다.</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">도움을 받으십시오</block>
-  <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="paragraph">NetApp은 Workload Factory와 다양한 방법으로 클라우드 서비스를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">FSx for ONTAP에 대한 지원을 받으십시오</block>
-  <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">FSx for ONTAP, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 워크로드 팩토리 설명서에서 "도움말 얻기"를 참조하십시오.</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP용 Amazon FSx</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="paragraph"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="35f9849ffdd809bda11d0fc56e1e3583" category="paragraph">Workload Factory 및 해당 스토리지 솔루션 및 서비스에 대한 기술 지원을 받으려면 아래에 설명된 지원 옵션을 사용하십시오.</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">자체 지원 옵션을 사용합니다</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">이 옵션은 하루 24시간, 주 7일 동안 무료로 사용할 수 있습니다.</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">문서화</block>
-  <block id="d935525f4850c4638cbf48ae53fb4686" category="paragraph">현재 보고 있는 Workload Factory 문서</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">기술 자료</block>
   <block id="436f63b446dba5a418c698d49bd39718" category="list-text"><block ref="436f63b446dba5a418c698d49bd39718" category="inline-link-rx"></block></block>
-  <block id="ba6274b9c9d1f81bb3a648fa289986b8" category="paragraph">Workload Factory 기술 문서를 검색하여 문제 해결에 도움이 되는 문서를 찾습니다.</block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">커뮤니티</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
-  <block id="7faef90df03399696ba9d4815b37171a" category="paragraph">Workload Factory 커뮤니티에 참여하여 진행 중인 토론을 따르거나 새로운 토론을 만드십시오.</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">NetApp Support로 케이스 생성</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">위의 자체 지원 옵션 외에도 NetApp 지원 전문가와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">시작하기 전에</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">지원 등록 방법을 알아보십시오</block>
-  <block id="a12ea39ddf1c98adfd7f751299705efa" category="paragraph">케이스 생성 * 기능을 사용하려면 먼저 지원을 등록해야 합니다. NetApp 지원 사이트 자격 증명을 워크로드 팩토리 로그인과 연결합니다. <block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>..</block>
-  <block id="356c88ac4b0ec3f7689cc91f54701fef" category="list-text">Workload Factory 콘솔의 오른쪽 위에서 * Help &gt; Support * 를 선택합니다.</block>
   <block id="aadd86a3fadf19221852692c6e4adc2f" category="paragraph">이 옵션을 선택하면 BlueXP 콘솔에 새 브라우저 탭이 열리고 지원 대시보드가 로드됩니다.</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">리소스 * 페이지의 기술 지원 아래에서 사용 가능한 옵션 중 하나를 선택합니다.</block>
   <block id="6a1b74969231967ed071d465206b15c7" category="list-text">전화로 통화하려면 * 전화 * 를 선택하십시오. 전화를 걸 수 있는 전화 번호가 나열된 netapp.com 페이지로 연결됩니다.</block>
@@ -312,8 +305,6 @@
   <block id="3638e2726e921646915ead3523420694" category="paragraph">VMware HCX(하이브리드 클라우드 확장)와 같은 외부 툴을 사용하여 기존 가상 머신 스토리지의 데이터를 새 가상 머신에 연결된 FSx for NetApp ONTAP 볼륨으로 이동합니다.</block>
   <block id="ed2864ba6212a6975c8039c89029a916" category="paragraph"><block ref="19e3683b716b5e111f0f1f9ccf094dd2" category="inline-link-macro-rx"></block>..</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">지원을 위해 등록하십시오</block>
-  <block id="996ad73a480311d4f86d6946935389d2" category="paragraph">Workload Factory 및 해당 스토리지 솔루션 및 서비스에 대한 기술 지원을 받으려면 지원 등록을 해야 합니다. Workload Factory와는 별도의 웹 기반 콘솔인 BlueXP 콘솔에서 지원을 받으려면 등록해야 합니다.</block>
-  <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">지원을 등록한다고 해서 클라우드 공급자 파일 서비스에 대한 NetApp 지원이 활성화되지 않습니다. 클라우드 공급자 파일 서비스, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품에 대한 Workload Factory 설명서의 "도움말 얻기"를 참조하십시오.</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">지원 등록 개요</block>
   <block id="d7e4bb081bf4ec4814d83edcfbdb8b96" category="paragraph">계정 ID 지원 가입 등록(BlueXP의 지원 리소스 페이지에 있는 20자리 960xxxxxxxxx 일련 번호)은 단일 지원 구독 ID로 사용됩니다. 각 BlueXP 계정 수준 지원 구독을 등록해야 합니다.</block>
   <block id="f9e05c2b383e3f11e3b4bebbe8952225" category="paragraph">등록하면 지원 티켓 열기 및 자동 사례 생성과 같은 기능을 사용할 수 있습니다. 아래 설명과 같이 BlueXP에 NetApp Support 사이트(NSS) 계정을 추가하여 등록을 완료합니다.</block>
@@ -382,7 +373,6 @@
   <block id="d738890a4c9a0f96c08ae0ba66a626a1" category="doc">마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다</block>
   <block id="12108488b525984a76d1a39aeb4948cb" category="paragraph">온프레미스 vSphere 환경의 현재 가상 머신 구성을 Amazon EC2의 가상 머신으로 마이그레이션하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 수 있습니다.</block>
   <block id="5dff619fafdcb02708f9c4517a7bb8fe" category="list-text">마이그레이션 어드바이저 VM 수집기(.zip 파일)를 사용하거나 RVTools(.xlsx 파일)를 사용하여 기존 시스템에서 인벤토리 파일을 만들어야 합니다.</block>
-  <block id="c3fb55d7fbab2ce4cf38cd35ab2765e2" category="paragraph">VM 요약 * 섹션은 VM 수와 총 스토리지 용량을 반영하기 위해 인벤토리 파일에서 채워집니다.</block>
   <block id="212e4a78a96c4a6a7cb8d8168f38a132" category="list-text">Target capacity and protection considerations_섹션에서 몇 가지 스토리지 옵션 중에서 선택합니다.</block>
   <block id="2371c65768dba03d44190d2797940527" category="list-text">* 평균 데이터 축소율 *: 세 가지 일반적인 데이터 축소율 중에서 선택합니다. "1:1 - No reduction", "1:1.25 - 20% reduction" 또는 "1:1.5 - 33% reduction"을 선택합니다.</block>
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">20% 미만의 양을 선택하면 보호 및 장기 백업을 위한 볼륨 스냅샷을 생성할 수 없습니다.</block>
@@ -410,8 +400,6 @@
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">AWS 기반 VMware Cloud로 마이그레이션하십시오</block>
   <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">AWS 기반 VMware Cloud로 마이그레이션을 빠르게 시작할 수 있습니다</block>
   <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">Amazon EC2로의 마이그레이션을 빠르게 시작합니다</block>
-  <block id="15cd8c066461a2900cdb71fc53b09930" category="list-text">외부 데이터 저장소 배포 계획을 .csv 형식으로 다운로드하려면 * 다운로드 계획 &gt; 인스턴스 스토리지 배포 * 를 선택하여 새로운 클라우드 기반 지능형 데이터 인프라를 구축할 수 있습니다.</block>
-  <block id="74f9ca267e4b5efb489a146170987dbb" category="list-text">계획 검토를 위해 계획을 배포할 수 있도록 배포 계획을 .pdf 형식으로 다운로드하려면 * 계획 다운로드 &gt; 계획 보고서 * 를 선택합니다.</block>
   <block id="2792e29ba30bdded6461ac9b9f0816a4" category="doc">VMware 마이그레이션 어드바이저의 향상된 기능</block>
   <block id="2dbb83c0d88f8aa5c12c5445b2b248ee" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block></block>
   <block id="aadc951fc26ce017c445dc2a4fc12d5d" category="list-text">VMware 워크로드 타일에서 * 액세스 및 계획 * 을 선택한 다음 * AWS 네이티브 컴퓨팅으로 마이그레이션 * 을 선택합니다. VMware Migration Advisor 시작 화면이 표시됩니다.</block>
@@ -420,8 +408,6 @@
   <block id="ef3c7f794852a9bd24d0e9c87cce7d80" category="paragraph">이 페이지 상단은 FSx for ONTAP 파일 시스템 및 EBS 볼륨의 월별 절약 효과를 예측합니다. 각 섹션을 확장하여 제안된 파일 시스템 구성, 예상 절감 비용 분석, 가정 및 기술적 고지 사항에 대한 세부 정보를 볼 수 있습니다.</block>
   <block id="d30cddb743993744da7757e5dc8d38a4" category="paragraph">이전에 사용한 기존 배포 계획과 유사한 새 배포를 계획하는 경우 해당 계획을 가져와 변경한 다음 새 배포 계획으로 저장할 수 있습니다.</block>
   <block id="9666bbc427ef045e019206b1e73f8b26" category="list-text">VMware 워크로드 타일에서 * 액세스 및 계획 * 을 선택한 다음 * AWS 네이티브 컴퓨팅으로 마이그레이션 * 을 선택합니다.</block>
-  <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">요구 사항에 맞게 계획을 사용자 지정한 후에는 계획을 저장하거나 계획 보고서를 PDF 파일로 다운로드할 수 있습니다.</block>
-  <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024년 9월 19일</block>
   <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">VMware Migration Advisor 데이터 축소율이 도움이 됩니다</block>
   <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">이번 VMware용 Workload Factory 릴리즈에는 데이터 축소율 지원 기능이 있습니다. 데이터 축소율 도우미를 통해 AWS 클라우드 온보딩을 준비할 때 VMware 인벤토리 및 스토리지 공간에 가장 적합한 비율을 결정할 수 있습니다.</block>
   <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">어떤 비율을 선택할지 잘 모르겠으면 * 결정 도움 요청 * 을 선택합니다. Data reduction ratio assistant _ 대화상자가 나타납니다. VM 인벤토리 및 스토리지 자산에 적용되는 설명을 선택하십시오. 보조자는 적절한 데이터 축소율을 권장합니다. 권장 비율을 사용하려면 * 적용 * 을 선택합니다.</block>
@@ -484,7 +470,6 @@
   <block id="8322562b9931621dac341ec2891a8ed7" category="list-text">* 표준에서 고성능 *: 평균 IO 속도가 20 ~ 5000 IOPS인 VM용.</block>
   <block id="fe6746d68f60ac87ac812195dbe0ba44" category="list-text">* 매우 높은 성능 *: 평균 IO 속도가 5000 IOPS 이상인 VM용.</block>
   <block id="def2319cb1ab48e55abf938aae0948be" category="list-text">* 매우 낮은 성능 *: 평균 IO 속도가 20 IOPS 미만인 VM의 경우</block>
-  <block id="b31024f3340bb98c95da565075ba28e4" category="list-text">범위 * 페이지의 목록에서 AWS 클라우드 마이그레이션에 포함할 VM을 선택하고 * 다음 * 을 선택합니다.</block>
   <block id="4db7ab627ca2119e30a51c404a814e9f" category="list-text">분류 * 페이지에서 구축 과정에서 마이그레이션할 VM 정보, 볼륨 분류 규칙, 볼륨 할당 및 볼륨 목록을 검토한 후 * 다음 * 을 선택합니다.</block>
   <block id="6e8e51789a8fdf8319fae75541361b0d" category="list-text">패키지 * 페이지에서 EC2 인스턴스와 다른 FSx for ONTAP 클러스터에 할당된 볼륨을 검토한 후 * 다음 * 을 선택합니다.</block>
   <block id="45de7b9580db1698613b43e8b89bb740" category="list-text">계획 검토 * 페이지에서 마이그레이션할 모든 VM에 대한 예상 월별 절감 비용 및 비용 추정치를 검토합니다.</block>
@@ -495,8 +480,6 @@
   <block id="518090cfd67cd9305ed824ac9e5cc06e" category="paragraph">완료 * 를 선택하여 VMware 마이그레이션 어드바이저 페이지로 돌아갈 수 있습니다.</block>
   <block id="7726d5796471d8b93e1bd91aa1db9caa" category="list-text">Import plan * 을 선택합니다.</block>
   <block id="d117b15d4decf0a56ccac3c38c271055" category="list-text">마이그레이션 관리자에서 가져올 기존 .json 계획 파일을 선택한 다음 * 열기 * 를 선택합니다.</block>
-  <block id="42b7d26c8da56661da79cbe95791968e" category="paragraph">Review plan * 페이지가 표시됩니다.</block>
-  <block id="b989004e18a26f3c98cfe95fa122af6c" category="list-text">이전 페이지에 액세스하고 이전 섹션에 설명된 대로 계획에 대한 설정을 수정하려면 * Previous *(이전 *)를 선택할 수 있습니다.</block>
   <block id="fbcf13b4033589220687bf9717dd7cda" category="summary">VMware용 BlueXP  워크로드 팩토리에서는 온프레미스 시스템의 데이터를 VMware Cloud on AWS(VMC) 또는 Amazon EC2로 이동할 수 있는 툴을 제공합니다.</block>
   <block id="76882d4f1c13ac2d5609c95803006de5" category="doc">VMware용 BlueXP  워크로드 팩토리에 대해 알아보십시오</block>
   <block id="878b0838fec14a308c058b697894e8b9" category="section-title">VMware용 BlueXP  워크로드 팩토리는 무엇입니까?</block>
@@ -504,7 +487,6 @@
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  워크로드 공장</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
   <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024년 12월 1일</block>
-  <block id="ee42de0e28fe9ae4fdaac41867872582" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 2024년 9월 1일</block>
   <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">VMware 워크로드를 Amazon EC2로 마이그레이션하기 전에 VM 구성을 캡처하십시오</block>
   <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">VMware 워크로드를 사용하여 VMware Cloud로 마이그레이션하기 전에 VM 구성을 캡처하십시오</block>
   <block id="3173329d2df7808ef89c684e36fe95db" category="doc">VMware 워크로드에 권장되는 FSx for ONTAP 파일 시스템을 구축하십시오</block>
@@ -517,4 +499,34 @@
   <block id="ecdd552e8f9e5da2a61e6db8b8030056" category="doc">VMware 워크로드 마이그레이션 어드바이저를 사용하여 AWS 기반 VMware Cloud로 마이그레이션하기 위한 빠른 시작</block>
   <block id="9db9ff1e14360eb723369155da355a69" category="doc">VMware에 대한 BlueXP  워크로드 팩토리 지원에 등록하십시오</block>
   <block id="06d7f560c7d6e855b18ae8d7b5014e05" category="doc">VMware를 위한 BlueXP  워크로드 팩토리의 새로운 기능</block>
+  <block id="cde718e2f0bf0ef80eb31becc18c4787" category="list-text">* 마이그레이션 계획 저장 또는 다운로드 *: 이제 마이그레이션 계획을 저장하거나 다운로드하고 마이그레이션 계획을 로드하여 마이그레이션 관리자를 채울 수 있습니다. 마이그레이션 계획을 저장하면 작업 부하 공장 계정과 함께 계획이 저장됩니다.</block>
+  <block id="42ec77b942403dfbfa1bb7908218848c" category="list-text">* 향상된 VM 선택 *: VMware용 BlueXP  워크로드 팩토리에서는 이제 마이그레이션 배포에 포함할 VM 목록의 필터링 및 검색을 지원합니다.</block>
+  <block id="00cb1da4c4dda4c1e1894d6c1f8a7487" category="paragraph">NetApp Migration Advisor VM Collector 스크립트는 RVTools에서 수집하는 것과 유사한 방식으로 vCenter에서 VM 구성 정보를 수집하지만, 현재 VM 성능 데이터를 캡처하여 실제 읽기/쓰기 IOPS 및 처리량 통계를 제공합니다. 스크립트는 * 단기 데이터 수집 * 장기 데이터 수집이라는 두 가지 모드 중 하나로 사용할 수 있습니다</block>
+  <block id="2b2099b87f7c704c69c0981f3e339373" category="list-text">* true * 는 사용자 지정 기간 동안 1시간 간격으로 IOPS 및 처리량 데이터를 수집합니다.</block>
+  <block id="b6a4501cc05e54e2e5a513c3b552183a" category="paragraph">NetApp은 BlueXP  워크로드 팩토리 및 클라우드 서비스를 다양한 방식으로 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
+  <block id="261966eaf033c38f6934f2c8fc36d79c" category="paragraph">FSx for ONTAP, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 워크로드 공장 설명서의 "도움말 얻기"를 참조하십시오.</block>
+  <block id="5b49df4e58e2a4750acd8bfa8687ccd6" category="paragraph">현재 보고 있는 작업 부하 공장 문서입니다.</block>
+  <block id="ba51332e265e54eb4295d6e7d057bad8" category="paragraph">워크로드 팩토리 기술 문서를 검색하여 문제 해결에 유용한 문서를 찾습니다.</block>
+  <block id="fc3e8f3c2017c33d444d483913a485ba" category="paragraph">워크로드 공장 커뮤니티에 참여하여 진행 중인 토론을 따르거나 새 토론을 만드십시오.</block>
+  <block id="ffa18fada5deeeb1e533786297855e7d" category="paragraph">케이스 생성 * 기능을 사용하려면 먼저 지원을 등록해야 합니다. NetApp 지원 사이트 자격 증명을 워크로드 공장 로그인에 연결하십시오. <block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>..</block>
+  <block id="e13a5649dfef3a1c76c4be8e463226d7" category="list-text">워크로드 팩토리 콘솔의 오른쪽 위에서 * Help &gt; Support * 를 선택합니다.</block>
+  <block id="246fd576936aa6a7e609ed87c073c207" category="paragraph">데이터 수집 정보 * 섹션은 Onboarding Advisor 데이터 수집기를 사용하여 수집된 데이터의 날짜 범위 및 시간을 제공합니다.</block>
+  <block id="43edfc2e70d40761eafc22f44f15e60a" category="paragraph">VM 인벤토리 요약 * 섹션은 VM 수와 총 스토리지 용량을 반영하기 위해 인벤토리 파일에서 채워집니다.</block>
+  <block id="694a4615408e2c20273a3b2eddddc05f" category="list-text">범위 * 페이지의 목록에서 AWS 마이그레이션에 포함할 VM을 선택합니다. 각 VM의 전원 상태와 VM이 상주하는 데이터 센터 및 클러스터를 기준으로 목록을 필터링할 수 있습니다.</block>
+  <block id="06be6f495115a5a35b66e96726f02c68" category="paragraph">VM 목록에서 열로 표시할 VM 정보의 유형을 선택할 수 있습니다.</block>
+  <block id="42f16e28c3177812ada64d38e636ae26" category="list-text">배포 계획 데이터를 계정에 저장하려면 * 계획 관리 &gt; 계획 저장 * 을 선택합니다. 이렇게 하면 나중에 유사한 요구 사항이 있는 시스템을 배포할 때 서식 파일로 사용할 계획을 가져올 수 있습니다. 저장하기 전에 계획의 이름을 지정할 수 있습니다.</block>
+  <block id="a1d4e19ec2439c8dc7cd938fc77c75bf" category="list-text">마이그레이션 계획을 컴퓨터에 .json 형식의 템플릿으로 저장하려면 * 계획 관리 &gt; 계획 내보내기 * 를 선택합니다. 나중에 계획을 가져와 요구 사항이 유사한 시스템을 배포할 때 템플릿으로 사용할 수 있습니다.</block>
+  <block id="edb193ada9589bdd34ce3be340dd56b8" category="list-text">계획을 배포할 수 있도록 배포 계획을 .pdf 형식으로 다운로드하려면 * 계획 관리 &gt; 보고서 다운로드 * 를 선택하십시오.</block>
+  <block id="12b1a213ece510a085b9e12a71432992" category="list-text">외부 데이터 저장소 배포 계획을 .csv 형식으로 다운로드하려면 * 계획 관리 &gt; 인스턴스 저장소 배포 다운로드 * 를 선택하여 새로운 클라우드 기반 지능형 데이터 인프라를 만들 수 있습니다.</block>
+  <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">다음 중 하나를 수행합니다.</block>
+  <block id="1b0022b023293239665220628da7a16c" category="list-text">저장된 계획 로드 * 를 선택합니다.</block>
+  <block id="f3029172ae69383e67245128a26c3e63" category="list-text">목록에서 가져올 계획을 선택합니다.</block>
+  <block id="77e0db0ca8a943ba2d5e456b53ecdf89" category="list-text">Load * 를 선택합니다.</block>
+  <block id="32411f6422d4823926cd1776f5933ad4" category="list-text">내 컴퓨터에서 * 를 선택합니다.</block>
+  <block id="1faf4fef6046370079cb5fb1e673a625" category="paragraph">Review plan * 페이지가 표시됩니다. . 이전 페이지에 액세스하고 이전 섹션에 설명된 대로 계획에 대한 설정을 수정하려면 * Previous *(이전 *)를 선택할 수 있습니다. . 요구 사항에 맞게 계획을 사용자 지정한 후에는 계획을 저장하거나 계획 보고서를 PDF 파일로 다운로드할 수 있습니다.</block>
+  <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">BlueXP  워크로드 팩토리 및 스토리지 솔루션 및 서비스와 관련된 기술 지원을 받으려면 지원 등록을 해야 합니다. 워크로드 공장 과는 별도의 웹 기반 콘솔인 BlueXP  콘솔에서 지원을 등록해야 합니다.</block>
+  <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">지원을 등록한다고 해서 클라우드 공급자 파일 서비스에 대한 NetApp 지원이 활성화되지 않습니다. 클라우드 공급자 파일 서비스, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품에 대한 워크로드 공장 설명서의 "도움말 얻기"를 참조하십시오.</block>
+  <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025년 1월 5일</block>
+  <block id="c12526e52dcc59e8997a1d5b998bdbcb" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 2024년 9월 19일</block>
+  <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024년 9월 1일</block>
 </blocks>
