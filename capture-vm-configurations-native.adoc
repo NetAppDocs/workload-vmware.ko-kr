@@ -34,7 +34,7 @@ VM에서 장기 통계(일일 통계)를 캡처하려면 vSphere 관리 콘솔(V
 
 .단계
 . 중 하나를 사용하여 워크로드 팩토리에 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] 로그인합니다.
-. VMware 워크로드 타일에서 * 액세스 및 계획 * 을 선택한 다음 * AWS 네이티브 컴퓨팅으로 마이그레이션 * 을 선택합니다. VMware Migration Advisor 시작 화면이 표시됩니다.
+. VMware 워크로드 타일에서 * 평가 및 계획 * 을 선택한 다음 * AWS 네이티브 컴퓨팅으로 마이그레이션 * 을 선택합니다. VMware Migration Advisor 시작 화면이 표시됩니다.
 +
 정보를 검토하여 마이그레이션 관리자의 이점에 대해 알아보십시오.
 
