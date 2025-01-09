@@ -49,22 +49,31 @@ VM에서 장기 통계(일일 통계)를 캡처하려면 vSphere 관리 콘솔(V
 .. PowerShell 및 PowerCLI가 설치된 데이터 수집기를 다운로드한 시스템에 로그인합니다.
 .. 다음 명령을 실행하여 VMware vCenter 서버에 연결합니다.
 +
- Connect-VIServer -server <server_IP>
+[source, console]
+----
+Connect-VIServer -server <server_IP>
+----
 +
 <server_IP>를 VMware 서버의 IP 주소 또는 호스트 이름으로 바꿉니다.
 
-.. 다운로드한 데이터 수집기 스크립트를 실행하고 "일별" 또는 "시간별" VM 통계에 대한 데이터 수집 옵션을 지정합니다.
+.. 다운로드한 데이터 수집기 스크립트를 실행하고 "시간별" 또는 "일별" VM 통계에 대한 데이터 수집 옵션을 지정합니다.
 +
- .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+[source, console]
+----
+./list-vms.ps1 -PerformanceStatisticsTimePeriod <LastHour | LastDay>
+----
 +
 여기서,
 
 +
-*** * true * 는 사용자 지정 기간 동안 1시간 간격으로 IOPS 및 처리량 데이터를 수집합니다.
-*** *FALSE*는 지난 1시간 동안 20초 간격으로 IOPS 및 처리량 데이터를 수집합니다.
+*** * LastHour * 는 지난 1시간 동안 20초 간격으로 IOPS 및 처리량 데이터를 수집합니다.
+*** * LastDay * 는 지난 24시간 동안 5분 간격으로 IOPS 및 처리량 데이터를 수집합니다.
 
 
 
+
++
+선택적으로 옵션을 지정하지 않고 데이터 수집기 스크립트를 실행할 수 있습니다. 이렇게 하면 대화형 메뉴에서 데이터 수집 기간을 선택할 수 있습니다.
 
 
 

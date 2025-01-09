@@ -50,13 +50,19 @@ Prepare for VMware Cloud on AWS migration * 페이지가 표시됩니다.
 .. PowerShell 및 PowerCLI가 설치된 데이터 수집기를 다운로드한 시스템에 로그인합니다.
 .. 다음 명령을 실행하여 VMware vCenter 서버에 연결합니다.
 +
- Connect-VIServer -server <server_IP>
+[source, console]
+----
+Connect-VIServer -server <server_IP>
+----
 +
 <server_IP>를 VMware 서버의 IP 주소 또는 호스트 이름으로 바꿉니다.
 
 .. 다운로드한 데이터 수집기 스크립트를 실행하고 "일별" 또는 "시간별" VM 통계에 대한 데이터 수집 옵션을 지정합니다.
 +
- .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+[source, console]
+----
+./list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+----
 +
 여기서,
 

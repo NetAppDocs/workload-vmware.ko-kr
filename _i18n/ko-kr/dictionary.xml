@@ -496,7 +496,6 @@
   <block id="cde718e2f0bf0ef80eb31becc18c4787" category="list-text">* 마이그레이션 계획 저장 또는 다운로드 *: 이제 마이그레이션 계획을 저장하거나 다운로드하고 마이그레이션 계획을 로드하여 마이그레이션 관리자를 채울 수 있습니다. 마이그레이션 계획을 저장하면 작업 부하 공장 계정과 함께 계획이 저장됩니다.</block>
   <block id="42ec77b942403dfbfa1bb7908218848c" category="list-text">* 향상된 VM 선택 *: VMware용 BlueXP  워크로드 팩토리에서는 이제 마이그레이션 배포에 포함할 VM 목록의 필터링 및 검색을 지원합니다.</block>
   <block id="00cb1da4c4dda4c1e1894d6c1f8a7487" category="paragraph">NetApp Migration Advisor VM Collector 스크립트는 RVTools에서 수집하는 것과 유사한 방식으로 vCenter에서 VM 구성 정보를 수집하지만, 현재 VM 성능 데이터를 캡처하여 실제 읽기/쓰기 IOPS 및 처리량 통계를 제공합니다. 스크립트는 * 단기 데이터 수집 * 장기 데이터 수집이라는 두 가지 모드 중 하나로 사용할 수 있습니다</block>
-  <block id="2b2099b87f7c704c69c0981f3e339373" category="list-text">* true * 는 사용자 지정 기간 동안 1시간 간격으로 IOPS 및 처리량 데이터를 수집합니다.</block>
   <block id="b6a4501cc05e54e2e5a513c3b552183a" category="paragraph">NetApp은 BlueXP  워크로드 팩토리 및 클라우드 서비스를 다양한 방식으로 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
   <block id="261966eaf033c38f6934f2c8fc36d79c" category="paragraph">FSx for ONTAP, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 워크로드 공장 설명서의 "도움말 얻기"를 참조하십시오.</block>
   <block id="5b49df4e58e2a4750acd8bfa8687ccd6" category="paragraph">현재 보고 있는 작업 부하 공장 문서입니다.</block>
@@ -531,4 +530,8 @@
   <block id="b989004e18a26f3c98cfe95fa122af6c" category="list-text">이전 페이지에 액세스하고 이전 섹션에 설명된 대로 계획에 대한 설정을 수정하려면 * Previous *(이전 *)를 선택할 수 있습니다.</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">요구 사항에 맞게 계획을 사용자 지정한 후에는 계획을 저장하거나 계획 보고서를 PDF 파일로 다운로드할 수 있습니다.</block>
   <block id="8ee9b2adbe4d5a2c623d823af805b9a0" category="list-text">VMware 워크로드 타일에서 * 평가 및 계획 * 을 선택한 다음 * AWS에서 VMware Cloud로 마이그레이션 * 을 선택합니다. VMware Migration Advisor 기본 페이지가 표시됩니다.</block>
+  <block id="3d749d00ccdbb179e634ecc56aff4377" category="list-text">다운로드한 데이터 수집기 스크립트를 실행하고 "시간별" 또는 "일별" VM 통계에 대한 데이터 수집 옵션을 지정합니다.</block>
+  <block id="b2d8e0c32623281035bb9ce3ea340526" category="list-text">* LastHour * 는 지난 1시간 동안 20초 간격으로 IOPS 및 처리량 데이터를 수집합니다.</block>
+  <block id="c3aef4fe00d86c06f8e8b666bd7c9f02" category="list-text">* LastDay * 는 지난 24시간 동안 5분 간격으로 IOPS 및 처리량 데이터를 수집합니다.</block>
+  <block id="f0cbed8418df3c7702700c7e26a8bca8" category="paragraph">선택적으로 옵션을 지정하지 않고 데이터 수집기 스크립트를 실행할 수 있습니다. 이렇게 하면 대화형 메뉴에서 데이터 수집 기간을 선택할 수 있습니다.</block>
 </blocks>
