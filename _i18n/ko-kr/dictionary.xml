@@ -495,7 +495,6 @@
   <block id="06d7f560c7d6e855b18ae8d7b5014e05" category="doc">VMware를 위한 BlueXP  워크로드 팩토리의 새로운 기능</block>
   <block id="cde718e2f0bf0ef80eb31becc18c4787" category="list-text">* 마이그레이션 계획 저장 또는 다운로드 *: 이제 마이그레이션 계획을 저장하거나 다운로드하고 마이그레이션 계획을 로드하여 마이그레이션 관리자를 채울 수 있습니다. 마이그레이션 계획을 저장하면 작업 부하 공장 계정과 함께 계획이 저장됩니다.</block>
   <block id="42ec77b942403dfbfa1bb7908218848c" category="list-text">* 향상된 VM 선택 *: VMware용 BlueXP  워크로드 팩토리에서는 이제 마이그레이션 배포에 포함할 VM 목록의 필터링 및 검색을 지원합니다.</block>
-  <block id="00cb1da4c4dda4c1e1894d6c1f8a7487" category="paragraph">NetApp Migration Advisor VM Collector 스크립트는 RVTools에서 수집하는 것과 유사한 방식으로 vCenter에서 VM 구성 정보를 수집하지만, 현재 VM 성능 데이터를 캡처하여 실제 읽기/쓰기 IOPS 및 처리량 통계를 제공합니다. 스크립트는 * 단기 데이터 수집 * 장기 데이터 수집이라는 두 가지 모드 중 하나로 사용할 수 있습니다</block>
   <block id="b6a4501cc05e54e2e5a513c3b552183a" category="paragraph">NetApp은 BlueXP  워크로드 팩토리 및 클라우드 서비스를 다양한 방식으로 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
   <block id="261966eaf033c38f6934f2c8fc36d79c" category="paragraph">FSx for ONTAP, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 워크로드 공장 설명서의 "도움말 얻기"를 참조하십시오.</block>
   <block id="5b49df4e58e2a4750acd8bfa8687ccd6" category="paragraph">현재 보고 있는 작업 부하 공장 문서입니다.</block>
@@ -534,4 +533,7 @@
   <block id="b2d8e0c32623281035bb9ce3ea340526" category="list-text">* LastHour * 는 지난 1시간 동안 20초 간격으로 IOPS 및 처리량 데이터를 수집합니다.</block>
   <block id="c3aef4fe00d86c06f8e8b666bd7c9f02" category="list-text">* LastDay * 는 지난 24시간 동안 5분 간격으로 IOPS 및 처리량 데이터를 수집합니다.</block>
   <block id="f0cbed8418df3c7702700c7e26a8bca8" category="paragraph">선택적으로 옵션을 지정하지 않고 데이터 수집기 스크립트를 실행할 수 있습니다. 이렇게 하면 대화형 메뉴에서 데이터 수집 기간을 선택할 수 있습니다.</block>
+  <block id="cd37b5cf2c47ed75e8cfcfb7e7f8bb1f" category="paragraph">NetApp Migration Advisor VM Collector 스크립트는 RVTools에서 수집하는 것과 유사한 방식으로 vCenter에서 VM 구성 정보를 수집하지만, 현재 VM 성능 데이터를 캡처하여 실제 읽기/쓰기 IOPS 및 처리량 통계를 제공합니다. 스크립트는 다음 두 가지 모드 중 하나로 사용할 수 있습니다.</block>
+  <block id="883783e9620901e0ec065bb8ae5613d2" category="list-text">시간별 데이터 수집</block>
+  <block id="f90051c528271959eb69e542599c2556" category="list-text">일일 데이터 수집</block>
 </blocks>
