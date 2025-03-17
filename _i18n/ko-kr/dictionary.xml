@@ -405,7 +405,6 @@
   <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">VMware Migration Advisor 데이터 축소율이 도움이 됩니다</block>
   <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">이번 VMware용 Workload Factory 릴리즈에는 데이터 축소율 지원 기능이 있습니다. 데이터 축소율 도우미를 통해 AWS 클라우드 온보딩을 준비할 때 VMware 인벤토리 및 스토리지 공간에 가장 적합한 비율을 결정할 수 있습니다.</block>
   <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">어떤 비율을 선택할지 잘 모르겠으면 * 결정 도움 요청 * 을 선택합니다. Data reduction ratio assistant _ 대화상자가 나타납니다. VM 인벤토리 및 스토리지 자산에 적용되는 설명을 선택하십시오. 보조자는 적절한 데이터 축소율을 권장합니다. 권장 비율을 사용하려면 * 적용 * 을 선택합니다.</block>
-  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024년 11월 3일</block>
   <block id="0a51c23a9b33a88216f2dbd3a38c1be3" category="doc">VMware용 워크로드 팩토리 최초 릴리즈</block>
   <block id="c9b4182f157d4d581536f53df8cd512d" category="paragraph">VMware용 워크로드 팩토리에서는 이제 VMware 마이그레이션 어드바이저를 사용하여 Amazon EC2로의 마이그레이션을 지원합니다.</block>
   <block id="21558f6938275b17b39171353ad95a65" category="paragraph">이번 VMware용 워크로드 팩토리에는 기능 및 안정성이 향상되었으며 VMware 마이그레이션 관리자를 사용할 때 마이그레이션 계획을 가져오고 내보내는 기능이 포함되어 있습니다.</block>
@@ -442,7 +441,6 @@
   <block id="0df1d5b9b1a14b5b9e7736c356eb7cb8" category="paragraph"><block ref="45ba3a90dd25508f5576e9402f61bd51" category="inline-link-macro-rx"></block>..</block>
   <block id="056634bec4a153903ebb9b769277f4d7" category="summary">NetApp 기술 지원에 대한 지원 케이스를 생성하기 전에 워크로드 팩토리에 NetApp Support 사이트 계정을 추가한 다음 지원을 등록해야 합니다.</block>
   <block id="034aea94174faaaaa75a9f1c1ac4b15a" category="summary">워크로드 팩토리의 VMware 마이그레이션 어드바이저 구성 요소의 새로운 기능에 대해 알아보십시오.</block>
-  <block id="5df361f1373a0606daf80b69ecfa0a96" category="paragraph">워크로드 팩토리의 VMware Cloud Migration Advisor 구성 요소에 대한 새로운 기능에 대해 알아보십시오.</block>
   <block id="c3aaf7c410f8a7244dafe42037dc12ce" category="sidebar">VMware 설명서를 위한 BlueXP  워크로드 팩토리</block>
   <block id="1d194f6c398ca78aaffd8c430203e1ec" category="doc">Amazon EC2 마이그레이션 어드바이저 개선 사항</block>
   <block id="1e5e06dbbf4cb0bb655126bc90757161" category="paragraph">이번 릴리즈의 VMware용 BlueXP  워크로드 팩토리는 마이그레이션 조언자 환경에서 다음과 같은 여러 가지 향상된 기능을 제공합니다.</block>
@@ -505,7 +503,6 @@
   <block id="246fd576936aa6a7e609ed87c073c207" category="paragraph">데이터 수집 정보 * 섹션은 Onboarding Advisor 데이터 수집기를 사용하여 수집된 데이터의 날짜 범위 및 시간을 제공합니다.</block>
   <block id="43edfc2e70d40761eafc22f44f15e60a" category="paragraph">VM 인벤토리 요약 * 섹션은 VM 수와 총 스토리지 용량을 반영하기 위해 인벤토리 파일에서 채워집니다.</block>
   <block id="694a4615408e2c20273a3b2eddddc05f" category="list-text">범위 * 페이지의 목록에서 AWS 마이그레이션에 포함할 VM을 선택합니다. 각 VM의 전원 상태와 VM이 상주하는 데이터 센터 및 클러스터를 기준으로 목록을 필터링할 수 있습니다.</block>
-  <block id="06be6f495115a5a35b66e96726f02c68" category="paragraph">VM 목록에서 열로 표시할 VM 정보의 유형을 선택할 수 있습니다.</block>
   <block id="a1d4e19ec2439c8dc7cd938fc77c75bf" category="list-text">마이그레이션 계획을 컴퓨터에 .json 형식의 템플릿으로 저장하려면 * 계획 관리 &gt; 계획 내보내기 * 를 선택합니다. 나중에 계획을 가져와 요구 사항이 유사한 시스템을 배포할 때 템플릿으로 사용할 수 있습니다.</block>
   <block id="edb193ada9589bdd34ce3be340dd56b8" category="list-text">계획을 배포할 수 있도록 배포 계획을 .pdf 형식으로 다운로드하려면 * 계획 관리 &gt; 보고서 다운로드 * 를 선택하십시오.</block>
   <block id="12b1a213ece510a085b9e12a71432992" category="list-text">외부 데이터 저장소 배포 계획을 .csv 형식으로 다운로드하려면 * 계획 관리 &gt; 인스턴스 저장소 배포 다운로드 * 를 선택하여 새로운 클라우드 기반 지능형 데이터 인프라를 만들 수 있습니다.</block>
@@ -517,7 +514,6 @@
   <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">BlueXP  워크로드 팩토리 및 스토리지 솔루션 및 서비스와 관련된 기술 지원을 받으려면 지원 등록을 해야 합니다. 워크로드 공장 과는 별도의 웹 기반 콘솔인 BlueXP  콘솔에서 지원을 등록해야 합니다.</block>
   <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">지원을 등록한다고 해서 클라우드 공급자 파일 서비스에 대한 NetApp 지원이 활성화되지 않습니다. 클라우드 공급자 파일 서비스, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품에 대한 워크로드 공장 설명서의 "도움말 얻기"를 참조하십시오.</block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025년 1월 5일</block>
-  <block id="c12526e52dcc59e8997a1d5b998bdbcb" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 2024년 9월 19일</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024년 9월 1일</block>
   <block id="c86d184e30a296fa80a6a87a91997466" category="list-text">VMware 워크로드 타일에서 * 평가 및 계획 * 을 선택한 다음 * AWS 네이티브 컴퓨팅으로 마이그레이션 * 을 선택합니다. VMware Migration Advisor 시작 화면이 표시됩니다.</block>
   <block id="1d9b4d532dc0a6a0e4f5f8e48c2bf2fc" category="list-text">VMware 워크로드 타일에서 * 평가 및 계획 * 을 선택한 다음 * AWS에서 VMware Cloud로 마이그레이션 * 을 선택합니다.</block>
@@ -536,4 +532,17 @@
   <block id="cd37b5cf2c47ed75e8cfcfb7e7f8bb1f" category="paragraph">NetApp Migration Advisor VM Collector 스크립트는 RVTools에서 수집하는 것과 유사한 방식으로 vCenter에서 VM 구성 정보를 수집하지만, 현재 VM 성능 데이터를 캡처하여 실제 읽기/쓰기 IOPS 및 처리량 통계를 제공합니다. 스크립트는 다음 두 가지 모드 중 하나로 사용할 수 있습니다.</block>
   <block id="883783e9620901e0ec065bb8ae5613d2" category="list-text">시간별 데이터 수집</block>
   <block id="f90051c528271959eb69e542599c2556" category="list-text">일일 데이터 수집</block>
+  <block id="cec87a8931004e5402a3f18575682723" category="paragraph">이 VMware용 BlueXP  워크로드 팩토리에는 Amazon EC2 마이그레이션 조언자 환경이 여러 가지 향상되었습니다.</block>
+  <block id="13ba1ae4c82947e19de7e94ee0eaab45" category="list-text">* Estimated instance type *: 마이그레이션 어드바이저는 이제 환경의 요구 사항을 검토하고 각 VM에 대해 예상되는 Amazon EC2 인스턴스 유형을 제공할 수 있습니다. 마이그레이션 관리자의 범위 단계에서 각 VM에 대한 예상 인스턴스 유형을 포함하도록 선택할 수 있습니다.</block>
+  <block id="3006f7737352e976899743eaf6e2b28e" category="list-text">* Amazon EBS 볼륨을 추천할 수 있는 능력 *: 이제 마이그레이션 어드바이저는 특정 지역의 특정 용량 또는 성능 요구사항으로 인해 Amazon FSx for NetApp ONTAP 대신 Amazon EBS(Elastic Block Store)로 데이터 볼륨을 마이그레이션할 것을 권장합니다.</block>
+  <block id="b4a4e72af96c527b186a3d8f12952f22" category="list-text">* 향상된 파일 시스템 자동 할당 *: NetApp ONTAP용 Amazon FSx 파일 시스템 할당이 개선되어 비용을 최적화하고 처리량을 최소화할 수 있습니다.</block>
+  <block id="ff2dedc9d43416dc5120ca5c85f276db" category="paragraph">VM 목록에서 열로 표시할 VM 정보의 유형을 선택할 수 있습니다. 예를 들어 SELECTING_Estimated instance type _ 은(는) VM 리소스 요구 사항에 따라 각 VM에 대한 예상 Amazon EC2 인스턴스 유형이 포함된 열을 표시합니다.</block>
+  <block id="f56dc26bb43a8ffda27f608798af3995" category="admonition">볼륨에 특정 지역에서 Amazon FSx for NetApp ONTAP 파일 시스템의 기능을 초과하는 용량 또는 성능 요구 사항이 있는 경우 마이그레이션 관리자는 볼륨을 Amazon EBS 파일 시스템에 구축할 것을 권장합니다.</block>
+  <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025년 3월 2일</block>
+  <block id="a436f06d47357224bdd3d8f2871de84a" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 2024년 11월 3일</block>
+  <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024년 9월 19일</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 및 커뮤니티</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
+  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP 블로그</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
 </blocks>

@@ -35,3 +35,11 @@ indexpage:
       url: launch-onboarding-advisor-native.html
     - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
       url: deploy-fsx-file-system.html
+  - title: 블로그 및 커뮤니티
+    links:
+    - title: NetApp 커뮤니티
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: BlueXP 블로그
+      url: https://bluexp.netapp.com/blog
+    - title: 클라우드 웨비나
+      url: https://bluexp.netapp.com/events
