@@ -15,6 +15,22 @@ summary: 워크로드 팩토리의 VMware 마이그레이션 어드바이저 구
 
 
 
+== 2025년 3월 30일
+
+
+
+=== Amazon EC2 마이그레이션 어드바이저 개선 사항
+
+이 VMware용 BlueXP  워크로드 팩토리에는 Amazon EC2 마이그레이션 조언자 환경이 여러 가지 향상되었습니다.
+
+* * 향상된 볼륨 할당 지침 *: EC2 마이그레이션 어드바이저의 볼륨 할당 정보는 "분류" 및 "패키지" 단계에서 읽기 편이성과 사용성이 향상되었습니다. 각 볼륨에 대한 보다 유용한 정보가 표시되므로 볼륨을 보다 잘 식별하고 볼륨을 할당하는 방법을 결정할 수 있습니다.
+* * 데이터 수집기 스크립트 효율성 향상 *: EC2 마이그레이션 어드바이저 데이터 수집기 스크립트는 소규모 VM 배포를 위해 데이터를 수집할 때 CPU 사용을 최적화합니다.
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"]
+
+
+
 == 2025년 3월 2일
 
 
@@ -44,11 +60,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 * * 향상된 VM 선택 *: VMware용 BlueXP  워크로드 팩토리에서는 이제 마이그레이션 배포에 포함할 VM 목록의 필터링 및 검색을 지원합니다.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"]
-
-
-
-== 2024년 12월 1일
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"] == 2024년 12월 1일
 
 
 
@@ -61,7 +73,11 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 * * 빠른 경험과 고급 경험 * : 마이그레이션 관리자를 사용하면 RVtools를 사용하여 빠른 마이그레이션 경험을 선택하거나 마이그레이션 어드바이저 데이터 수집기를 사용하는 고급 환경을 선택할 수 있습니다.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"] == 2024년 11월 3일
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"]
+
+
+
+== 2024년 11월 3일
 
 
 

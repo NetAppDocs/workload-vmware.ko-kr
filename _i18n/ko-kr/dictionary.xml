@@ -478,7 +478,6 @@
   <block id="b9fb9729caa36dac48ae61f984d2ec85" category="paragraph">VMware용 BlueXP  workload factory는 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석할 수 있는 마이그레이션 관리자를 제공합니다. 그런 다음 마이그레이션 어드바이저는 권장 VM 레이아웃을 Amazon EC2 또는 VMware Cloud on AWS vSphere 클러스터 에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용하기 위한 계획을 생성합니다.</block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  워크로드 공장</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
-  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024년 12월 1일</block>
   <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">VMware 워크로드를 Amazon EC2로 마이그레이션하기 전에 VM 구성을 캡처하십시오</block>
   <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">VMware 워크로드를 사용하여 VMware Cloud로 마이그레이션하기 전에 VM 구성을 캡처하십시오</block>
   <block id="3173329d2df7808ef89c684e36fe95db" category="doc">VMware 워크로드에 권장되는 FSx for ONTAP 파일 시스템을 구축하십시오</block>
@@ -539,10 +538,14 @@
   <block id="ff2dedc9d43416dc5120ca5c85f276db" category="paragraph">VM 목록에서 열로 표시할 VM 정보의 유형을 선택할 수 있습니다. 예를 들어 SELECTING_Estimated instance type _ 은(는) VM 리소스 요구 사항에 따라 각 VM에 대한 예상 Amazon EC2 인스턴스 유형이 포함된 열을 표시합니다.</block>
   <block id="f56dc26bb43a8ffda27f608798af3995" category="admonition">볼륨에 특정 지역에서 Amazon FSx for NetApp ONTAP 파일 시스템의 기능을 초과하는 용량 또는 성능 요구 사항이 있는 경우 마이그레이션 관리자는 볼륨을 Amazon EBS 파일 시스템에 구축할 것을 권장합니다.</block>
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025년 3월 2일</block>
-  <block id="a436f06d47357224bdd3d8f2871de84a" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 2024년 11월 3일</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024년 9월 19일</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 및 커뮤니티</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP 블로그</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
+  <block id="6e62567f7c9b240a118b25fc64f2991f" category="list-text">* 향상된 볼륨 할당 지침 *: EC2 마이그레이션 어드바이저의 볼륨 할당 정보는 "분류" 및 "패키지" 단계에서 읽기 편이성과 사용성이 향상되었습니다. 각 볼륨에 대한 보다 유용한 정보가 표시되므로 볼륨을 보다 잘 식별하고 볼륨을 할당하는 방법을 결정할 수 있습니다.</block>
+  <block id="5fc07f589f318bbf4f9475dbf3754c9f" category="list-text">* 데이터 수집기 스크립트 효율성 향상 *: EC2 마이그레이션 어드바이저 데이터 수집기 스크립트는 소규모 VM 배포를 위해 데이터를 수집할 때 CPU 사용을 최적화합니다.</block>
+  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025년 3월 30일</block>
+  <block id="2b689bb88bc16807c840177b45816e7f" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 2024년 12월 1일</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024년 11월 3일</block>
 </blocks>
