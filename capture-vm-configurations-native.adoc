@@ -11,11 +11,33 @@ summary: Migration Advisor VM Collector 스크립트 또는 RVTools를 사용하
 
 
 [role="lead"]
-Migration Advisor VM Collector 스크립트 또는 RVTools를 사용하여 현재 VM 구성을 캡처할 수 있습니다. Migration Advisor VM Collector 스크립트는 가장 정확한 계획을 위해 VM 구성과 성능 데이터를 모두 수집하므로 이 스크립트를 사용하는 것이 좋습니다.
+마이그레이션 어드바이저 VM 데이터 수집기 스크립트, RVTools 또는 NetApp 데이터 인프라 Insights를 사용하여 현재 VM 구성을 캡처할 수 있습니다. 이러한 옵션은 가장 정확한 계획을 위해 VM 구성과 성능 데이터를 모두 수집하므로 Migration Advisor VM Collector 스크립트 또는 Data Infrastructure Insights를 사용하는 것이 좋습니다.
 
 [role="tabbed-block"]
 ====
-.Migration Advisor VM Collector 스크립트를 사용합니다
+.RVTools 사용(빠른 평가)
+--
+RVTools는 vCenter 및 ESX 서버(5.x - 8.0)와 상호 작용하여 VMware 가상 환경에 대한 정보를 캡처하는 Windows 애플리케이션입니다. VM, CPU, 메모리, 디스크, 클러스터에 대한 정보 수집 ESX 호스트, 데이터 저장소 등 이 정보를 xlsx 파일로 내보내어 마이그레이션 관리자에서 사용할 수 있습니다.
+
+https://www.robware.net/home["RVTools에 대해 자세히 알아보십시오"^]
+
+.단계
+. 에서 RVTools 4.4.2 이상을 다운로드하여 설치합니다 https://www.robware.net/download["RVTools 웹 사이트"^]
+. RVTools를 실행하고 대상 vCenter Server에 로그인합니다.
++
+그러면 해당 vCenter Server에 대한 정보가 캡처됩니다.
+
+. VMware 정보를 xlsx 또는 xls 파일로 내보냅니다.
++
+ https://resources.robware.net/resources/prod/RVTools.pdf["RVTools 설명서"^]자세한 내용은 의 "commandline parameters" 장을 참조하십시오.
+
+
+
+.결과
+결과가 포함된 xlsx 또는 xls 파일이 작업 디렉터리에 저장됩니다.
+
+--
+.Migration Advisor VM Collector 스크립트 사용(세부 계획)
 --
 NetApp Migration Advisor VM Collector 스크립트는 RVTools에서 수집하는 것과 유사한 방식으로 vCenter에서 VM 구성 정보를 수집하지만, 현재 VM 성능 데이터를 캡처하여 실제 읽기/쓰기 IOPS 및 처리량 통계를 제공합니다. 스크립트는 다음 두 가지 모드 중 하나로 사용할 수 있습니다.
 
@@ -85,26 +107,35 @@ Connect-VIServer -server <server_IP>
 스크립트는 현재 작업 디렉토리의 이름에 타임스탬프가 있는 압축된 파일을 출력합니다. zip 파일에는 모든 VM 및 해당 속성의 목록이 IOPS 및 처리량 데이터와 함께 포함됩니다.
 
 --
-.RVTools 소프트웨어를 사용합니다
+.NetApp 데이터 인프라 인사이트 사용(상세 계획)
 --
-RVTools는 vCenter 및 ESX 서버(5.x - 8.0)와 상호 작용하여 VMware 가상 환경에 대한 정보를 캡처하는 Windows 애플리케이션입니다. VM, CPU, 메모리, 디스크, 클러스터에 대한 정보 수집 ESX 호스트, 데이터 저장소 등 이 정보를 xlsx 파일로 내보내어 마이그레이션 관리자에서 사용할 수 있습니다.
+NetApp 데이터 인프라 Insights는 전체 인프라에 대한 가시성을 제공하는 클라우드 인프라 모니터링 툴입니다. 마이그레이션 어드바이저가 VMware 인프라에 대한 정보를 수집할 수 있도록 마이그레이션 어드바이저와 Data Infrastructure Insights 간에 임시 API 통신을 활성화해야 합니다.
 
-https://www.robware.net/home["RVTools에 대해 자세히 알아보십시오"^]
+https://docs.netapp.com/us-en/data-infrastructure-insights/["Data Infrastructure Insights에 대해 자세히 알아보십시오"^]
 
 .단계
-. 에서 RVTools 4.4.2 이상을 다운로드하여 설치합니다 https://www.robware.net/download["RVTools 웹 사이트"^]
-. RVTools를 실행하고 대상 vCenter Server에 로그인합니다.
+. Data Infrastructure Insights 계정에 로그인합니다.
+. 측면 탐색 메뉴에서 * Admin * 을 선택합니다.
+. 결과 메뉴에서 * API 액세스 * 를 선택합니다.
+. API 액세스 토큰 * 탭에서 * + API 액세스 토큰 * 을 선택합니다.
 +
-그러면 해당 vCenter Server에 대한 정보가 캡처됩니다.
+API 액세스 토큰 만들기 대화 상자가 나타납니다.
 
-. VMware 정보를 xlsx 또는 xls 파일로 내보냅니다.
+. API 토큰의 이름과 설명을 입력하십시오.
+. 이 토큰을 호출하는 데 사용할 API 유형 * 에서 다음 중 하나를 선택합니다.
 +
- https://resources.robware.net/resources/prod/RVTools.pdf["RVTools 설명서"^]자세한 내용은 의 "commandline parameters" 장을 참조하십시오.
+** 획득 장치
+** 자산
+** 데이터 수집
 
 
+. 권한 * 아래에서 * 읽기 전용 * 을 선택합니다.
+. 토큰 만료 시간 * 에서 유효한 API 토큰이 필요한 기간을 선택합니다.
+. Kubernetes용 토큰 자동 회전 * 의 선택을 취소합니다.
+. 저장 * 을 선택합니다.
+. Copy API Access Token * 을 선택합니다.
+. 이 토큰을 워크로드 팩토리 마이그레이션 조언자와 함께 사용할 수 있도록 준비하십시오.
 
-.결과
-결과가 포함된 xlsx 또는 xls 파일이 작업 디렉터리에 저장됩니다.
 
 --
 ====

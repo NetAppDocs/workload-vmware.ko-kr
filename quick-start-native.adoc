@@ -28,7 +28,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["자격 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] vSphere 환경의 현재 VM 구성을 캡처합니다
 [role="quick-margin-para"]
-마이그레이션 어드바이저 VM 수집기 스크립트 또는 RVTools를 사용하여 현재 VM 구성을 캡처하여 배포 계획을 생성할 수 있습니다. 기존 배포 계획을 템플릿으로 가져온 다음 필요한 특성을 수정할 수도 있습니다.
+마이그레이션 어드바이저 VM 수집기 스크립트, RVTools 또는 NetApp 데이터 인프라 Insights를 사용하여 배포 계획을 생성하기 전에 현재 VM 구성을 캡처할 수 있습니다. 기존 배포 계획을 템플릿으로 가져온 다음 필요한 특성을 수정할 수도 있습니다.
 
 [role="quick-margin-para"]
 link:capture-vm-configurations-native.html["현재 VM 구성을 캡처하는 방법에 대해 알아봅니다"]..

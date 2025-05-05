@@ -412,7 +412,6 @@
   <block id="11bdb1b485383914846d0ec01ecbf8da" category="list-text">중 하나를 사용하여 워크로드 팩토리에<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block> 로그인합니다.</block>
   <block id="d976ce7b00249b4ad474f3d0bbefedbc" category="summary">권장 FSx for ONTAP 파일 시스템 또는 경우에 따라 파일 시스템이 정확한 요구사항을 충족하는지 확인한 후 워크로드 팩토리를 사용하여 AWS 환경에 시스템을 구축할 수 있습니다.</block>
   <block id="8d3bf2572336618eb2a21a708a9e620f" category="paragraph">권장 FSx for ONTAP 파일 시스템(또는 경우에 따라 여러 파일 시스템)이 정확한 요구사항을 충족하는지 확인한 후 워크로드 팩토리를 사용하여 AWS 환경에 시스템을 구축할 수 있습니다.</block>
-  <block id="2589791e68019a74d4c1966e01ee9a23" category="paragraph">워크로드 공장 계정에 추가한 정책 및 권한에 따라 워크로드 팩토리를 사용하여 FSx for ONTAP 파일 시스템을 완전히 구축할 수 있습니다(자동화 모드 사용). 사용 권한이 더 적거나(읽기 모드) 권한이 없는 경우(기본 모드) 코드박스의 CloudFormation 정보를 사용하고 AWS에 FSx for ONTAP 파일 시스템을 직접 배포해야 합니다.</block>
   <block id="a17419346eeea7a8b754d54e457aad0b" category="list-text">* AWS 자격 증명 *: 워크로드 공장에 FSx for ONTAP 파일 시스템을 직접 생성하는 데 필요한 권한을 부여할 자격 증명을 선택하거나 추가합니다. 또한 코드상자에서 CloudFormation 코드를 선택하고 AWS에 FSx for ONTAP 파일 시스템을 직접 구축할 수도 있습니다.</block>
   <block id="894106a56db6962222de989043e29e02" category="summary">NetApp는 다양한 방법으로 워크로드 팩토리를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
   <block id="b634387d5ccb17a06840d1d9c30bd867" category="summary">NetApp 워크로드 팩토리에 로그인하여 VMware 마이그레이션 조언자에 액세스합니다. 마법사의 단계를 따라 필요에 맞게 사용자 지정된 배포 계획 또는 마이그레이션 계획을 만듭니다.</block>
@@ -422,13 +421,6 @@
   <block id="9b6fcbe67fd66ce427a7c15ff055c322" category="paragraph">워크로드 팩토리얼에 로그인하려는 시스템에서 기존 배포 계획에 대한 .json 파일에 액세스할 수 있어야 합니다.</block>
   <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link">워크로드 공장 개요</block>
   <block id="41dde101808f5228034390c3766fcad7" category="paragraph">작업 부하 공장에 대한 자세한 내용은 을<block ref="5b162ed7e5df7e2d72a6505743e2b555" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">워크로드 팩토리 사용을 위한 툴</block>
-  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">다음 툴과 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다.</block>
-  <block id="b49621858369606c8835ffee4bc53434" category="list-text">* 워크로드 팩토리 콘솔 * : 워크로드 팩토리 콘솔은 애플리케이션 및 프로젝트에 대한 전체적인 보기를 제공하는 시각적 인터페이스를 제공합니다.</block>
-  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  콘솔 *: BlueXP  콘솔은 하이브리드 인터페이스 환경을 제공하므로 다른 BlueXP  서비스와 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다.</block>
-  <block id="23ae25c2ba38ca6ce35bbc556ab80a83" category="list-text">* REST API *: 워크로드 팩토리 REST API를 통해 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리할 수 있습니다</block>
-  <block id="870c2713113a9cc14410aec5475c932f" category="list-text">* CloudFormation *: AWS CloudFormation 코드를 사용하면 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 워크로드 팩토리 콘솔에서 정의한 작업을 수행할 수 있습니다.</block>
-  <block id="531a2642b7c023ef8b4ec401d5c39c4b" category="list-text">* Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하면 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리할 수 있습니다.</block>
   <block id="80d4b078f6c58ce0995857130402115f" category="paragraph">시작하기 전에 에 대한 이해가 있어야<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block> 합니다.</block>
   <block id="2fd605c5fdf1d57ba01b68838e68dc27" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 워크로드 공장 에 로그인합니다</block>
   <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link">워크로드 팩토리에 계정을 설정합니다</block>
@@ -452,9 +444,6 @@
   <block id="9f0b77a1e3095470cfdf1a84bf5cf034" category="list-text">Codebox 창에서 <block ref="a800f53f7ef8a18e067b4b267fa3a526" category="inline-image-macro-rx" type="image"></block>마이그레이션 어드바이저 데이터 수집기 스크립트("list-vms.ps1"로 이름)를 대상 시스템에 저장하거나 스크립트를 복사하여 적절한 시스템에 붙여 넣을 수 있도록 선택합니다<block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="cc4870c19a7e10403dc983ef555a28d0" category="list-text">배포 계획을 만드는 과정에서 원하는 세부 정보 수준 및 방법을 선택합니다.</block>
   <block id="5586b276ee5d10073c88e1ba47359329" category="list-text">* 빠른 평가 *: 이 옵션은 RVtools 인벤토리 파일을 사용하여 가속화된 프로세스 중에 VM에 대한 정보를 검색하여 클라우드 마이그레이션을 위한 설계 청사진을 생성합니다.</block>
-  <block id="04f2339fe8588e01c3aa7e0fbd8490cf" category="list-text">* 세부 계획 * : 마이그레이션 어드바이저 데이터 수집기 인벤토리 파일을 사용하여 자세한 정보를 수집함으로써 배포 준비가 완료된 설계를 완성합니다.</block>
-  <block id="4fc22904e7ad82e45f6cc6942f96cbe0" category="open-title">빠른 평가</block>
-  <block id="6276c253f2d29f91f984ee9577150c8b" category="list-text">Quick Assessment * 타일을 선택하고 * Next * 를 선택합니다.</block>
   <block id="7e3cc0b2d801781d73ed00ce40074dfe" category="paragraph">Prepare for AWS Cloud OnBoarding * 페이지가 표시됩니다.</block>
   <block id="23ad7ab0fd343203832fd708d413ee18" category="list-text">vm configuration upload_ 섹션에서 <block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>RVTools에 의해 생성된 .xlsx 파일을 선택하고 선택합니다.</block>
   <block id="b201be50fb24455e1169e30ba042483c" category="list-text">* 지역 * : NetApp ONTAP용 Amazon FSx 파일 시스템을 배포할 지역을 선택하십시오. 최적의 성능과 비용 효율성을 위해 일반적으로 기존 Amazon EC2 SDDC를 구축하는 지역과 동일합니다.</block>
@@ -465,8 +454,6 @@
   <block id="4db7ab627ca2119e30a51c404a814e9f" category="list-text">분류 * 페이지에서 구축 과정에서 마이그레이션할 VM 정보, 볼륨 분류 규칙, 볼륨 할당 및 볼륨 목록을 검토한 후 * 다음 * 을 선택합니다.</block>
   <block id="6e8e51789a8fdf8319fae75541361b0d" category="list-text">패키지 * 페이지에서 EC2 인스턴스와 다른 FSx for ONTAP 클러스터에 할당된 볼륨을 검토한 후 * 다음 * 을 선택합니다.</block>
   <block id="45de7b9580db1698613b43e8b89bb740" category="list-text">계획 검토 * 페이지에서 마이그레이션할 모든 VM에 대한 예상 월별 절감 비용 및 비용 추정치를 검토합니다.</block>
-  <block id="03d15192bc504e0564aa6cdec5bfe07e" category="open-title">세부 계획</block>
-  <block id="4a50209580074fac47e3bfdd382fc71e" category="list-text">세부 계획 * 타일을 선택하고 * 다음 * 을 선택합니다.</block>
   <block id="fc48377a5cd8e99f7049cbb809dc2995" category="list-text">vm configuration upload_section에서 migration advisor <block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block> data collector에 의해 생성된 .zip 파일을 선택하고 선택합니다.</block>
   <block id="7e06858f263dfcb3b89a2b54389be478" category="list-text">vm inventory considerations_ 섹션에서 Amazon FSx for NetApp ONTAP 파일 시스템을 구축할 지역을 선택합니다. 최적의 성능과 비용 효율성을 위해 일반적으로 기존 Amazon EC2 SDDC를 구축하는 지역과 동일합니다.</block>
   <block id="518090cfd67cd9305ed824ac9e5cc06e" category="paragraph">완료 * 를 선택하여 VMware 마이그레이션 어드바이저 페이지로 돌아갈 수 있습니다.</block>
@@ -512,7 +499,6 @@
   <block id="32411f6422d4823926cd1776f5933ad4" category="list-text">내 컴퓨터에서 * 를 선택합니다.</block>
   <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">BlueXP  워크로드 팩토리 및 스토리지 솔루션 및 서비스와 관련된 기술 지원을 받으려면 지원 등록을 해야 합니다. 워크로드 공장 과는 별도의 웹 기반 콘솔인 BlueXP  콘솔에서 지원을 등록해야 합니다.</block>
   <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">지원을 등록한다고 해서 클라우드 공급자 파일 서비스에 대한 NetApp 지원이 활성화되지 않습니다. 클라우드 공급자 파일 서비스, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품에 대한 워크로드 공장 설명서의 "도움말 얻기"를 참조하십시오.</block>
-  <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025년 1월 5일</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024년 9월 1일</block>
   <block id="c86d184e30a296fa80a6a87a91997466" category="list-text">VMware 워크로드 타일에서 * 평가 및 계획 * 을 선택한 다음 * AWS 네이티브 컴퓨팅으로 마이그레이션 * 을 선택합니다. VMware Migration Advisor 시작 화면이 표시됩니다.</block>
   <block id="1d9b4d532dc0a6a0e4f5f8e48c2bf2fc" category="list-text">VMware 워크로드 타일에서 * 평가 및 계획 * 을 선택한 다음 * AWS에서 VMware Cloud로 마이그레이션 * 을 선택합니다.</block>
@@ -546,6 +532,51 @@
   <block id="6e62567f7c9b240a118b25fc64f2991f" category="list-text">* 향상된 볼륨 할당 지침 *: EC2 마이그레이션 어드바이저의 볼륨 할당 정보는 "분류" 및 "패키지" 단계에서 읽기 편이성과 사용성이 향상되었습니다. 각 볼륨에 대한 보다 유용한 정보가 표시되므로 볼륨을 보다 잘 식별하고 볼륨을 할당하는 방법을 결정할 수 있습니다.</block>
   <block id="5fc07f589f318bbf4f9475dbf3754c9f" category="list-text">* 데이터 수집기 스크립트 효율성 향상 *: EC2 마이그레이션 어드바이저 데이터 수집기 스크립트는 소규모 VM 배포를 위해 데이터를 수집할 때 CPU 사용을 최적화합니다.</block>
   <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025년 3월 30일</block>
-  <block id="2b689bb88bc16807c840177b45816e7f" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 2024년 12월 1일</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024년 11월 3일</block>
+  <block id="795a0e870c9420e8289ae895de63c851" category="paragraph">이 VMware용 BlueXP  워크로드 팩토리에는 Amazon EC2 마이그레이션 조언자 환경이 다음과 같이 개선되었습니다.</block>
+  <block id="81e3939f348a9727ff017a61306371bd" category="paragraph">* 데이터 소스로서의 NetApp 데이터 인프라 인사이트 *: 이제 워크로드 팩토리가 NetApp 데이터 인프라 통찰력과 직접 연결되어 EC2 마이그레이션 어드바이저 데이터 수집기를 사용할 때 VMware 배포 정보를 수집합니다.</block>
+  <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">사용 권한 용어가 업데이트되었습니다</block>
+  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">워크로드 팩토리 사용자 인터페이스 및 설명서에서는 이제 "읽기 전용"을 사용하여 읽기 권한을 참조하고 "읽기-쓰기"를 사용하여 사용 권한을 자동화합니다.</block>
+  <block id="f8e901b31808cd5fdd45bae1bb1b5200" category="paragraph">마이그레이션 어드바이저 VM 데이터 수집기 스크립트, RVTools 또는 NetApp 데이터 인프라 Insights를 사용하여 현재 VM 구성을 캡처할 수 있습니다. 이러한 옵션은 가장 정확한 계획을 위해 VM 구성과 성능 데이터를 모두 수집하므로 Migration Advisor VM Collector 스크립트 또는 Data Infrastructure Insights를 사용하는 것이 좋습니다.</block>
+  <block id="22a28a767d70781d263ac5d0d07edaf6" category="open-title">RVTools 사용(빠른 평가)</block>
+  <block id="c3a0a2cbaabcb9856e249dfefdef2ff1" category="open-title">Migration Advisor VM Collector 스크립트 사용(세부 계획)</block>
+  <block id="905f3af3e1ec084a67a1b487b9ac6b66" category="open-title">NetApp 데이터 인프라 인사이트 사용(상세 계획)</block>
+  <block id="a0e5953d5eb8ffc03d66bca81a0c18e6" category="paragraph">NetApp 데이터 인프라 Insights는 전체 인프라에 대한 가시성을 제공하는 클라우드 인프라 모니터링 툴입니다. 마이그레이션 어드바이저가 VMware 인프라에 대한 정보를 수집할 수 있도록 마이그레이션 어드바이저와 Data Infrastructure Insights 간에 임시 API 통신을 활성화해야 합니다.</block>
+  <block id="b5b31d8ce41e2f6be9d862f8948f3dcc" category="inline-link">Data Infrastructure Insights에 대해 자세히 알아보십시오</block>
+  <block id="70e33e04e2c32f73e731d6c181dfb01f" category="paragraph"><block ref="70e33e04e2c32f73e731d6c181dfb01f" category="inline-link-rx"></block></block>
+  <block id="64f9349e02e421debf3f6d20a5be5ed2" category="list-text">Data Infrastructure Insights 계정에 로그인합니다.</block>
+  <block id="58b51871d59c9ea6e3dfb178bf676134" category="list-text">측면 탐색 메뉴에서 * Admin * 을 선택합니다.</block>
+  <block id="372be835c202d63d8125e0f349ef82e4" category="list-text">결과 메뉴에서 * API 액세스 * 를 선택합니다.</block>
+  <block id="1691ad67fe5d613f8659e3b1f3dbad92" category="list-text">API 액세스 토큰 * 탭에서 * + API 액세스 토큰 * 을 선택합니다.</block>
+  <block id="0d9f4e7c4781ab54219dde884e55e7de" category="paragraph">API 액세스 토큰 만들기 대화 상자가 나타납니다.</block>
+  <block id="8572681a78798eae07513e43042ec14e" category="list-text">API 토큰의 이름과 설명을 입력하십시오.</block>
+  <block id="25301bbb0bd6feeaa7d0f92041e91809" category="list-text">이 토큰을 호출하는 데 사용할 API 유형 * 에서 다음 중 하나를 선택합니다.</block>
+  <block id="7afd7da52e07dd7febdaa6f50c36644d" category="list-text">획득 장치</block>
+  <block id="9aedeaf1f77b8642abe528503b8c5de8" category="list-text">자산</block>
+  <block id="a8ab2a0cac3ada71ce8c170ef7fd84b5" category="list-text">데이터 수집</block>
+  <block id="1632bcc011087537a13d82cdf7c72e92" category="list-text">권한 * 아래에서 * 읽기 전용 * 을 선택합니다.</block>
+  <block id="a30491a7247ae579cd45bb891810edc6" category="list-text">토큰 만료 시간 * 에서 유효한 API 토큰이 필요한 기간을 선택합니다.</block>
+  <block id="403c7f2f4480b30b6731e3047d4251f3" category="list-text">Kubernetes용 토큰 자동 회전 * 의 선택을 취소합니다.</block>
+  <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">저장 * 을 선택합니다.</block>
+  <block id="61a464c915eccf6999e7c204f359223d" category="list-text">Copy API Access Token * 을 선택합니다.</block>
+  <block id="b75df169abd314f574bcc40ea5155622" category="list-text">이 토큰을 워크로드 팩토리 마이그레이션 조언자와 함께 사용할 수 있도록 준비하십시오.</block>
+  <block id="0e580c33f97a1c7ca616a1e9f7fdd1e8" category="paragraph">워크로드 공장 계정에 추가한 정책 및 권한에 따라 읽기/쓰기 모드 사용)를 워크로드 팩토리를 사용하여 FSx for ONTAP 파일 시스템을 완전히 구축할 수 있습니다. 사용 권한이 더 적거나(읽기 전용 모드) 권한이 없거나(기본 모드) 권한이 없는 경우 Codebox의 CloudFormation 정보를 사용하고 AWS에 FSx for ONTAP 파일 시스템을 직접 배포해야 합니다.</block>
+  <block id="cca1b6b092fdbaae02361708d86c5216" category="list-text">* 세부 계획 *: 이 옵션은 마이그레이션 어드바이저 데이터 수집기 인벤토리 파일 또는 NetApp 데이터 인프라 통찰력에 대한 직접 API 액세스를 사용하여 자세한 정보를 수집하므로 배포 준비가 완료된 설계가 가능합니다.</block>
+  <block id="969dbeb4218261a227069d80a30e69d5" category="open-title">RVTools(빠른 평가)</block>
+  <block id="8834e6e76cc39ebd77730b20d1f3b50f" category="list-text">RVTools * 타일을 선택하고 * Next * 를 선택합니다.</block>
+  <block id="3cc6c29f47170a38b3e6942027d7a69c" category="open-title">마이그레이션 어드바이저 데이터 수집기(상세 계획)</block>
+  <block id="e996abdfd89eafe08b518bb9c53ffb5c" category="list-text">마이그레이션 관리자 데이터 수집기 * 타일을 선택하고 * 다음 * 을 선택합니다.</block>
+  <block id="4fdc46a9c04edc23a039525075c001f6" category="open-title">NetApp 데이터 인프라 인사이트(상세 계획)</block>
+  <block id="f5cd0ecad07b6d4672d911e9b54865f1" category="list-text">NetApp 데이터 인프라 인사이트 * 타일을 선택하고 * 다음 * 을 선택합니다.</block>
+  <block id="947d830ffc5683c6bbe8aa6121603afd" category="list-text">NetApp Data Infrastructure Insights 연결 구성 _ 섹션에서 Data Infrastructure Insights에 대한 테넌트 엔드포인트를 입력합니다.</block>
+  <block id="94d5cfc399e2d5a51a5607471312328b" category="paragraph">Data Infrastructure Insights에 액세스하는 데 사용하는 URL입니다.</block>
+  <block id="5085d7cec411dbaca9f86e65ed057ff3" category="list-text">Data Infrastructure Insights에 대한 API 액세스 토큰을 아직 생성하지 않은 경우 페이지의 지침에 따라 토큰을 생성하십시오. 그렇지 않으면 * API 액세스 토큰 입력 * 텍스트 상자에 API 액세스 토큰을 붙여 넣습니다.</block>
+  <block id="0f265823a78c858e83b858d5e6089fce" category="list-text">Connect * 를 선택합니다.</block>
+  <block id="5680d40c89174adbe60bc8bed6184bd1" category="paragraph">워크로드 공장에서 Data Infrastructure Insights에서 정보를 수집합니다.</block>
+  <block id="82b38fde955a89166e0b70bb9c3424a9" category="paragraph">VM 인벤토리 요약 * 섹션은 VM 수와 총 스토리지 용량을 반영하기 위해 수집된 정보로부터 채워집니다.</block>
+  <block id="1c9640aa9075334712c6c2b922771c50" category="paragraph"><block ref="1c9640aa9075334712c6c2b922771c50" category="inline-link-rx"></block></block>
+  <block id="8019b706859e2e34cf0317637e794d77" category="paragraph">마이그레이션 어드바이저 VM 수집기 스크립트, RVTools 또는 NetApp 데이터 인프라 Insights를 사용하여 배포 계획을 생성하기 전에 현재 VM 구성을 캡처할 수 있습니다. 기존 배포 계획을 템플릿으로 가져온 다음 필요한 특성을 수정할 수도 있습니다.</block>
+  <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025년 5월 4일</block>
+  <block id="985089c2a3b99769d99dd7f5ea48529c" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> = = 2025년 1월 5일</block>
+  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024년 12월 1일</block>
 </blocks>

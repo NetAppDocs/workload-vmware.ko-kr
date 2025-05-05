@@ -15,6 +15,26 @@ summary: 워크로드 팩토리의 VMware 마이그레이션 어드바이저 구
 
 
 
+== 2025년 5월 4일
+
+
+
+=== Amazon EC2 마이그레이션 어드바이저 개선 사항
+
+이 VMware용 BlueXP  워크로드 팩토리에는 Amazon EC2 마이그레이션 조언자 환경이 다음과 같이 개선되었습니다.
+
+* 데이터 소스로서의 NetApp 데이터 인프라 인사이트 *: 이제 워크로드 팩토리가 NetApp 데이터 인프라 통찰력과 직접 연결되어 EC2 마이그레이션 어드바이저 데이터 수집기를 사용할 때 VMware 배포 정보를 수집합니다.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"]
+
+
+
+=== 사용 권한 용어가 업데이트되었습니다
+
+워크로드 팩토리 사용자 인터페이스 및 설명서에서는 이제 "읽기 전용"을 사용하여 읽기 권한을 참조하고 "읽기-쓰기"를 사용하여 사용 권한을 자동화합니다.
+
+
+
 == 2025년 3월 30일
 
 
@@ -44,11 +64,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 * * 향상된 파일 시스템 자동 할당 *: NetApp ONTAP용 Amazon FSx 파일 시스템 할당이 개선되어 비용을 최적화하고 처리량을 최소화할 수 있습니다.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"]
-
-
-
-== 2025년 1월 5일
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"] = = 2025년 1월 5일
 
 
 
@@ -60,7 +76,11 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 * * 향상된 VM 선택 *: VMware용 BlueXP  워크로드 팩토리에서는 이제 마이그레이션 배포에 포함할 VM 목록의 필터링 및 검색을 지원합니다.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"] == 2024년 12월 1일
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"]
+
+
+
+== 2024년 12월 1일
 
 
 
