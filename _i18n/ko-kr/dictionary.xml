@@ -425,10 +425,8 @@
   <block id="2fd605c5fdf1d57ba01b68838e68dc27" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 워크로드 공장 에 로그인합니다</block>
   <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link">워크로드 팩토리에 계정을 설정합니다</block>
   <block id="113933a0a6b3eb57d22f707e6384bd49" category="paragraph">를 사용하여<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block> 로그인해야<block ref="5eb9de2715b74ed434f03d8a9fef9b70" category="inline-link-rx"></block> 합니다.</block>
-  <block id="de1e04d3212ed90a1e381e49a4b2d13d" category="paragraph">AWS 계정에 액세스하기 위해 자격 증명을 추가하지 않고 _Basic_mode에서 워크로드 팩터리를 사용할 수 있습니다. Read_or_automate_ 모드에서 워크로드 팩토리에 AWS 자격 증명을 추가하면 워크로드 공장 계정에서 FSx for ONTAP 파일 시스템을 생성 및 관리하고 Amazon EC2 내에서 워크로드를 배포 및 관리하는 데 필요한 권한을 얻을 수 있습니다.</block>
   <block id="c01367c7ec78f01defe37cab59b14851" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block>..</block>
   <block id="65b67cfacaf9f942b7e72202ad4253cf" category="paragraph"><block ref="f440c867abbb2e895fda5fc4c7c4b4d3" category="inline-link-macro-rx"></block>..</block>
-  <block id="3157cd9076119066c34a23e78c720d17" category="paragraph">AWS 계정에 액세스하기 위해 자격 증명을 추가하지 않고 _Basic_mode에서 워크로드 팩터리를 사용할 수 있습니다. Read_or_automate_ 모드에서 워크로드 팩토리에 AWS 자격 증명을 추가하면 워크로드 공장 계정에 FSx for ONTAP 파일 시스템을 생성 및 관리하고 VMware Cloud 내에서 워크로드를 배포 및 관리하는 데 필요한 권한이 부여됩니다.</block>
   <block id="99518c9c883f7beb3f0b6f82063520fd" category="inline-link-macro">FSx for ONTAP 파일 시스템을 연결하는 방법에 대해 알아보십시오</block>
   <block id="0df1d5b9b1a14b5b9e7736c356eb7cb8" category="paragraph"><block ref="45ba3a90dd25508f5576e9402f61bd51" category="inline-link-macro-rx"></block>..</block>
   <block id="056634bec4a153903ebb9b769277f4d7" category="summary">NetApp 기술 지원에 대한 지원 케이스를 생성하기 전에 워크로드 팩토리에 NetApp Support 사이트 계정을 추가한 다음 지원을 등록해야 합니다.</block>
@@ -536,7 +534,6 @@
   <block id="795a0e870c9420e8289ae895de63c851" category="paragraph">이 VMware용 BlueXP  워크로드 팩토리에는 Amazon EC2 마이그레이션 조언자 환경이 다음과 같이 개선되었습니다.</block>
   <block id="81e3939f348a9727ff017a61306371bd" category="paragraph">* 데이터 소스로서의 NetApp 데이터 인프라 인사이트 *: 이제 워크로드 팩토리가 NetApp 데이터 인프라 통찰력과 직접 연결되어 EC2 마이그레이션 어드바이저 데이터 수집기를 사용할 때 VMware 배포 정보를 수집합니다.</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">사용 권한 용어가 업데이트되었습니다</block>
-  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">워크로드 팩토리 사용자 인터페이스 및 설명서에서는 이제 "읽기 전용"을 사용하여 읽기 권한을 참조하고 "읽기-쓰기"를 사용하여 사용 권한을 자동화합니다.</block>
   <block id="f8e901b31808cd5fdd45bae1bb1b5200" category="paragraph">마이그레이션 어드바이저 VM 데이터 수집기 스크립트, RVTools 또는 NetApp 데이터 인프라 Insights를 사용하여 현재 VM 구성을 캡처할 수 있습니다. 이러한 옵션은 가장 정확한 계획을 위해 VM 구성과 성능 데이터를 모두 수집하므로 Migration Advisor VM Collector 스크립트 또는 Data Infrastructure Insights를 사용하는 것이 좋습니다.</block>
   <block id="22a28a767d70781d263ac5d0d07edaf6" category="open-title">RVTools 사용(빠른 평가)</block>
   <block id="c3a0a2cbaabcb9856e249dfefdef2ff1" category="open-title">Migration Advisor VM Collector 스크립트 사용(세부 계획)</block>
@@ -560,7 +557,6 @@
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">저장 * 을 선택합니다.</block>
   <block id="61a464c915eccf6999e7c204f359223d" category="list-text">Copy API Access Token * 을 선택합니다.</block>
   <block id="b75df169abd314f574bcc40ea5155622" category="list-text">이 토큰을 워크로드 팩토리 마이그레이션 조언자와 함께 사용할 수 있도록 준비하십시오.</block>
-  <block id="0e580c33f97a1c7ca616a1e9f7fdd1e8" category="paragraph">워크로드 공장 계정에 추가한 정책 및 권한에 따라 읽기/쓰기 모드 사용)를 워크로드 팩토리를 사용하여 FSx for ONTAP 파일 시스템을 완전히 구축할 수 있습니다. 사용 권한이 더 적거나(읽기 전용 모드) 권한이 없거나(기본 모드) 권한이 없는 경우 Codebox의 CloudFormation 정보를 사용하고 AWS에 FSx for ONTAP 파일 시스템을 직접 배포해야 합니다.</block>
   <block id="cca1b6b092fdbaae02361708d86c5216" category="list-text">* 세부 계획 *: 이 옵션은 마이그레이션 어드바이저 데이터 수집기 인벤토리 파일 또는 NetApp 데이터 인프라 통찰력에 대한 직접 API 액세스를 사용하여 자세한 정보를 수집하므로 배포 준비가 완료된 설계가 가능합니다.</block>
   <block id="969dbeb4218261a227069d80a30e69d5" category="open-title">RVTools(빠른 평가)</block>
   <block id="8834e6e76cc39ebd77730b20d1f3b50f" category="list-text">RVTools * 타일을 선택하고 * Next * 를 선택합니다.</block>
@@ -586,5 +582,9 @@
   <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">* CloudShell CLI *: 워크로드 팩토리에는 단일 브라우저 기반 CLI를 통해 모든 계정에서 AWS 및 NetApp 환경을 관리하고 운영할 수 있는 CloudShell CLI가 포함되어 있습니다. 워크로드 팩토리 콘솔의 상단 표시줄에서 CloudShell에 액세스합니다.</block>
   <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">* REST API *: 워크로드 팩토리 REST API를 사용하여 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리합니다.</block>
   <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">* CloudFormation *: AWS CloudFormation 코드를 사용하여 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 워크로드 팩토리 콘솔에 정의한 작업을 수행합니다.</block>
-  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">* Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하여 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리하십시오.</block>
+  <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">워크로드 팩토리 사용자 인터페이스와 문서에서는 이제 읽기 권한을 나타내는 데 "읽기 전용"을 사용하고 자동화 권한을 나타내는 데 "읽기/쓰기"를 사용합니다.</block>
+  <block id="22e3b254750c8ee79058a0cf095f5b60" category="paragraph">워크로드 팩토리 계정에 추가한 정책 및 권한에 따라 워크로드 팩토리(읽기/쓰기 모드 사용)를 사용하여 FSx for ONTAP 파일 시스템을 완전히 배포할 수 있습니다. 권한이 더 적거나(읽기 전용 모드) 권한이 없는 경우(기본 모드), Codebox의 CloudFormation 정보를 사용하여 FSx for ONTAP 파일 시스템을 AWS에 직접 배포해야 합니다.</block>
+  <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">* Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하여 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리하십시오.</block>
+  <block id="93aede4db8facb711d27bf36fdf38874" category="paragraph">AWS 계정에 액세스하기 위해 자격 증명을 추가하지 않고 _Basic_mode에서 워크로드 팩터리를 사용할 수 있습니다. 워크로드 팩토리에 AWS 자격 증명을 읽기 전용 또는 읽기/쓰기 모드로 추가하면 워크로드 팩토리 계정에 FSx for ONTAP 파일 시스템을 생성하고 관리하고 Amazon EC2 내에서 워크로드를 배포하고 관리하는 데 필요한 권한이 부여됩니다.</block>
+  <block id="a3510fa27dbfcf1faf64ffdbe7d3fbcf" category="paragraph">AWS 계정에 액세스하기 위해 자격 증명을 추가하지 않고 _Basic_mode에서 워크로드 팩터리를 사용할 수 있습니다. 워크로드 팩토리에 AWS 자격 증명을 읽기 전용 또는 읽기/쓰기 모드로 추가하면 워크로드 팩토리 계정에 FSx for ONTAP 파일 시스템을 생성하고 관리하고 VMware Cloud 내에서 워크로드를 배포하고 관리하는 데 필요한 권한이 부여됩니다.</block>
 </blocks>
