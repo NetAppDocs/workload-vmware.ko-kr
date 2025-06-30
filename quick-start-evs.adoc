@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: quick-start-evs.html 
+keywords: quick start 
+summary: Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라를 Amazon EVS로 이전하려면 VMware 마이그레이션 어드바이저를 시작하세요. 
+---
+= VMware 워크로드 마이그레이션 어드바이저를 사용하여 Amazon EVS로 마이그레이션하기 위한 빠른 시작
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라를 Amazon EVS로 이전하려면 VMware 마이그레이션 어드바이저를 시작하세요.
+
+시작하기 전에 에 대한 이해가 있어야 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["작동 모드"^] 합니다.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] 워크로드 공장 에 로그인합니다
+[role="quick-margin-para"]
+를 사용하여 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] 로그인해야 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["워크로드 팩토리에 계정을 설정합니다"^] 합니다.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 계정에 AWS 자격 증명 및 권한을 추가합니다
+[role="quick-margin-para"]
+AWS 계정에 액세스하기 위해 자격 증명을 추가하지 않고 _Basic_mode에서 워크로드 팩터리를 사용할 수 있습니다. 워크로드 팩토리에 AWS 자격 증명을 읽기 전용 또는 읽기/쓰기 모드로 추가하면 워크로드 팩토리 계정에 FSx for ONTAP 파일 시스템을 생성하고 관리하고 Amazon EC2 내에서 워크로드를 배포하고 관리하는 데 필요한 권한이 부여됩니다.
+
+[role="quick-margin-para"]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["자격 증명 및 사용 권한을 추가하는 방법에 대해 알아봅니다"^]..
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] VMware 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
+[role="quick-margin-para"]
+VMware 마이그레이션 어드바이저를 실행하고 Amazon FSx for ONTAP 파일 시스템을 외부 NFS 데이터 저장소로 사용하여 Amazon Elastic VMWare Service 인프라에 만들려는 VM 환경을 수동으로 구성합니다.
+
+[role="quick-margin-para"]
+link:launch-migration-advisor-evs-manual.html["VMware Migration Advisor를 사용하여 구축 계획을 생성하는 방법에 대해 알아봅니다"]..
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] 권장 FSx for ONTAP 파일 시스템을 배포합니다
+[role="quick-margin-para"]
+Amazon EC2 인프라의 VM용 데이터 저장소를 제공할 새로운 FSx for ONTAP 파일 시스템을 배포합니다.
+
+[role="quick-margin-para"]
+link:deploy-fsx-file-system-evs.html["새로운 FSx for ONTAP 파일 시스템을 구축하는 방법을 알아보십시오"]..
