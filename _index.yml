@@ -11,10 +11,28 @@ indexpage:
     links:
     - title: VMware용 BlueXP  워크로드 팩토리에 대해 알아보십시오
       url: learn-about-vmware-workloads.html
+    - title: '빠른 시작: Amazon Elastic VMware Service로 마이그레이션'
+      url: quick-start-evs.html
     - title: '빠른 시작: AWS의 VMware Cloud로 마이그레이션합니다'
       url: quick-start.html
     - title: '빠른 시작: Amazon EC2로 마이그레이션합니다'
       url: quick-start-native.html
+  - title: Amazon Elastic VMware Service로 마이그레이션
+    links:
+    - title: 저축 알아보기
+      url: calculate-evs-savings.html
+    - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
+      url: launch-migration-advisor-evs-manual.html
+    - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
+      url: deploy-fsx-file-system.html
+  - title: Amazon EC2로 마이그레이션합니다
+    links:
+    - title: 현재 VM 구성을 캡처합니다
+      url: capture-vm-configurations-native.html
+    - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
+      url: launch-onboarding-advisor-native.html
+    - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
+      url: deploy-fsx-file-system.html
   - title: AWS 기반 VMware Cloud로 마이그레이션하십시오
     links:
     - title: 현재 VM 구성을 캡처합니다
@@ -27,14 +45,6 @@ indexpage:
       url: connect-sddc-to-fsx.html
     - title: 데이터를 새로운 인프라로 마이그레이션합니다
       url: migrate-data.html
-  - title: Amazon EC2로 마이그레이션합니다
-    links:
-    - title: 현재 VM 구성을 캡처합니다
-      url: capture-vm-configurations-native.html
-    - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
-      url: launch-onboarding-advisor-native.html
-    - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
-      url: deploy-fsx-file-system.html
   - title: 블로그 및 커뮤니티
     links:
     - title: NetApp 커뮤니티

@@ -32,6 +32,8 @@ sidebar:
     entries:
     - title: Amazon Elastic VMware Service로 마이그레이션
       entries:
+      - title: 저축 알아보기
+        url: "/calculate-evs-savings.html"
       - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
         url: "/launch-migration-advisor-evs-manual.html"
       - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
