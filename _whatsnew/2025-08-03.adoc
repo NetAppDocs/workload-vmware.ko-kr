@@ -6,7 +6,7 @@
 
 === Amazon Elastic VMWare Service에 대한 향상된 마이그레이션 어드바이저 지원
 
-Amazon Elastic VMware Service 마이그레이션 어드바이저는 이제 Amazon FSx for NetApp ONTAP 파일 시스템의 자동 배포 및 마운트를 지원합니다.  이를 통해 Amazon EVS 환경으로의 마이그레이션이 완료되면 FSx for ONTAP 파일 시스템에 VM 배포를 시작할 수 있습니다.
+NetApp Workload Factory는 이제 Amazon FSx for NetApp ONTAP 파일 시스템의 자동 배포 및 마운트를 지원합니다.  이를 통해 Amazon EVS 환경으로의 마이그레이션이 완료되면 FSx for ONTAP 파일 시스템에 VM 배포를 시작할 수 있습니다.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["마이그레이션 어드바이저를 사용하여 Amazon EVS에 대한 배포 계획을 만듭니다."]
 
