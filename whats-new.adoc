@@ -2,16 +2,34 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 워크로드 팩토리의 VMware 마이그레이션 어드바이저 구성 요소의 새로운 기능에 대해 알아보십시오. 
+summary: Workload Factory의 VMware 마이그레이션 어드바이저 구성 요소의 새로운 기능에 대해 알아보세요. 
 ---
-= VMware를 위한 BlueXP  워크로드 팩토리의 새로운 기능
+= VMware용 NetApp Workload Factory의 새로운 기능
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-워크로드 팩토리의 VMware 마이그레이션 어드바이저 구성 요소의 새로운 기능에 대해 알아보십시오.
+Workload Factory의 VMware 마이그레이션 어드바이저 구성 요소의 새로운 기능에 대해 알아보세요.
+
+
+
+== 2025년 10월 5일
+
+
+
+=== BlueXP workload factory NetApp 워크로드 팩토리로 변경되었습니다.
+
+BlueXP 데이터 인프라 관리에 있어서의 역할을 더 잘 반영하도록 이름이 바뀌고 재설계되었습니다. 결과적으로 BlueXP workload factory NetApp 워크로드 팩토리로 이름이 변경되었습니다.
+
+
+
+=== VMware 워크로드 계획 센터 소개
+
+VMware 워크로드 계획 센터를 사용하면 한 곳에서 VM 인벤토리와 마이그레이션 계획을 보고 관리할 수 있습니다.  다양한 환경에서 여러 VM 인벤토리를 업로드하고 저장할 수 있으며, 그 중 하나를 AWS EC2 또는 Amazon Elastic VMware 서비스로 마이그레이션할 계획을 세울 수 있습니다.  AWS EC2 또는 EVS 마이그레이션 계획을 만들고 저장할 수도 있습니다.
+
+https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["VMware 워크로드 계획 센터 탐색"]
 
 
 
@@ -31,7 +49,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 이제 VMware 워크로드를 Amazon Elastic VMware Service(EVS)로 마이그레이션하여 얻을 수 있는 잠재적인 비용 절감 효과를 살펴보실 수 있습니다.  절감 계산기를 사용하면 기본 스토리지로 Amazon FSx for NetApp ONTAP 사용하거나 사용하지 않고 Amazon EVS를 사용할 때의 비용을 비교할 수 있습니다.  계산기는 환경 특성을 조정하면서 잠재적인 절감액을 실시간으로 표시합니다.
 
-https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["BlueXP workload factory 통해 Amazon Elastic VMware Service에 대한 절감 혜택을 살펴보세요."]
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["BlueXP Workload Factory를 통해 Amazon Elastic VMware Service에 대한 절감 혜택을 살펴보세요"]
 
 
 
@@ -41,7 +59,7 @@ https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["BlueXP
 
 === Amazon Elastic VMWare Service에 대한 마이그레이션 어드바이저 지원 소개
 
-VMware용 BlueXP 워크로드 팩토리가 이제 Amazon Elastic VMware Service를 지원합니다. 마이그레이션 어드바이저를 사용하여 온프레미스 VMware 워크로드를 Amazon Elastic VMware Service로 신속하게 마이그레이션하여 비용을 최적화하고 애플리케이션을 리팩토링하거나 플랫폼을 재구축할 필요 없이 VMware 환경을 더욱 효과적으로 제어할 수 있습니다.
+VMware용 BlueXP Workload Factory는 이제 Amazon Elastic VMware Service를 지원합니다.  마이그레이션 어드바이저를 사용하면 온프레미스 VMware 워크로드를 Amazon Elastic VMware Service로 빠르게 마이그레이션하여 비용을 최적화하고 애플리케이션을 리팩토링하거나 플랫폼을 재구축할 필요 없이 VMware 환경을 더 효과적으로 제어할 수 있습니다.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["마이그레이션 어드바이저를 사용하여 Amazon EVS에 대한 배포 계획을 만듭니다."]
 
@@ -53,7 +71,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 === Amazon EC2 마이그레이션 어드바이저 개선 사항
 
-이 VMware용 BlueXP  워크로드 팩토리에는 Amazon EC2 마이그레이션 조언자 환경이 다음과 같이 개선되었습니다.
+VMware용 BlueXP Workload Factory의 이번 릴리스에서는 Amazon EC2 마이그레이션 어드바이저 환경에 다음과 같은 개선 사항이 적용되었습니다.
 
 * 데이터 소스로서의 NetApp 데이터 인프라 인사이트 *: 이제 워크로드 팩토리가 NetApp 데이터 인프라 통찰력과 직접 연결되어 EC2 마이그레이션 어드바이저 데이터 수집기를 사용할 때 VMware 배포 정보를 수집합니다.
 
@@ -63,7 +81,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === 사용 권한 용어가 업데이트되었습니다
 
-워크로드 팩토리 사용자 인터페이스와 문서에서는 이제 읽기 권한을 나타내는 데 "읽기 전용"을 사용하고 자동화 권한을 나타내는 데 "읽기/쓰기"를 사용합니다.
+Workload Factory 사용자 인터페이스와 설명서에서는 이제 읽기 권한을 나타내는 데 "읽기 전용"이라는 용어를 사용하고 자동화 권한을 나타내는 데 "읽기/쓰기"라는 용어를 사용합니다.
 
 
 
@@ -73,7 +91,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2 마이그레이션 어드바이저 개선 사항
 
-이 VMware용 BlueXP  워크로드 팩토리에는 Amazon EC2 마이그레이션 조언자 환경이 여러 가지 향상되었습니다.
+VMware용 BlueXP Workload Factory의 이번 릴리스에서는 Amazon EC2 마이그레이션 어드바이저 환경에 대한 여러 가지 개선 사항이 적용되었습니다.
 
 * * 향상된 볼륨 할당 지침 *: EC2 마이그레이션 어드바이저의 볼륨 할당 정보는 "분류" 및 "패키지" 단계에서 읽기 편이성과 사용성이 향상되었습니다. 각 볼륨에 대한 보다 유용한 정보가 표시되므로 볼륨을 보다 잘 식별하고 볼륨을 할당하는 방법을 결정할 수 있습니다.
 * * 데이터 수집기 스크립트 효율성 향상 *: EC2 마이그레이션 어드바이저 데이터 수집기 스크립트는 소규모 VM 배포를 위해 데이터를 수집할 때 CPU 사용을 최적화합니다.
@@ -89,7 +107,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2 마이그레이션 어드바이저 개선 사항
 
-이 VMware용 BlueXP  워크로드 팩토리에는 Amazon EC2 마이그레이션 조언자 환경이 여러 가지 향상되었습니다.
+VMware용 BlueXP Workload Factory의 이번 릴리스에서는 Amazon EC2 마이그레이션 어드바이저 환경에 대한 여러 가지 개선 사항이 적용되었습니다.
 
 * * Estimated instance type *: 마이그레이션 어드바이저는 이제 환경의 요구 사항을 검토하고 각 VM에 대해 예상되는 Amazon EC2 인스턴스 유형을 제공할 수 있습니다. 마이그레이션 관리자의 범위 단계에서 각 VM에 대한 예상 인스턴스 유형을 포함하도록 선택할 수 있습니다.
 * * Amazon EBS 볼륨을 추천할 수 있는 능력 *: 이제 마이그레이션 어드바이저는 특정 지역의 특정 용량 또는 성능 요구사항으로 인해 Amazon FSx for NetApp ONTAP 대신 Amazon EBS(Elastic Block Store)로 데이터 볼륨을 마이그레이션할 것을 권장합니다.
@@ -106,10 +124,10 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2 마이그레이션 어드바이저 개선 사항
 
-이번 릴리즈의 VMware용 BlueXP  워크로드 팩토리는 마이그레이션 조언자 환경에서 다음과 같은 여러 가지 향상된 기능을 제공합니다.
+VMware용 BlueXP Workload Factory의 이번 릴리스에서는 마이그레이션 어드바이저 환경에 대한 여러 가지 개선 사항이 적용되었습니다.
 
-* * 마이그레이션 계획 저장 또는 다운로드 *: 이제 마이그레이션 계획을 저장하거나 다운로드하고 마이그레이션 계획을 로드하여 마이그레이션 관리자를 채울 수 있습니다. 마이그레이션 계획을 저장하면 작업 부하 공장 계정과 함께 계획이 저장됩니다.
-* * 향상된 VM 선택 *: VMware용 BlueXP  워크로드 팩토리에서는 이제 마이그레이션 배포에 포함할 VM 목록의 필터링 및 검색을 지원합니다.
+* *마이그레이션 계획 저장 또는 다운로드*: 이제 마이그레이션 계획을 저장하거나 다운로드하고, 마이그레이션 계획을 로드하여 마이그레이션 관리자를 채울 수 있습니다.  마이그레이션 계획을 저장하면 해당 계획이 Workload Factory 계정에 저장됩니다.
+* *개선된 VM 선택*: VMware용 BlueXP Workload Factory는 이제 마이그레이션 배포에 포함하려는 VM 목록을 필터링하고 검색하는 기능을 지원합니다.
 
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"]
@@ -122,10 +140,10 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2 마이그레이션 어드바이저 개선 사항
 
-이번 릴리즈의 VMware용 BlueXP  워크로드 팩토리는 마이그레이션 조언자 환경에서 다음과 같은 여러 가지 향상된 기능을 제공합니다.
+VMware용 NetApp Workload Factory의 이번 릴리스에서는 마이그레이션 어드바이저 환경에 대한 여러 가지 개선 사항이 적용되었습니다.
 
-* * 데이터 수집 *: VMware용 BlueXP  워크로드 팩토리에서는 마이그레이션 관리자를 사용할 때 특정 기간 동안 데이터를 수집할 수 있습니다.
-* * VM 선택 *: VMware용 BlueXP  워크로드 팩토리에서는 이제 마이그레이션 배포에 포함할 VM을 선택할 수 있습니다.
+* *데이터 수집*: BlueXP Workload Factory for VMware는 마이그레이션 어드바이저를 사용할 때 특정 기간 동안의 데이터를 수집하는 기능을 지원합니다.
+* *VM 선택*: VMware용 BlueXP Workload Factory는 이제 마이그레이션 배포에 포함할 VM을 선택할 수 있도록 지원합니다.
 * * 빠른 경험과 고급 경험 * : 마이그레이션 관리자를 사용하면 RVtools를 사용하여 빠른 마이그레이션 경험을 선택하거나 마이그레이션 어드바이저 데이터 수집기를 사용하는 고급 환경을 선택할 수 있습니다.
 
 
@@ -151,7 +169,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === VMware 마이그레이션 어드바이저의 향상된 기능
 
-이번 VMware용 워크로드 팩토리에는 기능 및 안정성이 향상되었으며 VMware 마이그레이션 관리자를 사용할 때 마이그레이션 계획을 가져오고 내보내는 기능이 포함되어 있습니다.
+VMware용 Workload Factory의 이번 릴리스에서는 기능 및 안정성이 향상되었으며, VMware 마이그레이션 어드바이저를 사용할 때 마이그레이션 계획을 가져오고 내보낼 수 있는 기능이 추가되었습니다.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2에 대한 배포 계획을 생성합니다"]
 
@@ -171,6 +189,6 @@ VMware용 워크로드 팩토리에서는 이제 VMware 마이그레이션 어�
 
 
 
-=== VMware용 워크로드 팩토리 최초 릴리즈
+=== VMware용 Workload Factory의 초기 릴리스
 
 초기 릴리즈에는 VMware 마이그레이션 어드바이저를 사용하여 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석하고 권장 VM 레이아웃을 AWS 기반 VMware Cloud에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 계획을 생성하는 기능이 포함되어 있습니다.

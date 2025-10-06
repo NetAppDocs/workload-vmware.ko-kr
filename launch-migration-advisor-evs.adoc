@@ -1,0 +1,110 @@
+---
+sidebar: sidebar 
+permalink: launch-migration-advisor-evs.html 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works, migration, manual, specification, deploy, deployment, plan 
+summary: VMware 계획 센터에서 Amazon EVS 마이그레이션 어드바이저를 실행하여 사용자의 요구 사항에 맞게 사용자 정의된 마이그레이션 계획을 만들 수 있습니다. 
+---
+= 마이그레이션 어드바이저를 사용하여 Amazon EVS에 대한 배포 계획을 만듭니다.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+VMware 계획 센터에서 Amazon EVS 마이그레이션 어드바이저를 실행하여 사용자의 요구 사항에 맞게 사용자 정의된 마이그레이션 계획을 만들 수 있습니다.
+
+Workload Factory에 액세스하려면 사용자 이름과 비밀번호가 필요합니다.  접근할 수 없다면 지금 계정을 만드세요.  지침을 참조하세요 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["여기"] .
+
+
+
+== 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
+
+가상 머신을 Amazon Elastic VMware Service로 마이그레이션하고 사용자 지정 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용하는 배포 계획을 만들 수 있습니다.  마이그레이션 어드바이저의 옵션은 VM 인벤토리 데이터를 수집하는 데 사용된 도구에 따라 다를 수 있습니다.
+
+.요구 사항
+* Amazon Elastic VMware Service 구독이 있어야 합니다.
+
+
+.단계
+. 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
+. 선택적으로, Workload Factory 콘솔에서 Workload Factory에 액세스한 경우 VMware 워크로드 타일에서 *VMware Planning Center*를 선택한 다음 *VMware Planning Center*를 선택합니다.  VMware 계획 센터가 표시됩니다.
+. 배포 계획을 세우는 데 사용할 VM 인벤토리를 목록에서 선택하고 해당 행에서 *계획 시작*을 선택합니다.
+. 나타나는 드롭다운 메뉴에서 *EVS*를 선택합니다.
++
+*AWS 클라우드 온보딩 준비* 마법사가 나타납니다.
+
+. 필요한 정보를 입력하세요.
+
+
+[discrete]
+===== 지정하다
+
+. _VM 구성 업로드_ 섹션에서 마이그레이션 계획을 만드는 데 사용하는 데이터 세트에 대한 정보를 검토합니다.  *VM 인벤토리 요약* 섹션은 VM 수와 총 저장 용량을 반영하기 위해 인벤토리 파일에서 채워집니다.
+. _VM 인벤토리 고려 사항_ 섹션에서 마이그레이션하려는 VM 목록을 필터링하는 옵션을 선택합니다.
++
+.. * 지역 * : NetApp ONTAP용 Amazon FSx 파일 시스템을 배포할 지역을 선택하십시오. 최적의 성능과 비용 효율성을 위해 일반적으로 기존 Amazon EC2 SDDC를 구축하는 지역과 동일합니다.
+.. 이 영역에서 VM에 대한 예측 성능 수준을 선택합니다. 먼저 IOPS를 작게 설정하는 것이 좋습니다. 워크로드가 마이그레이션되거나 배포됨에 따라 파일 시스템이 생성된 후 프로비저닝된 SSD IOPS를 늘릴 수 있습니다.
++
+*** * 표준에서 고성능 *: 평균 IO 속도가 20 ~ 5000 IOPS인 VM용.
+*** * 매우 높은 성능 *: 평균 IO 속도가 5000 IOPS 이상인 VM용.
+*** * 매우 낮은 성능 *: 평균 IO 속도가 20 IOPS 미만인 VM의 경우
+
+
+
+
+. _대상 용량 및 보호 고려 사항_ 섹션에서 몇 가지 저장 옵션 중에서 선택하세요.
++
+.. * 고려할 VM 스토리지 *: 온보딩된 각 VM에 대해 생성된 데이터 저장소의 크기가 현재 사용된 크기(권장) 또는 프로비저닝된 크기에 따라 조정되는지 여부를 선택합니다.
++
+외부 데이터 저장소는 Amazon FSx for NetApp ONTAP 파일 시스템 볼륨을 사용하여 구현합니다.
+
+.. * 평균 데이터 축소율 *: 세 가지 일반적인 데이터 축소율 중에서 선택합니다. "1:1 - No reduction", "1:1.25 - 20% reduction" 또는 "1:1.5 - 33% reduction"을 선택합니다.
++
+어떤 비율을 선택할지 잘 모르겠으면 * 결정 도움 요청 * 을 선택합니다. Data reduction ratio assistant _ 대화상자가 나타납니다. VM 인벤토리 및 스토리지 자산에 적용되는 설명을 선택하십시오. 보조자는 적절한 데이터 축소율을 권장합니다. 권장 비율을 사용하려면 * 적용 * 을 선택합니다.
+
+.. * 여유 공간 비율 *: FSx for ONTAP 파일 시스템의 용량에 추가되는 용량 증가 비율을 입력하십시오.
++
+20% 미만의 양을 선택하면 보호 및 장기 백업을 위한 볼륨 스냅샷을 생성할 수 없습니다.
+
+.. * VM 스냅샷 보호 *: 스냅샷을 사용하여 VM을 보호하려면 이 옵션을 활성화합니다.
+
+
+. 다음 * 을 선택합니다.
+
+
+[discrete]
+===== 선택하다
+
+. *가상 머신 선택* 페이지에서 AWS 마이그레이션에 포함할 VM을 목록에서 선택합니다.  각 VM의 전원 상태와 VM이 있는 데이터 센터 및 클러스터에 따라 목록을 필터링할 수 있습니다.
++
+VM 목록에서 열로 표시할 VM 정보 유형을 선택할 수 있습니다.  예를 들어, _최대 읽기 IOPS_를 선택하면 각 VM의 최대 읽기 IOPS가 포함된 열이 표시됩니다.
+
+. 선택적으로 비용이나 회수 가능성을 고려하여 배포를 최적화할 수 있습니다.
++
+** *비용*: Workload Factory는 목록에서 I/O 밀도가 낮은 VM을 선택합니다.  이렇게 하면 리소스 요구 사항을 줄이는 데 도움이 됩니다.
+** *복구 가능성*: Workload Factory는 로컬로 빠르게 복사하기 가장 쉬운 VM을 목록에서 선택합니다.  이를 통해 중단이 발생할 경우 빠른 복구가 가능합니다.
+
+
+. 다음 * 을 선택합니다.
+
+
+[discrete]
+===== 설계
+
+. *ClassReview 인스턴스 저장소 할당* 페이지에서 VM 정보, 볼륨 분류 규칙, 볼륨 할당 및 배포의 일부로 마이그레이션될 볼륨 목록을 검토한 후 *다음*을 선택합니다.
+
+
+[discrete]
+===== 검토 계획
+
+. 계획 검토 * 페이지에서 마이그레이션할 모든 VM에 대한 예상 월별 절감 비용 및 비용 추정치를 검토합니다.
++
+이 페이지 상단은 FSx for ONTAP 파일 시스템 및 EBS 볼륨의 월별 절약 효과를 예측합니다. 각 섹션을 확장하여 제안된 파일 시스템 구성, 예상 절감 비용 분석, 가정 및 기술적 고지 사항에 대한 세부 정보를 볼 수 있습니다.
+
++
+마이그레이션 계획은 기본적으로 계획 센터의 계획 목록에 자동으로 저장됩니다.
+
+. 계획을 진행할 준비가 되면 *프로비저닝*을 선택하여 권장되는 Amazon FSx for NetApp ONTAP 파일 시스템 배포를 시작합니다.
+
+
+link:deploy-fsx-file-system-evs.html["VMware 워크로드에 권장되는 FSx for ONTAP 파일 시스템을 구축하십시오"]..

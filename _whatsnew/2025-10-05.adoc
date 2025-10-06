@@ -1,0 +1,17 @@
+= BlueXP workload factory NetApp 워크로드 팩토리로 변경되었습니다.
+:allow-uri-read: 
+
+
+
+
+=== BlueXP workload factory NetApp 워크로드 팩토리로 변경되었습니다.
+
+BlueXP 데이터 인프라 관리에 있어서의 역할을 더 잘 반영하도록 이름이 바뀌고 재설계되었습니다. 결과적으로 BlueXP workload factory NetApp 워크로드 팩토리로 이름이 변경되었습니다.
+
+
+
+=== VMware 워크로드 계획 센터 소개
+
+VMware 워크로드 계획 센터를 사용하면 한 곳에서 VM 인벤토리와 마이그레이션 계획을 보고 관리할 수 있습니다.  다양한 환경에서 여러 VM 인벤토리를 업로드하고 저장할 수 있으며, 그 중 하나를 AWS EC2 또는 Amazon Elastic VMware 서비스로 마이그레이션할 계획을 세울 수 있습니다.  AWS EC2 또는 EVS 마이그레이션 계획을 만들고 저장할 수도 있습니다.
+
+https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["VMware 워크로드 계획 센터 탐색"]

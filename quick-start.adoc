@@ -15,23 +15,23 @@ VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTAP을 외�
 
 시작하기 전에 에 대한 이해가 있어야 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["작동 모드"^] 합니다.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] 워크로드 공장 에 로그인합니다
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"]Workload Factory에 로그인하세요
 [role="quick-margin-para"]
-를 사용하여 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] 로그인해야 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["워크로드 팩토리에 계정을 설정합니다"^] 합니다.
+당신은 필요합니다 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factory에 계정을 설정하세요"^] 다음 중 하나를 사용하여 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 계정에 AWS 자격 증명 및 권한을 추가합니다
 [role="quick-margin-para"]
-AWS 계정에 액세스하기 위해 자격 증명을 추가하지 않고 _Basic_mode에서 워크로드 팩터리를 사용할 수 있습니다. 워크로드 팩토리에 AWS 자격 증명을 읽기 전용 또는 읽기/쓰기 모드로 추가하면 워크로드 팩토리 계정에 FSx for ONTAP 파일 시스템을 생성하고 관리하고 VMware Cloud 내에서 워크로드를 배포하고 관리하는 데 필요한 권한이 부여됩니다.
+AWS 계정에 액세스하기 위한 자격 증명을 추가하지 않고도 _기본_ 모드에서 Workload Factory를 사용할 수 있습니다. Workload Factory에 AWS 자격 증명을 _읽기 전용_ 또는 _읽기/쓰기_ 모드로 추가하면 Workload Factory 계정에 FSx for ONTAP 파일 시스템을 생성하고 관리하고 VMware Cloud 내에서 워크로드를 배포하고 관리하는 데 필요한 권한이 부여됩니다.
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["자격 증명 및 사용 권한을 추가하는 방법에 대해 알아봅니다"^]..
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] vSphere 환경의 현재 VM 구성을 캡처합니다
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"]VM 인벤토리 데이터 업로드
 [role="quick-margin-para"]
-마이그레이션 어드바이저 VM 수집기 스크립트 또는 RVTools를 사용하여 현재 VM 구성을 캡처하여 배포 계획을 생성할 수 있습니다. 기존 배포 계획을 템플릿으로 가져온 다음 필요한 특성을 수정할 수도 있습니다.
+계획 센터를 사용하여 현재 VM 환경에 대한 인벤토리 세부 정보를 업로드할 수 있습니다.  데이터 수집기 ​​스크립트, RVTools 또는 NetApp Data Infrastructure Insights 사용하여 현재 VM 구성을 캡처하고 해당 데이터를 계획 센터에 업로드합니다.
 
 [role="quick-margin-para"]
-link:capture-vm-configurations.html["현재 VM 구성을 캡처하는 방법에 대해 알아봅니다"]..
+link:upload-vm-inventory.html["VM 인벤토리 데이터를 업로드하는 방법을 알아보세요"^] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] VMware 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
 [role="quick-margin-para"]

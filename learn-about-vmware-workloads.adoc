@@ -1,58 +1,54 @@
 ---
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: 'VMware용 BlueXP  워크로드 팩토리에서는 온프레미스 시스템의 데이터를 VMware Cloud on AWS(VMC) 또는 Amazon EC2로 이동할 수 있는 툴을 제공합니다.' 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works 
+summary: 'VMware용 NetApp Workload Factory는 온프레미스 시스템에서 Amazon EVS, VMware Cloud on AWS(VMC) 또는 Amazon EC2로 데이터를 이동하는 도구를 제공합니다.' 
 ---
-= VMware용 BlueXP  워크로드 팩토리에 대해 알아보십시오
+= VMware용 NetApp Workload Factory에 대해 알아보세요
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-VMware용 BlueXP  워크로드 팩토리에서는 온프레미스 시스템의 데이터를 VMware Cloud on AWS(VMC) 또는 Amazon EC2로 이동할 수 있는 툴을 제공합니다.
+VMware용 NetApp Workload Factory는 온프레미스 시스템에서 Amazon Elastic VMware Service(EVS), VMware Cloud on AWS(VMC) 또는 Amazon EC2로 데이터를 이동하는 도구를 제공합니다.
 
 
 
-== VMware용 BlueXP  워크로드 팩토리는 무엇입니까?
+== VMware용 NetApp Workload Factory란 무엇인가요?
 
-VMware용 BlueXP  workload factory는 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석할 수 있는 마이그레이션 관리자를 제공합니다. 그런 다음 마이그레이션 어드바이저는 권장 VM 레이아웃을 Amazon EC2 또는 VMware Cloud on AWS vSphere 클러스터 에 배포하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용하기 위한 계획을 생성합니다.
+VMware용 NetApp Workload Factory는 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석할 수 있는 계획 센터와 마이그레이션 어드바이저를 제공합니다.  그런 다음 마이그레이션 어드바이저는 권장되는 VM 레이아웃을 AWS vSphere 클러스터의 Amazon EVS, Amazon EC2 또는 VMware Cloud에 배포하고 사용자 정의된 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용하는 계획을 생성합니다.  VMware 대시보드의 워크로드 팩토리 역할을 하는 계획 센터를 통해 저장된 VM 인벤토리 데이터 세트와 저장된 마이그레이션 계획을 관리하고, 저장된 마이그레이션 계획을 프로비저닝할 수 있습니다.
 
-Amazon FSx for NetApp ONTAP은 NetApp의 ONTAP 파일 시스템을 기반으로 구축된 외부 NFS 데이터 저장소로, Amazon EC2 인스턴스 또는 VMware Cloud on AWS vSphere 클러스터에 연결할 수 있습니다. 사용 가능한 스토리지를 늘리기 위해 호스트를 추가할 필요가 없습니다. 대신 FSx for ONTAP 볼륨을 외부 데이터 저장소로 사용하여 vSAN 데이터 저장소를 보완하면 됩니다. 따라서 컴퓨팅 리소스와 독립적으로 확장이 가능한 유연한 고성능 가상화 스토리지 인프라를 제공할 수 있습니다.
+Amazon FSx for NetApp ONTAP 은 NetApp의 ONTAP 파일 시스템을 기반으로 구축된 외부 NFS 데이터 저장소로, Amazon EVS 또는 Amazon EC2 인스턴스나 AWS vSphere 클러스터의 VMware Cloud에 연결할 수 있습니다.  사용 가능한 스토리지를 늘리기 위해 호스트를 추가할 필요는 없습니다. 대신, vSAN 데이터스토어를 보완하는 외부 데이터스토어로 FSx for ONTAP 볼륨을 사용하면 됩니다.  이를 통해 컴퓨팅 리소스에 관계없이 확장 가능한 유연하고 고성능의 가상화된 스토리지 인프라를 제공합니다.
 
-image:diagram-vmware-fsx-overview.png["아키텍처를 보여 주는 다이어그램"]
-
-작업 부하 공장에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["워크로드 공장 개요"^]참조하십시오.
+Workload Factory에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["Workload Factory 개요"^] .
 
 
 
-== VMware 마이그레이션 관리자의 작동 방식
+== VMware 마이그레이션 어드바이저의 작동 방식
 
-마이그레이션 어드바이저는 VMware 지원 데이터 저장소에서 실행되는 온프레미스 가상 머신(VM)과 데이터를 Amazon EC2 또는 VMware Cloud 데이터 저장소로 이동할 수 있도록 도와줍니다. 이때 FSx for ONTAP 파일 시스템의 보조 NFS 데이터 저장소가 포함됩니다.
-
-image:diagram-vmware-fsx-old-new.png["마이그레이션 후 이전 아키텍처와 새 아키텍처의 예를 보여 주는 다이어그램"]
+마이그레이션 어드바이저는 VMware 지원 데이터스토어에서 실행되는 온프레미스 가상 머신(VM)과 해당 데이터를 Amazon EVS, Amazon EC2 또는 VMware Cloud 데이터스토어로 이동하는 데 도움을 줄 수 있습니다. 여기에는 FSx for ONTAP 파일 시스템의 보충 NFS 데이터스토어가 포함됩니다.
 
 AWS 기반 VMware Cloud의 단일 vSphere 클러스터에 FSx for ONTAP 볼륨을 최대 4개까지 연결할 수 있습니다.
 
 
 
-== 마이그레이션 조언자로 수행할 수 있는 작업
+== 이민 자문가와 함께 할 수 있는 일
 
-마이그레이션 관리자는 다음과 같은 기능을 제공합니다.
+마이그레이션 어드바이저는 다음과 같은 기능을 제공합니다.
 
 * 현재 온-프레미스 VM 구성을 분석합니다
-* Amazon EC2 또는 VMware Cloud on AWS로 마이그레이션할 VM을 결정합니다
+* Amazon EC2, Amazon EVS 또는 VMware Cloud on AWS로 마이그레이션할 VM을 결정합니다.
 * VM 외부 데이터 저장소로 사용할 FSx for ONTAP 볼륨에서 필요한 공간을 식별합니다
 * 결과 보고서를 검토하여 배포 단계를 이해합니다
 * 실제 배포를 수행합니다
 
 
-마이그레이션 어드바이저는 단일 FSx for ONTAP 파일 시스템에 연결된 단일 Amazon EC2 인스턴스 또는 VMware Cloud on AWS 클러스터에 대한 구성 계획을 지원합니다.
+마이그레이션 어드바이저는 단일 FSx for ONTAP 파일 시스템에 연결된 단일 Amazon EVS 또는 Amazon EC2 인스턴스 또는 VMware Cloud on AWS 클러스터에 대한 구성 계획을 지원합니다.
 
 
 
-== 마이그레이션 관리자 사용의 이점
+== 이민 자문 서비스 이용의 이점
 
 Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라의 일부를 AWS 기반 Amazon EC2 또는 VMware Cloud로 전환하는 것은 다음과 같은 이점을 제공합니다.
 
@@ -67,29 +63,43 @@ Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 �
 
 
 
-== 워크로드 팩토리 사용을 위한 툴
+== NetApp Workload Factory를 사용하는 도구
 
-다음 툴과 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다.
+다음 도구와 함께 NetApp Workload Factory를 사용할 수 있습니다.
 
-* * 워크로드 팩토리 콘솔 * : 워크로드 팩토리 콘솔은 애플리케이션과 프로젝트에 대한 시각적이고 포괄적인 뷰를 제공합니다.
-* * BlueXP  콘솔 *: BlueXP  콘솔은 하이브리드 인터페이스 환경을 제공하므로 다른 BlueXP  서비스와 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다.
-* * 질문하기 *: 질문하기 AI 도우미를 사용하여 워크로드 팩토리 웹 UI를 벗어나지 않고도 워크로드 공장에 대해 자세히 알아보십시오. 워크로드 기본 도움말 메뉴에서 질문하기 에 액세스합니다.
-* * CloudShell CLI *: 워크로드 팩토리에는 단일 브라우저 기반 CLI를 통해 모든 계정에서 AWS 및 NetApp 환경을 관리하고 운영할 수 있는 CloudShell CLI가 포함되어 있습니다. 워크로드 팩토리 콘솔의 상단 표시줄에서 CloudShell에 액세스합니다.
-* * REST API *: 워크로드 팩토리 REST API를 사용하여 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리합니다.
-* * CloudFormation *: AWS CloudFormation 코드를 사용하여 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 워크로드 팩토리 콘솔에 정의한 작업을 수행합니다.
-* * Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하여 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리하십시오.
+* *Workload Factory 콘솔*: Workload Factory 콘솔은 애플리케이션과 프로젝트에 대한 시각적이고 전체적인 보기를 제공합니다.
+* * NetApp 콘솔*: NetApp 콘솔은 Workload Factory를 다른 NetApp 데이터 서비스와 함께 사용할 수 있도록 하이브리드 인터페이스 환경을 제공합니다.
+* *질문하기*: Workload Factory 콘솔을 벗어나지 않고도 Ask me AI 도우미를 사용하여 질문을 하고 Workload Factory에 대해 자세히 알아보세요. Workload Factory 도움말 메뉴에서 Ask me에 액세스하세요.
+* *CloudShell CLI*: Workload Factory에는 단일 브라우저 기반 CLI를 통해 여러 계정의 AWS 및 NetApp 환경을 관리하고 운영할 수 있는 CloudShell CLI가 포함되어 있습니다. Workload Factory 콘솔의 상단 표시줄에서 CloudShell에 액세스합니다.
+* *REST API*: Workload Factory REST API를 사용하여 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리합니다.
+* *CloudFormation*: AWS CloudFormation 코드를 사용하여 Workload Factory 콘솔에서 정의한 작업을 수행하여 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리합니다.
+* *Terraform NetApp Workload Factory 공급자*: Terraform을 사용하여 Workload Factory 콘솔에서 생성된 인프라 워크플로를 구축하고 관리합니다.
 
 
 
 
 == 비용
 
-VMware 마이그레이션 관리자를 사용하려면 비용이 들지 않습니다.
+VMware에서 Workload Factory를 사용하는 데는 비용이 들지 않습니다.
 
-마이그레이션 어드바이저의 권장 사항에 따라 배포한 AWS 리소스의 비용을 지불해야 합니다.
+마이그레이션 어드바이저의 권장 사항에 따라 배포하는 AWS 리소스에 대한 비용을 지불해야 합니다.
 
 
 
 == 라이센싱
 
-NetApp에서 마이그레이션 관리자를 사용하기 위해 특별한 라이센스가 필요하지 않습니다.
+VMware용 Workload Factory를 사용하려면 NetApp 의 특별 라이선스가 필요하지 않습니다.
+
+
+
+== 지역
+
+Workload Factory는 FSx for ONTAP 이 지원되는 모든 상업 지역에서 지원됩니다. https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["지원되는 Amazon 지역을 확인하세요."^]
+
+다음 AWS 지역은 지원되지 않습니다.
+
+* 중국 지역
+* GovCloud(미국) 지역
+* 시크릿 클라우드
+* 극비 클라우드
+

@@ -1,17 +1,27 @@
 ---
 sidebar: sidebar 
-permalink: capture-vm-configurations-native.html 
+permalink: upload-vm-inventory.html 
 keywords: vm workloads, capture vm details 
-summary: Migration Advisor VM Collector 스크립트 또는 RVTools를 사용하여 현재 VM 구성을 캡처할 수 있습니다. Migration Advisor VM Collector 스크립트는 가장 정확한 계획을 위해 VM 구성과 성능 데이터를 모두 수집하므로 이 스크립트를 사용하는 것이 좋습니다. 
+summary: Planning Center를 사용하여 현재 VMware 환경에 대한 정보를 업로드할 수 있습니다. 
 ---
-= VMware 워크로드를 Amazon EC2로 마이그레이션하기 전에 VM 구성을 캡처하십시오
+= NetApp Workload Factory에 VM 인벤토리 데이터 업로드
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-마이그레이션 어드바이저 VM 데이터 수집기 스크립트, RVTools 또는 NetApp 데이터 인프라 Insights를 사용하여 현재 VM 구성을 캡처할 수 있습니다. 이러한 옵션은 가장 정확한 계획을 위해 VM 구성과 성능 데이터를 모두 수집하므로 Migration Advisor VM Collector 스크립트 또는 Data Infrastructure Insights를 사용하는 것이 좋습니다.
+마이그레이션 계획을 생성하기 전에 VM 인벤토리 데이터를 업로드해야 합니다.
+
+.단계
+. 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
+. VMware 워크로드 타일에서 *VMware Planning Center*를 선택합니다.
++
+계획 센터에서 VM 인벤토리 데이터를 업로드하고, 이전 인벤토리 데이터 업로드를 확인하고, VM 인벤토리 데이터 세트를 사용하여 마이그레이션을 계획할 수 있습니다.
+
+. *VM 인벤토리 업로드*를 선택하세요.
+. 사용할 데이터 수집 방법을 선택하세요.
+
 
 [role="tabbed-block"]
 ====
@@ -22,6 +32,11 @@ RVTools는 vCenter 및 ESX 서버(5.x - 8.0)와 상호 작용하여 VMware 가�
 https://www.robware.net/home["RVTools에 대해 자세히 알아보십시오"^]
 
 .단계
+. *RVTools* 타일을 선택하고 *다음*을 선택합니다.
++
+Prepare for AWS Cloud OnBoarding * 페이지가 표시됩니다.
+
+. 생성할 VM 인벤토리 데이터 세트의 이름을 입력하세요.
 . 에서 RVTools 4.4.2 이상을 다운로드하여 설치합니다 https://www.robware.net/download["RVTools 웹 사이트"^]
 . RVTools를 실행하고 대상 vCenter Server에 로그인합니다.
 +
@@ -31,13 +46,13 @@ https://www.robware.net/home["RVTools에 대해 자세히 알아보십시오"^]
 +
  https://resources.robware.net/resources/prod/RVTools.pdf["RVTools 설명서"^]자세한 내용은 의 "commandline parameters" 장을 참조하십시오.
 
+. 선택하다image:button-upload-file.png["업로드 버튼"] 그리고 내보낸 RVTools 파일을 선택하세요.
+. *업로드*를 선택하세요.
+. *마침*을 선택하세요.
 
-
-.결과
-결과가 포함된 xlsx 또는 xls 파일이 작업 디렉터리에 저장됩니다.
 
 --
-.Migration Advisor VM Collector 스크립트 사용(세부 계획)
+.데이터 수집기 사용(상세 계획)
 --
 NetApp Migration Advisor VM Collector 스크립트는 RVTools에서 수집하는 것과 유사한 방식으로 vCenter에서 VM 구성 정보를 수집하지만, 현재 VM 성능 데이터를 캡처하여 실제 읽기/쓰기 IOPS 및 처리량 통계를 제공합니다. 스크립트는 다음 두 가지 모드 중 하나로 사용할 수 있습니다.
 
@@ -59,16 +74,7 @@ Collector 스크립트를 실행할 시스템은 다음 요구 사항을 충족�
 VM에서 장기 통계(일일 통계)를 캡처하려면 vSphere 관리 콘솔(VMware 관리 환경)에서 통계 레벨 3 이상을 활성화해야 합니다.
 
 .단계
-. 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
-. VMware 워크로드 타일에서 *VMware Planning Center*를 선택합니다.
-+
-계획 센터에서 VM 인벤토리 데이터를 업로드하고, 이전 인벤토리 데이터 업로드를 확인하고, VM 인벤토리 데이터 세트를 사용하여 마이그레이션을 계획할 수 있습니다. 그런 다음 *AWS 네이티브 컴퓨팅으로 마이그레이션*을 선택합니다.  VMware 마이그레이션 어드바이저 시작 화면이 표시됩니다.
-
-+
-정보를 검토하여 마이그레이션 관리자의 이점에 대해 알아보십시오.
-
-. 준비가 되면 * 시작 * 을 선택합니다.
-. 세부 계획 * 타일을 선택하고 * 다음 * 을 선택합니다.
+. *데이터 수집기* 타일을 선택하고 *다음*을 선택합니다.
 +
 페이지 오른쪽에 코드 상자 창이 나타납니다.
 
@@ -104,10 +110,11 @@ Connect-VIServer -server <server_IP>
 +
 선택적으로 옵션을 지정하지 않고 데이터 수집기 스크립트를 실행할 수 있습니다. 이렇게 하면 대화형 메뉴에서 데이터 수집 기간을 선택할 수 있습니다.
 
++
++ 스크립트는 이름에 타임스탬프가 포함된 압축 파일을 현재 작업 디렉토리에 출력합니다.  .zip 파일에는 모든 VM과 해당 속성 목록, IOPS 및 처리량 데이터가 포함되어 있습니다.
 
+. *업로드*를 선택하세요.
 
-.결과
-스크립트는 현재 작업 디렉토리의 이름에 타임스탬프가 있는 압축된 파일을 출력합니다. zip 파일에는 모든 VM 및 해당 속성의 목록이 IOPS 및 처리량 데이터와 함께 포함됩니다.
 
 --
 .NetApp 데이터 인프라 인사이트 사용(상세 계획)
@@ -117,30 +124,29 @@ NetApp 데이터 인프라 Insights는 전체 인프라에 대한 가시성을 �
 https://docs.netapp.com/us-en/data-infrastructure-insights/["Data Infrastructure Insights에 대해 자세히 알아보십시오"^]
 
 .단계
-. Data Infrastructure Insights 계정에 로그인합니다.
-. 측면 탐색 메뉴에서 * Admin * 을 선택합니다.
-. 결과 메뉴에서 * API 액세스 * 를 선택합니다.
-. API 액세스 토큰 * 탭에서 * + API 액세스 토큰 * 을 선택합니다.
+. * Data Infrastructure Insights* 타일을 선택하고 *다음*을 선택합니다.
 +
-API 액세스 토큰 만들기 대화 상자가 나타납니다.
+Prepare for AWS Cloud OnBoarding * 페이지가 표시됩니다.
 
-. API 토큰의 이름과 설명을 입력하십시오.
-. 이 토큰을 호출하는 데 사용할 API 유형 * 에서 다음 중 하나를 선택합니다.
+. 생성할 VM 인벤토리 데이터 세트의 이름을 입력하세요.
+. Data Infrastructure Insights 에 대한 테넌트 엔드포인트를 입력하세요.
 +
-** 획득 장치
-** 자산
-** 데이터 수집
+Data Infrastructure Insights에 액세스하는 데 사용하는 URL입니다.
 
+. Data Infrastructure Insights에 대한 API 액세스 토큰을 아직 생성하지 않은 경우 페이지의 지침에 따라 토큰을 생성하십시오. 그렇지 않으면 * API 액세스 토큰 입력 * 텍스트 상자에 API 액세스 토큰을 붙여 넣습니다.
+. *업로드*를 선택하세요.
++
+Workload Factory는 Data Infrastructure Insights 에서 정보를 수집합니다.
 
-. 권한 * 아래에서 * 읽기 전용 * 을 선택합니다.
-. 토큰 만료 시간 * 에서 유효한 API 토큰이 필요한 기간을 선택합니다.
-. Kubernetes용 토큰 자동 회전 * 의 선택을 취소합니다.
-. 저장 * 을 선택합니다.
-. Copy API Access Token * 을 선택합니다.
-. Workload Factory 마이그레이션 어드바이저와 함께 사용할 준비를 위해 이 토큰을 저장하세요.
 
 
 --
 ====
 .다음 단계
-link:launch-onboarding-advisor-native.html["마이그레이션 관리자를 사용하여 Amazon EC2 배포 계획을 생성합니다"]..
+계획 센터에서 업로드한 VM 인벤토리 데이터를 관리하거나 배포 계획을 만듭니다.
+
+* link:explore-planning-center.html["VMware 워크로드 계획 센터 탐색"]
+* link:launch-onboarding-advisor.html["Amazon VMware Cloud 배포 계획 만들기"]
+* link:launch-migration-advisor-evs.html["Amazon Elastic VMware Service 배포 계획 만들기"]
+* link:launch-onboarding-advisor-native.html["Amazon EC2 배포 계획 만들기"]
+

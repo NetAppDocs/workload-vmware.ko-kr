@@ -35,7 +35,7 @@ Collector 스크립트를 실행할 시스템은 다음 요구 사항을 충족�
 VM에서 장기 통계(일일 통계)를 캡처하려면 vSphere 관리 콘솔(VMware 관리 환경)에서 통계 레벨 3 이상을 활성화해야 합니다.
 
 .단계
-. 중 하나를 사용하여 워크로드 팩토리에 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] 로그인합니다.
+. 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
 . VMware 워크로드 타일에서 * 평가 및 계획 * 을 선택한 다음 * AWS에서 VMware Cloud로 마이그레이션 * 을 선택합니다.
 +
 VMware Migration Advisor 기본 페이지가 표시됩니다.

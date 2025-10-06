@@ -6,6 +6,6 @@
 
 === Amazon Elastic VMWare Service에 대한 마이그레이션 어드바이저 지원 소개
 
-VMware용 BlueXP 워크로드 팩토리가 이제 Amazon Elastic VMware Service를 지원합니다. 마이그레이션 어드바이저를 사용하여 온프레미스 VMware 워크로드를 Amazon Elastic VMware Service로 신속하게 마이그레이션하여 비용을 최적화하고 애플리케이션을 리팩토링하거나 플랫폼을 재구축할 필요 없이 VMware 환경을 더욱 효과적으로 제어할 수 있습니다.
+VMware용 BlueXP Workload Factory는 이제 Amazon Elastic VMware Service를 지원합니다.  마이그레이션 어드바이저를 사용하면 온프레미스 VMware 워크로드를 Amazon Elastic VMware Service로 빠르게 마이그레이션하여 비용을 최적화하고 애플리케이션을 리팩토링하거나 플랫폼을 재구축할 필요 없이 VMware 환경을 더 효과적으로 제어할 수 있습니다.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["마이그레이션 어드바이저를 사용하여 Amazon EVS에 대한 배포 계획을 만듭니다."]

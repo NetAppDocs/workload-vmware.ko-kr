@@ -4,7 +4,7 @@ permalink: calculate-evs-savings.html
 keywords: vm workloads, deploy fsx, deploy storage for vms, evs, savings, calculate, tco 
 summary: FSx for ONTAP 과 함께 Amazon EVS를 사용하면 얼마나 많은 비용을 절감할 수 있는지 계산해 보세요. 
 ---
-= BlueXP workload factory 통해 Amazon Elastic VMware Service에 대한 절감 혜택을 살펴보세요.
+= NetApp Workload Factory를 통해 Amazon Elastic VMware Service에 대한 절감 혜택을 살펴보세요
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -25,7 +25,7 @@ Amazon EVS 환경으로 계획된 마이그레이션을 통해 얻을 수 있는
 NOTE: 계속하기 전에, 절감 계산기 하단의 고지사항을 검토하여 가격 추정치가 어떻게 계산되는지 자세히 알아보세요.
 
 .단계
-. 중 하나를 사용하여 워크로드 팩토리에 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] 로그인합니다.
+. 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
 . VMware 워크로드 타일에서 *절감 효과 살펴보기*를 선택한 다음 *Amazon Elastic VMware Service(EVS)*를 선택합니다.  저축 계산기가 표시됩니다.
 +
 *환경 기본 설정* 창에는 환경 요구 사항에 따라 조정할 수 있는 슬라이더가 제공됩니다.

@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: explore-planning-center.html 
+keywords: vm workloads, netapp Workload Factory 
+summary: VMware 계획 센터를 사용하면 업로드된 인벤토리 데이터와 사용자가 만든 마이그레이션 계획을 관리할 수 있습니다. 
+---
+= VMware 계획 센터 탐색
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+VMware 계획 센터를 사용하면 새로운 VM 인벤토리 데이터를 업로드하고 새로운 마이그레이션 계획을 만들 수 있을 뿐만 아니라 NetApp Workload Factory에 이미 저장해 둔 VM 인벤토리 데이터와 마이그레이션 계획을 관리할 수 있습니다.
+
+
+
+== VM 인벤토리 데이터 관리
+
+계획 센터를 사용하여 VM 인벤토리 데이터를 만들고 관리합니다.
+
+
+
+=== VM 인벤토리 데이터 업로드
+
+Workload Factory를 사용하여 Amazon AWS 환경으로의 마이그레이션 옵션을 살펴볼 준비가 되면 VM 인벤토리 데이터를 업로드할 수 있습니다.  참조하다link:upload-vm-inventory.html["VM 인벤토리 데이터 업로드"] 지침을 보려면.
+
+
+
+=== 데이터 세트 이름 바꾸기
+
+저장된 데이터 세트의 이름을 변경할 수 있습니다.
+
+.단계
+. 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
+. VMware 워크로드 타일에서 *VMware Planning Center*를 선택합니다.  계획 센터가 나타납니다.
+. 이름을 바꾸려는 데이터 세트에 대한 작업 메뉴(...)를 선택하고 *이름 바꾸기*를 선택합니다.
+. 데이터 세트의 새 이름을 입력하고 *저장*을 선택합니다.
+
+
+
+
+=== 데이터 세트 삭제
+
+데이터 세트가 더 이상 필요하지 않으면 언제든지 삭제할 수 있습니다.
+
+.단계
+. 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
+. VMware 워크로드 타일에서 *VMware Planning Center*를 선택합니다.  계획 센터가 나타납니다.
+. 삭제하려는 데이터 세트에 대한 작업 메뉴(...)를 선택하고 *삭제*를 선택합니다.
+. *삭제*를 선택하여 작업을 확인하세요.
+
+
+
+
+== 마이그레이션 계획 관리
+
+마이그레이션 센터를 사용하여 마이그레이션 계획을 만들고 관리하세요.
+
+
+
+=== 마이그레이션 계획 제공
+
+마이그레이션 계획을 선택하고 프로비저닝하여 VM이 원하는 Amazon AWS 환경으로 마이그레이션되도록 할 수 있습니다.
+
+.단계
+. 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
+. VMware 워크로드 타일에서 *VMware Planning Center*를 선택합니다.  계획 센터가 나타납니다.
+. *마이그레이션 계획* 메뉴를 선택하세요.
+. 프로비저닝하려는 마이그레이션 계획에 대한 작업 메뉴(...)를 선택하고 *프로비저닝*을 선택합니다.
+. 마이그레이션 계획에 따라 파일 시스템을 배포하기 위한 지침을 참조하세요.
++
+** link:deploy-fsx-file-system.html["Amazon VMware Cloud 플랜에 파일 시스템 배포"]
+** link:deploy-fsx-file-system-native.html["Amazon EC2 계획에 대한 파일 시스템 배포"]
+** link:deploy-fsx-file-system-evs.html["Amazon Elastic VMware 서비스 계획에 대한 파일 시스템 배포"]
+
+
+
+
+
+
+=== 마이그레이션 계획에 대한 주석을 편집하세요
+
+마이그레이션 계획에 대한 주석 세부 정보를 변경해야 하는 경우, 계획 센터에서 주석을 편집하세요.
+
+.단계
+. 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
+. VMware 워크로드 타일에서 *VMware Planning Center*를 선택합니다.  계획 센터가 나타납니다.
+. *마이그레이션 계획*을 선택하세요.
+. 편집하려는 마이그레이션 계획에 대한 작업 메뉴(...)를 선택하고 *댓글 편집*을 선택합니다.
+. 댓글을 입력하고 *저장*을 선택하세요.
+
+
+
+
+=== 마이그레이션 계획에 대한 PDF 보고서 만들기
+
+마이그레이션 계획의 세부 정보를 담은 PDF 보고서를 만듭니다.
+
+.단계
+. 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
+. VMware 워크로드 타일에서 *VMware Planning Center*를 선택합니다.  계획 센터가 나타납니다.
+. *마이그레이션 계획*을 선택하세요.
+. PDF 보고서를 만들 마이그레이션 계획에 대한 작업 메뉴(...)를 선택하고 *보고서 만들기*를 선택합니다.
+. 보고서 PDF의 이름을 입력하고 *저장*을 선택합니다.
+
+
+
+
+=== 마이그레이션 계획 삭제
+
+마이그레이션 계획이 더 이상 필요하지 않으면 언제든지 삭제할 수 있습니다.
+
+.단계
+. 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
+. VMware 워크로드 타일에서 *VMware Planning Center*를 선택합니다.  계획 센터가 나타납니다.
+. *마이그레이션 계획*을 선택하세요.
+. 삭제하려는 마이그레이션 계획에 대한 작업 메뉴(...)를 선택하고 *삭제*를 선택합니다.
+. *삭제*를 선택하여 작업을 확인하세요.
+

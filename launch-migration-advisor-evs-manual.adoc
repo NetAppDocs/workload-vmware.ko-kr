@@ -1,19 +1,19 @@
 ---
 sidebar: sidebar 
 permalink: launch-migration-advisor-evs-manual.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works, migration, advisor, manual, specification, deploy, deployment, plan 
-summary: NetApp 워크로드 팩토리에 로그인하여 VMware 마이그레이션 조언자에 액세스합니다. 마법사의 단계를 따라 필요에 맞게 사용자 지정된 배포 계획 또는 마이그레이션 계획을 만듭니다. 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works, migration, manual, specification, deploy, deployment, plan 
+summary: NetApp Workload Factory에 로그인하여 VMware 계획 센터에 액세스하세요.  EVS에 대한 배포 계획을 수동으로 만들 수 있습니다. 
 ---
-= VMware 워크로드 마이그레이션 어드바이저를 사용하여 Amazon EVS에 대한 배포 계획을 만듭니다.
+= Amazon EVS에 대한 배포 계획을 수동으로 생성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-NetApp 워크로드 팩토리에 로그인하여 VMware 마이그레이션 조언자에 액세스합니다. 마법사의 단계를 따라 필요에 맞게 사용자 지정된 배포 계획 또는 마이그레이션 계획을 만듭니다.
+NetApp Workload Factory에 로그인하여 VMware 계획 센터에 액세스하세요.  여기에서 사용자의 요구 사항에 맞게 사용자 정의된 Amazon EVS 배포 계획이나 마이그레이션 계획을 수동으로 만들 수 있습니다.
 
-워크로드 팩토리얼에 액세스하려면 사용자 이름과 암호가 있어야 합니다. 액세스 권한이 없는 경우 지금 계정을 만드십시오. 자세한 내용은 지침을 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["여기"]참조하십시오.
+Workload Factory에 액세스하려면 사용자 이름과 비밀번호가 필요합니다.  접근할 수 없다면 지금 계정을 만드세요.  지침을 참조하세요 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["여기"] .
 
 
 
@@ -26,10 +26,9 @@ Amazon Elastic VMware Service의 가상 머신에 대한 요구 사항을 수동
 
 
 .단계
-. 중 하나를 사용하여 워크로드 팩토리에 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] 로그인합니다.
-. 선택적으로 Workload Factory 콘솔에서 Workload Factory에 액세스한 경우 VMware 워크로드 타일에서 *계획 및 생성*을 선택한 다음 *Amazon Elastic VMware 서비스*를 선택합니다. VMware Migration Advisor 시작 화면이 표시됩니다.
-. *Amazon Elastic VMware 서비스* 타일을 선택합니다.
-. 준비가 되면 * 시작 * 을 선택합니다.
+. 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
+. 선택적으로, Workload Factory 콘솔에서 Workload Factory에 액세스한 경우 VMware 워크로드 타일에서 *VMware Planning Center*를 선택한 다음 *VMware Planning Center*를 선택합니다.  VMware 계획 센터가 표시됩니다.
+. *EVS 계획을 수동으로 생성*을 선택하세요.
 . VM 환경에 대한 요구 사항을 입력하세요.
 +
 [NOTE]
@@ -42,13 +41,13 @@ Amazon Elastic VMware Service의 가상 머신에 대한 요구 사항을 수동
 
 
 ====
-. 준비가 되면 *다음*을 선택하여 마이그레이션 계획을 검토하세요.
+. 준비가 되면 *계획 검토*를 선택하여 마이그레이션 계획을 검토하세요.
 . 계획을 검토합니다. 각 섹션을 확장하여 계획 세부 정보를 확인하세요.
-. 선택적으로, 마이그레이션 계획에 만족하면 이를 템플릿이나 PDF로 저장할 수 있습니다.
 +
-** 마이그레이션 계획을 템플릿으로 저장하려면 *계획 내보내기*를 선택하세요.  `.json` 컴퓨터의 형식입니다. 나중에 계획을 가져와 요구 사항이 유사한 시스템을 배포할 때 템플릿으로 사용할 수 있습니다.
-** 배포 계획을 다운로드하려면 *계획 다운로드*를 선택하세요.  `.pdf` 계획을 검토용으로 배포할 수 있는 형식입니다.
+기본적으로 Workload Factory는 마이그레이션 계획을 계획 센터에 저장합니다.  페이지 상단에서 이 옵션의 선택을 해제할 수 있습니다.
+
+. 선택적으로, 마이그레이션 계획에 만족하면 *계획 내보내기(PDF)*를 선택하여 계획 세부 정보를 PDF 문서로 다운로드할 수 있습니다.
+. 배포 계획을 프로비저닝할 준비가 되면 *프로비저닝*을 선택하세요.
 
 
-. link:deploy-fsx-file-system-evs.html["VMware 워크로드에 권장되는 FSx for ONTAP 파일 시스템을 구축하십시오"]..
-
+link:deploy-fsx-file-system-evs.html["VMware 워크로드에 권장되는 FSx for ONTAP 파일 시스템을 구축하십시오"]..

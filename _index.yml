@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: VMware 설명서를 위한 BlueXP  워크로드 팩토리
+  title: VMware용 NetApp Workload Factory 설명서
   summary: 온프레미스 vSphere 환경에서 AWS 기반의 VMware Cloud로 마이그레이션을 간소화하고 맞춤형 FSx for ONTAP
     파일 시스템을 외부 데이터 저장소로 구현합니다.
   keywords: VMware, FSx, VMs, VMC, VMware Cloud on AWS, FSx for ONTAP
@@ -9,7 +9,7 @@ indexpage:
   tiles:
   - title: 시작하십시오
     links:
-    - title: VMware용 BlueXP  워크로드 팩토리에 대해 알아보십시오
+    - title: VMware용 NetApp Workload Factory에 대해 알아보세요
       url: learn-about-vmware-workloads.html
     - title: '빠른 시작: Amazon Elastic VMware Service로 마이그레이션'
       url: quick-start-evs.html
@@ -17,26 +17,26 @@ indexpage:
       url: quick-start.html
     - title: '빠른 시작: Amazon EC2로 마이그레이션합니다'
       url: quick-start-native.html
+    - title: VMware 계획 센터 탐색
+      url: explore-planning-center.html
   - title: Amazon Elastic VMware Service로 마이그레이션
     links:
     - title: 저축 알아보기
       url: calculate-evs-savings.html
-    - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
+    - title: 수동으로 배포 계획 생성
       url: launch-migration-advisor-evs-manual.html
+    - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
+      url: launch-migration-advisor-evs.html
     - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
       url: deploy-fsx-file-system.html
   - title: Amazon EC2로 마이그레이션합니다
     links:
-    - title: 현재 VM 구성을 캡처합니다
-      url: capture-vm-configurations-native.html
     - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
       url: launch-onboarding-advisor-native.html
     - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
       url: deploy-fsx-file-system.html
   - title: AWS 기반 VMware Cloud로 마이그레이션하십시오
     links:
-    - title: 현재 VM 구성을 캡처합니다
-      url: capture-vm-configurations.html
     - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
       url: launch-onboarding-advisor.html
     - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
@@ -47,9 +47,9 @@ indexpage:
       url: migrate-data.html
   - title: 블로그 및 커뮤니티
     links:
+    - title: NetApp 콘솔
+      url: https://www.netapp.com/console
+    - title: NetApp 데이터 서비스
+      url: https://www.netapp.com/data-services/
     - title: NetApp 커뮤니티
-      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: BlueXP 블로그
-      url: https://bluexp.netapp.com/blog
-    - title: 클라우드 웨비나
-      url: https://bluexp.netapp.com/events
+      url: https://community.netapp.com/
