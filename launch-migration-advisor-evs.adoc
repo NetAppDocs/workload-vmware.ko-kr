@@ -13,19 +13,20 @@ summary: VMware 계획 센터에서 Amazon EVS 마이그레이션 어드바이�
 [role="lead"]
 VMware 계획 센터에서 Amazon EVS 마이그레이션 어드바이저를 실행하여 사용자의 요구 사항에 맞게 사용자 정의된 마이그레이션 계획을 만들 수 있습니다.
 
-Workload Factory에 액세스하려면 사용자 이름과 비밀번호가 필요합니다.  접근할 수 없다면 지금 계정을 만드세요.  지침을 참조하세요 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["여기"] .
-
-
-
-== 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
-
 가상 머신을 Amazon Elastic VMware Service로 마이그레이션하고 사용자 지정 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용하는 배포 계획을 만들 수 있습니다.  마이그레이션 어드바이저의 옵션은 VM 인벤토리 데이터를 수집하는 데 사용된 도구에 따라 다를 수 있습니다.
 
-.요구 사항
+
+
+== 요구 사항
+
+* Workload Factory에 액세스하려면 사용자 이름과 비밀번호가 필요합니다.  접근할 수 없다면 지금 계정을 만드세요.  지침을 참조하세요 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["여기"] .
 * Amazon Elastic VMware Service 구독이 있어야 합니다.
 
 
-.단계
+
+
+== 단계
+
 . 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
 . 선택적으로, Workload Factory 콘솔에서 Workload Factory에 액세스한 경우 VMware 워크로드 타일에서 *VMware Planning Center*를 선택한 다음 *VMware Planning Center*를 선택합니다.  VMware 계획 센터가 표시됩니다.
 . 배포 계획을 세우는 데 사용할 VM 인벤토리를 목록에서 선택하고 해당 행에서 *계획 시작*을 선택합니다.
@@ -91,7 +92,7 @@ VM 목록에서 열로 표시할 VM 정보 유형을 선택할 수 있습니다.
 [discrete]
 ===== 설계
 
-. *ClassReview 인스턴스 저장소 할당* 페이지에서 VM 정보, 볼륨 분류 규칙, 볼륨 할당 및 배포의 일부로 마이그레이션될 볼륨 목록을 검토한 후 *다음*을 선택합니다.
+* *ClassReview 인스턴스 저장소 할당* 페이지에서 VM 정보, 볼륨 분류 규칙, 볼륨 할당 및 배포의 일부로 마이그레이션될 볼륨 목록을 검토한 후 *다음*을 선택합니다.
 
 
 [discrete]
@@ -103,6 +104,10 @@ VM 목록에서 열로 표시할 VM 정보 유형을 선택할 수 있습니다.
 
 +
 마이그레이션 계획은 기본적으로 계획 센터의 계획 목록에 자동으로 저장됩니다.
+
+. 선택적으로, 페이지 오른쪽 상단에서 *계획 관리*를 선택한 다음 *보고서 다운로드(.pdf)* 또는 *VM 스토리지 배포 다운로드(.csv)*를 선택하여 마이그레이션 계획을 PDF 또는 CSV 파일로 내보낼 수 있습니다.
++
+.csv 파일은 마이그레이션 계획에 포함된 모든 VM과 할당된 스토리지 볼륨에 대한 맵을 만듭니다.
 
 . 계획을 진행할 준비가 되면 *프로비저닝*을 선택하여 권장되는 Amazon FSx for NetApp ONTAP 파일 시스템 배포를 시작합니다.
 

@@ -253,7 +253,6 @@
   <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link">작동 모드</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1개</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2개</block>
-  <block id="b36a952e38561cb86fdb6a473044fce0" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 계정에 AWS 자격 증명 및 권한을 추가합니다</block>
   <block id="fb391f4cf6483b8b419032dc188bd9d8" category="inline-link">자격 증명 및 사용 권한을 추가하는 방법에 대해 알아봅니다</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">세 가지</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">네</block>
@@ -442,7 +441,6 @@
   <block id="1832a7f4d2abf297aa0cee87f4c043e3" category="doc">Amazon Elastic VMWare Service에 대한 마이그레이션 어드바이저 지원 소개</block>
   <block id="e64998710319712d47612cc187a1dc35" category="inline-link">마이그레이션 어드바이저를 사용하여 Amazon EVS에 대한 배포 계획을 만듭니다.</block>
   <block id="e38866fbf1fd8067b38b878041582246" category="paragraph"><block ref="e38866fbf1fd8067b38b878041582246" category="inline-link-rx"></block></block>
-  <block id="802df5af335904750107954ab3a8ed46" category="list-title">Amazon Elastic VMware Service에 대한 배포 요구 사항</block>
   <block id="af3e8ed9d9207dad8af46833f2eb0ab7" category="list-text">Amazon Elastic VMware Service 구독이 있어야 합니다.</block>
   <block id="ae7ebbe17e3811730276beadb335d6dd" category="list-text">AWS 계정에서 FSx for ONTAP 파일 시스템을 생성하려면 필요한 권한이 있어야 합니다.</block>
   <block id="24fc36f7e1c73cab9f76bb8ee2f25d79" category="list-text">"파일 시스템 일반 구성" 섹션에서 다음 정보를 입력합니다.</block>
@@ -456,7 +454,6 @@
   <block id="7d87cf8c2865afef739dfc772b6aabc3" category="list-text">*ONTAP 자격 증명*: ONTAP 사용자 이름 비밀번호를 입력하세요.</block>
   <block id="2240ad2300512b80bcff2fc7b3eadb2e" category="paragraph">선택적으로 Codebox 창에서 *CloudFormation으로 리디렉션*을 선택하여 CloudFormation 스택을 사용하여 파일 시스템과 권장 VM 구성을 생성할 수 있습니다.</block>
   <block id="f49f5d0e3a47bf2d077d9b5cb9387559" category="paragraph">FSx for ONTAP 파일 시스템이 구축됩니다. 이제 Codebox의 AWS CloudFormation 템플릿을 사용하여 권장되는 VM 구성을 Amazon Elastic VMware Service 환경에 배포할 수 있습니다.</block>
-  <block id="afae2006111ac3752aa6ac921a1174d1" category="section-title">환경 요구 사항을 수동으로 지정하여 배포 계획을 만듭니다.</block>
   <block id="3693b6808c8591ae14d0989957294e8c" category="paragraph">Amazon Elastic VMware Service의 가상 머신에 대한 요구 사항을 수동으로 지정하고 사용자 정의된 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 수 있습니다.</block>
   <block id="1b7c012ca7da212cb6ec387367494316" category="list-text">VM 환경에 대한 요구 사항을 입력하세요.</block>
   <block id="330b61387619b0f8b4b8895b1ec8613f" category="paragraph">다음 VM 마이그레이션 성능 요구 사항과 권장 사항을 염두에 두세요.</block>
@@ -551,7 +548,6 @@
   <block id="f80ba210e2b7f5a6a678422254f971c2" category="section-title">마이그레이션 계획 관리</block>
   <block id="35114aeb2258e143dcf714ece6d9d294" category="paragraph">마이그레이션 센터를 사용하여 마이그레이션 계획을 만들고 관리하세요.</block>
   <block id="3659e24395e47e249a7cb0babacdce89" category="section-title">마이그레이션 계획 제공</block>
-  <block id="79365fd6156503549c858f6fef6f4384" category="paragraph">마이그레이션 계획을 선택하고 프로비저닝하여 VM이 원하는 Amazon AWS 환경으로 마이그레이션되도록 할 수 있습니다.</block>
   <block id="d739eb8fed40a1b32724c4bd454b0f7b" category="list-text">*마이그레이션 계획* 메뉴를 선택하세요.</block>
   <block id="956d376b583f5687a7637d9906bf6a8a" category="list-text">프로비저닝하려는 마이그레이션 계획에 대한 작업 메뉴(...)를 선택하고 *프로비저닝*을 선택합니다.</block>
   <block id="5a71691c5600510f5a4512966f318d3b" category="list-text">마이그레이션 계획에 따라 파일 시스템을 배포하기 위한 지침을 참조하세요.</block>
@@ -566,10 +562,6 @@
   <block id="ed977dfdfe1506958cfaf0814d2d88aa" category="list-text">*마이그레이션 계획*을 선택하세요.</block>
   <block id="85ff4660d4c9887c8c3642f5b88f5c0f" category="list-text">편집하려는 마이그레이션 계획에 대한 작업 메뉴(...)를 선택하고 *댓글 편집*을 선택합니다.</block>
   <block id="ffba1532f20138af6f125ed0e7922f0c" category="list-text">댓글을 입력하고 *저장*을 선택하세요.</block>
-  <block id="af848be5e478317315a7456f2b750f85" category="section-title">마이그레이션 계획에 대한 PDF 보고서 만들기</block>
-  <block id="ab8d3711b0c3a5626489fe2bfe17f05f" category="paragraph">마이그레이션 계획의 세부 정보를 담은 PDF 보고서를 만듭니다.</block>
-  <block id="90ef9f5b382625493541f79cb73c95bc" category="list-text">PDF 보고서를 만들 마이그레이션 계획에 대한 작업 메뉴(...)를 선택하고 *보고서 만들기*를 선택합니다.</block>
-  <block id="95ccbdc12e94d757840a1d49067a3a22" category="list-text">보고서 PDF의 이름을 입력하고 *저장*을 선택합니다.</block>
   <block id="80150f821562b98f3c468bc4b96f7cfc" category="section-title">마이그레이션 계획 삭제</block>
   <block id="39f6a04761fcf20bcf673a41a6ab8f37" category="paragraph">마이그레이션 계획이 더 이상 필요하지 않으면 언제든지 삭제할 수 있습니다.</block>
   <block id="dc38ae40a3dd847f4277194b9bdb3492" category="list-text">삭제하려는 마이그레이션 계획에 대한 작업 메뉴(...)를 선택하고 *삭제*를 선택합니다.</block>
@@ -598,7 +590,6 @@
   <block id="3a24ead84cf153dcdbed17a6f2a5453f" category="list-text">*EVS 계획을 수동으로 생성*을 선택하세요.</block>
   <block id="d81d55a8a22e2c2e3489e48eb0ed356b" category="list-text">준비가 되면 *계획 검토*를 선택하여 마이그레이션 계획을 검토하세요.</block>
   <block id="09092a8424b4b288607f4a8069cab241" category="paragraph">기본적으로 Workload Factory는 마이그레이션 계획을 계획 센터에 저장합니다.  페이지 상단에서 이 옵션의 선택을 해제할 수 있습니다.</block>
-  <block id="554a7544eaaf7039cc0b201a4eb1c0a0" category="list-text">선택적으로, 마이그레이션 계획에 만족하면 *계획 내보내기(PDF)*를 선택하여 계획 세부 정보를 PDF 문서로 다운로드할 수 있습니다.</block>
   <block id="4147fd67220c420eb852e2c99f9ef614" category="list-text">배포 계획을 프로비저닝할 준비가 되면 *프로비저닝*을 선택하세요.</block>
   <block id="c3e8b1987aa88fc22cc3f9a3da7214be" category="summary">VMware 계획 센터에서 Amazon EVS 마이그레이션 어드바이저를 실행하여 사용자의 요구 사항에 맞게 사용자 정의된 마이그레이션 계획을 만들 수 있습니다.</block>
   <block id="8cf6f9434ff2a0ab859f112105dcf308" category="paragraph">가상 머신을 Amazon Elastic VMware Service로 마이그레이션하고 사용자 지정 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용하는 배포 계획을 만들 수 있습니다.  마이그레이션 어드바이저의 옵션은 VM 인벤토리 데이터를 수집하는 데 사용된 도구에 따라 다를 수 있습니다.</block>
@@ -676,13 +667,11 @@
   <block id="3d784fb83da69a092542ad97e84229a1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>Workload Factory에 로그인하세요</block>
   <block id="e3f4d5b3a0d16b68c0f95c7031bbab0f" category="inline-link">Workload Factory에 계정을 설정하세요</block>
   <block id="8af94ef3a55ab31e78f60c3968ecc4e3" category="paragraph">당신은 필요합니다<block ref="c1e10d5d77d21feb199911d5a4450d55" category="inline-link-rx"></block> 다음 중 하나를 사용하여 로그인하세요.<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block> .</block>
-  <block id="dd4f9edabeb37ece9735b049d7a1c633" category="paragraph">AWS 계정에 액세스하기 위한 자격 증명을 추가하지 않고도 _기본_ 모드에서 Workload Factory를 사용할 수 있습니다. Workload Factory에 AWS 자격 증명을 _읽기 전용_ 또는 _읽기/쓰기_ 모드로 추가하면 Workload Factory 계정에 FSx for ONTAP 파일 시스템을 생성하고 관리하고 Amazon EC2 내에서 워크로드를 배포하고 관리하는 데 필요한 권한이 부여됩니다.</block>
   <block id="3f35f21ffef11e779800fd22d15e4ca8" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>VM 인벤토리 데이터 업로드</block>
   <block id="e1705a2c0f8c2dd8d94e67c86291e62a" category="paragraph">계획 센터를 사용하여 현재 VM 환경에 대한 인벤토리 세부 정보를 업로드할 수 있습니다.  데이터 수집기 ​​스크립트, RVTools 또는 NetApp Data Infrastructure Insights 사용하여 현재 VM 구성을 캡처하고 해당 데이터를 계획 센터에 업로드합니다.</block>
   <block id="10ebd16f18f5f5f9fac69ef4c933c75f" category="inline-link-macro">VM 인벤토리 데이터를 업로드하는 방법을 알아보세요</block>
   <block id="527322d1ebf3079ca1f474c5e3c8d4dc" category="paragraph"><block ref="3f004e021dfd1da14c955ee4e1d0ba17" category="inline-link-macro-rx"></block> .</block>
   <block id="465e05b02c4091132dffd8661fead178" category="paragraph"><block ref="3aea27ccdadee3f33be0c6643a1fec67" category="inline-link-macro-rx"></block> .</block>
-  <block id="ed3181ef696298ce4f112b70f615add4" category="paragraph">AWS 계정에 액세스하기 위한 자격 증명을 추가하지 않고도 _기본_ 모드에서 Workload Factory를 사용할 수 있습니다. Workload Factory에 AWS 자격 증명을 _읽기 전용_ 또는 _읽기/쓰기_ 모드로 추가하면 Workload Factory 계정에 FSx for ONTAP 파일 시스템을 생성하고 관리하고 VMware Cloud 내에서 워크로드를 배포하고 관리하는 데 필요한 권한이 부여됩니다.</block>
   <block id="b334128403ed60ff931947907046e1f0" category="summary">NetApp 기술 지원에 지원 사례를 개설하려면 먼저 Workload Factory에 NetApp 지원 사이트 계정을 추가한 다음 지원을 위해 등록해야 합니다.</block>
   <block id="321b853ccb62a088abe07117978e5b31" category="doc">VMware용 NetApp Workload Factory 지원에 등록하세요</block>
   <block id="3d9b602ae77ac6a4951ca31b05b6b54f" category="paragraph">NetApp Workload Factory와 해당 스토리지 솔루션 및 서비스에 대한 기술 지원을 받으려면 지원 등록이 필요합니다. Workload Factory와는 별도의 웹 기반 콘솔인 NetApp 콘솔에서 지원을 받으려면 등록해야 합니다.</block>
@@ -735,4 +724,41 @@
   <block id="74f9db7fefcf8c24332761c003d46a02" category="section-title">VMware 워크로드 계획 센터 소개</block>
   <block id="c1ed477ef5d58aa5d9931821badda717" category="paragraph">VMware용 BlueXP Workload Factory를 사용하면 이제 Amazon Elastic VMware Service 마이그레이션 어드바이저를 사용하여 온프레미스 VMware 워크로드를 Amazon Elastic VMware Service로 빠르게 마이그레이션할 수 있습니다.  마이그레이션 어드바이저를 사용하여 마이그레이션 계획을 생성하면 해당 계획은 계획 센터의 마이그레이션 계획 목록에 자동으로 저장됩니다.</block>
   <block id="c2ec0e17d82dd73344c2ef80a6de22f1" category="paragraph"><block ref="c2ec0e17d82dd73344c2ef80a6de22f1" category="inline-link-rx"></block></block>
+  <block id="24469e003440641648ff205b984a0ac7" category="doc">FSx for ONTAP 파일 시스템 배포 마법사에서 Amazon Elastic VMware Service 기본 설정 소개</block>
+  <block id="0e8989988334c8827a95bf9733f5311e" category="paragraph">Amazon Elastic VMware Service의 외부 NFS 데이터 저장소로 사용할 FSx for ONTAP 파일 시스템을 배포하는 경우 이제 데이터 저장소가 연결될 EVS 환경을 선택할 수 있습니다.  이렇게 하면 배포 마법사의 여러 필드가 자동으로 채워져 배포 프로세스가 간소화됩니다.</block>
+  <block id="876ee64bc6b6627784cd32512c519f60" category="paragraph"><block ref="876ee64bc6b6627784cd32512c519f60" category="inline-link-rx"></block></block>
+  <block id="8bf32647108c4a28e744e9ba5a1683bf" category="section-title">VMware 워크로드에 대한 권한 변경</block>
+  <block id="18a162715dca6df2cf24f0158d03bddd" category="paragraph">VMware 워크로드는 특정 작업에 필요한 권한에 대한 명확성을 제공하고 필요한 권한만 선택할 수 있는 세분성을 제공합니다.  자격 증명을 추가하면 이전 권한 모델인 _읽기 전용_ 및 _읽기/쓰기_ 대신 두 가지 권한 옵션 중에서 선택할 수 있습니다. 새로운 권한 모델은 권한 정책을 다음과 같이 구분합니다.</block>
+  <block id="0a015f0bd274c5e6c7a774ac18592871" category="list-text">_보기, 계획 및 분석_: EVS 가상화 환경 인벤토리를 보고, 시스템에 대한 잘 설계된 분석을 얻고, 절감 방안을 알아보세요.</block>
+  <block id="56522cb8a8b15eeca3868896cb875225" category="list-text">_데이터 저장소 배포 및 연결_: 권장되는 VM 레이아웃을 AWS vSphere 클러스터의 Amazon EVS, Amazon EC2 또는 VMware Cloud에 배포하고 사용자 정의된 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용합니다.</block>
+  <block id="59371e7e2c46a6e1dae0e4d3224dd7ef" category="paragraph">자격 증명을 추가할 때 VMware 워크로드에 제공하려는 액세스 수준에 따라 이러한 권한 정책 중 하나 이상을 선택할 수 있습니다.</block>
+  <block id="b20b01e02162a68002ca1747d1bd3c10" category="inline-link-macro">워크로드 팩토리 권한 참조</block>
+  <block id="444b052e3d1349e221d4ceb42e6c1cf7" category="paragraph"><block ref="444b052e3d1349e221d4ceb42e6c1cf7" category="inline-link-macro-rx"></block></block>
+  <block id="62057df0ae6e346379f483246f31203b" category="list-text">*마이그레이션 계획 저장 또는 다운로드*: 이제 마이그레이션 계획을 PDF 또는 CSV 파일로 저장하거나 다운로드할 수 있습니다.  마이그레이션 계획을 저장하면 해당 계획이 Workload Factory 계정에 저장됩니다.</block>
+  <block id="ea61e2c2ff507048203824add1eb7c21" category="section-title">고려 사항</block>
+  <block id="8eea8cbef155daad5f0336e67b106d2f" category="list-text">"Amazon Elastic VMware Service 기본 설정" 섹션에서 외부 데이터 저장소에 연결할 EVS 가상화 환경을 선택할 수 있습니다.  이렇게 하면 배포에 가장 적합한 옵션이 일부 필드에 자동으로 채워집니다.  필요에 따라 이러한 옵션을 변경할 수 있습니다.</block>
+  <block id="4356903392007c85f8e73efe4347e2ff" category="list-text">"Amazon Elastic VMware Service 기본 설정" 섹션의 "환경 ID" 목록에서 데이터 저장소가 연결될 EVS 환경을 선택합니다.</block>
+  <block id="61f5a1ca1bc96422fa16bce675cee6a1" category="paragraph">그러면 다음 필드가 자동으로 채워집니다.</block>
+  <block id="5a27c4fb594c9f679329c31622b59a04" category="list-text">*VPC*</block>
+  <block id="9fec24e9bf3c3f6b25e4def96d0b31cb" category="list-text">*가용 구역*</block>
+  <block id="a5ede60043f381fbec4810d49c62a7e7" category="list-text">*서브넷*</block>
+  <block id="864acc0e479b0f497d42b56fec813833" category="list-text">*NFS 데이터 저장소 액세스* 섹션에서 *EVS 호스트 관리만* 옵션을 선택한 경우 *EVS 호스트 관리(CIDR)* 필드가 자동으로 채워집니다.</block>
+  <block id="c2c2f4e306bee7cddb73a93d88e8f835" category="list-text">*데이터 저장소 마운트 옵션* 섹션에서 EVS 클러스터에 데이터 저장소를 마운트하도록 선택한 경우 *EVS 클러스터 VMware vCenter 주소* 및 *vSphere 관리자 자격 증명 비밀 ARN* 필드가 자동으로 채워집니다.</block>
+  <block id="7af379a5a0b7c9925c9cc49a5fe4102b" category="paragraph">어느 경우든 CloudFormation에서 생성 진행 상황을 모니터링할 수 있습니다.</block>
+  <block id="640e753affbc0ed23602125bd47cf1a0" category="paragraph">마이그레이션 계획을 선택하고 프로비저닝하여 VM이 원하는 Amazon AWS 환경으로 마이그레이션되도록 할 수 있습니다.</block>
+  <block id="0c47e3b364699e732be74fcfcd5fcb76" category="section-title">마이그레이션 계획에 대한 PDF 또는 CSV 보고서 만들기</block>
+  <block id="feb07457ab16b08e6759f9a102b74915" category="paragraph">마이그레이션 계획의 세부 정보를 PDF 또는 CSV 형식으로 보고서로 만듭니다.</block>
+  <block id="ce7492243f67024ea27281293ef49ad2" category="list-text">*이전 계획*을 선택하세요.</block>
+  <block id="ad4c2b0bf62cfb791914800c139d480c" category="list-text">PDF 또는 CSV 보고서를 생성할 마이그레이션 계획에 대한 작업 메뉴(...)를 선택하고 *계획 다운로드(PDF)* 또는 *VM 보고서 다운로드(CSV)*를 선택합니다.</block>
+  <block id="fae19c44f57cb307c986fe8aed636a86" category="list-text">보고서 이름을 입력하고 *저장*을 선택합니다.</block>
+  <block id="71d503717b6e0e8fdefc91ea29f61bc2" category="list-text">Workload Factory에 액세스하려면 사용자 이름과 비밀번호가 필요합니다.  접근할 수 없다면 지금 계정을 만드세요.  지침을 참조하세요<block ref="8d9a8b8727a696c09218527f7717c32e" category="inline-link-rx"></block> .</block>
+  <block id="6b220aa78c1cc96ebbf1f4b5bb3682d6" category="list-text">선택적으로, 페이지 오른쪽 상단에서 *계획 관리*를 선택한 다음 *보고서 다운로드(.pdf)* 또는 *VM 스토리지 배포 다운로드(.csv)*를 선택하여 마이그레이션 계획을 PDF 또는 CSV 파일로 내보낼 수 있습니다.</block>
+  <block id="aedb7e102d3632d427ea9e76ff06651a" category="paragraph">.csv 파일은 마이그레이션 계획에 포함된 모든 VM과 할당된 스토리지 볼륨에 대한 맵을 만듭니다.</block>
+  <block id="27c19be9febabd1e2fb82d7a39784f2d" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>자격 증명 및 권한 추가</block>
+  <block id="51bf12717b370e03e3310859db67cac6" category="inline-link">권한 정책</block>
+  <block id="936d666f131176683c1d6c00130dafc9" category="paragraph">선택하세요<block ref="58aaeb1e36f031336cc27639db355451" category="inline-link-rx"></block> 귀하의 요구 사항을 충족하기 위해.</block>
+  <block id="611dad37557a2cb5ae289c5e019aed4c" category="paragraph">권한을 부여하지 않기로 선택하는 경우 Workload Factory for Databases를 사용하여 부분적으로 완성된 코드 샘플을 복사할 수 있습니다.</block>
+  <block id="ce8e7e98b5597e78e8fd7d6bc94729cb" category="inline-link">계정에 자격 증명을 수동으로 추가</block>
+  <block id="89de75212fc10daeec1259e132f3752a" category="paragraph">권한을 부여하기로 선택한 경우 다음이 필요합니다.<block ref="869f3c251b5d8f71098ec6e85e90e6d1" category="inline-link-rx"></block> 여기에는 데이터베이스 및 AI와 같은 워크로드 기능을 선택하고, 필요한 권한에 대한 IAM 정책을 만드는 것이 포함됩니다.</block>
+  <block id="78a1fd3770ad9cba75be7a432485a77e" category="section-title">2025년 11월 2일</block>
 </blocks>

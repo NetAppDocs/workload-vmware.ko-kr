@@ -15,24 +15,47 @@ summary: 권장하는 FSx for ONTAP 파일 시스템 또는 경우에 따라 여
 
 Workload Factory 계정에 추가한 정책 및 권한에 따라 Workload Factory(읽기/쓰기 모드 사용)를 사용하여 FSx for ONTAP 파일 시스템을 완전히 배포할 수 있습니다.  권한이 적은 경우(읽기 전용 모드) 또는 권한이 없는 경우(기본 모드), Codebox의 CloudFormation 템플릿을 사용하여 AWS에 FSx for ONTAP 파일 시스템을 직접 배포해야 합니다.
 
-.Amazon Elastic VMware Service에 대한 배포 요구 사항
+
+
+== 요구 사항
+
 * Amazon Elastic VMware Service 구독이 있어야 합니다.
 * AWS 계정에서 FSx for ONTAP 파일 시스템을 생성하려면 필요한 권한이 있어야 합니다.
 
 
-.단계
+
+
+== 고려 사항
+
+* 빠른 만들기 또는 고급 만들기 옵션을 사용할 수 있습니다. Advanced create는 사용자 지정할 수 있는 몇 가지 추가 스토리지 매개 변수를 제공합니다. https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["이 두 옵션이 제공하는 혜택을 확인해 보십시오"]..
+* "Amazon Elastic VMware Service 기본 설정" 섹션에서 외부 데이터 저장소에 연결할 EVS 가상화 환경을 선택할 수 있습니다.  이렇게 하면 배포에 가장 적합한 옵션이 일부 필드에 자동으로 채워집니다.  필요에 따라 이러한 옵션을 변경할 수 있습니다.
+
+
+
+
+== 단계
+
 . 검토 계획 * 페이지 하단에 * 배포 * 를 선택하면 FSx for ONTAP 파일 시스템 생성 페이지가 표시됩니다.
 +
 FSx for ONTAP 파일 시스템을 정의하는 대부분의 필드는 입력한 정보를 기반으로 완료되지만 이 페이지에서 완료해야 하는 몇 가지 필드가 있습니다.
-
-+
-빠른 만들기 또는 고급 만들기 옵션을 사용할 수 있습니다. Advanced create는 사용자 지정할 수 있는 몇 가지 추가 스토리지 매개 변수를 제공합니다. https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["이 두 옵션이 제공하는 혜택을 확인해 보십시오"]..
 
 . "파일 시스템 일반 구성" 섹션에서 다음 정보를 입력합니다.
 +
 .. *AWS 자격 증명*: Workload Factory에서 FSx for ONTAP 파일 시스템을 직접 생성하는 데 필요한 권한을 부여하는 자격 증명을 선택하거나 추가합니다.  Codebox에서 CloudFormation 코드를 선택하고 AWS에 FSx for ONTAP 파일 시스템을 직접 배포할 수도 있습니다.
 .. * 파일 시스템 이름 *: 이 FSx for ONTAP 파일 시스템에 사용할 이름을 입력하십시오.
 .. *태그*: 선택적으로 태그를 추가하여 이 FSx for ONTAP 파일 시스템을 분류할 수 있습니다.
+
+
+. "Amazon Elastic VMware Service 기본 설정" 섹션의 "환경 ID" 목록에서 데이터 저장소가 연결될 EVS 환경을 선택합니다.
++
+그러면 다음 필드가 자동으로 채워집니다.
+
++
+** *VPC*
+** *가용 구역*
+** *서브넷*
+** *NFS 데이터 저장소 액세스* 섹션에서 *EVS 호스트 관리만* 옵션을 선택한 경우 *EVS 호스트 관리(CIDR)* 필드가 자동으로 채워집니다.
+** *데이터 저장소 마운트 옵션* 섹션에서 EVS 클러스터에 데이터 저장소를 마운트하도록 선택한 경우 *EVS 클러스터 VMware vCenter 주소* 및 *vSphere 관리자 자격 증명 비밀 ARN* 필드가 자동으로 채워집니다.
 
 
 . "네트워크 및 보안" 섹션에서 다음 정보를 입력합니다.
@@ -95,9 +118,12 @@ AZ 간 트래픽에 대한 요금을 회피하려면 VMware SDDC가 구축된 �
 선택적으로 Codebox 창에서 *CloudFormation으로 리디렉션*을 선택하여 CloudFormation 스택을 사용하여 파일 시스템과 권장 VM 구성을 생성할 수 있습니다.
 
 +
-두 경우 모두 CloudFormation에서 생성 진행률을 모니터링할 수 있습니다.
+어느 경우든 CloudFormation에서 생성 진행 상황을 모니터링할 수 있습니다.
 
 
 
-.결과
+
+
+== 결과
+
 FSx for ONTAP 파일 시스템이 구축됩니다. 이제 Codebox의 AWS CloudFormation 템플릿을 사용하여 권장되는 VM 구성을 Amazon Elastic VMware Service 환경에 배포할 수 있습니다.
