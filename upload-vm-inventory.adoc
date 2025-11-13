@@ -29,7 +29,7 @@ summary: Planning Center를 사용하여 현재 VMware 환경에 대한 정보�
 --
 RVTools는 vCenter 및 ESX 서버(5.x - 8.0)와 상호 작용하여 VMware 가상 환경에 대한 정보를 캡처하는 Windows 애플리케이션입니다. VM, CPU, 메모리, 디스크, 클러스터에 대한 정보 수집 ESX 호스트, 데이터 저장소 등 이 정보를 xlsx 파일로 내보내어 마이그레이션 관리자에서 사용할 수 있습니다.
 
-https://www.robware.net/home["RVTools에 대해 자세히 알아보십시오"^]
+에서 https://www.dell.com/en-us/shop/vmware/sl/rvtools["RVTools에 대해 자세히 알아보십시오"^]
 
 .단계
 . *RVTools* 타일을 선택하고 *다음*을 선택합니다.
@@ -37,14 +37,14 @@ https://www.robware.net/home["RVTools에 대해 자세히 알아보십시오"^]
 Prepare for AWS Cloud OnBoarding * 페이지가 표시됩니다.
 
 . 생성할 VM 인벤토리 데이터 세트의 이름을 입력하세요.
-. 에서 RVTools 4.4.2 이상을 다운로드하여 설치합니다 https://www.robware.net/download["RVTools 웹 사이트"^]
+. RVTools 4.4.2 이상을 다운로드하여 설치하세요. https://www.dell.com/en-us/shop/vmware/sl/rvtools["RVTools 웹 사이트"^]
 . RVTools를 실행하고 대상 vCenter Server에 로그인합니다.
 +
 그러면 해당 vCenter Server에 대한 정보가 캡처됩니다.
 
 . VMware 정보를 xlsx 또는 xls 파일로 내보냅니다.
 +
- https://resources.robware.net/resources/prod/RVTools.pdf["RVTools 설명서"^]자세한 내용은 의 "commandline parameters" 장을 참조하십시오.
+"명령줄 매개변수"에 대한 장을 참조하세요. https://www.dell.com/en-us/shop/vmware/sl/rvtools["리소스 섹션에 있는 RVTools 설명서"^] 자세한 내용은.
 
 . 선택하다image:button-upload-file.png["업로드 버튼"] 그리고 내보낸 RVTools 파일을 선택하세요.
 . *업로드*를 선택하세요.

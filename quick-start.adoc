@@ -13,7 +13,7 @@ summary: VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTA
 [role="lead"]
 VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라를 AWS 기반 VMware Cloud로 이동하십시오.
 
-시작하기 전에 에 대한 이해가 있어야 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["작동 모드"^] 합니다.
+시작하기 전에 https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html [ NetApp Workload Factory 에 대한 권한 ^]을 이해해야 합니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"]Workload Factory에 로그인하세요
 [role="quick-margin-para"]
