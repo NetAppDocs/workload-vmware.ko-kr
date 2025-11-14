@@ -13,8 +13,6 @@ summary: Migration Advisor VM Collector 스크립트 또는 RVTools를 사용하
 [role="lead"]
 Migration Advisor VM Collector 스크립트 또는 RVTools를 사용하여 현재 VM 구성을 캡처할 수 있습니다. Migration Advisor VM Collector 스크립트는 가장 정확한 계획을 위해 VM 구성과 성능 데이터를 모두 수집하므로 이 스크립트를 사용하는 것이 좋습니다.
 
-이전에 로컬로 저장한 기존 배포 계획을 기반으로 새 시스템을 배포하려는 경우 이 단계를 건너뛰고 기존 배포 계획을 선택할 수 있습니다. link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["기존 계획을 사용하여 새 계획을 작성하는 방법을 알아봅니다"]..
-
 [role="tabbed-block"]
 ====
 .Migration Advisor VM Collector 스크립트를 사용합니다

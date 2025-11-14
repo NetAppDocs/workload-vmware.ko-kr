@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="495f22292688acea8c30ad6ad16b09d3" category="summary">Migration Advisor VM Collector 스크립트 또는 RVTools를 사용하여 현재 VM 구성을 캡처할 수 있습니다. Migration Advisor VM Collector 스크립트는 가장 정확한 계획을 위해 VM 구성과 성능 데이터를 모두 수집하므로 이 스크립트를 사용하는 것이 좋습니다.</block>
-  <block id="29f021e47d424b1dde8f4e01c9c530a8" category="inline-link-macro">기존 계획을 사용하여 새 계획을 작성하는 방법을 알아봅니다</block>
-  <block id="b16e57a351e118b35fdca27cf5d83661" category="paragraph">이전에 로컬로 저장한 기존 배포 계획을 기반으로 새 시스템을 배포하려는 경우 이 단계를 건너뛰고 기존 배포 계획을 선택할 수 있습니다. <block ref="d2cbff8d3a997fc87993c98dd8782aa2" category="inline-link-macro-rx"></block>..</block>
   <block id="c423127be094663f098066c3efa8a37a" category="open-title">Migration Advisor VM Collector 스크립트를 사용합니다</block>
   <block id="e7bc9976408bfbd315fb5cead8d7c4e2" category="paragraph">NetApp Migration Advisor VM Collector 스크립트는 RVTools에서 수집하는 것과 유사한 방식으로 vCenter에서 VM 구성 정보를 수집하지만, 현재 VM 성능 데이터를 캡처하여 실제 읽기/쓰기 IOPS 및 처리량 통계를 제공합니다.</block>
   <block id="008d8f4c73b65286fe403c16e1624b81" category="paragraph">마이그레이션 어드바이저를 시작하여 Codebox 창에서 마이그레이션 어드바이저 VM 수집기 스크립트를 복사해야 합니다.</block>
@@ -154,8 +152,6 @@
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">* 케이스 종료 *: 케이스를 종료하는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 선택합니다.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷</block>
   <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="28a3e421e42b408e3e4ff1bca62ee052" category="inline-xref">요구사항이 유사한 기존 구축 계획을 기반으로 클라우드에 시스템 구축</block>
-  <block id="c31c21e843fdb59a8add150356c11304" category="list-text"><block ref="5fa6f23430006bdd76a7952ab9b38e33" category="inline-xref-macro-rx"></block></block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">여기</block>
   <block id="8209a613eadf680eb0da074479c79a0b" category="section-title">온-프레미스 vSphere 환경을 기반으로 구축 계획을 만듭니다</block>
   <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">온프레미스 vSphere 환경의 현재 가상 머신 구성을 AWS 기반 VMware Cloud의 가상 머신으로 마이그레이션하고 맞춤형 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용할 수 있습니다.</block>
@@ -327,9 +323,6 @@
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">20% 미만의 양을 선택하면 보호 및 장기 백업을 위한 볼륨 스냅샷을 생성할 수 없습니다.</block>
   <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">* VM 스냅샷 보호 *: 스냅샷을 사용하여 VM을 보호하려면 이 옵션을 활성화합니다.</block>
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">페이지 상단에서는 배포된 모든 VM 및 FSx for ONTAP 파일 시스템의 월별 비용을 설명합니다. 각 섹션을 확장하여 "권장되는 Amazon FSx for ONTAP 파일 시스템 구성", "예상 비용 분석", "볼륨 구성", "크기 지정 가정" 및 기술적 "면책 조항"에 대한 세부 정보를 볼 수 있습니다.</block>
-  <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">VMware Cloud로 마이그레이션할 때 마이그레이션 관리자를 사용하여 다음 시나리오에 대한 배포 계획을 생성할 수 있습니다.</block>
-  <block id="dafb3c70bc12caaeab402760a87e98d9" category="inline-xref">현재 온프레미스 vSphere 환경을 VMware 클라우드로 마이그레이션합니다.</block>
-  <block id="59bf0f7e79d795451ad94f36b9896e02" category="list-text"><block ref="d7d9086f96876c516cd0685f13fc1fe9" category="inline-xref-macro-rx"></block></block>
   <block id="547bc0b99ec96bc4efdb00bc0ff7eccd" category="list-text">* 평균 데이터 축소율 *: 세 가지 일반적인 데이터 축소 선택 값 중에서 선택합니다. "1:1 - No reduction", "1:1.25 - 20% reduction" 또는 "1:1.5 - 33% reduction"을 선택합니다.</block>
   <block id="9b33daba55511d7238a85d7736fbd98f" category="list-text">*vSAN 오류 포용*: VM에 필요한 내결함성 수준을 선택합니다. "Auto(자동)"를 선택할 수 있습니다(권장). 또는 다양한 RAID 레벨 중에서 선택할 수 있습니다.</block>
   <block id="794575b7b1daf584d278fad81412fd2b" category="paragraph">Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라의 일부를 AWS 기반 Amazon EC2 또는 VMware Cloud로 전환하는 것은 다음과 같은 이점을 제공합니다.</block>
@@ -767,4 +760,5 @@
   <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">RVTools 4.4.2 이상을 다운로드하여 설치하세요.<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">리소스 섹션에 있는 RVTools 설명서</block>
   <block id="aab95159d263780315dd964c73eaae67" category="paragraph">"명령줄 매개변수"에 대한 장을 참조하세요.<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> 자세한 내용은.</block>
+  <block id="1e884770040a1369dfb00ff9fba06330" category="paragraph">VMware Cloud로 마이그레이션할 때 마이그레이션 어드바이저를 사용하여 현재 온프레미스 vSphere 환경을 VMWare Cloud로 마이그레이션할 수 있습니다.</block>
 </blocks>
