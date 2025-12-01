@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: calculate-evs-savings.html 
-keywords: vm workloads, deploy fsx, deploy storage for vms, evs, savings, calculate, tco 
+keywords: vm workloads, deploy fsx, deploy storage for vms, evs, savings, calculate, tco, regions 
 summary: FSx for ONTAP 과 함께 Amazon EVS를 사용하면 얼마나 많은 비용을 절감할 수 있는지 계산해 보세요. 
 ---
 = NetApp Workload Factory를 통해 Amazon Elastic VMware Service에 대한 절감 혜택을 살펴보세요
@@ -28,19 +28,20 @@ NOTE: 계속하기 전에, 절감 계산기 하단의 고지사항을 검토하�
 . 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
 . VMware 워크로드 타일에서 *절감 효과 살펴보기*를 선택한 다음 *Amazon Elastic VMware Service(EVS)*를 선택합니다.  저축 계산기가 표시됩니다.
 +
-*환경 기본 설정* 창에는 환경 요구 사항에 따라 조정할 수 있는 슬라이더가 제공됩니다.
+*환경 기본 설정* 창에서 EVS 배포 지역을 선택하고 이에 따라 TCO 및 절감 예측을 조정할 수 있습니다.
 
+. *지역* 드롭다운 목록에서 EVS 배포 지역을 선택하여 절감액을 계산하세요.
 . 선택한 값에 대한 실시간 절감 계산을 보려면 필요에 따라 다음 슬라이더를 조정하세요.  키보드를 사용하는 경우 화살표 키를 사용하여 작은 조정을 할 수 있습니다.
 +
-.. *필요한 물리적 CPU(개수)*
-.. *필요한 물리적 메모리(GiB)*
-.. *필요한 VM 스토리지(TiB)*
-.. *EVS 청구 계획*
+** *필요한 물리적 CPU(개수)*
+** *필요한 물리적 메모리(GiB)*
+** *필요한 VM 스토리지(TiB)*
 
 
+. *EVS 청구 플랜*에서 현재 사용 중인 플랜을 선택하세요.
 . 다음 중 하나를 수행합니다.
 +
-** 마이그레이션 어드바이저를 사용하려면link:launch-migration-advisor-evs-manual.html["배포 계획을 작성하다"] Amazon EVS 환경의 경우 *상세한 평가 만들기*를 선택합니다.
+** 마이그레이션 어드바이저를 사용하려면 link:launch-migration-advisor-evs-manual.html["배포 계획을 작성하다"] Amazon EVS 환경의 경우 *EVS 마이그레이션 계획*을 선택합니다.
 ** TCO 계산기를 닫으려면 *닫기*를 선택하세요.
 
 
