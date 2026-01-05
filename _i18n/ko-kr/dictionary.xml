@@ -767,4 +767,7 @@
   <block id="6706b7bf4c170433cc0ab592c9e594f8" category="list-text">*EVS 청구 플랜*에서 현재 사용 중인 플랜을 선택하세요.</block>
   <block id="74ce259d0d76a9e0cd46f6300bcc2371" category="list-text">마이그레이션 어드바이저를 사용하려면 <block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block> Amazon EVS 환경의 경우 *EVS 마이그레이션 계획*을 선택합니다.</block>
   <block id="815e75619b370a1b845eccec6979ed74" category="section-title">2025년 11월 27일</block>
+  <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">Ask me AI 어시스턴트 홈페이지 통합</block>
+  <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory 콘솔 홈 페이지에는 Ask me AI 어시스턴트가 내장되어 있어 스토리지 환경에 대한 질문을 하고, 환경에서 직접 맞춤형 인사이트를 얻고, 이전 대화를 참조할 수 있습니다. Ask me 기능을 사용하면 콘솔을 벗어나지 않고도 워크로드를 이해하고, 문제를 해결하고, Workload Factory에 대해 자세히 알아볼 수 있습니다.</block>
+  <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026년 1월 4일</block>
 </blocks>
