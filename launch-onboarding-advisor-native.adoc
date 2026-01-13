@@ -27,7 +27,7 @@ Workload Factory에 액세스하려면 사용자 이름과 비밀번호가 필�
 
 .단계
 . 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
-. VMware 워크로드 타일에서 *VMware Planning Center*를 선택합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *VMware*를 선택하십시오.
 +
 계획 센터가 표시됩니다.
 

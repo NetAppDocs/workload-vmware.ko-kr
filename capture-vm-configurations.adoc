@@ -34,10 +34,16 @@ VM에서 장기 통계(일일 통계)를 캡처하려면 vSphere 관리 콘솔(V
 
 .단계
 . 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .
-. VMware 워크로드 타일에서 * 평가 및 계획 * 을 선택한 다음 * AWS에서 VMware Cloud로 마이그레이션 * 을 선택합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *VMware*를 선택하십시오.
++
+계획 센터가 표시됩니다.
+
+. VMware 메뉴에서 *평가 및 계획*을 선택한 다음 *AWS의 VMware 클라우드로 마이그레이션*을 선택합니다.
 +
 VMware Migration Advisor 기본 페이지가 표시됩니다.
 
+. *VMC 계획 및 생성*을 선택합니다.
+. *시작하기!*를 선택하세요. 체크박스를 선택하면 이 페이지가 다시 표시되지 않도록 설정할 수 있습니다.
 . 새 배포 계획 생성 * 을 선택하고 * 마이그레이션 어드바이저 VMware 데이터 수집기 사용 * 옵션을 선택한 후 * 다음 * 을 선택합니다.
 +
 Prepare for VMware Cloud on AWS migration * 페이지가 표시됩니다.
