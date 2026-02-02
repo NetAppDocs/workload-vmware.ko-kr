@@ -217,7 +217,6 @@
   <block id="f9f61055f7c12e19b3df8a6b77099e20" category="list-text">볼륨 크기를 늘리거나 줄일 뿐만 아니라 데이터 처리량, IOPS 및 파일 시스템 크기를 변경하는 기능</block>
   <block id="958d4e659e939db8e66a192e1e4f46f9" category="list-text">AZ(Multiple Availability Zone) 배포를 지원하는 고가용성</block>
   <block id="0abb1f890b7655b5842e2e4271738b78" category="list-text">Transit Gateway 없이 VPC 피어링을 사용하는 단일 AZ 구성에서 비용과 대기 시간을 줄일 수 있습니다</block>
-  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">비용</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">라이센싱</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
@@ -768,4 +767,132 @@
   <block id="45f41cadcd45c9728fa28d6a1cb8d206" category="list-text">VMware 메뉴에서 *평가 및 계획*을 선택한 다음 *AWS의 VMware 클라우드로 마이그레이션*을 선택합니다.</block>
   <block id="9af7ccdef2ffa0cddc3f29f9b918947c" category="list-text">*시작하기!*를 선택하세요. 체크박스를 선택하면 이 페이지가 다시 표시되지 않도록 설정할 수 있습니다.</block>
   <block id="034ce347094f8e8ed94fd4499edd6a02" category="paragraph">기획 센터가 표시되어 있습니다. 계획 센터에서 VM 인벤토리 데이터를 업로드하고, 이전에 업로드한 인벤토리 데이터를 확인하고, VM 인벤토리 데이터 세트를 사용하여 마이그레이션을 계획할 수 있습니다.</block>
+  <block id="8f1b9e3fbbd44cf22e9f5ac28290aba0" category="doc">Amazon Elastic VMware Service에 대한 Well-Architected 분석</block>
+  <block id="f6c8ff445c3db04296fa83d4b2790691" category="paragraph">Workload Factory는 이제 Amazon Elastic VMware Service(EVS) 환경에 대한 자동화된 well-architected 분석 기능을 제공합니다. 매일 실행되는 검사를 통해 구성 불일치를 식별하고 최적의 운영, 보안 및 비용 효율성을 유지하는 데 도움이 되는 자세한 해결 권장 사항을 제공합니다.</block>
+  <block id="7e27d05efe618fad67c0e09d831368c6" category="paragraph">AWS API를 사용하여 스캔이 수행되므로 vSphere 자격 증명이나 vCenter 연결이 필요하지 않습니다. 결과는 EVS 환경 세부 정보 내의 새로운 *Well-architected status* 탭에서 확인할 수 있습니다.</block>
+  <block id="b49141c08a1be0c2df4a29b08af10e5e" category="paragraph">이번 릴리스에는 다음에 대한 인사이트가 포함됩니다.</block>
+  <block id="eb309475830119de69a172afb7c872e1" category="list-text">*인스턴스 중지/종료 보호 상태*: EC2 중지 또는 종료 보호가 적용되지 않은 EVS 노드를 식별합니다. EC2 콘솔에서 EVS 노드를 중지하거나 종료하면 가상 머신 데이터에 접근할 수 없거나 데이터가 손실될 수 있습니다.</block>
+  <block id="5e10e9fc9dc23fca9bdc4e8b00ae9469" category="list-text">*클러스터 노드 파티션 배치 정렬*: AWS 가용 영역 내 파티션에 장애가 발생할 경우 상당한 처리 능력 손실이나 다운타임을 초래할 수 있는 파티션 정렬 오류를 감지합니다. 각 인사이트에는 심각도 수준, 영향을 받는 리소스 정보를 포함한 자세한 결과, AWS 모범 사례에 기반한 단계별 해결 절차가 포함됩니다.</block>
+  <block id="3ac4be70f27829fbadc2c932a5b029e4" category="inline-link-macro">잘 설계된 구성 구현</block>
+  <block id="0f39698d75936e2b93022b9c574c0eb3" category="paragraph"><block ref="0f39698d75936e2b93022b9c574c0eb3" category="inline-link-macro-rx"></block></block>
+  <block id="811182fb87c3ac2818bca780e05e0c5c" category="summary">Workload Factory가 Amazon Elastic VMware Service 구성을 분석하여 문제를 식별하고 모범 사례 권장 사항을 제공하는 방법을 알아보세요.</block>
+  <block id="b998e1ace581318d41cd37b71dfe5cac" category="doc">EVS 구성에 대한 구성 분석</block>
+  <block id="ee876b0ee5fe63fbc90fddc929719edd" category="paragraph">Workload Factory는 Amazon Elastic VMware Service(EVS) 구성을 정기적으로 분석하여 모범 사례와의 불일치를 파악합니다. 분석 결과를 활용하여 성능, 비용 효율성 및 규정 준수를 개선하십시오.</block>
+  <block id="1c11d2e59190fe6a4e37f1e68abafcb4" category="paragraph">주요 기능은 다음과 같습니다:</block>
+  <block id="ebc3bf5de769bc75ad8e36a90a0ed695" category="list-text">일일 구성 분석</block>
+  <block id="8c0981b34ea19373e1dcf1c3d034f097" category="list-text">자동 모범 사례 검증</block>
+  <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">사전 예방적 관찰 가능성</block>
+  <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">인사이트를 실행으로</block>
+  <block id="fc34f37e0124ad3486b3476b4c3bf8ba" category="section-title">잘 설계된 상태</block>
+  <block id="ebd5767595bd56d8d385eee9f3e5317a" category="paragraph">Workload Factory 콘솔에서는 검색된 모든 EVS 가상화 환경의 well-architected 상태가 표시됩니다. Well-architected 상태는 "Optimized" 또는 "Not optimized"로 분류됩니다. *Inventory*를 선택하면 환경 내의 Well-architected 상태 탭으로 이동하여 환경의 모든 구성을 확인할 수 있습니다.</block>
+  <block id="a4394e01049a42d14bd6258585de98b7" category="section-title">구성 범주</block>
+  <block id="a5584aec16bb244b4e3daa5c56c07600" category="paragraph">Workload Factory는 여러 범주에 걸쳐 EVS 구성을 평가하여 AWS 및 NetApp 모범 사례와의 일치 여부를 확인합니다. 각 범주는 EVS 환경의 특정 측면에 중점을 둡니다.</block>
+  <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="list-text">가용성</block>
+  <block id="bc2da75aa54d732564f6242c6a869d0c" category="list-text">EVS 구성이 얼마나 접근 가능하고 운영 가능할 것으로 예상되는가.</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="list-text">보안</block>
+  <block id="6c02cf363d34d913745020138dfa79a6" category="list-text">EVS 구성이 데이터를 얼마나 잘 보호하고 액세스를 제어하는지(예: EC2 중지 및 종료 보호).</block>
+  <block id="02bc0523497de72834c4c7990e32d155" category="list-text">복원력</block>
+  <block id="75927f968f22d6de4aff600752ad874d" category="list-text">EVS 구성이 장애 또는 중단으로부터 복구할 수 있는 능력.</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">다음 단계</block>
+  <block id="eb9cf952bc2ab533d61d93bdca17a2a1" category="section-title">EVS 환경에 대한 Well-Architected 분석</block>
+  <block id="de4d561d9225c3e38ab8fb69845b3845" category="paragraph">'우수한 아키텍처' 탭은 Amazon Elastic VMware Service(EVS) 환경에 대한 자동화된 일일 분석을 제공하여 AWS 및 NetApp 모범 사례를 준수하는지 확인합니다. 이 탭은 구성 문제를 식별하고 자세한 해결 지침을 제공하여 최적의 운영, 보안 및 비용 효율성을 유지할 수 있도록 지원합니다.</block>
+  <block id="6c4617868490733aeac61d81c4d1a4e9" category="paragraph">자동 검사는 AWS API를 사용하여 수행되므로 vSphere 자격 증명이 필요하지 않습니다. 발견 사항은 구성 영역별로 정리되며, 각 발견 사항에는 상태, 심각도 수준, 영향을 받는 리소스 세부 정보 및 단계별 해결 절차가 포함됩니다.</block>
+  <block id="add6a35f61fed94b5f8dbfe9beecaf4e" category="inline-link-macro">Workload Factory에서 잘 설계된 EVS 구성 구현</block>
+  <block id="978188131a8faf177650cc05b5648337" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>. == 비용</block>
+  <block id="fccfcfaaf4414d768ea3ae43ac15179f" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> EVS 환경에 대한 잘 설계된 인사이트 검토</block>
+  <block id="9af4d557947285cd35bace6367e46950" category="paragraph">EVS 환경이 검색되면 Workload Factory는 자동으로 매일 well-architected 스캔을 수행하여 구성 문제를 식별하고 해결 권장 사항을 제공합니다.</block>
+  <block id="849b694f18d5f2f0d81dfe44c89029ea" category="inline-link-macro">잘 설계된 구성을 구현하는 방법을 알아보세요</block>
+  <block id="5dc782d436d94215ab9c41482cff8c02" category="paragraph"><block ref="f09015d4a26b2878c118305ce478ca5f" category="inline-link-macro-rx"></block>.</block>
+  <block id="fc6485a9112c61e8addae60c9881529a" category="summary">Workload Factory에서 EVS 구성의 well-architected 상태를 검토하고 AWS 및 NetApp 모범 사례를 기반으로 한 해결 지침을 따르십시오.</block>
+  <block id="74163cd660daafe169a986c2d540a418" category="doc">잘 설계된 EVS 구성 구현</block>
+  <block id="55f759553ee3b4403a36ef5481e92158" category="paragraph">Workload Factory 구성 분석을 사용하여 Amazon Elastic VMware Service(EVS) 구성의 well-architected 상태를 검토하고 안정성, 보안 및 비용에 영향을 미치는 문제를 해결하십시오.</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="section-title">이 작업 정보</block>
+  <block id="992962ec039b953e3a26be2bbe0354ea" category="paragraph">AWS API를 사용하여 발견된 모든 EVS 환경을 매일 자동으로 스캔하여 EVS 구성을 분석하고 가용성, 복원력, 보안 또는 비용 최적화에 영향을 미칠 수 있는 잠재적인 문제를 식별합니다. 발견 사항은 구성 영역별로 정리되며, 각 발견 사항에는 상태, 심각도 수준, 영향을 받는 리소스 세부 정보 및 단계별 해결 절차가 포함됩니다.</block>
+  <block id="46983665512cec916d21fde7e5cd3c92" category="paragraph">주요 기능은 다음과 같습니다:</block>
+  <block id="d5bec1394e46fe7beb3bfc357658dbee" category="list-text">*자동 일일 스캔*: 발견된 모든 EVS 환경은 인사이트가 최신 상태로 유지되도록 하루에 한 번 자동으로 스캔됩니다.</block>
+  <block id="7178f1776bec85b1fa0d80ba102bb59c" category="list-text">*AWS API 기반 스캔*: 스캔은 AWS API를 사용하며 vSphere 자격 증명이나 vCenter에 대한 연결이 필요하지 않습니다.</block>
+  <block id="8157ddea6dba3cc417056b072b8b80f3" category="list-text">*문제 해결에 대한 자세한 안내*: 식별된 각 문제에는 명확한 설명, 심각도 수준 및 단계별 해결 절차가 포함되어 있습니다.</block>
+  <block id="1f4af7de884cca1c2591581301dfb2d3" category="list-text">*보기 전용 인사이트*: 자동 문제 해결 옵션 없이 자세한 분석 결과 및 권장 사항을 제공합니다.</block>
+  <block id="8a932e11437d1c455e0309f4576aecfc" category="section-title">잘 설계된 인사이트 이해</block>
+  <block id="ba3c34291d7a94693a481a33bd15d66a" category="paragraph">Well-architected 탭에는 다음 내용이 표시됩니다.</block>
+  <block id="8092529325e1bffb70e26a2f0a96de8c" category="list-text">*구성 이름*: 평가 대상 구성 영역입니다.</block>
+  <block id="fb65a696254587c809d66cfee810bcb9" category="list-text">*태그*: 영향을 받는 영역(예: 가용성, 복원력, 보안)을 나타내는 레이블입니다.</block>
+  <block id="191370a235cb47e01e8bb5d93f56f68e" category="list-text">*Status*: "Optimized"(문제 없음) 또는 "Not optimized"(문제 있음).</block>
+  <block id="7e06d612ab32ad7e5b276e570d6052db" category="list-text">*심각도*: 발견된 사항의 중요도 수준(예: Warning).</block>
+  <block id="8b38d8216b4a9677a6565c6987244bfd" category="list-text">*리소스 유형*: 평가 대상 AWS 리소스의 유형입니다.</block>
+  <block id="aed619db5443435ab1909111087c9354" category="list-text">*영향을 받은 리소스 수*: 문제의 영향을 받은 리소스의 수입니다.</block>
+  <block id="d17c25d685d870f3162fd07bd3759e9d" category="section-title">스캔 빈도</block>
+  <block id="ec009bfd9b9d35c799aa225e2210ad5d" category="paragraph">잘 설계된 스캔은 발견된 모든 EVS 구성에 대해 자동으로 수행됩니다. 스캔 일정에 대한 주요 세부 정보는 다음과 같습니다.</block>
+  <block id="200b6c38eb872375baba819532b25c35" category="list-text">각 EVS 구성에 대해 하루에 한 번 스캔이 수행됩니다.</block>
+  <block id="aac386e06e58e41f07f21274a2ce3cd3" category="list-text">다양한 구성에 대한 검사는 서로 다른 시간에 수행될 수 있습니다.</block>
+  <block id="cbf4a11b9106a765a8d59f5bde22b92b" category="list-text">하나의 구성에 대한 검사가 실패하면 동일한 계정의 다른 구성에 대한 검사는 계속 시도됩니다.</block>
+  <block id="2e23c7712db264116ae4e9427788e890" category="list-text">Well-architected 상태 탭의 타임스탬프 카드에는 현재 구성에 대한 마지막 스캔이 완료된 시간이 표시됩니다.</block>
+  <block id="6b263d7d4b1960744986bbf27f19031b" category="admonition">잘 설계된 스캔의 온디맨드 실행은 현재 지원되지 않습니다. 모든 스캔은 매일 정해진 일정에 따라 자동으로 수행됩니다.</block>
+  <block id="6943da56f7bfefaf87bd63fa31f32343" category="inline-link">AWS 자격 증명 추가됨</block>
+  <block id="de6391d66ba7208735ea026c0163bd82" category="list-text">VMware 워크로드에 대한 _보기, 계획 및 분석_ 권한이 있는<block ref="1c3a105d12a49d2155fa535811f69d6c" category="inline-link-rx"></block>이(가) 있어야 합니다.</block>
+  <block id="7c751b705d8b34dd77f43768750957ae" category="list-text">AWS 계정에 최소 하나 이상의 검색된 Amazon Elastic VMware Service 환경이 있어야 합니다.</block>
+  <block id="bcfe7032eb38dd46f96fae8e821cb2f5" category="section-title">잘 설계된 상태 탭에 액세스</block>
+  <block id="9a1e15b3cbcb65c9396541d3f9c5193b" category="list-text">VMware 메뉴에서 *인벤토리*를 선택합니다.</block>
+  <block id="744339c5b641ba182ae35bbb4cfc33a4" category="list-text">*가상화 환경* 목록에서 well-architected 인사이트를 확인하려는 검색된 EVS 환경을 선택합니다.</block>
+  <block id="97136f0d9a483a6fdfdfc42b5a59cfe7" category="list-text">*Well-architected 상태* 탭을 선택하세요.</block>
+  <block id="a563ade9a0b771335a4862de1340dc24" category="paragraph">다음 요소가 표시됩니다.</block>
+  <block id="4898eb92487a19f75bf5dd69bf5044ca" category="list-text">*자동 일일 분석 타임스탬프*: 이 환경에 대해 마지막 스캔이 수행된 시간을 표시합니다.</block>
+  <block id="327c34fae86c3c2d78f5cfa847ccf61c" category="list-text">*Configurations*: 구성 영역별로 결과를 정리하고 상태 및 세부 정보를 표시합니다.</block>
+  <block id="3cecc2f68d529e2866ede0865952d12e" category="section-title">잘 설계된 평가 보기</block>
+  <block id="dc1feaa4afec46ae71e1b4ce87c52cc9" category="section-title">클러스터 노드 관리</block>
+  <block id="1bb51698a0663f165dbe5f273c5c5673" category="paragraph">이는 EVS 클러스터 노드에 적절한 EC2 중지 및 종료 보호가 구성되어 있는지 평가합니다.</block>
+  <block id="5a82da798b8d52a1877e0af59310a695" category="paragraph">*상태*:</block>
+  <block id="2177db57d319d13e0bf2ae908c5ad3fd" category="list-text">*최적화됨*: 모든 EVS 노드에 EC2 정지 보호 및 종료 보호가 구성되어 있습니다.</block>
+  <block id="645739737a5dbda70addbb1793f629c5" category="list-text">*최적화되지 않음*: 하나 이상의 EVS 노드에 EC2 중지 보호 또는 종료 보호가 구성되어 있지 않습니다.</block>
+  <block id="813bbde82916c6d5352808ebeccf0b78" category="paragraph">*이것이 중요한 이유*:</block>
+  <block id="47ba39ae7dbe55540d6304890df50c31" category="paragraph">EVS ESXi 노드는 vCenter 또는 기타 VMware 수준의 관리 도구를 사용하여 독점적으로 관리해야 합니다. 적절한 EC2 수준의 보호 조치가 없으면 EC2 콘솔에서 노드가 실수로 중지되거나 종료될 수 있으며, 이로 인해 가상 머신 데이터를 사용할 수 없거나 데이터 손실이 발생할 수 있습니다.</block>
+  <block id="852fec60fb308754480e33bb8725f7d0" category="paragraph">*자세한 결과를 보려면*:</block>
+  <block id="5b924baabf30c77d336ab00807a2e592" category="list-text">Well-architected 상태 탭에서 *클러스터 노드 관리*를 찾으세요.</block>
+  <block id="2f0a4abe3577a24388d3503c76df1f1e" category="list-text">*보기*를 선택하여 결과 대화 상자를 엽니다.</block>
+  <block id="f771ae48bfbea0e9bd4510a2944d7c27" category="paragraph">대화 상자에 다음이 표시됩니다.</block>
+  <block id="beceff88971536474ce183c2c49086a3" category="list-text">*조사 결과 요약*: 사용자 환경에서 발견된 문제에 대한 자세한 설명입니다.</block>
+  <block id="521b5581051893604e80bc8d9a9b2a47" category="list-text">*리소스 그리드*: 모든 EVS 노드와 해당 노드의 보호 상태를 보여주는 표로, 다음을 포함합니다:</block>
+  <block id="1e64edfa54c534cdd3eab5eafafdc723" category="list-text">노드 식별자</block>
+  <block id="79a2c7f2446afac26daa7c86e7c7552d" category="list-text">EC2 중지 보호 상태</block>
+  <block id="e26fc7b3b268da15eeb1541c027f3181" category="list-text">EC2 종료 보호 상태</block>
+  <block id="dd3ff4b0d866a1f342fc31bf10649488" category="list-text">*조치 필요*: 단계별 문제 해결 절차.</block>
+  <block id="2fb2741679a033656b8deb871364d1ba" category="list-text">*권장 사항*: 모범 사례 지침.</block>
+  <block id="801eec1f5aa15441f8563024525f7de2" category="paragraph">*개선 조치*:</block>
+  <block id="0dcf33d70ce0ac99ae40cb18631345ea" category="paragraph">이 문제를 해결하려면 EVS 노드에 대한 중지 및 종료 보호를 활성화하십시오.</block>
+  <block id="f1f93afb3b5ca94caad02f19d5690631" category="inline-link">정지 보호 활성화에 대한 AWS 설명서</block>
+  <block id="3de60d42654be51b8431224f33d26e80" category="list-text"><block ref="39a165446f78431d50e534c995c99eb1" category="inline-link-rx"></block>에 명시된 절차를 따르십시오.</block>
+  <block id="0ed28b656053bbc9750b2cb527e317cd" category="inline-link">종료 보호 활성화에 대한 AWS 설명서</block>
+  <block id="ecf75ab49e92be6325b9b3a05088f6a0" category="list-text"><block ref="723a60649762a3af21a294f7843f9b4c" category="inline-link-rx"></block>에 명시된 절차를 따르십시오.</block>
+  <block id="ce129dbc888eb33b14b32d1fa034d7b7" category="section-title">EVS 환경 복원력</block>
+  <block id="c049b3d231c8b43b1fd719fd9a8215e5" category="paragraph">EVS 클러스터 노드가 파티션 배치 그룹 전체에 적절하게 분산되어 있는지 평가합니다.</block>
+  <block id="30323180fe07f0de31c13be7ab8edff5" category="list-text">*최적화됨*: 모든 노드는 4개 이상의 파티션으로 구성된 단일 파티션 배치 그룹의 멤버입니다.</block>
+  <block id="bb6b44588620725c2fafc527d3a36108" category="list-text">다음 중 하나라도 해당되면 *최적화되지 않음*:</block>
+  <block id="5ceff40676061e4d49313b93769e0092" category="list-text">노드는 둘 이상의 배치 그룹의 구성원입니다.</block>
+  <block id="80e60c8a90e80f84fb5d310b198db129" category="list-text">하나 이상의 노드가 비분할 배치 그룹의 구성원입니다.</block>
+  <block id="0a410fbafeb1762934b94f77af190020" category="list-text">모든 노드는 파티션이 4개 미만인 분할된 배치 그룹의 구성원입니다.</block>
+  <block id="4c9e98121a4fe72e482aafa4e8b548dd" category="paragraph">적절한 파티션 배치를 통해 EVS 클러스터 노드가 AWS 가용 영역 내의 여러 장애 격리 하드웨어 파티션에 분산되도록 할 수 있습니다. 잘못 정렬된 경우 파티션 장애 시 상당한 처리 능력 손실이나 가동 중단이 발생할 수 있습니다.</block>
+  <block id="c5b0e174597ee5abfad58c8d92e612ab" category="list-text">Well-architected 상태 탭에서 *EVS environment resiliency*를 찾으십시오.</block>
+  <block id="0e3b484d9d0687e5c5b32b8f2ad39c25" category="list-text">*결과 요약*: 파티셔닝 불일치에 대한 자세한 설명입니다.</block>
+  <block id="ae7e05a26896efe16ac92af493496bfe" category="list-text">*리소스 그리드*: 다음을 포함하는 EVS 환경 노드를 보여주는 표:</block>
+  <block id="9a4247fce420e054bc53b23a77efaa26" category="list-text">배치 그룹 이름</block>
+  <block id="035f6ab94403d611f603c8115478662d" category="list-text">배치 그룹 유형</block>
+  <block id="3cba1eb347e09ee7cfb864eb01fccac4" category="list-text">배치 그룹 파티션 수</block>
+  <block id="bb4564e55d348d7a7b7061c258291236" category="list-text">*조치 필요*: 단계별 해결 절차</block>
+  <block id="626f65450b25b8256e989a7d96d9dd8c" category="list-text">*권장 사항*: 모범 사례 지침</block>
+  <block id="1741ef00400e675fccbb26bb1e459a1c" category="paragraph">파티션 배치 문제를 해결하려면:</block>
+  <block id="190ae6870996db4b351353f26146dfe2" category="list-text">EVS 환경에 새 노드를 추가할 때는 최소 4개의 파티션으로 구성된 분할 배치 그룹을 사용하여 새 노드를 프로비저닝하십시오.</block>
+  <block id="9bc8310ff2c5946d58c2c80b2c49c003" category="list-text">클러스터 노드를 교체하는 경우 교체 노드가 최소 4개의 파티션이 있는 분할 배치 그룹을 사용하여 프로비저닝되는지 확인하십시오.</block>
+  <block id="b4f5ac9ad226f10eca619b94888a2179" category="list-text">위의 권장 사항에 맞춰 모든 EVS 노드를 단일 배치 그룹으로 통합해 보십시오.</block>
+  <block id="ceb2f3b962adcc18ee161b7e14839412" category="paragraph">*모범 사례 권장 사항*:</block>
+  <block id="fe90fa535ae4fff7efe640e795799979" category="paragraph">EVS 환경을 생성하거나 확장할 때는 4개 이상의 파티션으로 구성된 단일 파티션 배치 그룹을 사용하여 모든 클러스터 노드를 프로비저닝하십시오.</block>
+  <block id="f2dd5e328e06e8cf91d1b5390e4cd997" category="paragraph">잘 설계된 인사이트를 검토하고 권장 변경 사항을 구현한 후:</block>
+  <block id="139deeaf3f0b706655accefb5d2c2384" category="list-text">잘 설계된 상태 탭을 매일 모니터링하여 환경의 상태에 대한 정보를 파악하세요.</block>
+  <block id="1a2bd51e6c9820e6b845fcee8b825038" category="list-text">"최적화되지 않음" 결과에 대한 해결 절차를 따르십시오.</block>
+  <block id="84125effdc43235cd3e3b49417a766ea" category="list-text">추가 모범 사례는 AWS 및 NetApp 설명서를 검토하십시오.</block>
+  <block id="0b3b97923e2348ff9e1f39e9effff018" category="list-text">EVS 환경을 확장하기 전에 권장 사항 구현을 고려하십시오.</block>
+  <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">관련 링크</block>
+  <block id="ab9fa5da04b047baee14c97180c20a08" category="inline-link">AWS 배치 그룹 문서</block>
+  <block id="5686150fea51f3258859e4fd15d8a797" category="list-text"><block ref="5686150fea51f3258859e4fd15d8a797" category="inline-link-rx"></block></block>
+  <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">2026년 2월 1일</block>
+  <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">관리 및 모니터링</block>
 </blocks>

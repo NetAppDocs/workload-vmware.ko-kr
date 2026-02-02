@@ -60,6 +60,12 @@ sidebar:
         url: "/connect-sddc-to-fsx.html"
       - title: 데이터를 새로운 인프라로 마이그레이션합니다
         url: "/migrate-data.html"
+  - title: 관리 및 모니터링
+    entries:
+    - title: EVS 구성에 대한 구성 분석
+      url: "/configuration-analysis.html"
+    - title: 잘 설계된 EVS 구성 구현
+      url: "/view-evs-well-architected.html"
   - title: 지식 및 지원
     entries:
     - title: 지원을 위해 등록하십시오

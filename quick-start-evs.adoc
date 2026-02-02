@@ -52,3 +52,10 @@ Amazon EC2 인프라의 VM용 데이터 저장소를 제공할 새로운 FSx for
 
 [role="quick-margin-para"]
 link:deploy-fsx-file-system-evs.html["새로운 FSx for ONTAP 파일 시스템을 구축하는 방법을 알아보십시오"]..
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6개"] EVS 환경에 대한 잘 설계된 인사이트 검토
+[role="quick-margin-para"]
+EVS 환경이 검색되면 Workload Factory는 자동으로 매일 well-architected 스캔을 수행하여 구성 문제를 식별하고 해결 권장 사항을 제공합니다.
+
+[role="quick-margin-para"]
+link:view-evs-well-architected.html["잘 설계된 구성을 구현하는 방법을 알아보세요"^].

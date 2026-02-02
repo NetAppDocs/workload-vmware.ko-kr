@@ -15,6 +15,26 @@ Workload Factory의 VMware 마이그레이션 어드바이저 구성 요소의 �
 
 
 
+== 2026년 2월 1일
+
+
+
+=== Amazon Elastic VMware Service에 대한 Well-Architected 분석
+
+Workload Factory는 이제 Amazon Elastic VMware Service(EVS) 환경에 대한 자동화된 well-architected 분석 기능을 제공합니다. 매일 실행되는 검사를 통해 구성 불일치를 식별하고 최적의 운영, 보안 및 비용 효율성을 유지하는 데 도움이 되는 자세한 해결 권장 사항을 제공합니다.
+
+AWS API를 사용하여 스캔이 수행되므로 vSphere 자격 증명이나 vCenter 연결이 필요하지 않습니다. 결과는 EVS 환경 세부 정보 내의 새로운 *Well-architected status* 탭에서 확인할 수 있습니다.
+
+이번 릴리스에는 다음에 대한 인사이트가 포함됩니다.
+
+* *인스턴스 중지/종료 보호 상태*: EC2 중지 또는 종료 보호가 적용되지 않은 EVS 노드를 식별합니다. EC2 콘솔에서 EVS 노드를 중지하거나 종료하면 가상 머신 데이터에 접근할 수 없거나 데이터가 손실될 수 있습니다.
+* *클러스터 노드 파티션 배치 정렬*: AWS 가용 영역 내 파티션에 장애가 발생할 경우 상당한 처리 능력 손실이나 다운타임을 초래할 수 있는 파티션 정렬 오류를 감지합니다. 각 인사이트에는 심각도 수준, 영향을 받는 리소스 정보를 포함한 자세한 결과, AWS 모범 사례에 기반한 단계별 해결 절차가 포함됩니다.
+
+
+link:view-evs-well-architected.html["잘 설계된 구성 구현"]
+
+
+
 == 2026년 1월 4일
 
 
