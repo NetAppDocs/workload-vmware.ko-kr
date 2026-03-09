@@ -28,6 +28,8 @@ sidebar:
       url: "/quick-start-native.html"
     - title: AWS 기반 VMware Cloud로 마이그레이션을 빠르게 시작할 수 있습니다
       url: "/quick-start.html"
+    - title: Google Cloud VMware Engine으로 마이그레이션을 위한 빠른 시작
+      url: "/quick-start-gcve.html"
     - title: VMware 계획 센터 탐색
       url: "/explore-planning-center.html"
   - title: VMware 계획 센터를 사용하세요
@@ -44,6 +46,10 @@ sidebar:
         url: "/launch-migration-advisor-evs.html"
       - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
         url: "/deploy-fsx-file-system-evs.html"
+    - title: Google Cloud VMware Engine으로 마이그레이션
+      entries:
+      - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
+        url: "/launch-migration-advisor-gcve.html"
     - title: Amazon EC2로 마이그레이션합니다
       entries:
       - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다

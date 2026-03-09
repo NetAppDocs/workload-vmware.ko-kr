@@ -207,9 +207,7 @@
   <block id="a8e3f2e23f07d3e3b894748c162a207a" category="list-text">마이그레이션 계획을 .json 형식의 템플릿으로 저장하려면 * 계획 내보내기 * 를 선택합니다. 나중에 계획을 가져와 요구 사항이 유사한 시스템을 배포할 때 템플릿으로 사용할 수 있습니다.</block>
   <block id="f16579e3ec27716e8cd4980fbae4d3e4" category="paragraph">AWS 기반 VMware Cloud의 단일 vSphere 클러스터에 FSx for ONTAP 볼륨을 최대 4개까지 연결할 수 있습니다.</block>
   <block id="8cab295292831bfdeb59bccbb79bdd46" category="list-text">현재 온-프레미스 VM 구성을 분석합니다</block>
-  <block id="1a05637cb863ca10f5a7d788eab39615" category="list-text">VM 외부 데이터 저장소로 사용할 FSx for ONTAP 볼륨에서 필요한 공간을 식별합니다</block>
   <block id="feb18d16cfa710c71684233bc628e803" category="list-text">결과 보고서를 검토하여 배포 단계를 이해합니다</block>
-  <block id="ecd032206ca6be7b4497c7dadd4679ff" category="list-text">실제 배포를 수행합니다</block>
   <block id="633d759efd4c2199d984faea480082ad" category="list-text">호스트 및 스토리지의 분리 및 고급 데이터 효율성을 통한 비용 최적화</block>
   <block id="52800f54ef93212b18b3653970aa2ed4" category="list-text">추가 호스트 인스턴스를 구입할 필요 없이 필요에 따라 스토리지 용량을 확장할 수 있습니다</block>
   <block id="17167f5b04002560e9e2c5818b543bfa" category="list-text">공간 효율적인 스냅샷, 클론 복제, 압축, 중복제거, 컴팩션과 같은 클라우드의 NetApp ONTAP 데이터 관리 기능</block>
@@ -324,7 +322,6 @@
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">페이지 상단에서는 배포된 모든 VM 및 FSx for ONTAP 파일 시스템의 월별 비용을 설명합니다. 각 섹션을 확장하여 "권장되는 Amazon FSx for ONTAP 파일 시스템 구성", "예상 비용 분석", "볼륨 구성", "크기 지정 가정" 및 기술적 "면책 조항"에 대한 세부 정보를 볼 수 있습니다.</block>
   <block id="547bc0b99ec96bc4efdb00bc0ff7eccd" category="list-text">* 평균 데이터 축소율 *: 세 가지 일반적인 데이터 축소 선택 값 중에서 선택합니다. "1:1 - No reduction", "1:1.25 - 20% reduction" 또는 "1:1.5 - 33% reduction"을 선택합니다.</block>
   <block id="9b33daba55511d7238a85d7736fbd98f" category="list-text">*vSAN 오류 포용*: VM에 필요한 내결함성 수준을 선택합니다. "Auto(자동)"를 선택할 수 있습니다(권장). 또는 다양한 RAID 레벨 중에서 선택할 수 있습니다.</block>
-  <block id="794575b7b1daf584d278fad81412fd2b" category="paragraph">Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라의 일부를 AWS 기반 Amazon EC2 또는 VMware Cloud로 전환하는 것은 다음과 같은 이점을 제공합니다.</block>
   <block id="5cf77a6cd1a6546f96141615c376acb2" category="inline-link">VMware HCX 설명서를 검토합니다</block>
   <block id="1cdaa881e46a57173b4ffb5ec3faacc3" category="paragraph"><block ref="cef3bc29c9f27088570c1e3262538cf8" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="e893ba46613a19a9294b7b151c4df83e" category="summary">VMware 마이그레이션 관리자를 시작하여 Amazon FSx for ONTAP을 외부 NFS 데이터 저장소로 사용하여 현재 인프라를 Amazon EC2로 이동하십시오.</block>
@@ -601,20 +598,13 @@
   <block id="b13e28ff6e5b463fac6d9d320af1db48" category="list-text">Workload Factory에 로그인하는 시스템의 인벤토리 파일에 액세스할 수 있어야 합니다.</block>
   <block id="472a898c43ee1ea13ac33b7eed565504" category="list-text">*VMC 계획 및 생성*을 선택합니다.</block>
   <block id="4f85817ed18f4d26c6d18e7183794766" category="list-text">현재 VM 구성으로 Workload Factory를 채우는 데 사용할 인벤토리 파일 유형을 선택하고 *다음*을 선택합니다.</block>
-  <block id="48037044ca3e2f933dc421a829d69076" category="summary">VMware용 NetApp Workload Factory는 온프레미스 시스템에서 Amazon EVS, VMware Cloud on AWS(VMC) 또는 Amazon EC2로 데이터를 이동하는 도구를 제공합니다.</block>
   <block id="ce96debe53114e32c50b0d98712aa377" category="doc">VMware용 NetApp Workload Factory에 대해 알아보세요</block>
-  <block id="f9e0f742f36854af5e8be72632368d6f" category="paragraph">VMware용 NetApp Workload Factory는 온프레미스 시스템에서 Amazon Elastic VMware Service(EVS), VMware Cloud on AWS(VMC) 또는 Amazon EC2로 데이터를 이동하는 도구를 제공합니다.</block>
   <block id="53b7ad6af2aa1fdb5fb978cb41ca68cf" category="section-title">VMware용 NetApp Workload Factory란 무엇인가요?</block>
-  <block id="bd5e98676a4adce7cc532d7cbc872a35" category="paragraph">VMware용 NetApp Workload Factory는 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석할 수 있는 계획 센터와 마이그레이션 어드바이저를 제공합니다.  그런 다음 마이그레이션 어드바이저는 권장되는 VM 레이아웃을 AWS vSphere 클러스터의 Amazon EVS, Amazon EC2 또는 VMware Cloud에 배포하고 사용자 정의된 Amazon FSx for NetApp ONTAP 파일 시스템을 외부 데이터 저장소로 사용하는 계획을 생성합니다.  VMware 대시보드의 워크로드 팩토리 역할을 하는 계획 센터를 통해 저장된 VM 인벤토리 데이터 세트와 저장된 마이그레이션 계획을 관리하고, 저장된 마이그레이션 계획을 프로비저닝할 수 있습니다.</block>
-  <block id="51c42327475a517ed8042ac208d5bc52" category="paragraph">Amazon FSx for NetApp ONTAP 은 NetApp의 ONTAP 파일 시스템을 기반으로 구축된 외부 NFS 데이터 저장소로, Amazon EVS 또는 Amazon EC2 인스턴스나 AWS vSphere 클러스터의 VMware Cloud에 연결할 수 있습니다.  사용 가능한 스토리지를 늘리기 위해 호스트를 추가할 필요는 없습니다. 대신, vSAN 데이터스토어를 보완하는 외부 데이터스토어로 FSx for ONTAP 볼륨을 사용하면 됩니다.  이를 통해 컴퓨팅 리소스에 관계없이 확장 가능한 유연하고 고성능의 가상화된 스토리지 인프라를 제공합니다.</block>
   <block id="6ae8e58cb52cd45b321927bcb2961f4e" category="inline-link">Workload Factory 개요</block>
   <block id="b5b60d536e6e0460769e5ad0ac34a2d7" category="paragraph">Workload Factory에 대한 자세한 내용은 다음을 참조하세요.<block ref="3b764dfed54c8d9154794adb30144dfb" category="inline-link-rx"></block> .</block>
   <block id="02550f8dfa494f45cbf71ecbab4158bc" category="section-title">VMware 마이그레이션 어드바이저의 작동 방식</block>
-  <block id="682906bdd5e082664c7d3f28fd071b49" category="paragraph">마이그레이션 어드바이저는 VMware 지원 데이터스토어에서 실행되는 온프레미스 가상 머신(VM)과 해당 데이터를 Amazon EVS, Amazon EC2 또는 VMware Cloud 데이터스토어로 이동하는 데 도움을 줄 수 있습니다. 여기에는 FSx for ONTAP 파일 시스템의 보충 NFS 데이터스토어가 포함됩니다.</block>
   <block id="2dcc23cafa7d96e8f966cdf717cc41a5" category="section-title">이민 자문가와 함께 할 수 있는 일</block>
   <block id="5b5a947ec2b974eb0e23579b4db2a817" category="paragraph">마이그레이션 어드바이저는 다음과 같은 기능을 제공합니다.</block>
-  <block id="ff6f49d240259199aeaf90f6d4d03f81" category="list-text">Amazon EC2, Amazon EVS 또는 VMware Cloud on AWS로 마이그레이션할 VM을 결정합니다.</block>
-  <block id="90bc9a2e58ddbf4a5adafdb3a190041f" category="paragraph">마이그레이션 어드바이저는 단일 FSx for ONTAP 파일 시스템에 연결된 단일 Amazon EVS 또는 Amazon EC2 인스턴스 또는 VMware Cloud on AWS 클러스터에 대한 구성 계획을 지원합니다.</block>
   <block id="67c1d6f7e45ca1a7c63174da6d5a6af9" category="section-title">이민 자문 서비스 이용의 이점</block>
   <block id="4bbb8d481021011f9afb73ca196bfecd" category="section-title">NetApp Workload Factory를 사용하는 도구</block>
   <block id="227f846d45d01d0f9fb62a784d506d51" category="paragraph">다음 도구와 함께 NetApp Workload Factory를 사용할 수 있습니다.</block>
@@ -742,7 +732,6 @@
   <block id="d6add28cedc07b8a80ae0bda37f86523" category="list-text">RVTools 4.4.2 이상을 다운로드하여 설치하세요.<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
   <block id="33daaeb5c5025e30dc44f9f5bb7098a6" category="inline-link">리소스 섹션의 RVTools 설명서</block>
   <block id="bc7e9c87828b6c8d46b8ee715cdad433" category="paragraph">"명령줄 매개변수"에 대한 장을 참조하세요.<block ref="cba36d23348879ff4ac7b19a18786876" category="inline-link-rx"></block> 자세한 내용은.</block>
-  <block id="c6e53b973f12d3e5f6edcac94bd4cafc" category="paragraph">시작하기 전에 https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html [ NetApp Workload Factory 에 대한 권한 ^]을 이해해야 합니다.</block>
   <block id="ed642dbc1cfaad7c138d0206f75e0100" category="paragraph">에서<block ref="bf6bdc955de5a25fe27ac07cc3dd7f22" category="inline-link-rx"></block></block>
   <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">RVTools 4.4.2 이상을 다운로드하여 설치하세요.<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">리소스 섹션에 있는 RVTools 설명서</block>
@@ -895,4 +884,171 @@
   <block id="5686150fea51f3258859e4fd15d8a797" category="list-text"><block ref="5686150fea51f3258859e4fd15d8a797" category="inline-link-rx"></block></block>
   <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">2026년 2월 1일</block>
   <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">관리 및 모니터링</block>
+  <block id="129560e32411be4dc94c9cfeada8ea67" category="doc">Workload Factory에서 사용할 수 있는 새로운 Ask Me 북마크</block>
+  <block id="4ea89e975474ebd5bba8d32ced2e95cc" category="paragraph">Workload Factory 콘솔의 모든 화면에 새로운 Ask Me 북마크를 추가했습니다. 이 개선 사항을 통해 필요할 때 언제든지 Ask Me에 더 쉽고 빠르게 액세스할 수 있습니다. Ask Me는 사용자의 워크로드 환경에 대한 질문을 하고, 환경에서 직접 맞춤형 인사이트를 얻고, 이전 대화를 참조할 수 있도록 지원하는 AI 비서입니다.</block>
+  <block id="b365ed726bb3010ba5b4a6a1479128f9" category="paragraph">새로운 북마크를 클릭하면 어느 페이지에서든 Ask Me를 열 수 있습니다. 현재 작업 중인 내용을 방해하지 않고 사이드 패널에 Ask Me가 실행되어, 현재 작업과 관련된 간단한 설명과 추천 사항을 제공합니다.</block>
+  <block id="80dcbdee31e7f18a301f863f8b73dc64" category="inline-link-macro">Ask Me에 대해 자세히 알아보기</block>
+  <block id="df84e5c661ad9c55d4921f236021aac2" category="paragraph"><block ref="df84e5c661ad9c55d4921f236021aac2" category="inline-link-macro-rx"></block></block>
+  <block id="d9a614ba22162f87467dc9820cb657d0" category="doc">Google Cloud VMware Engine용 마이그레이션 어드바이저 지원 소개</block>
+  <block id="9ed9d229ad690b47d132eb6206cba909" category="paragraph">NetApp Workload Factory가 이제 Google Cloud VMware Engine을 지원합니다. Google Cloud NetApp Volumes를 외부 NFS 데이터스토어로 사용하여 온프레미스 VMware 워크로드를 Google Cloud VMware Engine으로 마이그레이션할 수 있습니다. 이를 통해 애플리케이션을 재구성하거나 플랫폼을 변경할 필요 없이 비용을 최적화하고 VMware 환경을 더욱 효과적으로 제어할 수 있습니다.</block>
+  <block id="42fbc3a98a8196c1e84ea7586967c06f" category="paragraph">Google Cloud VMware Engine 마이그레이션 어드바이저는 다음을 제공합니다.</block>
+  <block id="6e784cfbe98c0f6a070e3304420a9971" category="list-text">VE1 및 VE2 노드 유형을 지원하는 자동화된 Google Cloud VMware Engine 클러스터 크기 조정 및 설계</block>
+  <block id="f6879c882f4384c5ca30017d48dafe42" category="list-text">vSAN 내부 데이터스토어와 Google Cloud NetApp Volumes 외부 NFS 데이터스토어 간의 VM 레이아웃 최적화.</block>
+  <block id="a29465f74d83dc4ead73643e19ed4387" category="list-text">vSAN 단독 구성과 Google Cloud NetApp Volumes 강화 구성 간의 상세한 비용 비교 및 총소유비용(TCO) 분석.</block>
+  <block id="1711c42c1c1d16547f3fc604cd9af939" category="list-text">Standard, Premium 및 Extreme Google Cloud NetApp Volumes 서비스 레벨을 지원합니다.</block>
+  <block id="d5adbe8ffd84800d108bc7ddf1451b8a" category="list-text">Terraform을 사용한 자동화된 프로비저닝을 위한 Infrastructure-as-Code 배포.</block>
+  <block id="6edf666a8e66c338ed987a8170473fc1" category="inline-link-macro">Google Cloud VMware Engine 플랜용 Google Cloud NetApp Volumes 데이터스토어를 배포하세요</block>
+  <block id="c6fdbf6f595f7c0ad6e578b92f3bc742" category="list-text"><block ref="c6fdbf6f595f7c0ad6e578b92f3bc742" category="inline-link-macro-rx"></block></block>
+  <block id="7f23e40eb3340fde04d9926b7462c830" category="summary">VMware 계획 센터에서 Google Cloud VMware Engine 마이그레이션 어드바이저를 실행하여 필요에 맞게 사용자 지정된 마이그레이션 계획을 수립할 수 있습니다.</block>
+  <block id="5e50f9be4f1e626bb755e71b6ef9feec" category="doc">마이그레이션 어드바이저를 사용하여 Google Cloud VMware Engine용 배포 계획을 생성하십시오</block>
+  <block id="bdef3354bb4b315740e7e8854254495b" category="paragraph">가상 머신을 Google Cloud VMware Engine으로 마이그레이션하고 사용자 지정 Google Cloud NetApp Volumes를 외부 NFS 데이터 저장소로 사용하는 배포 계획을 생성할 수 있습니다. 마이그레이션 어드바이저의 옵션은 VM 인벤토리 데이터를 수집하는 데 사용된 도구에 따라 다를 수 있습니다.</block>
+  <block id="68da13bad217e0063074ca65ab1746c6" category="list-text">Workload Factory에 접속하려면 사용자 이름과 비밀번호가 필요합니다. 계정이 없으시면 지금 바로 계정을 만드세요. 안내를 참조하십시오<block ref="8199fecf84297ce97d3f6270595de419" category="inline-link-rx"></block>.</block>
+  <block id="5a4d83a02bb188eb7ca1f7e786e22e1d" category="list-text">Google Cloud VMware Engine 및 Google Cloud NetApp Volumes 서비스를 모두 사용할 수 있는 지역에 Google Cloud VMware Engine 구독이 있어야 합니다.</block>
+  <block id="dc45aa090e1645baa98c11a108029ce0" category="list-text">드롭다운 메뉴에서 *Google Cloud*를 선택합니다.</block>
+  <block id="73baed54ed8ca7d7f90fe730c7b59b88" category="list-text">VM 인벤토리 테이블에서 배포 계획을 세우는 데 사용할 인벤토리 옆에 있는 *Start planning*을 선택합니다.</block>
+  <block id="db7c743cb66453373682261b413adad9" category="paragraph">*Google Cloud 온보딩 준비* 마법사가 나타납니다.</block>
+  <block id="e6f8994ed2b1b810094dfb26fa18e8e2" category="section-title">마이그레이션 기본 설정을 구성합니다</block>
+  <block id="318057dd05b246b46dcbf62fa92fe315" category="list-text">_VM 인벤토리 고려 사항_ 섹션에서 VM 목록을 필터링하고 마이그레이션 계획 설계 방법을 구성하는 옵션을 선택합니다.</block>
+  <block id="bc7c3c1171be78801f06d1a8be1b33da" category="list-text">*VM 인벤토리 고려 사항*: 전원 상태를 기준으로 포함할 VM을 선택합니다.</block>
+  <block id="418498649001645bfbeb014ffb28f3a5" category="list-text">*전원 켜짐*(기본적으로 선택됨)</block>
+  <block id="0fbcd3243d3f686c466384887bd6de4d" category="list-text">*전원 꺼짐*</block>
+  <block id="b127b7c444e5c26d1316aeff5d18b6c0" category="list-text">*일시 중단됨*</block>
+  <block id="8358d69538590d55579dfed09c42a3dc" category="list-text">*VM 스토리지 고려 사항*: Google Cloud NetApp Volumes 데이터스토어의 크기를 어떻게 설정할지 선택하세요.</block>
+  <block id="e0b155b26280cf35363da155123ba80b" category="list-text">*활용률*: VM의 실제 사용 용량을 기준으로 데이터 저장소의 크기를 조정합니다.</block>
+  <block id="ff354babfdeb77e7b4389011d1c1a96b" category="list-text">*프로비저닝됨*(기본값): VM의 전체 프로비저닝된 용량을 기준으로 데이터 저장소의 크기를 지정합니다.</block>
+  <block id="9dcb56404cf9e3954f908118420777c5" category="list-text">*고려할 VM 메모리*: 필요한 Google Cloud VMware Engine 클러스터 컴퓨팅 리소스를 계산하는 방법을 선택합니다.</block>
+  <block id="1a554f30ae6e06a3369acf61e5598b64" category="list-text">*활용률*: VM의 실제 메모리 사용량을 기준으로 계산합니다.</block>
+  <block id="e8017897774b4bf2495c82f404444684" category="list-text">*프로비저닝됨* (기본값): VM에 할당된 총 메모리를 기준으로 계산합니다.</block>
+  <block id="6f3b7fbb308b5cd5ad0d69af3189d9a4" category="list-text">*가상 머신 성능 예측*: 이 옵션은 RVTools를 데이터 소스로 사용할 때만 나타납니다. 예상 성능 수준을 선택하십시오.</block>
+  <block id="1525decaa8624824a33b6bc992f4d864" category="list-text">*낮음*: VM당 평균 50 IOPS.</block>
+  <block id="38270b49f9e67488cb71ff02a55f42ea" category="list-text">*표준*: VM당 평균 200 IOPS(기본값으로 선택됨).</block>
+  <block id="15ed638a0e72bf4a2607c046aeb81864" category="list-text">*높음*: VM당 평균 800 IOPS.</block>
+  <block id="b449916fc58f92ffcaa6f3ffb72ceeb6" category="list-text">_Google Cloud VMware Engine 배포 지역_ 섹션에서:</block>
+  <block id="2942a3017cfae2123d920cc47cc8652d" category="list-text">*지역*: Google Cloud VMware Engine 및 Google Cloud NetApp Volumes를 배포할 Google Cloud 지역을 선택하세요. 두 서비스 모두 사용 가능한 지역만 목록에 표시됩니다.</block>
+  <block id="2ec7c0d92d77fe03c018d7625788f776" category="list-text">_VM 스토리지 용량 및 보호 고려 사항_ 섹션에서:</block>
+  <block id="7ad31a1f794d93192d2fcf7fe57c3521" category="list-text">*용량 헤드룸 비율*: 성장을 위해 추가할 추가 용량의 비율을 입력합니다. 기본값은 20%이며 권장 최소값이기도 합니다.</block>
+  <block id="d4f03c9c6377b773ec4201e2d11cefc4" category="admonition">여유 공간을 20% 미만으로 선택하면 스냅샷 보호 기능이 자동으로 비활성화됩니다.</block>
+  <block id="c154c1c66b585ace39c0fe25c1bc81ea" category="list-text">*VM 스냅샷 보호*: 이 옵션을 활성화하면(기본적으로 활성화됨) ONTAP 기본 스냅샷 정책을 사용하여 스냅샷이 있는 VM을 보호할 수 있습니다.</block>
+  <block id="1e078659568f45142ad6ff83c2958dd0" category="section-title">클러스터 구성 선택</block>
+  <block id="d6d4f2913ba9aec17bc7133710233a62" category="list-text">*선호하는 Google Cloud VMware Engine 클러스터 구성 선택* 페이지에서 Google Cloud VMware Engine 클러스터 기본 설정을 구성하고 권장 구성을 검토하세요.</block>
+  <block id="d2cde9f9a429ad5350e8aa204fd2241d" category="list-text">_아키텍처 기본 설정_ 섹션에서:</block>
+  <block id="2d58b16a43cdd4543d48af2a2a465cb8" category="list-text">*Google Cloud VMware Engine VE2 노드 유형 허용*: 이 옵션을 활성화하면(기본값) VE1 및 VE2 노드 유형이 모두 고려됩니다. VE1 노드로만 구성을 제한하려면 이 옵션을 비활성화하십시오.</block>
+  <block id="c99dbd22517a9e786f961b2df74010f9" category="list-text">*Google Cloud NetApp Volumes 표준 볼륨 허용*: 이 옵션을 비활성화하면(기본값) 구성 설계에서 Premium 및 Extreme 서비스 레벨만 사용되며, 이는 권장되는 모범 사례입니다. Premium 및 Extreme 볼륨은 지역 가용성을 제공하여 가용성 영역 장애에 대한 복원력이 뛰어납니다. 표준 볼륨은 영역 가용성만 제공하며 가용성 영역 장애로부터 보호되지 않습니다. 이 옵션을 활성화하면 표준 서비스 레벨 볼륨을 포함하여 가용성 영역 수준의 복원력이 필요하지 않은 저성능 워크로드의 비용을 절감할 수 있습니다.</block>
+  <block id="c24061201d4aac62423f361124cd2ea9" category="list-text">_클러스터 구성_ 섹션에서 사용 가능한 Google Cloud VMware Engine 클러스터 구성을 검토하십시오.</block>
+  <block id="7e2f923c2ece67d7f03cea8cfc2cec3c" category="paragraph">구성은 예상 총 비용(낮은 값에서 높은 값 순)으로 정렬되며 다음과 같은 다양한 조합을 보여줍니다.</block>
+  <block id="3eceea6468a6cb92c2559a2980f972be" category="list-text">Google Cloud VMware Engine 노드 유형(VE1 또는 VE2)</block>
+  <block id="b260e33619eeabc05fb9f549d49c1bb7" category="list-text">예상 총 비용</block>
+  <block id="41d35228c5dd44718af03e95a7a66c0b" category="list-text">예상 절감액</block>
+  <block id="f143d990b31f7ac5e79358104cb48aff" category="list-text">노드 수</block>
+  <block id="06963bdc1e939a83554fb2f6e1123a88" category="list-text">VSAN 내결함성 설정: FTT(Fault Tolerance Type) 및 FTM(Fault Tolerance Method)</block>
+  <block id="1586df1eb6fd24647c7b8eeea36a5684" category="list-text">TiB의 초과 스토리지 용량</block>
+  <block id="eb90cdaabce0e303a4bf416b7b3623b3" category="list-text">스토리지 전용 노드 유형</block>
+  <block id="649eaaada1930b6d058fcabd21cdda9f" category="list-text">원하는 클러스터 구성 옆에 있는 라디오 버튼을 클릭하여 선택합니다.</block>
+  <block id="0437a536b5da65e60b818ed2bbc1a961" category="paragraph">첫 번째(가장 저렴한) 구성이 기본적으로 선택됩니다.</block>
+  <block id="ed83440f7fa681e523c2732d38a7b2e0" category="section-title">VM 레이아웃을 선택합니다</block>
+  <block id="f75aafe44a7a24b5ed25b86c00e0392e" category="list-text">*자동 VM 선택* 페이지에서 필요한 외부 스토리지 용량 및 기본 설정에 따라 자동으로 선택된 최적의 가상 머신 레이아웃을 검토하십시오.</block>
+  <block id="06c4948c691699c140b560bed36cf694" category="list-text">_VM 인벤토리_ 섹션을 검토하세요. 이 섹션에는 다음 내용이 표시됩니다.</block>
+  <block id="6fe50fe9d1984a8bbc393a22b0344b1b" category="list-text">전체 VM 수</block>
+  <block id="ce1168c4a0150c3c5269489c6b1c044c" category="list-text">전체 용량(이전 선택에 따라 프로비저닝되거나 사용된 용량)</block>
+  <block id="a6610a39936d624143ac328a4c30cf93" category="paragraph">섹션을 확장하여 다음 세부 정보를 볼 수 있습니다.</block>
+  <block id="9dbc75c2caf0bb17b2e5552da81dc213" category="list-text">집계된 평균 IOPS</block>
+  <block id="287d022f0924b9434fe3c56becfa411c" category="list-text">총 처리량(MB/s)</block>
+  <block id="7e1e5cb9717e72ce67c3e7d3d42668e7" category="list-text">총 최대 IOPS</block>
+  <block id="88dde71fa61fc2745375f962ee0309de" category="list-text">총 최대 처리량(MB/s)</block>
+  <block id="c1757aa1ab464c2683bc6df2d33797b3" category="list-text">_VM 선택 기본 설정_ 섹션에서 최적화 방법을 선택하십시오.</block>
+  <block id="42d2c38fdce391bb82af93c49a349f05" category="list-text">*비용*(기본값): I/O 밀도가 가장 높은 VM을 vSAN 스토리지에 할당하여 성능 요구 사항을 충족하면서 Google Cloud NetApp Volumes 비용을 최소화합니다.</block>
+  <block id="44f37f35fadeb6bcf5373e762a8936f4" category="list-text">*보호*: 스토리지 용량이 가장 큰 VM을 Google Cloud NetApp Volumes 외부 데이터 저장소에 할당하여 Google Cloud NetApp Volumes 스냅샷 및 복제 기능을 통해 복구 가능성을 높입니다.</block>
+  <block id="e9297f98306d30068ec163f2bedd4dfb" category="list-text">VM 및 용량이 Google Cloud NetApp Volumes와 vSAN 스토리지 간에 어떻게 분산되는지 보여주는 _외부 데이터 저장소 구성_ 섹션을 검토하십시오.</block>
+  <block id="18316d9ec941bf3b960518ec396bd83a" category="paragraph">해당 섹션을 확장하면 다음과 같은 세부 정보를 볼 수 있습니다. * 집계된 평균 IOPS * 집계된 처리량(MB/s) * 집계된 최대 IOPS * 집계된 최대 처리량(MB/s)</block>
+  <block id="79170f31bfd8aee21b7af21ea74b679c" category="list-text">_Google Cloud NetApp Volumes NFS 데이터 저장소에 선택된 VM_ 테이블에서 다음을 수행할 수 있습니다.</block>
+  <block id="24d081499889e03a6f862bf9b92e1d7b" category="list-text">선택한 최적화 방법에 따라 자동으로 선택된 VM을 확인하세요.</block>
+  <block id="686d86bc6cf0f2dd81b047d6c6fb20ff" category="list-text">확인란을 사용하여 개별 VM을 수동으로 선택하거나 선택 취소합니다.</block>
+  <block id="8fd7c4bce16287bc0901d76e6df18369" category="list-text">클러스터, 운영 체제 또는 데이터 센터별로 VM을 필터링합니다.</block>
+  <block id="33a0f704fea457cd41d0c99aa0f2b24c" category="list-text">표시되는 열(예: VM 이름, 프로비저닝된 용량, 평균 읽기 IOPS)을 기준으로 VM을 정렬합니다.</block>
+  <block id="724ff45242187140f5f0fa936e3f1883" category="inline-image-macro">열 선택기 아이콘</block>
+  <block id="d7c867e0983f09b2860e42622e3e18b3" category="list-text"><block ref="e09a28752dc289a931b5bd80d410bab8" category="inline-image-macro-rx" type="image"></block>를 클릭하여 추가 열을 표시하거나 숨깁니다.</block>
+  <block id="416c477b64c4b04c70f08817f2eec88e" category="admonition">VM 선택을 수동으로 수정한 경우 *재설정*을 선택하여 최적화 기본 설정에 따른 자동 선택으로 되돌릴 수 있습니다.</block>
+  <block id="bcd1d263fedf745abaf10a8e39e3ce7a" category="section-title">NFS 데이터 저장소 할당 검토</block>
+  <block id="313c4da174190a57c47b141b4c2d7d53" category="list-text">*Review instance store assignment* 페이지에서 자세한 데이터 저장소 레이아웃과 VM 할당을 검토하십시오.</block>
+  <block id="870e7ad52b7813eb4eef3d796cb12a23" category="list-text">*Total* 및 *Per datastore* 탭을 사용하여 집계 보기와 데이터 저장소별 세부 정보 간에 전환할 수 있습니다.</block>
+  <block id="ce4cbe9effb933914d8f4f5d04d7487b" category="list-text">*Total* 탭에서:</block>
+  <block id="90fa371363453317b8a8a48c353419b2" category="list-text">다음 내용을 표시하는 _스토리지 용량 분석_ 차트를 검토하십시오.</block>
+  <block id="8ec9cb96f2eafa3544c3c5840e600ea6" category="list-text">Google Cloud NetApp Volumes 논리적 용량</block>
+  <block id="d9ff59373383aa2a2345132052d2620a" category="list-text">VM 프로비저닝된 용량</block>
+  <block id="3a20649c9c4bd5b363e2188e9da436f1" category="list-text">VM 수준의 여유 공간(프로비저닝된 용량을 선택한 경우)</block>
+  <block id="26aea18cb1e707f31b308dd33a47f2c3" category="list-text">전체 용량 여유 공간</block>
+  <block id="efe33427acece88369716aee1cdb4638" category="list-text">스냅샷 버퍼 용량(스냅샷 보호가 활성화된 경우)</block>
+  <block id="fae8e96eddae7d4c06ba9e0ad951691e" category="list-text">다음을 표시하는 _상세 정보_ 섹션을 검토하십시오.</block>
+  <block id="9a56ad3fb5b4c1c596bed3f9798d1942" category="list-text">전체 VM 프로비저닝된 용량</block>
+  <block id="de7a1812653e49058c2b0fc45a470ac9" category="list-text">여유 공간(프로비저닝된 용량을 선택한 경우)</block>
+  <block id="e0a1cac53f449fb872b32efaa226ad6d" category="list-text">모든 Google Cloud NetApp Volumes 스토리지 풀의 전체 논리적 용량</block>
+  <block id="942c9f9342b5559d33dba5f991c67499" category="list-text">Google Cloud NetApp Volumes 스토리지 풀 개수 및 유형</block>
+  <block id="3d7b1ea762753f455dec512bb7eb6366" category="list-text">전체 VM 수 및 프로비저닝된 용량</block>
+  <block id="32989a1d33776ff1c54d7b4624ff9d47" category="list-text">집계된 VM 평균 IOPS(사용 가능한 경우)</block>
+  <block id="f2800421c18cc8ac7fdd5415519aa5a7" category="list-text">평균 I/O 밀도(계산 방법을 설명하는 툴팁 포함)</block>
+  <block id="4acce2ca98b00d1ec62bc94ab747eb4a" category="list-text">집계된 VM 평균 처리량(사용 가능한 경우)</block>
+  <block id="f3ebbd3bdb6c006819938d3e634c8265" category="list-text">*데이터 저장소별* 탭에서:</block>
+  <block id="46d30964efdee8f8361e173e01a56d75" category="list-text">데이터 저장소 탭을 선택하여 세부 정보를 확인하십시오.</block>
+  <block id="78d449d4ccb94b661a89d8d9bfd71ccd" category="list-text">해당 데이터 저장소의 세부 정보를 검토하십시오. 여기에는 다음이 포함됩니다.</block>
+  <block id="39b09228143d70a200a3d1e6a4bc34cc" category="list-text">용량 분석 차트</block>
+  <block id="2b5101c3a07098cfb9da6938626ef0a3" category="list-text">데이터 저장소 속성:</block>
+  <block id="dcd418b970d58623db7272b29c5c9ab8" category="list-text">전체 VM 활용 용량</block>
+  <block id="966f3447d134a9f961844546224609b8" category="list-text">데이터 저장소 논리적 용량</block>
+  <block id="3d482ed846681b98626621d5ee29828a" category="list-text">데이터 저장소 서비스 수준(Standard, Premium, Extreme)</block>
+  <block id="622cf890d2202b708da731d4396a5fa3" category="list-text">평균 데이터 저장소 I/O 밀도(사용 가능한 경우)</block>
+  <block id="b07508826fa15ee923db17879d587df2" category="list-text">이 데이터스토어에 할당된 모든 VM을 보여주는 _Virtual machines_ 테이블을 검토하십시오. 이 테이블에는 VM 이름, 용량, 클러스터, 운영 체제, IOPS, 처리량 및 기타 속성에 대한 열이 있습니다.</block>
+  <block id="3f7787c2c84b9f020c78dd2570dd1978" category="section-title">배포 계획을 검토하고 저장합니다</block>
+  <block id="c84ae240c20ff075273c44b014156638" category="list-text">*마이그레이션 계획 검토* 페이지에서 배포 계획을 저장하기 전에 검토하고 사용자 지정하십시오.</block>
+  <block id="3f058a662c13b8d11a82eded614260de" category="list-text">드롭다운 메뉴에서 요금제를 선택하세요.</block>
+  <block id="32d62a345830565c255a1d5c52d0df8d" category="list-text">*On-demand* (기본값): 사용량에 따라 요금을 지불하는 방식</block>
+  <block id="e59a6c2b81411bb4102996997a1197ab" category="admonition">리뷰 페이지 전체에 표시되는 가격은 선택한 플랜에 따라 조정됩니다.</block>
+  <block id="932b3919e252fd94007b181facfea234" category="list-text">_Estimated savings_ 섹션을 검토하십시오.</block>
+  <block id="9a12131dfe25a5d82a0f8c96d1aced53" category="list-text">_Google Cloud VMware Engine 구성 대안 비교_ 차트는 다음을 비교합니다.</block>
+  <block id="b27860d1731a66ef502cdae4b0a63ff9" category="list-text">Google Cloud VMware Engine vSAN 전용 구성의 예상 월별 비용(컴퓨팅 노드 + 스토리지 전용 노드)</block>
+  <block id="496c4d4316776481a1482ddb965d07c2" category="list-text">Google Cloud VMware Engine vSAN + 외부 데이터스토어 월별 예상 비용(컴퓨팅 노드 + Google Cloud NetApp Volumes 외부 데이터스토어)</block>
+  <block id="9af29b9aea6f20fe939f651c5fbff823" category="list-text">절약률 및 금액</block>
+  <block id="8ed6faf7202e1f068aca46df984e41aa" category="list-text">_예상 절감액 분석_ 표는 노드 수, 스토리지 용량, Google Cloud NetApp Volumes 풀 정보, 월별 및 연간 비용 절감액에 대한 세부 정보를 통해 두 구성을 비교합니다.</block>
+  <block id="fd5e55f3dada0dfdea1e4a8db65d4f71" category="list-text">_Google Cloud NetApp Volumes 권장 구성_ 섹션을 검토하십시오. 다음 사항이 강조됩니다.</block>
+  <block id="412f1d25415ed6ae42d9f7093a892003" category="list-text">스토리지 풀 수 및 유형</block>
+  <block id="bcefcdcb863748633ae2e2b4c03e8c5a" category="list-text">전체 스토리지 풀 용량</block>
+  <block id="03c3d7a09db2ac4b65e1eb25d5757b94" category="list-text">데이터 저장소(볼륨) 수</block>
+  <block id="e02f0b9124dd4bd3f4df656a21f9f5dd" category="list-text">데이터 저장소 집계 처리량</block>
+  <block id="69aa4b2dbd288e22e885b5bc2f41dc11" category="list-text">예상 월별 비용</block>
+  <block id="736d00d767eb2cc5061950d92fbae941" category="list-text">_권장 구성 세부 정보_ 섹션은 서비스 수준(Standard, Premium, Extreme)별로 스토리지 풀 개수, 용량, 데이터스토어 개수, 처리량 세부 정보, 용량 여유 공간, 스냅샷 버퍼 및 총 예상 월별 비용에 대한 분석을 제공합니다.</block>
+  <block id="ed79bf3416559d9d123df42da2af219a" category="list-text">_예상 비용 분석_ 섹션에서는 용량 비용, 콜드 용량, 복제된 데이터, 백업 사용량 및 용량을 포함하여 서비스 수준(Standard, Premium, Extreme)별 비용을 분석하고 총 예상 월별 비용을 제시합니다.</block>
+  <block id="9217f03104bb17cedac81e390d6976a4" category="list-text">_볼륨 구성_ 테이블에는 이름, 풀 유형, 프로토콜(NFSv3), 용량, 여유 공간, 스냅샷 정책 및 계층화 정책과 같은 세부 정보와 함께 계획된 각 Google Cloud NetApp Volumes 볼륨이 나열됩니다.</block>
+  <block id="d45e3ff81cc5679c120fa221fff1d2f8" category="list-text">_Solution design assumptions_ 및 _Disclaimer_ 섹션을 검토하십시오.</block>
+  <block id="78b0d963852b83be5e0705a4eabde39b" category="list-text">마이그레이션 계획에 만족하시면 다음과 같은 몇 가지 옵션이 있습니다.</block>
+  <block id="62d3f6597ca7730e26b8478a9cffb46d" category="list-text">페이지 상단의 *플랜 관리*를 선택하세요.</block>
+  <block id="1c1d62c9225c5b62e271d7bdf78281fd" category="list-text">다운로드할 항목을 선택하세요:</block>
+  <block id="dc2dce04f4cc304eb4072ad5c870dc1f" category="list-text">*보고서 다운로드*: 모든 계획 세부 정보가 담긴 종합 PDF 문서</block>
+  <block id="252e7f3a52993e1074df197050c910ae" category="list-text">*인스턴스 스토리지 배포 다운로드*: VM을 할당된 데이터 저장소에 매핑하는 CSV 파일</block>
+  <block id="c0b5479b7a72a1c1a851285c1482619e" category="list-text">Terraform Infrastructure-as-Code를 사용하여 Google Cloud NetApp Volumes NFS 데이터 저장소를 프로비저닝하려면 *Provision*을 선택하십시오.</block>
+  <block id="4c9e1a6d5098db9ed0d8724f69b55509" category="paragraph">생성된 Terraform 코드가 코드 상자에 표시됩니다. 코드를 클립보드에 복사하거나 파일로 다운로드하여 자체 Terraform 환경에서 실행할 수 있습니다.</block>
+  <block id="98eb3550d72a811f20fc4046f149ca3c" category="list-text">Google Cloud NetApp Volumes NFS 데이터스토어를 생성하려면 *생성*을 선택하세요.</block>
+  <block id="e810691ddff205487cb9d1e71664def5" category="summary">NetApp Workload Factory for VMware는 온프레미스 시스템의 데이터를 Amazon EVS, VMware Cloud on AWS(VMC), Amazon EC2 또는 Google Cloud VMware Engine으로 이동하는 도구를 제공합니다.</block>
+  <block id="b700ea2542063dec898122cc29ac6652" category="paragraph">NetApp Workload Factory for VMware는 온프레미스 시스템의 데이터를 Amazon Elastic VMware Service(EVS), VMware Cloud on AWS(VMC), Amazon EC2 또는 Google Cloud VMware Engine으로 이동하는 도구를 제공합니다.</block>
+  <block id="a8fe35dc679e31e460ff5314e4814c4f" category="paragraph">NetApp Workload Factory for VMware는 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석할 수 있는 계획 센터와 마이그레이션 어드바이저를 제공합니다. 마이그레이션 어드바이저는 권장 VM 레이아웃을 Amazon EVS, Amazon EC2, VMware Cloud on AWS vSphere 클러스터 또는 Google Cloud VMware Engine에 배포하는 계획을 생성하며, 외부 데이터 저장소로 사용자 지정 클라우드 네이티브 스토리지를 사용합니다. AWS 환경의 경우 Amazon FSx for NetApp ONTAP 파일 시스템이 포함됩니다. Google Cloud 환경의 경우 Google Cloud NetApp Volumes가 포함됩니다. Workload Factory for VMware 대시보드 역할을 하는 계획 센터를 통해 저장된 VM 인벤토리 데이터 세트와 저장된 마이그레이션 계획을 관리하고 저장한 마이그레이션 계획을 프로비저닝할 수 있습니다.</block>
+  <block id="3e86d077ced845a408bf957ded3dbae8" category="paragraph">Amazon FSx for NetApp ONTAP은 NetApp의 ONTAP 파일 시스템을 기반으로 구축된 외부 NFS 데이터스토어로, Amazon EVS 또는 Amazon EC2 인스턴스 또는 VMware Cloud on AWS vSphere 클러스터에 연결할 수 있습니다. 마찬가지로 Google Cloud NetApp Volumes는 Google Cloud VMware Engine 환경을 위한 외부 NFS 데이터스토어를 제공합니다. 사용 가능한 스토리지를 늘리기 위해 호스트를 추가할 필요 없이 이러한 클라우드 네이티브 스토리지 볼륨을 외부 데이터스토어로 사용하여 vSAN 데이터스토어를 보완할 수 있습니다. 이를 통해 컴퓨팅 리소스와 독립적으로 확장 가능한 유연하고 고성능의 가상화된 스토리지 인프라를 구축할 수 있습니다.</block>
+  <block id="2ccdcbb9ad87fe4eb4c7e0235ab222f3" category="paragraph">마이그레이션 전문가가 VMware에서 지원하는 모든 데이터스토어에서 실행되는 온프레미스 가상 머신(VM)과 해당 데이터를 Amazon EVS, Amazon EC2, VMware Cloud 또는 Google Cloud VMware Engine 데이터스토어로 마이그레이션하는 데 도움을 드릴 수 있습니다. 여기에는 FSx for ONTAP 파일 시스템 또는 Google Cloud NetApp Volumes의 보조 NFS 데이터스토어가 포함됩니다.</block>
+  <block id="2afa9ed57e4ce623bbccfda41d5d59af" category="list-text">Amazon EC2, Amazon EVS, VMware Cloud on AWS 또는 Google Cloud VMware Engine으로 마이그레이션할 VM을 결정합니다</block>
+  <block id="0f4fbe30c2e887701c223f09e89387d8" category="list-text">VM 외부 데이터 저장소로 사용할 클라우드 네이티브 스토리지 볼륨에 필요한 공간을 확인합니다</block>
+  <block id="ff62f1e53387635f4c94e523c95339f7" category="list-text">실제 배포를 수행합니다(Amazon EC2, Amazon EBS 및 VMware Cloud on AWS의 경우)</block>
+  <block id="87439718ba32d403605af10fe103cda9" category="paragraph">마이그레이션 어드바이저는 Amazon FSx for NetApp ONTAP 파일 시스템에 연결된 단일 Amazon EVS, Amazon EC2 또는 VMware Cloud on AWS 클러스터 또는 Google Cloud NetApp Volumes에 연결된 Google Cloud VMware Engine 클러스터에 대한 구성 계획을 지원합니다.</block>
+  <block id="53ece88b5f79298f3e39b4b2e9a3365d" category="paragraph">기존 인프라의 일부를 클라우드 네이티브 스토리지를 외부 NFS 데이터스토어로 사용하는 Amazon EC2, Amazon EBS, VMware Cloud on AWS 또는 Google Cloud VMware Engine으로 전환하면 다음과 같은 이점을 얻을 수 있습니다.</block>
+  <block id="546393155194873f3731142e84a340fd" category="inline-link">NetApp Workload Factory에 대한 권한</block>
+  <block id="6bc7794709563656174e241f32f0298a" category="paragraph">시작하기 전에<block ref="aae0d4009285116ff23f9a7f74c1f54b" category="inline-link-rx"></block>에 대해 이해해야 합니다.</block>
+  <block id="2556da08e11585b605626929beefd4ce" category="summary">VMware 마이그레이션 어드바이저를 사용하여 현재 인프라를 Google Cloud NetApp Volumes를 외부 NFS 데이터 저장소로 사용하는 Google Cloud VMware Engine으로 마이그레이션하세요.</block>
+  <block id="9e8284342c75f48a25dde90d2f2d0588" category="doc">VMware 워크로드 마이그레이션 어드바이저를 사용하여 Google Cloud VMware Engine으로 마이그레이션하기 위한 빠른 시작</block>
+  <block id="b53d94934411cf1f04ae399b5c11817c" category="paragraph">권한을 부여하지 않기로 선택하면 VMware용 Workload Factory를 사용하여 부분적으로 완성된 코드 샘플을 복사할 수 있습니다.</block>
+  <block id="50e7018c936f9967bef9aaaca1d14b1d" category="paragraph">권한을 부여하기로 선택한 경우, Google Cloud NetApp Volumes 리소스 보기 및 관리, VPC 구성 및 Google Cloud VMware Engine 데이터스토어 연결에 필요한 권한을 GCP 서비스 계정에 제공하는 것을 포함하는<block ref="869f3c251b5d8f71098ec6e85e90e6d1" category="inline-link-rx"></block>해야 합니다.</block>
+  <block id="175be206f8668945b45511179609ebe3" category="paragraph">VMware 마이그레이션 어드바이저를 실행하고 Google Cloud NetApp Volumes를 외부 NFS 데이터스토어로 사용하여 Google Cloud VMware Engine 인프라에 생성할 VM 환경을 구성합니다.</block>
+  <block id="020b682c9f65d6f17439d2cb0cf964bf" category="paragraph"><block ref="e3624573fd74cf60ac70575f2c86dc70" category="inline-link-macro-rx"></block>.</block>
+  <block id="955a2516353d537bc989165068e10d79" category="inline-link-macro">Google Cloud VMware Engine 배포 계획 생성</block>
+  <block id="fc32330336b033235d02cb9ee4ecb7f8" category="list-text"><block ref="fc32330336b033235d02cb9ee4ecb7f8" category="inline-link-macro-rx"></block></block>
+  <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026년 3월 9일</block>
+  <block id="4aa1f4ce7ff97e69b143fbe399631234" category="section-title">2026년 3월 1일</block>
+  <block id="cd201b013ee4f8ae149bb4ba1d9c3ab3" category="sidebar">빠른 시작: Google Cloud VMware Engine으로 마이그레이션</block>
+  <block id="26786f5592c89fd387f588f17079366d" category="sidebar">Google Cloud VMware Engine으로 마이그레이션</block>
+  <block id="ef1fc06261bcd9214fd9546ba1a3d6f6" category="sidebar">Google Cloud VMware Engine으로 마이그레이션을 위한 빠른 시작</block>
 </blocks>
