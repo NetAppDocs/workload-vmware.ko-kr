@@ -772,16 +772,7 @@
   <block id="8c0981b34ea19373e1dcf1c3d034f097" category="list-text">자동 모범 사례 검증</block>
   <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">사전 예방적 관찰 가능성</block>
   <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">인사이트를 실행으로</block>
-  <block id="fc34f37e0124ad3486b3476b4c3bf8ba" category="section-title">잘 설계된 상태</block>
-  <block id="ebd5767595bd56d8d385eee9f3e5317a" category="paragraph">Workload Factory 콘솔에서는 검색된 모든 EVS 가상화 환경의 well-architected 상태가 표시됩니다. Well-architected 상태는 "Optimized" 또는 "Not optimized"로 분류됩니다. *Inventory*를 선택하면 환경 내의 Well-architected 상태 탭으로 이동하여 환경의 모든 구성을 확인할 수 있습니다.</block>
-  <block id="a4394e01049a42d14bd6258585de98b7" category="section-title">구성 범주</block>
-  <block id="a5584aec16bb244b4e3daa5c56c07600" category="paragraph">Workload Factory는 여러 범주에 걸쳐 EVS 구성을 평가하여 AWS 및 NetApp 모범 사례와의 일치 여부를 확인합니다. 각 범주는 EVS 환경의 특정 측면에 중점을 둡니다.</block>
-  <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="list-text">가용성</block>
-  <block id="bc2da75aa54d732564f6242c6a869d0c" category="list-text">EVS 구성이 얼마나 접근 가능하고 운영 가능할 것으로 예상되는가.</block>
   <block id="2fae32629d4ef4fc6341f1751b405e45" category="list-text">보안</block>
-  <block id="6c02cf363d34d913745020138dfa79a6" category="list-text">EVS 구성이 데이터를 얼마나 잘 보호하고 액세스를 제어하는지(예: EC2 중지 및 종료 보호).</block>
-  <block id="02bc0523497de72834c4c7990e32d155" category="list-text">복원력</block>
-  <block id="75927f968f22d6de4aff600752ad874d" category="list-text">EVS 구성이 장애 또는 중단으로부터 복구할 수 있는 능력.</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">다음 단계</block>
   <block id="eb9cf952bc2ab533d61d93bdca17a2a1" category="section-title">EVS 환경에 대한 Well-Architected 분석</block>
   <block id="de4d561d9225c3e38ab8fb69845b3845" category="paragraph">'우수한 아키텍처' 탭은 Amazon Elastic VMware Service(EVS) 환경에 대한 자동화된 일일 분석을 제공하여 AWS 및 NetApp 모범 사례를 준수하는지 확인합니다. 이 탭은 구성 문제를 식별하고 자세한 해결 지침을 제공하여 최적의 운영, 보안 및 비용 효율성을 유지할 수 있도록 지원합니다.</block>
@@ -897,8 +888,6 @@
   <block id="a29465f74d83dc4ead73643e19ed4387" category="list-text">vSAN 단독 구성과 Google Cloud NetApp Volumes 강화 구성 간의 상세한 비용 비교 및 총소유비용(TCO) 분석.</block>
   <block id="1711c42c1c1d16547f3fc604cd9af939" category="list-text">Standard, Premium 및 Extreme Google Cloud NetApp Volumes 서비스 레벨을 지원합니다.</block>
   <block id="d5adbe8ffd84800d108bc7ddf1451b8a" category="list-text">Terraform을 사용한 자동화된 프로비저닝을 위한 Infrastructure-as-Code 배포.</block>
-  <block id="6edf666a8e66c338ed987a8170473fc1" category="inline-link-macro">Google Cloud VMware Engine 플랜용 Google Cloud NetApp Volumes 데이터스토어를 배포하세요</block>
-  <block id="c6fdbf6f595f7c0ad6e578b92f3bc742" category="list-text"><block ref="c6fdbf6f595f7c0ad6e578b92f3bc742" category="inline-link-macro-rx"></block></block>
   <block id="7f23e40eb3340fde04d9926b7462c830" category="summary">VMware 계획 센터에서 Google Cloud VMware Engine 마이그레이션 어드바이저를 실행하여 필요에 맞게 사용자 지정된 마이그레이션 계획을 수립할 수 있습니다.</block>
   <block id="5e50f9be4f1e626bb755e71b6ef9feec" category="doc">마이그레이션 어드바이저를 사용하여 Google Cloud VMware Engine용 배포 계획을 생성하십시오</block>
   <block id="bdef3354bb4b315740e7e8854254495b" category="paragraph">가상 머신을 Google Cloud VMware Engine으로 마이그레이션하고 사용자 지정 Google Cloud NetApp Volumes를 외부 NFS 데이터 저장소로 사용하는 배포 계획을 생성할 수 있습니다. 마이그레이션 어드바이저의 옵션은 VM 인벤토리 데이터를 수집하는 데 사용된 도구에 따라 다를 수 있습니다.</block>
@@ -1051,4 +1040,28 @@
   <block id="cd201b013ee4f8ae149bb4ba1d9c3ab3" category="sidebar">빠른 시작: Google Cloud VMware Engine으로 마이그레이션</block>
   <block id="26786f5592c89fd387f588f17079366d" category="sidebar">Google Cloud VMware Engine으로 마이그레이션</block>
   <block id="ef1fc06261bcd9214fd9546ba1a3d6f6" category="sidebar">Google Cloud VMware Engine으로 마이그레이션을 위한 빠른 시작</block>
+  <block id="9ffdb95250e26c7a6b468126ac7c75b0" category="section-title">작동 방식</block>
+  <block id="2888fa977354ad1bf513fa2f17fdd7df" category="paragraph">Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 환경에서 실행되는 워크로드를 매일 분석합니다. 이 분석을 통해 아키텍처 상태, 인사이트 및 권장 사항을 확인할 수 있습니다.</block>
+  <block id="678b83ba882b41e4bae10f8e48f4a766" category="paragraph">일일 분석이 완료되면 배포의 Well-architected 대시보드에 구성 상태가 "최적화됨" 또는 "최적화되지 않음"으로 표시됩니다. 총 최적화 점수, 범주별 구성 문제, 구성 문제 및 권장 사항 목록을 확인할 수 있습니다. 구성 문제에 대한 권장 사항을 검토할 수 있습니다. 일부 문제는 Workload Factory에서 자동으로 수정되지만, 다른 문제는 수동 개입이 필요합니다. 이 경우 Workload Factory는 권장 변경 사항을 구현하는 데 도움이 되는 자세한 지침을 제공합니다.</block>
+  <block id="1fab3ff575faec37f5f5855ba6c44e9b" category="paragraph">사용 환경에 적용되지 않는 구성에 대한 분석은 제외할 수 있습니다. 이렇게 하면 불필요한 경고와 부정확한 최적화 결과를 방지할 수 있습니다. 특정 구성 분석을 제외하면 Workload Factory는 해당 구성을 전체 최적화 점수 계산에 포함하지 않습니다.</block>
+  <block id="ee25e0b6cd574166f206b4c5b7f02df3" category="section-title">중요한 이유</block>
+  <block id="1ae45cc8915c23757127ca10c1cc4000" category="paragraph">Workload Factory는 지속적인 평가와 권장 사항 인사이트 및 문제 해결을 결합하여 대규모 스토리지, 데이터베이스 및 VMware 환경에 모범 사례를 적용합니다. Workload Factory 콘솔에서 적용되는 자동화된 수정 사항은 인적 오류를 줄이고 일관된 관리를 보장하며 워크로드 인프라 전반의 성능과 안정성을 유지합니다.</block>
+  <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">분석 요구 사항</block>
+  <block id="bd126090c73a42fcacb46a16e66fc0d0" category="paragraph">완벽한 구성 분석을 위해서는 다음을 수행해야 합니다.</block>
+  <block id="f95f58d64ce974b5c7aac839966c9c9b" category="list-text">링크를 연결하세요. 링크 연결을 통해 Workload Factory는 데이터 보호 및 성능과 같은 모든 파일 시스템 구성을 분석할 수 있습니다.</block>
+  <block id="be8334e3a8f0885af8e03ba816b24537" category="inline-link-macro">기존 링크를 연결하는 방법 또는 새 링크를 생성하고 연결하는 방법을 알아보십시오</block>
+  <block id="3b1785543fb9e9ab18e56f4cf89f47d9" category="paragraph"><block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.</block>
+  <block id="cb62e3613b98e65c2294e5b10993769d" category="list-text">VMware 워크로드에 대한 _보기, 계획 및 분석_ 권한을 부여합니다.</block>
+  <block id="bf2ef084e923ce6ebc4b57db27892de8" category="inline-link-macro">AWS 계정에 권한을 부여하는 방법을 알아보십시오</block>
+  <block id="582f3532371a870cf4bd6406f93d26de" category="paragraph"><block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block></block>
+  <block id="c6a26e796e7c4b35dd55f1fdf4b780ad" category="section-title">EVS 워크로드에 대한 모범 사례 및 권장 사항</block>
+  <block id="dba86fe56ac5fd6ee1fc03a1c7c3d8f5" category="paragraph">Workload Factory는 잘 설계된 Amazon Elastic VMware Service(EVS) 워크로드 운영을 위한 모범 사례 및 권장 사항을 제공합니다. 잘 설계된 분석은 EVS 구성을 평가하여 VMware 환경이 안정성, 보안, 운영 우수성, 비용 최적화 및 성능 효율성 측면에서 최적화되도록 지원합니다. VMware의 잘 설계된 상태 탭에서 EVS 환경에 대한 잘 설계된 모범 사례를 구현하는 데 도움이 되는 인사이트와 권장 사항을 확인할 수 있습니다.</block>
+  <block id="4dddd21092aa16dc9dfae3d527b65882" category="paragraph">잘 설계된 분석은 프레임워크의 다음 핵심 요소인 _신뢰성_ 및 _보안_을 기준으로 구성을 분류합니다.</block>
+  <block id="820b8f74ad843d1574106ec4cadfc07e" category="section-title">안정성</block>
+  <block id="32293fdcb7dff0798e6d06da4b108ce6" category="paragraph">안정성은 중단이 발생하더라도 워크로드가 의도된 기능을 정확하고 일관되게 수행하도록 보장합니다.</block>
+  <block id="64ccb44013ef32cd6747200b28ee1c1b" category="list-text">*EVS 환경 복원력*</block>
+  <block id="0ad9b54164298e25de96745a39c4ef18" category="paragraph">EVS 클러스터 노드가 파티션 배치 그룹에 올바르게 분산되어 있는지 확인하십시오. 모든 노드는 4개 이상의 파티션으로 구성된 단일 파티션 배치 그룹의 구성원이어야 합니다. 올바른 파티션 배치는 AWS 가용 영역 내의 여러 장애 격리 하드웨어 파티션에 EVS 클러스터 노드가 분산되도록 보장합니다. 잘못 배치되면 파티션 장애 발생 시 처리 능력 손실이나 다운타임이 크게 발생할 수 있습니다.</block>
+  <block id="7d7265a6929882bb433fc74e8bee871a" category="paragraph">보안은 위험 평가 및 완화 전략을 통해 데이터, 시스템 및 자산을 보호하는 데 중점을 둡니다.</block>
+  <block id="9bcd13fbdffcddd84a7b637f7ec4e9b8" category="list-text">*클러스터 노드 관리*</block>
+  <block id="240380a5970626d74754b96038898f5e" category="paragraph">EVS 클러스터 노드에 적절한 EC2 중지 및 종료 보호 기능이 구성되어 있는지 확인하십시오. EVS ESXi 노드는 vCenter 또는 기타 VMware 수준의 관리 도구를 사용하여 관리해야 합니다. 적절한 EC2 수준 보호 기능이 없으면 EC2 콘솔에서 노드가 실수로 중지되거나 종료될 수 있으며, 이로 인해 가상 머신 데이터의 사용 불가 또는 데이터 손실이 발생할 수 있습니다.</block>
 </blocks>
