@@ -4,6 +4,7 @@
 
 
 
+[[introducing-the-amazon-elastic-vmware-service-preferences-in-the-fsx-for-ontap-file-system-deployment-wizard]]
 === FSx for ONTAP 파일 시스템 배포 마법사에서 Amazon Elastic VMware Service 기본 설정 소개
 
 Amazon Elastic VMware Service의 외부 NFS 데이터 저장소로 사용할 FSx for ONTAP 파일 시스템을 배포하는 경우 이제 데이터 저장소가 연결될 EVS 환경을 선택할 수 있습니다.  이렇게 하면 배포 마법사의 여러 필드가 자동으로 채워져 배포 프로세스가 간소화됩니다.
@@ -12,6 +13,7 @@ https://docs.netapp.com/us-en/workload-vmware/deploy-fsx-file-system-evs.html["�
 
 
 
+[[permissions-changes-for-vmware-workloads]]
 === VMware 워크로드에 대한 권한 변경
 
 VMware 워크로드는 특정 작업에 필요한 권한에 대한 명확성을 제공하고 필요한 권한만 선택할 수 있는 세분성을 제공합니다.  자격 증명을 추가하면 이전 권한 모델인 _읽기 전용_ 및 _읽기/쓰기_ 대신 두 가지 권한 옵션 중에서 선택할 수 있습니다. 새로운 권한 모델은 권한 정책을 다음과 같이 구분합니다.
@@ -26,6 +28,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Amazon EC2 마이그레이션 어드바이저 개선 사항
 
 VMware용 NetApp Workload Factory의 이번 릴리스에서는 마이그레이션 어드바이저 환경에 대한 여러 가지 개선 사항이 적용되었습니다.

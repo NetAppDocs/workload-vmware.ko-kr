@@ -17,6 +17,7 @@ VMware 계획 센터에서 Amazon EVS 마이그레이션 어드바이저를 실�
 
 
 
+[[requirements]]
 == 요구 사항
 
 * Workload Factory에 액세스하려면 사용자 이름과 비밀번호가 필요합니다.  접근할 수 없다면 지금 계정을 만드세요.  지침을 참조하세요 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["여기"] .
@@ -25,6 +26,7 @@ VMware 계획 센터에서 Amazon EVS 마이그레이션 어드바이저를 실�
 
 
 
+[[steps]]
 == 단계
 
 . 다음 중 하나를 사용하여 Workload Factory에 로그인하세요. https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^] .

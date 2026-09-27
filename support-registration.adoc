@@ -19,6 +19,7 @@ link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fs
 
 
 
+[[support-registration-overview]]
 == 지원 등록 개요
 
 계정 ID 지원 구독을 등록하면( NetApp 콘솔의 지원 리소스 페이지에 있는 20자리 960xxxxxxxxx 일련 번호) 단일 지원 구독 ID로 사용됩니다. 각 NetApp 계정 수준 지원 구독을 등록해야 합니다.
@@ -27,12 +28,14 @@ link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fs
 
 
 
+[[register-your-account-for-netapp-support]]
 == NetApp 지원에 계정을 등록합니다
 
 지원을 등록하고 지원 자격을 활성화하려면 계정의 한 사용자가 NetApp 지원 사이트 계정을 NetApp 콘솔 로그인과 연결해야 합니다. NetApp 지원에 등록하는 방법은 NetApp 지원 사이트(NSS) 계정이 있는지 여부에 따라 달라집니다.
 
 
 
+[[existing-customer-with-an-nss-account]]
 === NSS 계정이 있는 기존 고객
 
 NSS 계정이 있는 NetApp 고객인 경우 NetApp 콘솔을 통해 지원을 등록하기만 하면 됩니다.
@@ -59,6 +62,7 @@ NetApp 콘솔 로그인과 NetApp 지원 사이트 계정을 연결하지 않은
 
 
 
+[[existing-customer-but-no-nss-account]]
 === 기존 고객이지만 NSS 계정은 없습니다
 
 기존 라이선스와 일련 번호는 있지만 NSS 계정이 없는 기존 NetApp 고객인 경우 NSS 계정을 만들고 NetApp 콘솔 로그인과 연결해야 합니다.
@@ -75,6 +79,7 @@ NetApp 콘솔 로그인과 NetApp 지원 사이트 계정을 연결하지 않은
 
 
 
+[[brand-new-to-netapp]]
 === NetApp이 처음이었습니다
 
 NetApp의 새로운 브랜드이고 NSS 계정이 없는 경우 아래의 각 단계를 수행하십시오.

@@ -4,6 +4,7 @@
 
 
 
+[[vmware-migration-advisor-enhancements]]
 === VMware 마이그레이션 어드바이저의 향상된 기능
 
 VMware용 Workload Factory의 이번 릴리스에서는 기능 및 안정성이 향상되었으며, VMware 마이그레이션 어드바이저를 사용할 때 마이그레이션 계획을 가져오고 내보낼 수 있는 기능이 추가되었습니다.

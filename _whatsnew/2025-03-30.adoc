@@ -4,6 +4,7 @@
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Amazon EC2 마이그레이션 어드바이저 개선 사항
 
 VMware용 BlueXP Workload Factory의 이번 릴리스에서는 Amazon EC2 마이그레이션 어드바이저 환경에 대한 여러 가지 개선 사항이 적용되었습니다.

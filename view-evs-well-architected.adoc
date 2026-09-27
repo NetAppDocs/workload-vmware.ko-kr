@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: view-evs-well-architected.html 
-keywords: evs, well-architected, wad, best practices, recommendations, security, resiliency 
+keywords: evs, well-architected, best practices, recommendations, security, resiliency 
 summary: Workload Factory에서 EVS 구성의 well-architected 상태를 검토하고 AWS 및 NetApp 모범 사례를 기반으로 한 해결 지침을 따르십시오. 
 ---
 = 잘 설계된 EVS 구성 구현
@@ -15,6 +15,7 @@ Workload Factory 구성 분석을 사용하여 Amazon Elastic VMware Service(EVS
 
 
 
+[[about-this-task]]
 == 이 작업 정보
 
 AWS API를 사용하여 발견된 모든 EVS 환경을 매일 자동으로 스캔하여 EVS 구성을 분석하고 가용성, 복원력, 보안 또는 비용 최적화에 영향을 미칠 수 있는 잠재적인 문제를 식별합니다. 발견 사항은 구성 영역별로 정리되며, 각 발견 사항에는 상태, 심각도 수준, 영향을 받는 리소스 세부 정보 및 단계별 해결 절차가 포함됩니다.
@@ -29,6 +30,7 @@ AWS API를 사용하여 발견된 모든 EVS 환경을 매일 자동으로 스�
 
 
 
+[[understanding-well-architected-insights]]
 === 잘 설계된 인사이트 이해
 
 Well-architected 탭에는 다음 내용이 표시됩니다.
@@ -43,6 +45,7 @@ Well-architected 탭에는 다음 내용이 표시됩니다.
 
 
 
+[[scan-frequency]]
 === 스캔 빈도
 
 잘 설계된 스캔은 발견된 모든 EVS 구성에 대해 자동으로 수행됩니다. 스캔 일정에 대한 주요 세부 정보는 다음과 같습니다.
@@ -58,6 +61,7 @@ NOTE: 잘 설계된 스캔의 온디맨드 실행은 현재 지원되지 않습�
 
 
 
+[[before-you-begin]]
 == 시작하기 전에
 
 * VMware 워크로드에 대한 _보기, 계획 및 분석_ 권한이 있는 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 자격 증명 추가됨"^]이(가) 있어야 합니다.
@@ -66,6 +70,7 @@ NOTE: 잘 설계된 스캔의 온디맨드 실행은 현재 지원되지 않습�
 
 
 
+[[access-the-well-architected-status-tab]]
 == 잘 설계된 상태 탭에 액세스
 
 .단계
@@ -89,10 +94,12 @@ NOTE: 잘 설계된 스캔의 온디맨드 실행은 현재 지원되지 않습�
 
 
 
+[[view-well-architected-assessments]]
 == 잘 설계된 평가 보기
 
 
 
+[[cluster-node-management]]
 === 클러스터 노드 관리
 
 이는 EVS 클러스터 노드에 적절한 EC2 중지 및 종료 보호가 구성되어 있는지 평가합니다.
@@ -137,6 +144,7 @@ EVS ESXi 노드는 vCenter 또는 기타 VMware 수준의 관리 도구를 사�
 
 
 
+[[evs-environment-resiliency]]
 === EVS 환경 복원력
 
 EVS 클러스터 노드가 파티션 배치 그룹 전체에 적절하게 분산되어 있는지 평가합니다.
@@ -193,6 +201,7 @@ EVS 환경을 생성하거나 확장할 때는 4개 이상의 파티션으로 �
 
 
 
+[[whats-next]]
 == 다음 단계
 
 잘 설계된 인사이트를 검토하고 권장 변경 사항을 구현한 후:

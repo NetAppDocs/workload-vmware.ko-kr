@@ -17,6 +17,7 @@ Workload Factory 계정에 추가한 정책 및 권한에 따라 Workload Factor
 
 
 
+[[requirements]]
 == 요구 사항
 
 * Amazon Elastic VMware Service 구독이 있어야 합니다.
@@ -25,6 +26,7 @@ Workload Factory 계정에 추가한 정책 및 권한에 따라 Workload Factor
 
 
 
+[[considerations]]
 == 고려 사항
 
 * 빠른 만들기 또는 고급 만들기 옵션을 사용할 수 있습니다. Advanced create는 사용자 지정할 수 있는 몇 가지 추가 스토리지 매개 변수를 제공합니다. https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["이 두 옵션이 제공하는 혜택을 확인해 보십시오"]..
@@ -33,6 +35,7 @@ Workload Factory 계정에 추가한 정책 및 권한에 따라 Workload Factor
 
 
 
+[[steps]]
 == 단계
 
 . 검토 계획 * 페이지 하단에 * 배포 * 를 선택하면 FSx for ONTAP 파일 시스템 생성 페이지가 표시됩니다.
@@ -124,6 +127,7 @@ AZ 간 트래픽에 대한 요금을 회피하려면 VMware SDDC가 구축된 �
 
 
 
+[[result]]
 == 결과
 
 FSx for ONTAP 파일 시스템이 구축됩니다. 이제 Codebox의 AWS CloudFormation 템플릿을 사용하여 권장되는 VM 구성을 Amazon Elastic VMware Service 환경에 배포할 수 있습니다.

@@ -15,6 +15,7 @@ NetApp Workload Factory for VMware는 온프레미스 시스템의 데이터를 
 
 
 
+[[what-is-netapp-workload-factory-for-vmware]]
 == VMware용 NetApp Workload Factory란 무엇인가요?
 
 NetApp Workload Factory for VMware는 온프레미스 vSphere 환경에서 현재 가상 머신 구성을 분석할 수 있는 계획 센터와 마이그레이션 어드바이저를 제공합니다. 마이그레이션 어드바이저는 권장 VM 레이아웃을 Amazon EVS, Amazon EC2, VMware Cloud on AWS vSphere 클러스터 또는 Google Cloud VMware Engine에 배포하는 계획을 생성하며, 외부 데이터 저장소로 사용자 지정 클라우드 네이티브 스토리지를 사용합니다. AWS 환경의 경우 Amazon FSx for NetApp ONTAP 파일 시스템이 포함됩니다. Google Cloud 환경의 경우 Google Cloud NetApp Volumes가 포함됩니다. Workload Factory for VMware 대시보드 역할을 하는 계획 센터를 통해 저장된 VM 인벤토리 데이터 세트와 저장된 마이그레이션 계획을 관리하고 저장한 마이그레이션 계획을 프로비저닝할 수 있습니다.
@@ -25,6 +26,7 @@ Workload Factory에 대한 자세한 내용은 다음을 참조하세요. https:
 
 
 
+[[how-the-vmware-migration-advisors-work]]
 == VMware 마이그레이션 어드바이저의 작동 방식
 
 마이그레이션 전문가가 VMware에서 지원하는 모든 데이터스토어에서 실행되는 온프레미스 가상 머신(VM)과 해당 데이터를 Amazon EVS, Amazon EC2, VMware Cloud 또는 Google Cloud VMware Engine 데이터스토어로 마이그레이션하는 데 도움을 드릴 수 있습니다. 여기에는 FSx for ONTAP 파일 시스템 또는 Google Cloud NetApp Volumes의 보조 NFS 데이터스토어가 포함됩니다.
@@ -33,6 +35,7 @@ AWS 기반 VMware Cloud의 단일 vSphere 클러스터에 FSx for ONTAP 볼륨�
 
 
 
+[[what-you-can-do-with-the-migration-advisors]]
 == 이민 자문가와 함께 할 수 있는 일
 
 마이그레이션 어드바이저는 다음과 같은 기능을 제공합니다.
@@ -48,6 +51,7 @@ AWS 기반 VMware Cloud의 단일 vSphere 클러스터에 FSx for ONTAP 볼륨�
 
 
 
+[[benefits-of-using-the-migration-advisors]]
 == 이민 자문 서비스 이용의 이점
 
 기존 인프라의 일부를 클라우드 네이티브 스토리지를 외부 NFS 데이터스토어로 사용하는 Amazon EC2, Amazon EBS, VMware Cloud on AWS 또는 Google Cloud VMware Engine으로 전환하면 다음과 같은 이점을 얻을 수 있습니다.
@@ -63,6 +67,7 @@ AWS 기반 VMware Cloud의 단일 vSphere 클러스터에 FSx for ONTAP 볼륨�
 
 
 
+[[tools-to-use-netapp-workload-factory]]
 == NetApp Workload Factory를 사용하는 도구
 
 다음 도구와 함께 NetApp Workload Factory를 사용할 수 있습니다.
@@ -73,11 +78,12 @@ AWS 기반 VMware Cloud의 단일 vSphere 클러스터에 FSx for ONTAP 볼륨�
 * *CloudShell CLI*: Workload Factory에는 단일 브라우저 기반 CLI를 통해 여러 계정의 AWS 및 NetApp 환경을 관리하고 운영할 수 있는 CloudShell CLI가 포함되어 있습니다. Workload Factory 콘솔의 상단 표시줄에서 CloudShell에 액세스합니다.
 * *REST API*: Workload Factory REST API를 사용하여 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리합니다.
 * *CloudFormation*: AWS CloudFormation 코드를 사용하여 Workload Factory 콘솔에서 정의한 작업을 수행하여 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리합니다.
-* *Terraform NetApp Workload Factory 공급자*: Terraform을 사용하여 Workload Factory 콘솔에서 생성된 인프라 워크플로를 구축하고 관리합니다.
+* *NetApp Terraform 공급자*: Workload Factory 콘솔에서 생성된 인프라 워크플로를 구축하고 관리하기 위해 Terraform을 사용합니다.
 
 
 
 
+[[well-architected-analysis-for-evs-environments]]
 == EVS 환경에 대한 Well-Architected 분석
 
 '우수한 아키텍처' 탭은 Amazon Elastic VMware Service(EVS) 환경에 대한 자동화된 일일 분석을 제공하여 AWS 및 NetApp 모범 사례를 준수하는지 확인합니다. 이 탭은 구성 문제를 식별하고 자세한 해결 지침을 제공하여 최적의 운영, 보안 및 비용 효율성을 유지할 수 있도록 지원합니다.
@@ -88,6 +94,7 @@ link:view-evs-well-architected.html["Workload Factory에서 잘 설계된 EVS �
 
 
 
+[[cost]]
 == 비용
 
 VMware에서 Workload Factory를 사용하는 데는 비용이 들지 않습니다.
@@ -96,12 +103,14 @@ VMware에서 Workload Factory를 사용하는 데는 비용이 들지 않습니�
 
 
 
+[[licensing]]
 == 라이센싱
 
 VMware용 Workload Factory를 사용하려면 NetApp 의 특별 라이선스가 필요하지 않습니다.
 
 
 
+[[regions]]
 == 지역
 
 Workload Factory는 FSx for ONTAP 이 지원되는 모든 상업 지역에서 지원됩니다. https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["지원되는 Amazon 지역을 확인하세요."^]

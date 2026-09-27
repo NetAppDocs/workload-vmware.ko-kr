@@ -4,6 +4,7 @@
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Amazon EC2 마이그레이션 어드바이저 개선 사항
 
 VMware용 BlueXP Workload Factory의 이번 릴리스에서는 Amazon EC2 마이그레이션 어드바이저 환경에 다음과 같은 개선 사항이 적용되었습니다.
@@ -14,6 +15,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 
 
+[[updated-permissions-terminology]]
 === 사용 권한 용어가 업데이트되었습니다
 
 Workload Factory 사용자 인터페이스와 설명서에서는 이제 읽기 권한을 나타내는 데 "읽기 전용"이라는 용어를 사용하고 자동화 권한을 나타내는 데 "읽기/쓰기"라는 용어를 사용합니다.

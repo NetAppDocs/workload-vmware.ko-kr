@@ -4,6 +4,7 @@
 
 
 
+[[vmware-migration-advisor-data-reduction-ratio-help]]
 === VMware Migration Advisor 데이터 축소율이 도움이 됩니다
 
 이번 VMware용 Workload Factory 릴리즈에는 데이터 축소율 지원 기능이 있습니다. 데이터 축소율 도우미를 통해 AWS 클라우드 온보딩을 준비할 때 VMware 인벤토리 및 스토리지 공간에 가장 적합한 비율을 결정할 수 있습니다.

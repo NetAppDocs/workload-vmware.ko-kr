@@ -17,6 +17,7 @@ VMware 워크로드를 Amazon Elastic VMware Service(EVS)로 마이그레이션�
 
 
 
+[[explore-savings-for-evs-environments]]
 == EVS 환경을 위한 비용 절감 살펴보기
 
 Amazon EVS 환경으로 계획된 마이그레이션을 통해 얻을 수 있는 잠재적 비용 절감 효과를 알아보려면 다음 단계를 따르세요.
