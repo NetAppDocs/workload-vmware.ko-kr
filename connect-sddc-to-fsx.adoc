@@ -13,7 +13,7 @@ summary: FSx for ONTAP 파일 시스템을 구축한 후에는 해당 시스템�
 [role="lead"]
 FSx for ONTAP 파일 시스템을 배포한 후에는 해당 시스템을 AWS 인프라의 VMware Cloud에 연결해야 합니다. SDDC(소프트웨어 정의 데이터 센터)는 VPC 피어링 기능을 사용하여 외부 NFS 스토리지 볼륨으로 네트워크 연결을 확장하여 FSx for ONTAP 파일 시스템에 연결할 수 있는 네트워크 옵션을 제공합니다.
 
-https://vmc.techzone.vmware.com/fsx-guide?check_logged_in=1#amazon-vpc-peering["자세한 내용은 Amazon VPC 피어링 문서를 참조하십시오"^]
+https://aws.amazon.com/blogs/apn/introducing-vpc-peering-for-amazon-fsx-for-netapp-ontap-with-vmware-cloud-on-aws/["VMware Cloud on AWS와 함께 사용하는 Amazon FSx for NetApp ONTAP의 VPC 피어링에 대해 읽어보십시오."^]
 
 다음 다이어그램은 VPC 피어링을 사용하여 단일 가용 영역(AZ) SDDC 클러스터를 FSx for ONTAP 단일 AZ 구축에 연결하는 방법을 보여줍니다.
 
