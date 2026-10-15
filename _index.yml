@@ -11,51 +11,51 @@ indexpage:
     links:
     - title: VMware용 NetApp Workload Factory에 대해 알아보세요
       url: learn-about-vmware-workloads.html
-    - title: '빠른 시작: Amazon Elastic VMware Service로 마이그레이션'
+    - title: Amazon EVS 마이그레이션 빠른 시작
       url: quick-start-evs.html
-    - title: '빠른 시작: AWS의 VMware Cloud로 마이그레이션합니다'
+    - title: VMware Cloud on AWS 마이그레이션 빠른 시작
       url: quick-start.html
-    - title: '빠른 시작: Amazon EC2로 마이그레이션합니다'
+    - title: Amazon EC2 마이그레이션 빠른 시작
       url: quick-start-native.html
-    - title: '빠른 시작: Google Cloud VMware Engine으로 마이그레이션'
+    - title: Google Cloud VMware Engine 마이그레이션 빠른 시작
       url: quick-start-gcve.html
     - title: VMware 계획 센터 탐색
       url: explore-planning-center.html
   - title: Amazon Elastic VMware Service로 마이그레이션
     links:
-    - title: 저축 알아보기
+    - title: VMware용 Workload Factory를 사용하여 Amazon EVS 비용 절감 효과를 확인해 보세요.
       url: calculate-evs-savings.html
     - title: 수동으로 배포 계획 생성
       url: launch-migration-advisor-evs-manual.html
-    - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
+    - title: 마이그레이션 어드바이저를 사용하여 Amazon EVS에 대한 배포 계획을 만듭니다.
       url: launch-migration-advisor-evs.html
-    - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
-      url: deploy-fsx-file-system.html
+    - title: Amazon EVS용 FSx for ONTAP 배포
+      url: deploy-fsx-file-system-evs.html
   - title: Google Cloud VMware Engine으로 마이그레이션
     links:
-    - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
+    - title: Google Cloud VMware Engine용 배포 계획을 생성하십시오
       url: launch-migration-advisor-gcve.html
   - title: Amazon EC2로 마이그레이션합니다
     links:
-    - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
+    - title: Amazon EC2용 배포 계획을 생성하십시오
       url: launch-onboarding-advisor-native.html
-    - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
-      url: deploy-fsx-file-system.html
+    - title: Amazon EC2용 FSx for ONTAP 배포
+      url: deploy-fsx-file-system-native.html
   - title: AWS 기반 VMware Cloud로 마이그레이션하십시오
     links:
-    - title: 마이그레이션 관리자를 사용하여 배포 계획을 생성합니다
+    - title: VMware Cloud on AWS 배포 계획을 수립하십시오
       url: launch-onboarding-advisor.html
-    - title: 권장 FSx for ONTAP 파일 시스템을 배포합니다
+    - title: VMware Cloud on AWS용 FSx for ONTAP을 배포합니다.
       url: deploy-fsx-file-system.html
     - title: FSx for ONTAP 파일 시스템을 AWS의 VMware Cloud에 연결합니다
       url: connect-sddc-to-fsx.html
-    - title: 데이터를 새로운 인프라로 마이그레이션합니다
+    - title: VM 데이터를 VMware Cloud on AWS로 마이그레이션합니다
       url: migrate-data.html
   - title: 관리 및 모니터링
     links:
     - title: EVS 구성에 대한 구성 분석
       url: configuration-analysis.html
-    - title: 잘 설계된 EVS 구성 구현
+    - title: VMware용 Workload Factory에서 잘 설계된 EVS 결과를 검토하십시오
       url: view-evs-well-architected.html
   - title: 블로그 및 커뮤니티
     links:

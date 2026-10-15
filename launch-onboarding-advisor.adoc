@@ -4,7 +4,7 @@ permalink: launch-onboarding-advisor.html
 keywords: overview, concepts, features, use case, workloads, how Workload Factory works 
 summary: NetApp Workload Factory에 로그인하여 VMware 마이그레이션 어드바이저에 액세스하세요.  마법사의 단계에 따라 귀하의 요구 사항에 맞게 사용자 정의된 배포 계획이나 마이그레이션 계획을 만듭니다. 
 ---
-= VMware 워크로드 마이그레이션 어드바이저를 사용하여 VMware Cloud on AWS에 대한 구축 계획을 수립합니다
+= VMware Cloud on AWS 배포 계획을 수립하십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

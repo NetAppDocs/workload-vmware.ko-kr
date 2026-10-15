@@ -4,7 +4,7 @@ permalink: launch-migration-advisor-gcve.html
 keywords: overview, concepts, features, use case, workloads, how Workload Factory works, migration, gcve, google cloud vmware engine, gcnv, deployment, plan 
 summary: VMware 계획 센터에서 Google Cloud VMware Engine 마이그레이션 어드바이저를 실행하여 필요에 맞게 사용자 지정된 마이그레이션 계획을 수립할 수 있습니다. 
 ---
-= 마이그레이션 어드바이저를 사용하여 Google Cloud VMware Engine용 배포 계획을 생성하십시오
+= Google Cloud VMware Engine용 배포 계획을 생성하십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

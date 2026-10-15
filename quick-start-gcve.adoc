@@ -4,7 +4,7 @@ permalink: quick-start-gcve.html
 keywords: quick start, gcve, google cloud vmware engine, gcnv, google cloud netapp volumes 
 summary: VMware 마이그레이션 어드바이저를 사용하여 현재 인프라를 Google Cloud NetApp Volumes를 외부 NFS 데이터 저장소로 사용하는 Google Cloud VMware Engine으로 마이그레이션하세요. 
 ---
-= VMware 워크로드 마이그레이션 어드바이저를 사용하여 Google Cloud VMware Engine으로 마이그레이션하기 위한 빠른 시작
+= Google Cloud VMware Engine 마이그레이션 빠른 시작
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

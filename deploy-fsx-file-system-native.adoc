@@ -4,7 +4,7 @@ permalink: deploy-fsx-file-system-native.html
 keywords: vm workloads, deploy fsx, deploy storage for vms 
 summary: 권장하는 FSx for ONTAP 파일 시스템 또는 경우에 따라 여러 파일 시스템이 정확한 요구 사항을 충족하는지 확인한 후 Workload Factory를 사용하여 AWS 환경에 시스템을 배포할 수 있습니다. 
 ---
-= 권장 FSx for ONTAP 파일 시스템을 배포합니다
+= Amazon EC2용 FSx for ONTAP 배포
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
