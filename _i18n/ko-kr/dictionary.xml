@@ -1107,4 +1107,8 @@
   <block id="53d93e9fac55ddfe7c501887d49a96ea" category="doc">VM 인벤토리 데이터를 Workload Factory for VMware에 업로드합니다.</block>
   <block id="ddff52126e082848348039b980fd1e5c" category="doc">VMware용 Workload Factory에서 잘 설계된 EVS 결과를 검토하십시오</block>
   <block id="8ecb1fa68ebd7661685ea0dc78ce9cea" category="sidebar">VMware용 NetApp Workload Factory의 새로운 기능</block>
+  <block id="d6ed55c5fa0490be9e9d07719ba741ce" category="doc">EVS TCO 계산기에서 i7i.metal-24xl 및 i7i.metal-48xl 인스턴스 지원</block>
+  <block id="b6c3bb340d0b13e009a53c6c8a2b9219" category="paragraph">EVS TCO 계산기가 이제 AWS i7i.metal-24xl 및 i7i.metal-48xl EC2 인스턴스를 클러스터 호스트로 지원합니다. i4i.metal 구성과 비교했을 때, i7i.metal-24xl 인스턴스는 컴퓨팅 비용 측면에서 EVS 초기 비용을 약 33%, vSAN 스토리지 비용 측면에서 약 25% 절감해 줍니다.</block>
+  <block id="e50148793a31ae443693925cfda40d91" category="paragraph">이 계산기는 모든 인스턴스 유형을 비교하여 가장 저렴한 옵션을 자동으로 선택합니다. 새로운 비교 섹션에서는 EVS 호스트 구성을 나란히 표시하여 필요에 맞는 최적의 설정을 더 쉽게 선택할 수 있습니다.</block>
+  <block id="8b253c1d4259c21c8314fc85adcb31d6" category="section-title">2026년 11월 1일</block>
 </blocks>

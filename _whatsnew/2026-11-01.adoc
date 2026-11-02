@@ -1,0 +1,14 @@
+= EVS TCO 계산기에서 i7i.metal-24xl 및 i7i.metal-48xl 인스턴스 지원
+:allow-uri-read: 
+
+
+
+
+[[i7i-metal-24xl-and-i7i-metal-48xl-instance-support-in-evs-tco-calculator]]
+=== EVS TCO 계산기에서 i7i.metal-24xl 및 i7i.metal-48xl 인스턴스 지원
+
+EVS TCO 계산기가 이제 AWS i7i.metal-24xl 및 i7i.metal-48xl EC2 인스턴스를 클러스터 호스트로 지원합니다. i4i.metal 구성과 비교했을 때, i7i.metal-24xl 인스턴스는 컴퓨팅 비용 측면에서 EVS 초기 비용을 약 33%, vSAN 스토리지 비용 측면에서 약 25% 절감해 줍니다.
+
+이 계산기는 모든 인스턴스 유형을 비교하여 가장 저렴한 옵션을 자동으로 선택합니다. 새로운 비교 섹션에서는 EVS 호스트 구성을 나란히 표시하여 필요에 맞는 최적의 설정을 더 쉽게 선택할 수 있습니다.
+
+link:https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["EVS의 예상 절감액 계산"]
